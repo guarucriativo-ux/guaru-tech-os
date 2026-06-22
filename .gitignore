@@ -13,6 +13,7 @@ api_key/
 key.txt
 .env
 .env.*
+!.env.example
 
 # Arquivos > 100MB que o GitHub rejeita (limite rigido)
 Projetos/Alkimia/Ref. Catalogo/CATALOGO_FINAL (1).pdf
