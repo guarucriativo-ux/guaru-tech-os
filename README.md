@@ -22,6 +22,32 @@ Guaru Tech/
         └── alkimia_teste1/
 ```
 
+## Core — CLI `guaru` (Node.js)
+
+Camada de gestão de clientes e do ciclo de aprendizado. Zero dependências (Node puro, ESM).
+
+```
+guaru new <nome>                    Clona template-client-base em Projetos/<slug>
+guaru list                          Lista clientes + status de conformidade
+guaru doctor <cliente>              Valida se o cliente segue o template
+guaru dna <cliente> [campo[=valor]] Lê/escreve brand-dna.json (ex: palette.primary=#FF6600)
+guaru learn <cliente> --titulo ... --contexto ... --resultado ... --licao ...
+guaru log <cliente> --peca ... --feedback ... --acao ...
+```
+
+Rodar via `node cli/index.js <comando>` (ou `npm run guaru -- <comando>`).
+
+```
+cli/index.js        parser de args + dispatch
+cli/commands/       um arquivo por comando
+core/client-repo.js localizar/clonar/listar/validar clientes
+core/brand-dna.js   ler/escrever/validar brand-dna.json
+core/learning.js    anexar entradas em learned-lessons.md / learning-log.md
+```
+
+`Projetos/<cliente>/` (clonado de `template-client-base/`) é o padrão único. `guaru doctor`
+sinaliza clientes fora do molde — hoje a Alkimia diverge (estrutura legada, pré-CLI).
+
 ## Status — Alkimia
 
 - Cliente: **Alkimia Produções**
