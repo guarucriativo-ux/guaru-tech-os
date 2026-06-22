@@ -1,0 +1,75 @@
+# Gera o pacote de conteúdo semanal NA NUVEM, via GitHub Actions.
+# É a "porta" da costura de execução-em-nuvem: o batente (repo + secret + .env.example) já existia;
+# isto pendura a porta. Usa o secret ANTHROPIC_API_KEY e commita o resultado de volta no repositório
+# — prova visível de que o sistema rodou sozinho na nuvem, sem a máquina do Marcos ligada.
+#
+# Pré-requisito: o secret ANTHROPIC_API_KEY precisa existir em
+#   Settings → Secrets and variables → Actions → New repository secret.
+# Dispara sozinho toda segunda ~09:00 BRT e também dá pra rodar na mão (workflow_dispatch) pra testar.
+name: Gerar conteúdo (nuvem)
+
+on:
+  schedule:
+    - cron: "0 12 * * 1" # toda segunda, 12:00 UTC (~09:00 BRT)
+  workflow_dispatch:
+    inputs:
+      cliente:
+        description: "Pasta do cliente em Projetos/"
+        default: "guaru-estudio"
+      foco:
+        description: "Foco comercial da semana"
+        default: "Autoridade no nicho — conteúdo que atrai e converte"
+
+permissions:
+  contents: write
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Conferir o secret (a costura está conectada?)
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Secret ANTHROPIC_API_KEY ausente. Settings → Secrets and variables → Actions → New repository secret."
+            exit 1
+          fi
+          echo "Secret presente. Seguindo."
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Definir cliente e semana
+        id: vars
+        env:
+          IN_CLIENTE: ${{ github.event.inputs.cliente }}
+        run: |
+          echo "cliente=${IN_CLIENTE:-guaru-estudio}" >> "$GITHUB_OUTPUT"
+          echo "semana=$(date +%V)" >> "$GITHUB_OUTPUT"
+
+      - name: Gerar pacote semanal
+        working-directory: Projetos/${{ steps.vars.outputs.cliente }}/02-content-generator
+        env:
+          FOCO: ${{ github.event.inputs.foco || 'Autoridade no nicho — conteúdo que atrai e converte' }}
+          SEMANA: ${{ steps.vars.outputs.semana }}
+        run: |
+          npm ci || npm install
+          node generate.js --week="$SEMANA" --focus="$FOCO"
+
+      - name: Commitar o resultado de volta no repo
+        env:
+          CLIENTE: ${{ steps.vars.outputs.cliente }}
+          SEMANA: ${{ steps.vars.outputs.semana }}
+        run: |
+          git config user.name "guaru-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add "Projetos/$CLIENTE/02-content-generator/outputs/" || true
+          git add "Projetos/$CLIENTE/data/" 2>/dev/null || true
+          git commit -m "chore(nuvem): pacote da semana $SEMANA gerado via GitHub Action" || { echo "Nada novo para commitar"; exit 0; }
+          git push
