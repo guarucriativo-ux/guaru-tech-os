@@ -1,0 +1,15 @@
+{
+  "registro": "cafe-aconchegante",
+  "week": "stress-01",
+  "asset": "../assets/teste-pizza.png",
+  "etapa_funil": "atracao",
+  "text": {
+    "TOP_SMALL_1": "teste de stress da",
+    "TOP_BIG": "guaru tech<br>factory",
+    "TOP_SMALL_2": "fluxo de ponta a ponta",
+    "SCRIPT_TEXT": "job, engine, output, log.",
+    "FOOTER_LABEL": "validação de produção",
+    "FOOTER_BIG": "autonomia operacional:",
+    "FOOTER_DETAIL": "job -> engine -> output -> ledger, sem intervenção manual."
+  }
+}

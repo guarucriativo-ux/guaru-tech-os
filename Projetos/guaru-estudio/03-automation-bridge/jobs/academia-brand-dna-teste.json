@@ -1,0 +1,13 @@
+{
+  "client": "Performance Box",
+  "tagline": "Treino com plano, não com sorte.",
+  "palette": {
+    "primary": "#1A1A1A",
+    "text": "#FFFFFF",
+    "text_on_box": "#FFFFFF",
+    "accent_on_box": "#FF5A1F"
+  },
+  "typography": {
+    "font_family": "Arial Black, Arial, Helvetica, sans-serif"
+  }
+}

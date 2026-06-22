@@ -1,0 +1,21 @@
+{
+  "client": "",
+  "tagline": "",
+  "palette": {
+    "primary": "",
+    "secondary": "",
+    "text": "",
+    "text_box_bg": "",
+    "text_on_box": ""
+  },
+  "typography": {
+    "style": "",
+    "font_family": ""
+  },
+  "shapes": [],
+  "logos": {
+    "primary": "",
+    "alternate": ""
+  },
+  "references_dir": "references/"
+}

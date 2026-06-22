@@ -1,0 +1,22 @@
+{
+  "_aviso": "Documento de extração/auditoria das 20 imagens em /Referencias/. NÃO é lido pelo image-engine.js — quem o código lê é brand-dna.json. Este arquivo existe para registrar o raciocínio por trás dos valores fixados, com data e amostra.",
+  "fonte": "Referencias/ (20 imagens, prints de portfólio de social media, analisadas uma a uma em 2026-06-22)",
+  "observado_por_categoria": {
+    "padding_margem": "Varia por peça (painéis de tamanhos diferentes); peças mais fortes (fitness/academia neon, branding amarelo) ficam na faixa de 7-9% da largura. 90px/1080px (~8,3%) está dentro dessa faixa.",
+    "proporcao_caixa_solida": "Varia de ~35% a ~70%+ da altura entre as 20 peças — não há um valor único 'correto' nas referências. 40% foi escolhido como padronização da Guaru Tech, não como média medida.",
+    "tipografia": "Bold/heavy quase universal, sans-serif de alto contraste, frequentemente em caixa baixa.",
+    "paleta": "2-3 cores por peça. As referências mais próximas da identidade Guaru (fitness/academia) usam verde-limão neon + preto + branco — base para o ACCENT_COLOR."
+  },
+  "valores_fixados": {
+    "MARGIN_PX": 90,
+    "BOX_HEIGHT_RATIO": 0.4,
+    "TEXT_COLOR_ON_BOX": "#FFFFFF",
+    "ACCENT_COLOR": "#CCFF00"
+  },
+  "onde_cada_valor_vive_no_codigo": {
+    "MARGIN_PX": "constante em 03-automation-bridge/image-engine.js (estrutural — Base Mãe, vale pra todo cliente)",
+    "BOX_HEIGHT_RATIO": "constante em 03-automation-bridge/image-engine.js (estrutural — Base Mãe, vale pra todo cliente)",
+    "TEXT_COLOR_ON_BOX": "brand-dna.json > palette.text_on_box (identidade do cliente)",
+    "ACCENT_COLOR": "brand-dna.json > palette.primary (identidade do cliente — atualizado de #E2FF00 para #CCFF00 nesta rodada)"
+  }
+}

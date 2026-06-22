@@ -1,0 +1,13 @@
+{
+  "registro": "cafe-aconchegante",
+  "asset": "../assets/teste-pizza.png",
+  "text": {
+    "TOP_SMALL_1": "o que uma pizzaria tem que",
+    "TOP_BIG": "nenhum delivery<br>genérico",
+    "TOP_SMALL_2": "conseguiu copiar?",
+    "SCRIPT_TEXT": "fresquinha, todo dia.",
+    "FOOTER_LABEL": "toda quinta é dia da pizza",
+    "FOOTER_BIG": "alerta de sabor:",
+    "FOOTER_DETAIL": "borda recheada de catupiry + suco natural da casa"
+  }
+}

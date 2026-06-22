@@ -1,0 +1,18 @@
+*.mp4
+*.MOV
+*.mov
+*.rar
+*.psd
+*.zip
+node_modules/
+.DS_Store
+
+# Segredos / credenciais — nunca versionar
+api_key/
+*.key
+key.txt
+.env
+.env.*
+
+# Arquivos > 100MB que o GitHub rejeita (limite rigido)
+Projetos/Alkimia/Ref. Catalogo/CATALOGO_FINAL (1).pdf

@@ -1,0 +1,36 @@
+{
+  "_comentario": "Mapeamento Registro -> Template. Cada chave é um dos modelos de niches-library/design-principles/catalogo-referencias.md. 'paletteSource':'fixed' = a paleta É o modelo, nunca vem do brand-dna.json (ex: MONA é preto/branco/amarelo pra qualquer cliente). 'brand-dna' = cores vêm de Projetos/<cliente>/brand-dna.json. 'hybrid' = parte fixa (identidade do modelo), parte flexível (texto/marca do cliente).",
+  "registros": {
+    "mona": {
+      "descricao": "Manifesto conceitual — preto/branco/amarelo, zero foto, tipografia gigante quebrada em 3 blocos (curto/curto/longo).",
+      "template": "registro-mona.html",
+      "paletteSource": "fixed",
+      "requiresAsset": false,
+      "canvas": { "width": 1080, "height": 1350 },
+      "tokens": ["LABEL_TOP", "TAG_TOP", "HEADLINE_LINE_1", "HEADLINE_LINE_2", "HEADLINE_LINE_3", "SUB_TEXT", "CAPTION_TEXT"],
+      "catalogoRef": "niches-library/design-principles/catalogo-referencias.md — Modelo 1"
+    },
+    "cafe-aconchegante": {
+      "descricao": "Lifestyle quente — foto real full-bleed, scrim de canto, headline pequeno/bold/pequeno + toque manuscrito + rodapé label/bold/detalhe.",
+      "template": "registro-cafe-aconchegante.html",
+      "paletteSource": "brand-dna",
+      "requiresAsset": true,
+      "canvas": { "width": 1080, "height": 1350 },
+      "tokens": ["ASSET_PATH", "BRAND_NAME", "TOP_SMALL_1", "TOP_BIG", "TOP_SMALL_2", "SCRIPT_TEXT", "FOOTER_LABEL", "FOOTER_BIG", "FOOTER_DETAIL"],
+      "catalogoRef": "niches-library/design-principles/catalogo-referencias.md — Modelo 6c"
+    },
+    "kameleon-organico": {
+      "descricao": "SaaS suave — foto real recortada em blob orgânico via clip-path, texto curvo no arco, duotone verde + texto preto/branco — paleta TODA fixa (o catálogo já define que esse modelo não varia cor por cliente, só o conteúdo do texto). CORRIGIDO 2026-06-22: estava marcado como 'hybrid' puxando TEXT_ON_BOX do brand-dna, o que quebrou contraste (texto branco sobre fundo creme claro, quase invisível) quando o cliente tem TEXT_ON_BOX claro pensado pra fundo escuro.",
+      "template": "registro-kameleon-organico.html",
+      "paletteSource": "fixed",
+      "requiresAsset": true,
+      "canvas": { "width": 1080, "height": 1080 },
+      "tokens": ["ASSET_PATH", "HEADLINE_HTML", "CAPTION_TEXT"],
+      "catalogoRef": "niches-library/design-principles/catalogo-referencias.md — Modelo 3"
+    }
+  },
+  "pendentes_de_portar": [
+    "vidde", "quadra", "academia-fitness", "food-delivery-agressivo",
+    "food-catalogo-limpo", "pet-shop", "ct-escola"
+  ]
+}

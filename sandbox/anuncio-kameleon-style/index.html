@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  #post {
+    width: 1080px;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+    background: #F7F5EE;
+    font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+  }
+
+  /* Blobs orgânicos (mix de dois verdes), à la Kameleon — assimétricos, sangrando à esquerda. */
+  #blob-light {
+    position: absolute;
+    left: -160px;
+    top: -80px;
+    width: 820px;
+    height: 820px;
+  }
+  #blob-light path { fill: #DCEFAE; }
+
+  #blob-dark {
+    position: absolute;
+    left: -40px;
+    top: 60px;
+    width: 660px;
+    height: 660px;
+  }
+  #blob-dark path { fill: #8FC23A; }
+
+  /* Avatar circular (placeholder de "pessoa" — sem foto real, silhueta + gradiente quente). */
+  #avatar-wrap {
+    position: absolute;
+    left: 280px;
+    top: 90px;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 24px 40px rgba(60, 90, 30, 0.18);
+    background: radial-gradient(circle at 38% 32%, #FFE3C2 0%, #F2B888 55%, #D99B66 100%);
+  }
+  #avatar-silhouette {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 280px;
+    border-radius: 160px 160px 0 0;
+    background: #2F4A1E;
+    opacity: 0.85;
+  }
+  #avatar-head {
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 160px;
+    border-radius: 50% 50% 46% 46%;
+    background: #2F4A1E;
+    opacity: 0.85;
+  }
+
+  #curve-label {
+    position: absolute;
+    left: 280px;
+    top: 90px;
+    width: 520px;
+    height: 520px;
+  }
+  #curve-label text {
+    fill: #2F4A1E;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  #badge-plus {
+    position: absolute;
+    left: 300px;
+    top: 540px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #4C7A28;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+  }
+
+  #pill-saiba-mais {
+    position: absolute;
+    left: 590px;
+    top: 540px;
+    background: #ffffff;
+    border-radius: 40px;
+    padding: 10px 22px 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.14);
+  }
+  .mini-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: -12px;
+  }
+  .mini-avatar:first-child { margin-left: 0; }
+  #pill-saiba-mais span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2F4A1E;
+  }
+
+  #content-block {
+    position: absolute;
+    left: 80px;
+    top: 740px;
+    width: 920px;
+  }
+  #content-block h1 {
+    font-size: 62px;
+    font-weight: 800;
+    color: #2F4A1E;
+    line-height: 1.05;
+    margin-bottom: 18px;
+  }
+  #content-block h1 span { color: #6FAA32; }
+  #content-block p {
+    font-size: 26px;
+    color: #5b5b52;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 34px;
+    max-width: 760px;
+  }
+
+  #cta-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  #cta-row .avatars {
+    display: flex;
+  }
+  #cta-pill {
+    background: #2F4A1E;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 16px 30px;
+    border-radius: 40px;
+  }
+</style>
+</head>
+<body>
+  <div id="post">
+    <div id="blob-light">
+      <svg viewBox="0 0 820 820" preserveAspectRatio="none">
+        <path d="M40,560 C-40,400 60,180 280,90 C480,10 700,90 770,300 C830,470 700,640 520,720 C330,800 110,720 40,560 Z" />
+      </svg>
+    </div>
+    <div id="blob-dark">
+      <svg viewBox="0 0 660 660" preserveAspectRatio="none">
+        <path d="M30,420 C-30,260 90,80 280,40 C470,0 620,140 630,330 C640,500 480,620 320,630 C160,640 70,560 30,420 Z" />
+      </svg>
+    </div>
+
+    <div id="avatar-wrap">
+      <div id="avatar-silhouette"></div>
+      <div id="avatar-head"></div>
+    </div>
+
+    <svg id="curve-label" viewBox="0 0 520 520">
+      <path id="curvePath" d="M 70,260 A 190,190 0 0 1 450,260" fill="none" />
+      <text text-anchor="middle">
+        <textPath href="#curvePath" startOffset="50%">sua marca com quem entende</textPath>
+      </text>
+    </svg>
+
+    <div id="badge-plus">+</div>
+
+    <div id="pill-saiba-mais">
+      <div class="mini-avatar" style="background:#F2B888;"></div>
+      <div class="mini-avatar" style="background:#8FC23A;"></div>
+      <div class="mini-avatar" style="background:#2F4A1E;"></div>
+      <span>saiba mais</span>
+    </div>
+
+    <div id="content-block">
+      <h1>anúncios que <span>vendem mais.</span></h1>
+      <p>gestão completa de tráfego pago em múltiplas plataformas — pra sua marca crescer todo mês, não só aparecer.</p>
+      <div id="cta-row">
+        <div class="avatars">
+          <div class="mini-avatar" style="background:#F2B888; width:42px; height:42px;"></div>
+          <div class="mini-avatar" style="background:#8FC23A; width:42px; height:42px;"></div>
+          <div class="mini-avatar" style="background:#2F4A1E; width:42px; height:42px;"></div>
+        </div>
+        <div id="cta-pill">fale com a gente →</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

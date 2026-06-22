@@ -1,0 +1,17 @@
+{
+  "registro": "cafe-aconchegante",
+  "client": "performance-box",
+  "angulo": "autoridade",
+  "week": "academia-seq-3",
+  "asset": "../assets/simulados/academia-resultado-aluno.png",
+  "brand": "jobs/academia-brand-dna-teste.json",
+  "text": {
+    "TOP_SMALL_1": "o que separa um aluno",
+    "TOP_BIG": "QUE EVOLUI<br>DE VERDADE",
+    "TOP_SMALL_2": "de quem só frequenta?",
+    "SCRIPT_TEXT": "8 anos formando atletas.",
+    "FOOTER_LABEL": "prova social",
+    "FOOTER_BIG": "+300 alunos transformados:",
+    "FOOTER_DETAIL": "metodologia validada, não achismo de instrutor."
+  }
+}

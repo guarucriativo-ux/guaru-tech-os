@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* Registro: cafe-aconchegante. Foto real full-bleed + scrim CSS (controle que a API do Canva
+     não dá). Cores principais vêm do brand-dna (TEXT_ON_BOX / ACCENT_ON_BOX). */
+  #post {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Georgia", "Times New Roman", serif;
+  }
+  #post img.bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, rgba(10,8,6,0.75) 0%, rgba(10,8,6,0.45) 32%, rgba(10,8,6,0) 58%);
+  }
+
+  #brand {
+    position: absolute;
+    top: 56px;
+    right: 56px;
+    color: {{TEXT_ON_BOX}};
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 5;
+  }
+
+  #headline {
+    position: absolute;
+    top: 110px;
+    left: 64px;
+    width: 480px;
+    z-index: 5;
+  }
+  #headline .small {
+    color: {{TEXT_ON_BOX}};
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.25;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #headline .big {
+    color: #FFFFFF;
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin: 6px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  /* Tamanho/posição corrigidos (feedback do Marcos, peça "Forno da Vila", 2026-06-22): texto
+     com significado não pode ficar pequeno discreto no canto — precisa ocupar a largura útil
+     e centralizar, senão não lê em Instagram mobile. Ver catalogo-referencias.md, princípio
+     transversal #5. */
+  #script {
+    position: absolute;
+    top: 520px;
+    left: 64px;
+    width: 952px;
+    text-align: center;
+    color: {{ACCENT_ON_BOX}};
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 72px;
+    font-style: italic;
+    transform: rotate(-2deg);
+    z-index: 5;
+    opacity: 0.95;
+  }
+
+  #footer-label {
+    position: absolute;
+    bottom: 200px;
+    left: 64px;
+    color: {{ACCENT_ON_BOX}};
+    font-size: 22px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 5;
+  }
+  #footer-big {
+    position: absolute;
+    bottom: 140px;
+    left: 64px;
+    color: {{TEXT_ON_BOX}};
+    font-size: 44px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    z-index: 5;
+  }
+  #footer-detail {
+    position: absolute;
+    bottom: 95px;
+    left: 64px;
+    width: 700px;
+    color: {{TEXT_ON_BOX}};
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 5;
+  }
+</style>
+</head>
+<body>
+  <div id="post">
+    <img class="bg" src="{{ASSET_PATH}}" alt="foto do registro cafe-aconchegante" />
+    <div id="scrim"></div>
+
+    <div id="brand">{{BRAND_NAME}}</div>
+
+    <div id="headline">
+      <div class="small">{{TOP_SMALL_1}}</div>
+      <div class="big">{{TOP_BIG}}</div>
+      <div class="small">{{TOP_SMALL_2}}</div>
+    </div>
+
+    <div id="script">{{SCRIPT_TEXT}}</div>
+
+    <div id="footer-label">{{FOOTER_LABEL}}</div>
+    <div id="footer-big">{{FOOTER_BIG}}</div>
+    <div id="footer-detail">{{FOOTER_DETAIL}}</div>
+  </div>
+</body>
+</html>

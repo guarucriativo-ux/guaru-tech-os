@@ -1,0 +1,22 @@
+{
+  "client": "Guaru Estúdio",
+  "tagline": "Seu negócio, bem visto.",
+  "palette": {
+    "primary": "#CCFF00",
+    "secondary": "",
+    "text": "#000000",
+    "text_box_bg": "#000000",
+    "text_on_box": "#FFFFFF",
+    "accent_on_box": "#CCFF00"
+  },
+  "typography": {
+    "style": "bold minúscula",
+    "font_family": "Arial Black, Arial, Helvetica, sans-serif"
+  },
+  "shapes": ["circulares orgânicas"],
+  "logos": {
+    "primary": "",
+    "alternate": ""
+  },
+  "references_dir": "references/"
+}
