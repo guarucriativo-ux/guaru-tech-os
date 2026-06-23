@@ -17,3 +17,7 @@ key.txt
 
 # Arquivos > 100MB que o GitHub rejeita (limite rigido)
 Projetos/Alkimia/Ref. Catalogo/CATALOGO_FINAL (1).pdf
+
+# Snapshot do repo (gerado por tools/gerar-snapshot.mjs sob demanda p/ anexar a IA externa).
+# Regenerável e pesado — nao versionar; rodar o script quando precisar reanexar.
+SNAPSHOT-REPO.md
