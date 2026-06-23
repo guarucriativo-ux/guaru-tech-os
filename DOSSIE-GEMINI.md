@@ -192,12 +192,26 @@ sozinha — e fica mais especialista no seu nicho a cada dia."*
 
 ---
 
-## 9. O PRÓXIMO PASSO (onde a ação retoma)
+## 9. Modelo classe A/B e o nicho do Alvo A (DECIDIDO 2026-06-23)
 
-**Escolher o nicho do Alvo A** — o primeiro Instagram de prova social — e começar a girar o
-flywheel: produzir conteúdo real naquele nicho, capturar feedback, transformar em regra na
-`niches-library/`. É a transição do Estágio 1 (motor pronto) para o Estágio 2 (prova de mercado).
-Profundidade em UM vertical é defensável; largura é commodity.
+**Descoberta-marco (2026-06-23):** nichos se dividem em duas classes pela dependência de imagem —
+- **Classe A "produto é a foto"** (comida, beleza, interior, moda): conteúdo honesto depende de
+  foto real do cliente; foto genérica/stock quebra a confiança ("não é o meu produto"). Para uma
+  conta nossa (Alvo A) não dá. **Parqueada como ponta aberta** (volta depois; ver `mercado-classe-b.md`
+  pra a calibragem por individualidade do produto — coxinha padronizado vs hambúrguer autoral).
+- **Classe B "autoridade/serviço"** (psicólogo, advogado, saúde, pet, fitness): conteúdo é
+  conhecimento/confiança → stock (Unsplash) + design autoral encaixam liso. **É o foco de expansão**
+  (mais automatizável → custo de servir cai → north-star).
+
+**Nicho do Alvo A = PSICÓLOGO** (decidido por pesquisa de mercado: ~400–574k profissionais, solo,
+Instagram-nativo, conteúdo 100% conceitual = fit mais limpo pra provar o sistema). O mapa completo
+do universo classe B e a inteligência de mercado de 16 nichos estão em
+**`niches-library/mercado-classe-b.md`** (mapa de expansão — onde clonar depois do Alvo A).
+
+**Próximo passo operacional:** girar o flywheel no psicólogo — construir `niches-library/psicologia/`
+(fundamentado em pesquisa do nicho + Base Mãe), `brand-dna` do Alvo A, gerar o 1º lote de carrosséis,
+capturar feedback → virar regra. Profundidade em UM vertical é defensável; largura é commodity.
+*(Pendente de decisão do Marcos: identidade do Alvo A — conta-vitrine da Guaru vs persona demo.)*
 
 ---
 
