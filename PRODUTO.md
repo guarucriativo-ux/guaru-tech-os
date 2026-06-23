@@ -97,6 +97,31 @@ rápido (o "aha"), demonstra a capacidade de tráfego e puxa o upsell do plano p
   aberta do Estágio 3). O bônus só entrega quando esse último metro existir, já com a conta estruturada.
 - **Teto de gasto rígido** (guardrail) — gasto automatizado sem limite duro pode sangrar dinheiro.
 
+## 8. Gestor de tráfego conversacional + crédito (WhatsApp) — [Estágio 3-4]
+O cliente acompanha e comanda a campanha **falando** (áudio) com o "gestor", e vê resumo no WhatsApp.
+
+**Acompanhar e comandar por voz:**
+- "Como está a campanha? qual está dando certo?" → o gestor lê métricas reais (Meta Marketing API:
+  gasto, CPC, conversões, leads) e responde simples, **com honestidade** (diz o que está caro, não só elogia).
+- Objetivo em linguagem natural ("conversão pro site" / "mais vendas no e-commerce" / "mais
+  seguidores") → mapeia pro objetivo Meta certo. ⚠️ **Pré-requisito técnico:** conversão/venda exige
+  **pixel** (e **catálogo** no e-commerce) — o gestor guia o setup ou avisa que falta. E **gerencia
+  expectativa**: otimiza pra venda, não garante venda (oferta/preço/produto pesam) — prometer demais = churn.
+- **Autonomia gradual:** cedo REPORTA + RECOMENDA, humano aprova ajustes; com dados + guardrails, ajusta sozinho.
+
+**Crédito (abastecer pelo WhatsApp):**
+- Crédito acabando → gestor **avisa proativamente**; cliente abastece pelo próprio zap.
+- ⚠️ **Sempre via a plataforma de cobrança (§6), nunca cartão no chat:** link/QR **Pix** (paga na
+  hora, webhook confirma) ou cartão recorrente **com confirmação do valor** → crédito sobe.
+- ⚠️ **Separar dois fluxos:** (1) **assinatura do serviço** (matrícula/receita) e (2) **carteira de
+  verba de anúncio** (vai pra Meta). Não misturar — clareza contábil.
+- ⚠️ **Decisão estrutural (verba):** o limpo/baixo-risco é a **conta de anúncio do PRÓPRIO cliente,
+  no cartão dele** (Guaru gerencia, cliente paga a Meta). Guaru segurar o dinheiro e pagar a Meta =
+  **intermediária de verba** (peso financeiro/fiscal + regras de revenda Meta) — evitar salvo se valer muito.
+
+**Acompanhamento (CRM/Dashboard):** começa como **resumo no WhatsApp** (gestor conta os números, lê
+do ledger + Meta — barato) e evolui pra **dashboard visual** + CRM de leads (`04-crm-systems`, hoje stub).
+
 ## Onde isso se encaixa
 Tudo aqui é **Estágio 3→4** (ver [ESCOPO-AUTOMACAO.md](ESCOPO-AUTOMACAO.md)): WhatsApp +
 onboarding self-service + aprovação do cliente + billing modular. Cada peça tem componente
