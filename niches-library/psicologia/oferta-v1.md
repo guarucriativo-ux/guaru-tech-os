@@ -11,6 +11,10 @@ instala nada). Ver memória do projeto `modelo-gtm-vertical-alvo-a`.
 - **Tudo pelo WhatsApp:** entrega das peças + legendas sugeridas + mini-calendário ("posta seg/qua/sex").
 - Conteúdo **único** (composição autoral + DNA do cliente) e **dentro da ética do CFP** (assinatura
   com CRP, sem promessa/diagnóstico/exposição) — ver `traffic-playbook.md`.
+- **Setup de perfil no onboarding:** bio otimizada + capas de destaque (a vitrine que converte),
+  ANTES do conteúdo diário começar — post bom em perfil fraco converte menos. Mesmo motor (SVG p/
+  capas + cérebro p/ copy), feito-por-você. Reforça o diferencial "corrente inteira" (não somos
+  gerador de post, somos construtor de presença).
 
 ## Como funciona (jornada do cliente)
 Vê o Instagram-vitrine → landing → paga → briefing rápido (form/WhatsApp) → **nós geramos** (motor)
