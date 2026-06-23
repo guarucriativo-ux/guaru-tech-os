@@ -29,6 +29,12 @@ layout**.
 O cliente dá 👍 (aprovado, vai pro ar) ou 👎 (reprovado, não posta). O dislike entra na base como
 material reprovado.
 
+- **Revisão por áudio (zero fricção, jeito BR):** em vez de só 👎, o cliente manda um áudio ("gostei,
+  mas troca a foto / muda a cor"). Fluxo: áudio → **transcrição** → o sistema entende → **eco de
+  confirmação** ("entendi: trocar a foto e clarear o fundo — confirma?", evita agir em cima de
+  transcrição errada) → regenera → reentrega. **Cada revisão é feedback de ouro** (registrada →
+  personalização do cliente + padrões do nicho). Política: **X revisões inclusas por peça**
+  (anti-abuso/custo). Revisão complexa **escala pro humano** enquanto o sistema amadurece (autonomia cresce).
 - **✅ Correção 2 — aprendizado por-cliente ≠ por-nicho:** o feedback do cliente X personaliza o
   conteúdo **do X**. Só **padrões anônimos entre muitos clientes** mexem na regra do nicho. O
   dislike do X **nunca** vaza pra gaveta de outro cliente (regra de isolamento — ver CLAUDE.md).
@@ -75,6 +81,21 @@ da verdade da "matrícula"** e cuida do que dói:
 - **Matrícula = estado:** ativo / inadimplente / cancelado, **lido da plataforma**, não controlado à mão.
 > ⚠️ Pesquisa pendente: comparar taxas/recursos das plataformas BR + estado do **Pix Automático**
 > (regras/custo atuais) antes de escolher.
+
+## 7. Bônus de tráfego na assinatura (gancho de aquisição) — [Estágio 3-4]
+Ao assinar, o cliente ganha **X (valor simbólico) de tráfego automatizado** — mostra resultado
+rápido (o "aha"), demonstra a capacidade de tráfego e puxa o upsell do plano pago.
+
+⚠️ **Estruturar certo, senão queima conta e dinheiro:**
+- **É dinheiro real = CAC budgetado.** "Grátis" sai do bolso da Guaru → manter literalmente
+  simbólico, como custo de aquisição (ou usar **créditos de anúncio da Meta** quando houver).
+- **Estrutura de conta (landmine):** NÃO rodar todos os clientes por uma única conta pessoal de
+  anúncios (mistura billing, fere termos da Meta, risco de ban). O certo: **Meta Business Manager
+  com conta de anúncio POR cliente** (Guaru com acesso de gestor), e o **cliente dono do próprio
+  pixel/audiência** (ativo dele — regra de isolamento).
+- **Depende da automação de tráfego:** hoje o ads-engine gera blueprint, não sobe campanha (costura
+  aberta do Estágio 3). O bônus só entrega quando esse último metro existir, já com a conta estruturada.
+- **Teto de gasto rígido** (guardrail) — gasto automatizado sem limite duro pode sangrar dinheiro.
 
 ## Onde isso se encaixa
 Tudo aqui é **Estágio 3→4** (ver [ESCOPO-AUTOMACAO.md](ESCOPO-AUTOMACAO.md)): WhatsApp +
