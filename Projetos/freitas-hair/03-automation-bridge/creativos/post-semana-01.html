@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Pinyon+Script&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* DNA Freitas Hair — Presença Digital */
+  :root {
+    --vinho: #AE1948;
+    --magenta: #E0457A;
+    --blush: #F3AEB4;
+    --creme: #F1EBE1;
+    --preto: #1A1A1A;
+  }
+
+  #post {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+    overflow: hidden;
+    background: var(--vinho);
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  /* Foto protagonista, full-bleed */
+  #photo { position: absolute; inset: 0; z-index: 1; }
+  #photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: 50% 38%;
+  }
+
+  /* Zona creme orgânica (borda inferior em onda — não retângulo) */
+  #creme-band { position: absolute; top: 0; left: 0; width: 1080px; height: 600px; z-index: 2; }
+  #creme-band path { fill: var(--creme); }
+
+  /* Marca discreta */
+  #brand {
+    position: absolute; top: 60px; left: 72px; z-index: 6;
+    font-family: "Montserrat", sans-serif; font-weight: 600;
+    font-size: 19px; letter-spacing: 0.34em; text-transform: uppercase;
+    color: var(--vinho);
+  }
+  #brand span { color: var(--magenta); }
+
+  /* Headline */
+  #headline { position: absolute; top: 138px; left: 72px; width: 660px; z-index: 6; }
+  #headline .l1 {
+    font-size: 64px; font-weight: 500; color: var(--vinho); line-height: 1.05;
+  }
+  #headline .anchor {
+    display: block;
+    font-family: "Pinyon Script", cursive;
+    font-size: 188px; font-weight: 400; color: var(--magenta);
+    line-height: 0.7; margin: 6px 0 0 -8px;
+    /* sangria: o rabo do script cruza pra cima da foto */
+  }
+  #headline .l3 {
+    display: inline-block;
+    font-size: 56px; font-weight: 500; font-style: italic; color: var(--vinho);
+    margin-top: 14px; position: relative;
+  }
+  #headline .l3::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -8px;
+    height: 4px; background: var(--magenta);
+  }
+
+  /* Barra de rótulo preta — straddle: cruza a borda creme/foto (sobreposição) */
+  #label {
+    position: absolute; top: 560px; left: 72px; z-index: 7;
+    background: var(--preto); color: #fff;
+    padding: 20px 26px;
+    font-family: "Montserrat", sans-serif; font-weight: 700;
+    font-size: 24px; letter-spacing: 0.1em; text-transform: uppercase;
+    line-height: 1.32;
+    box-shadow: 0 16px 30px rgba(0,0,0,0.28);
+  }
+  #label small { display:block; font-weight: 500; font-size: 18px; letter-spacing: 0.16em; opacity: 0.85; }
+
+  /* Estrela/sparkle rosa com micro-CTA */
+  #star { position: absolute; right: 56px; bottom: 70px; width: 268px; height: 268px; z-index: 7;
+          filter: drop-shadow(0 14px 22px rgba(0,0,0,0.30)); }
+  #star svg { position:absolute; inset:0; }
+  #star .star-fill { fill: var(--magenta); }
+  #star .cta {
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    font-family: "Montserrat", sans-serif; color: #fff; text-transform: uppercase;
+  }
+  #star .cta .small { font-weight: 500; font-size: 20px; letter-spacing: 0.18em; }
+  #star .cta .big { font-weight: 700; font-size: 46px; letter-spacing: 0.04em; line-height: 1; }
+</style>
+</head>
+<body>
+  <div id="post">
+    <div id="photo"><img src="../assets/loiro-ref.jpg" alt="cabelo loiro" /></div>
+
+    <div id="creme-band">
+      <svg viewBox="0 0 1080 600" preserveAspectRatio="none">
+        <path d="M0,0 H1080 V452 C 840,560 600,500 380,540 C 220,568 110,512 0,560 Z" />
+      </svg>
+    </div>
+
+    <div id="brand">FREITAS HAIR <span>·</span> CABELO LOIRO</div>
+
+    <div id="headline">
+      <span class="l1">Seu loiro não</span>
+      <span class="anchor">amarela</span>
+      <span class="l3">por acaso.</span>
+    </div>
+
+    <div id="label">
+      FUNDO DE CLAREAMENTO
+      <small>mal neutralizado — não é falta de matização</small>
+    </div>
+
+    <div id="star">
+      <svg viewBox="0 0 200 200">
+        <polygon class="star-fill" points="100,0 116.07,61.2 170.71,29.29 138.8,83.93 200,100 138.8,116.07 170.71,170.71 116.07,138.8 100,200 83.93,138.8 29.29,170.71 61.2,116.07 0,100 61.2,83.93 29.29,29.29 83.93,61.2" />
+      </svg>
+      <div class="cta">
+        <span class="small">comenta</span>
+        <span class="big">LOIRO</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

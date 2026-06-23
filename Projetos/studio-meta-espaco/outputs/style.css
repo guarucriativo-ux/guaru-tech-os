@@ -1,0 +1,130 @@
+/* Studio Meta-Espaço — Design System "Minimalismo Escultural"
+   Camadas: Base Mãe (disciplina: 2-3 cores, 1 jogada tipográfica, vazio intencional)
+   + briefing do cliente (concreto/cobre/off-white, tom intelectual).
+   Sem fontes externas: serifa editorial (Georgia) + sans para rótulos (Helvetica). */
+
+:root {
+  --concreto: #908B83;
+  --concreto-claro: #BDB8B0;
+  --cobre: #B5733F;
+  --offwhite: #F2EEE7;
+  --grafite: #26241F;
+  --hair: 1px solid var(--cobre);
+
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #d9d4cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 48px 0;
+  font-family: var(--serif);
+}
+
+/* Formato 4:5 (1080x1350) — padrão de carrossel Instagram retrato. */
+.slide {
+  position: relative;
+  width: 1080px;
+  height: 1350px;
+  background: var(--offwhite);
+  color: var(--grafite);
+  overflow: hidden;
+  padding: 96px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Rótulo de sistema: kicker + índice, sempre no topo — sans, caixa alta, tracking largo. */
+.kicker {
+  font-family: var(--sans);
+  font-size: 19px;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--cobre);
+  font-weight: 700;
+}
+.index {
+  position: absolute;
+  top: 96px; right: 96px;
+  font-family: var(--sans);
+  font-size: 19px;
+  letter-spacing: 0.2em;
+  color: var(--concreto);
+}
+.index b { color: var(--grafite); }
+
+/* Fio de cobre — motivo recorrente (1px), "fio de cobre" do brand-dna. */
+.hair { border: none; border-top: var(--hair); width: 120px; }
+.hair--full { width: 100%; border-top: 1px solid var(--concreto-claro); }
+
+/* Tipografia de display: serifa leve, escala extrema, leading apertado (Base Mãe: contraste de escala). */
+.display {
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.015em;
+  font-size: 132px;
+}
+.display .em { font-style: italic; color: var(--cobre); }
+.display--xl { font-size: 168px; }
+
+.lede {
+  font-size: 40px;
+  line-height: 1.32;
+  max-width: 18ch;
+  color: var(--grafite);
+}
+.caption {
+  font-family: var(--sans);
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--concreto);
+  max-width: 34ch;
+}
+.push { margin-top: auto; }
+
+/* Plano de concreto assimétrico que sangra a borda (escultural, sobreposição da Base Mãe). */
+.plane {
+  position: absolute;
+  background: var(--concreto);
+  opacity: 0.16;
+}
+
+/* Slide escuro (grafite) — quebra de ritmo no meio do carrossel. */
+.slide--dark { background: var(--grafite); color: var(--offwhite); }
+.slide--dark .caption { color: var(--concreto-claro); }
+.slide--dark .index { color: var(--concreto); }
+.slide--dark .index b { color: var(--offwhite); }
+
+/* Índice de materiais — colunas finas separadas por fio. */
+.matrix { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; margin-top: 64px; }
+.matrix > div { padding: 32px 28px 0 0; border-top: 1px solid var(--concreto-claro); }
+.matrix .n { font-family: var(--sans); font-size: 18px; letter-spacing: 0.2em; color: var(--cobre); }
+.matrix .t { font-size: 48px; margin: 18px 0 14px; }
+.matrix .d { font-family: var(--sans); font-size: 21px; line-height: 1.45; color: var(--concreto); }
+
+/* Swatches de material reais (cor sólida honesta, não textura falsa). */
+.swatch { width: 100%; height: 220px; margin-bottom: 22px; }
+.sw-concreto { background: var(--concreto); }
+.sw-cobre { background: var(--cobre); }
+.sw-offwhite { background: #fff; border: 1px solid var(--concreto-claro); }
+
+/* CTA */
+.cta-line {
+  font-family: var(--sans);
+  font-size: 26px;
+  letter-spacing: 0.06em;
+  color: var(--cobre);
+  font-weight: 700;
+}
+.logo {
+  font-family: var(--serif);
+  font-size: 34px;
+  letter-spacing: 0.02em;
+}
+.logo small { font-family: var(--sans); font-size: 17px; letter-spacing: 0.34em; text-transform: uppercase; color: var(--concreto); display: block; margin-top: 8px; }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pacifico&family=Anton&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --red:#E1261C; --deep:#A8160F; --cream:#F4EBD9; --mustard:#F4B400; --dark:#201813; }
+
+  #post {
+    width: 1080px; height: 1350px; position: relative; overflow: hidden;
+    background: var(--red); font-family: "Montserrat", sans-serif;
+  }
+
+  /* barra de delivery (canais genéricos — sem telefone inventado) */
+  #delivery {
+    position: absolute; top: 0; left: 0; width: 100%; z-index: 9;
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+    padding: 26px 0; background: var(--deep);
+    color: var(--cream); font-weight: 700; font-size: 23px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+  }
+  #delivery .dot { color: var(--mustard); }
+
+  /* halftone atrás do lettering */
+  #halftone {
+    position: absolute; top: 150px; left: -40px; width: 1160px; height: 560px; z-index: 1;
+    background-image: radial-gradient(var(--deep) 30%, transparent 32%);
+    background-size: 26px 26px; opacity: 0.55;
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 60%, transparent 100%);
+  }
+
+  #kicker {
+    position: absolute; top: 132px; left: 76px; z-index: 6;
+    color: var(--mustard); font-weight: 700; font-size: 30px;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    transform: rotate(-3deg);
+  }
+
+  #headline { position: absolute; top: 188px; left: 64px; z-index: 6; width: 980px; }
+  #headline .l {
+    font-family: "Luckiest Guy", cursive; color: var(--cream);
+    font-size: 200px; line-height: 0.9; letter-spacing: 0.01em;
+    text-shadow: 8px 8px 0 var(--deep);
+  }
+  #headline .l2 { color: var(--mustard); }
+
+  /* motion lines */
+  #motion { position: absolute; top: 150px; right: 60px; width: 220px; height: 260px; z-index: 6; }
+  #motion line { stroke: var(--cream); stroke-width: 12; stroke-linecap: round; }
+
+  /* foto foodporn, sangrando pra cima com borda diagonal */
+  #photo {
+    position: absolute; left: 0; bottom: 0; width: 1080px; height: 720px; z-index: 4;
+    clip-path: polygon(0 14%, 100% 0, 100% 100%, 0 100%);
+    box-shadow: 0 -18px 40px rgba(0,0,0,0.30);
+  }
+  #photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; }
+
+  /* selo redondo de preço/CTA */
+  #seal {
+    position: absolute; right: 70px; bottom: 92px; width: 230px; height: 230px; z-index: 7;
+    background: var(--mustard); border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; color: var(--dark); transform: rotate(8deg);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.35); border: 6px solid var(--cream);
+  }
+  #seal .s { font-family:"Montserrat"; font-weight:700; font-size:22px; letter-spacing:0.1em; text-transform:uppercase; }
+  #seal .b { font-family:"Luckiest Guy",cursive; font-size:48px; line-height:0.95; color: var(--red); }
+</style>
+</head>
+<body>
+  <div id="post">
+    <div id="delivery">PEÇA JÁ <span class="dot">•</span> IFOOD <span class="dot">•</span> RAPPI <span class="dot">•</span> UBER EATS</div>
+    <div id="halftone"></div>
+    <div id="kicker">// chegou a hora</div>
+    <div id="headline">
+      <div class="l">BATEU</div>
+      <div class="l l2">A FOME?</div>
+    </div>
+    <svg id="motion" viewBox="0 0 220 260">
+      <line x1="40" y1="20" x2="150" y2="20" />
+      <line x1="70" y1="70" x2="200" y2="70" />
+      <line x1="55" y1="120" x2="175" y2="120" />
+    </svg>
+    <div id="photo"><img src="../assets/foodporn-burger.jpg" alt="cheeseburger" /></div>
+    <div id="seal">
+      <span class="s">é o teu</span>
+      <span class="b">LANCHE</span>
+    </div>
+  </div>
+</body>
+</html>

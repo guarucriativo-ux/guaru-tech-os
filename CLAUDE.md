@@ -54,6 +54,46 @@ com a identidade do cliente. **Nunca usar estilo genérico.** Se qualquer uma da
 não tiver regra clara para o caso em mãos, perguntar ao Marcos antes de criar — não inventar
 regra de design em nome dele.
 
+## Regras de Assets e Imagens (obrigatório)
+
+### Isolamento de assets (regra inquebrável)
+Existem duas gavetas de imagem, e elas NUNCA se misturam:
+- **Gaveta privada do cliente** (`Projetos/<cliente>/assets`, `references/`) — fotos, logo e
+  material do cliente. São **propriedade dele**. NUNCA entram no banco compartilhado e NUNCA são
+  entregues/reutilizadas em outro cliente. A arquitetura de pasta-por-cliente já isola isto: ao
+  gerar para o cliente X, só se enxerga (assets do X) + (banco do nicho) — jamais a pasta de outro cliente.
+- **Banco compartilhado do nicho** — só imagens **licenciadas que a Guaru tem direito** (stock
+  pago, banco livre com licença anotada, ou geradas por IA). Essas, sim, rodam entre clientes do nicho.
+
+### Anti-genérico / anti-repetição (4 camadas, nesta ordem)
+Banco fixo e pequeno faz todo cliente do nicho ficar igual. Para evitar peça repetida/genérica:
+1. **Foto do cliente primeiro** (única e isolada) — sempre que o cliente real tiver material.
+2. **Anti-repetição via ledger** — o `shared/ledger-query.js` (`avoidRepeats`) já evita reusar o
+   mesmo asset nos últimos outputs; estende-se a imagem (lembra o que cada cliente usou e evita repetir).
+3. **Variação de composição** — a mesma foto base rende peças diferentes via diagramação autoral
+   (lettering, corte, cor, grafismo). Multiplicador grátis de variedade.
+4. **Geração por IA** — imagem única por post quando necessário (mata repetição e licença de uma vez).
+
+**[Longo prazo — vigiar quando escalar, papo de pós-validação]** Limite de uso por imagem em todo
+o nicho, **ponderado por sobreposição de audiência/geografia**: clientes do mesmo setor se enxergam
+(se seguem + a Meta agrupa audiência de nicho), então dois vizinhos com público sobreposto NUNCA
+podem dividir a mesma foto; cidades/públicos distintos = risco baixo. Não é só "N usos", é "N
+ponderado por proximidade". Reforça o caminho de imagem única por IA (mais único = menos colisão).
+
+### Banco de imagem por nicho — manifesto leve, arquivo pesado fora do Git
+- Metadados no repo: `niches-library/<nicho>/visual-references/image-bank.json` (tags, licença,
+  URL no storage) — leve, queryável pela máquina. Arquivos pesados ficam em **storage de nuvem**,
+  nunca no Git (regra de infra: GitHub rejeita arquivo grande).
+- **Cure o critério, não cada arquivo:** o olho do Marcos define o que é "boa foto para o nicho"
+  como regra/filtro — que então guia stock em escala ou geração por IA, sem ele garimpar à mão.
+
+### Economia de imagem (não escalar custo por post)
+IA generativa é cara **por imagem** se usada por post. A regra: **IA (e a curadoria Firefly do
+Marcos) alimenta o BANCO; o banco alimenta os posts.** Geração vira reabastecimento periódico
+(custo amortizado por reuso), não custo por unidade. Stock por assinatura + variação de composição
+derrubam o custo-por-post pra perto de zero. IA usada cirurgicamente (fundo/textura/mood), não para
+o produto real de um cliente.
+
 ## Modo de Execução
 
 - Nunca pedir ao Marcos para editar arquivo de configuração manualmente — sou eu quem edita

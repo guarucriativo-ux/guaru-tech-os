@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pacifico&family=Anton&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root { --red:#E1261C; --deep:#A8160F; --cream:#F4EBD9; --mustard:#F4B400; --dark:#201813; }
+  #post { width:1080px; height:1350px; position:relative; overflow:hidden; background:var(--red); font-family:"Montserrat",sans-serif; }
+  #halftone { position:absolute; inset:0; z-index:1; background-image:radial-gradient(var(--deep) 28%, transparent 30%); background-size:30px 30px; opacity:0.4; }
+  /* doodle de burger em linha */
+  #doodle { position:absolute; top:150px; left:50%; transform:translateX(-50%); width:360px; height:300px; z-index:3; }
+  #doodle path, #doodle line, #doodle circle { fill:none; stroke:var(--cream); stroke-width:9; stroke-linecap:round; stroke-linejoin:round; }
+  #headline { position:absolute; top:470px; left:60px; width:960px; z-index:5; }
+  #headline .l { font-family:"Luckiest Guy",cursive; color:var(--cream); font-size:130px; line-height:0.9; text-shadow:7px 7px 0 var(--deep); }
+  #headline .anchor { color:var(--mustard); }
+  #cta { position:absolute; bottom:210px; left:60px; z-index:6; font-family:"Pacifico",cursive; color:var(--cream); font-size:72px; transform:rotate(-4deg); }
+  #delivery { position:absolute; bottom:0; left:0; width:100%; z-index:7; display:flex; align-items:center; justify-content:center; gap:14px;
+    padding:34px 0; background:var(--dark); color:var(--cream); font-weight:700; font-size:26px; letter-spacing:0.14em; text-transform:uppercase; }
+  #delivery .dot { color:var(--mustard); }
+</style></head>
+<body><div id="post">
+  <div id="halftone"></div>
+  <svg id="doodle" viewBox="0 0 360 300">
+    <path d="M30,110 C30,40 330,40 330,110 Z"/>
+    <circle cx="120" cy="78" r="3.5"/><circle cx="180" cy="68" r="3.5"/><circle cx="240" cy="78" r="3.5"/>
+    <path d="M28,120 C70,150 110,100 150,135 C190,165 230,105 270,138 C300,160 332,120 332,120"/>
+    <line x1="26" y1="158" x2="334" y2="158"/>
+    <rect x="30" y="170" width="300" height="40" rx="20"/>
+    <path d="M30,235 C30,300 330,300 330,235 Z"/>
+  </svg>
+  <div id="headline">
+    <div class="l">NÃO DÁ</div>
+    <div class="l">PRA <span class="anchor">RESISTIR.</span></div>
+  </div>
+  <div id="cta">pede o teu!</div>
+  <div id="delivery">IFOOD <span class="dot">•</span> RAPPI <span class="dot">•</span> UBER EATS <span class="dot">•</span> BALCÃO</div>
+</div></body></html>

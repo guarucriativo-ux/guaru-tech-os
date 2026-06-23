@@ -1,0 +1,52 @@
+# Guaru Tech — Visão (North Star)
+
+> O norte do projeto, nas palavras do Marcos (fundador), organizado em 2026-06-22. Este é o
+> documento de visão; o `CLAUDE.md` cobre o "como operamos" e o `BRIEFING-GUARU-TECH.md` é o
+> resumo portátil. Atualizar quando a visão evoluir — nunca deixar isso viver só na cabeça.
+
+## Para quem
+O empreendedor de **pequeno e médio porte** preso na operação — sem tempo e sem domínio para
+executar com maestria partes vitais da empresa: marketing, comunicação visual, social media,
+sites, logo e o universo do design gráfico.
+
+## A grande ideia
+Oferecer todos esses serviços de forma **majoritariamente automatizada**, num modelo de serviço
+recorrente (SwaS/SaaS — ver [CLAUDE.md](CLAUDE.md)). Não é uma ferramenta genérica nem uma agência
+comum: é um sistema que **executa o trabalho pelo cliente**.
+
+## As frentes (horizonte amplo)
+Além de marketing, design gráfico e web design, o sistema é projetado para ser especialista em
+outras frentes do que o pequeno empreendedor precisa:
+- Programação sob demanda
+- Criação de CRM, ERP, Dashboards, planilhas
+- Integrações logadas à inteligência interna via **API da Claude** — ex.: Excel, Meta Ads,
+  Google Ads (já iniciado). Ex. concreto: interligar um CRM que o cliente pediu ao próprio
+  WhatsApp dele; automatizar a publicação dos posts.
+
+> ⚠️ Princípio de foco (decisão estratégica): o horizonte é amplo, mas o crescimento é **um tijolo
+> de cada vez** — dominar uma frente (design/conteúdo automatizado) até ficar excelente e ter
+> clientes pagantes recorrentes, e só então abrir a próxima. Escopo aberto cedo demais é risco.
+
+## O coração tecnológico
+Um SaaS que **aprende e evolui com os próprios erros e autocorreções**, alinhando boas práticas
+dia após dia. O conhecimento é cumulativo: cada cliente atendido deixa o sistema mais inteligente
+para o próximo (ver Ciclo de Aprendizado no CLAUDE.md). **Essa disciplina de documentar e
+reaproveitar É o ativo defensável** — não a API da Claude, que qualquer um tem.
+
+## O sonho
+Um negócio que gere **muito dinheiro de forma recorrente**, entregando **controle e progresso**
+ao pequeno empreendedor: *"ele vai estar com a filha dele brincando, e a nossa máquina vai estar
+trabalhando por ele."* Crescimento ordenado, tijolo por tijolo.
+
+## A métrica que decide o sonho (North Star)
+O **custo de servir cada novo cliente tem que cair** conforme a biblioteca de nichos cresce,
+**enquanto o preço se mantém**. Se o cliente nº 200 custa quase o mesmo que o nº 1 → vira
+consultoria que não escala. Se custa uma fração (nicho já documentado e reaproveitado) → vira a
+máquina recorrente. Todo registro/promoção pra `niches-library/` existe para fazer esse custo cair.
+
+## Desafios reconhecidos (para não esquecer)
+1. **Escopo**: foco numa frente por vez; não tentar ser tudo de uma vez.
+2. **Autonomia**: hoje "IA faz 90%, humano aprova"; autonomia total por tipo de tarefa só quando
+   as regras endurecerem. Caminho crível até o sonho, não atalho.
+3. **Distribuição/retenção**: construir ≠ vender. Receita recorrente depende de fechar e **reter**
+   os primeiros clientes pagantes — esse é o teste real, não a capacidade técnica.

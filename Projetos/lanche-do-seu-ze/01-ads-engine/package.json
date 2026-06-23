@@ -1,0 +1,13 @@
+{
+  "name": "01-ads-engine",
+  "version": "1.0.0",
+  "description": "Inteligência de campanhas e tráfego automatizado: criação/otimização de anúncios, regras de budget, leitura de métricas e ajustes automáticos por nicho.",
+  "main": "traffic-manager.js",
+  "type": "module",
+  "scripts": {
+    "build-campaign": "node traffic-manager.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
