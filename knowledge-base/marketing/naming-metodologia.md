@@ -34,6 +34,22 @@ briefing, produz nome aleatório. O processo profissional:
 - **Cresce com a empresa:** não se prende a geografia/categoria/época que a marca pode superar.
 - **Disponível e registrável:** @ + domínio + INPI livres.
 
+## Naming de negócio de NICHO (serviço-para-X) — ex.: "tech/marketing para psicólogos"
+<!-- Lição do Marcos (designer) + pesquisa 2026-06-23. Erro comum corrigido. -->
+- Um negócio "tech/marketing PARA psicólogos" é uma **marca de tech/marketing**, NÃO uma marca de
+  psicologia. Nomear com o universo do cliente-nicho (Psi, Divã, Cátedra) é erro — não diz o que a
+  empresa FAZ.
+- **Padrão certo:** NOME brandable (curto, moderno, evoca o benefício/categoria — crescimento,
+  conteúdo, visibilidade) **+ o nicho como DESCRITOR/slogan/subname** ("para psicólogos"). O nicho
+  vem no posicionamento, não no nome (ex.: agência Mutum = "B2B de tecnologia").
+- **Keyword real no descritor (CAC):** usar o que o mercado BUSCA ("psicólogo", "terapia",
+  "saúde mental"), não jargão interno ("psi" é fraco como keyword no BR; o símbolo Ψ serve só como
+  marcador visual/logo).
+- **Evitar puramente descritivo:** genérico, difícil de registrar e já tomado por concorrentes
+  (ex.: "Agência do Psicólogo", "Marketing para Psicólogos" já existem) → brandable + descritor diferencia.
+- **Bootstrap:** preferir evocativo-do-benefício a 100% abstrato (abstrato exige muito investimento
+  de marca pra ganhar significado).
+
 ## Arquitetura de marca (quando há portfólio)
 - **Branded house** (FedEx): marca-mãe + sub-marcas descritivas → expansão fácil, consistência.
 - **House of brands** (P&G): cada produto com marca única → mensagem sob medida por segmento.
