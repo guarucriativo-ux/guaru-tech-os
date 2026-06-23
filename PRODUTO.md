@@ -20,6 +20,7 @@ torna o cadastro de cliente escalável (multi-inquilino). A "pasta por cliente" 
 No dia/horário programado, antes de ir pro Instagram, o cliente recebe a peça pra **confirmar o
 layout**.
 
+- **Formato à escolha do cliente:** **carrossel** ou **post único** (definido no briefing ou pedido por peça).
 - **✅ Correção 1 — confirmação configurável (anti-fadiga):** o cliente escolhe o modo:
   *confirma cada post / confirma o lote da semana / automático total depois de N aprovações*.
   Confirmar tudo cansa; quem confia, libera.
@@ -60,6 +61,20 @@ Base barata, expansão por add-on — aumenta o LTV sem buscar cliente novo. Exe
   prometer o CRM antes do CRM existir.
 
 ---
+
+## 6. Matrículas e cobrança (billing) — [Estágio 3-4]
+**Não construir infraestrutura de pagamento.** Integrar uma plataforma de **cobrança recorrente
+brasileira** (ex.: Asaas, Iugu, Vindi, Pagar.me, Stripe Billing, Mercado Pago). Ela vira a **fonte
+da verdade da "matrícula"** e cuida do que dói:
+- **Métodos:** **Pix Automático** (recorrente, taxa baixa — forte no Brasil) · **cartão recorrente**
+  (padrão, mas tem churn involuntário por cartão vencido/recusado → exige dunning) · **boleto**
+  (pior pra recorrência, alta inadimplência).
+- **Inadimplência:** a plataforma faz **régua de cobrança** (retry automático, lembrete, notificação)
+  e marca o inadimplente. Via **webhook**, avisa o nosso sistema → o sistema **pausa o serviço**
+  (para de postar/gerar) até regularizar, e reativa quando o pagamento volta.
+- **Matrícula = estado:** ativo / inadimplente / cancelado, **lido da plataforma**, não controlado à mão.
+> ⚠️ Pesquisa pendente: comparar taxas/recursos das plataformas BR + estado do **Pix Automático**
+> (regras/custo atuais) antes de escolher.
 
 ## Onde isso se encaixa
 Tudo aqui é **Estágio 3→4** (ver [ESCOPO-AUTOMACAO.md](ESCOPO-AUTOMACAO.md)): WhatsApp +
