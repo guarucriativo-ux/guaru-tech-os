@@ -42,6 +42,25 @@ async function main() {
   const angulo = await nextAngulo({ client: "guaru-estudio" });
   console.log(`[generate] Ângulo desta semana (rotação automática): ${angulo.id} — ${angulo.label}`);
 
+  // Consulta a "Faculdade" (base de conhecimento, RAG em core/kb-query.js) — estuda antes de criar.
+  // Degrada gracioso: base vazia/ausente → segue sem fundamentos, sem quebrar a geração.
+  let fundamentos = "";
+  try {
+    const { queryKnowledgeBase } = await import("../../../core/kb-query.js");
+    const hits = await queryKnowledgeBase(args.focus, { top: 4 });
+    if (hits.length) {
+      const trechos = hits
+        .map((h) => `- (${h.file}) ${h.chunk.slice(0, 500).replace(/\s+/g, " ").trim()}`)
+        .join("\n");
+      fundamentos = `\n## Fundamentos consultados na base de conhecimento (aplique o princípio — NÃO copie literal)\n${trechos}\n`;
+      console.log(`[generate] Faculdade: ${hits.length} trecho(s) consultado(s).`);
+    } else {
+      console.log("[generate] Faculdade: base vazia/sem match — seguindo sem fundamentos.");
+    }
+  } catch (e) {
+    console.warn(`[generate] Faculdade indisponível (${e.message}) — seguindo sem ela.`);
+  }
+
   const prompt = `Você é o motor de geração de conteúdo da Guaru Tech, operando no molde abaixo
 para o cliente descrito no contexto. Siga exatamente a estrutura do molde e o tom de voz do
 contexto do cliente. Responda só com o Markdown final do pacote, sem comentários sobre o que
@@ -55,7 +74,7 @@ ${engineTemplate}
 
 ## Ângulo de abordagem desta semana (rotação automática, não repetir o da semana anterior)
 ${angulo.label} (id: ${angulo.id})
-
+${fundamentos}
 ## Tarefa
 Gere o pacote de conteúdo da Semana ${args.week}, usando o ângulo de abordagem indicado acima.
 Foco comercial desta semana: ${args.focus}`;

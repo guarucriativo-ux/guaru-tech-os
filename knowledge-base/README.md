@@ -21,6 +21,23 @@ knowledge-base/
 └── por-nicho/       ← conhecimento específico de setor (ex.: hamburgueria, cabelo-loiro)
 ```
 
+## O que alimentar (e o que NÃO)
+A faculdade é **TEXTO** (o "porquê"/raciocínio). Imagem é outra coisa — vai pro banco visual, NÃO aqui.
+
+**Organize por DISCIPLINA, não por formato.** Não faça pasta "livros" ou "vídeos"; o formato é só a
+fonte (livro → texto; videoaula → transcrição → texto; artigo/anotação → texto), e vai pra pasta do assunto.
+
+Hierarquia de valor (o que rende mais pro RAG):
+1. 🥇 **Frameworks e regras** — fórmulas/leis que viram regra reutilizável (CRAP, AIDA/PAS, teoria de
+   cor, hierarquia tipográfica, leis de UX, gatilhos de Cialdini).
+2. 🥈 **Estudos de caso com o raciocínio** ("funcionou por causa de X").
+3. 🥉 **Livros densos** (puxa-se em pedaços; capítulo denso = ouro, livro enrolado = ruído).
+4. ❌ Baixa alavanca: inspiração puramente visual (→ banco de imagem) e listicle genérico.
+
+**Destilar > despejar:** uma página sua de princípios afiados vale mais que um livro enrolado.
+**Legal/qualidade:** alimentar para o sistema **aprender o princípio**, nunca para republicar texto
+literal numa peça de cliente. Anote a origem de cada arquivo.
+
 ## Princípio (não cair no mito)
 Encher a pasta NÃO deixa o modelo (Claude) mais inteligente sozinho — ele é congelado. O que fica
 mais inteligente é o **sistema**, porque passa a **consultar** este acervo ao gerar, e porque a

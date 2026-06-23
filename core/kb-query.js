@@ -5,7 +5,7 @@
 // Uso:  node core/kb-query.js "como diagramar um carrossel" [--top=5] [--area=design]
 import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const KB_DIR = path.resolve(__dirname, "../knowledge-base");
@@ -56,24 +56,17 @@ function scoreChunk(queryTerms, chunkTerms) {
   return score + distinct * 2; // bônus por cobrir termos distintos da pergunta
 }
 
-async function main() {
-  const args = process.argv.slice(2);
-  const query = args.filter((a) => !a.startsWith("--")).join(" ");
-  const top = Number((args.find((a) => a.startsWith("--top=")) ?? "").split("=")[1]) || 5;
-  const area = (args.find((a) => a.startsWith("--area=")) ?? "").split("=")[1] || null;
-  if (!query) {
-    console.error('Uso: node core/kb-query.js "sua pergunta" [--top=5] [--area=design]');
-    process.exit(1);
-  }
-
-  try { await stat(KB_DIR); } catch {
-    console.error(`Base de conhecimento vazia/ausente em ${KB_DIR}. Despeje .md/.txt lá primeiro.`);
-    process.exit(1);
-  }
+// Função reutilizável: retorna os trechos mais relevantes da base para uma pergunta.
+// Degrada gracioso: base ausente/vazia ou query vazia → retorna [] (nunca lança por isso).
+// É o que o content-generator importa para "estudar antes de criar".
+export async function queryKnowledgeBase(query, { top = 5, area = null } = {}) {
+  const queryTerms = tokenize(query ?? "");
+  if (queryTerms.length === 0) return [];
+  try { await stat(KB_DIR); } catch { return []; }
 
   const root = area ? path.join(KB_DIR, area) : KB_DIR;
-  const files = await walk(root);
-  const queryTerms = tokenize(query);
+  let files;
+  try { files = await walk(root); } catch { return []; }
 
   const results = [];
   for (const file of files) {
@@ -83,15 +76,24 @@ async function main() {
       if (score > 0) results.push({ score, file: path.relative(KB_DIR, file), chunk });
     }
   }
-
   results.sort((a, b) => b.score - a.score);
-  const hits = results.slice(0, top);
+  return results.slice(0, top);
+}
 
+async function main() {
+  const args = process.argv.slice(2);
+  const query = args.filter((a) => !a.startsWith("--")).join(" ");
+  const top = Number((args.find((a) => a.startsWith("--top=")) ?? "").split("=")[1]) || 5;
+  const area = (args.find((a) => a.startsWith("--area=")) ?? "").split("=")[1] || null;
+  if (!query) {
+    console.error('Uso: node core/kb-query.js "sua pergunta" [--top=5] [--area=design]');
+    process.exit(1);
+  }
+  const hits = await queryKnowledgeBase(query, { top, area });
   if (hits.length === 0) {
     console.log(`Nada relevante encontrado para: "${query}". (A base ainda está magra? Alimente-a.)`);
     return;
   }
-
   console.log(`\nTop ${hits.length} trechos para: "${query}"\n`);
   for (const [i, h] of hits.entries()) {
     const snippet = h.chunk.length > 600 ? h.chunk.slice(0, 600) + "…" : h.chunk;
@@ -101,4 +103,7 @@ async function main() {
   }
 }
 
-main().catch((e) => { console.error("Falha na consulta:", e.message); process.exit(1); });
+// Só roda o CLI quando executado direto (node core/kb-query.js ...), não quando importado.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((e) => { console.error("Falha na consulta:", e.message); process.exit(1); });
+}
