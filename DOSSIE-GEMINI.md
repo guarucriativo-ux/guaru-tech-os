@@ -276,6 +276,24 @@ consistência de marca = brand-DNA + molde parametrizado (consistente por constr
 pendentes do Marcos** no carrossel da API; (4) **mais assinaturas** + **multi-formato** (9:16 stories / 1:1). E segue
 pendente a **leap do Marcos** (logo/selo/monograma da psi.automatic).
 
+**Atualização — 2026-06-24 (fim da sessão 2: motor v2 maduro + LOAD TEST + faculdade mais funda):**
+- **Motor v2 consolidado:** `compor.js` rotaciona **3 assinaturas** (Noturno / Aurora / Vértice) = anti-repetição
+  mecânica; cor que governa cada slide; foto duotone opcional; Fraunces na prova; kicker 24px; setas certas.
+  `gerar-peca.js` v2 produz o **schema v2** com os frameworks de copy. `montar.js` está **deprecado** (substituído).
+- **LOAD TEST (3 carrosséis pela API, ~demanda real):** a fábrica entregou os 3 com copy forte. **ACHOU e CORRIGIU**
+  um bug de robustez — a API devolvia **JSON inválido ~1/3** e matava a peça; `gerar-peca.js` ganhou **retry 3× +
+  extração do objeto JSON** (validado). Achados pra fila: a **FONTE DE FOTO é o elo fraco** (CC0/PDM magro pra mood
+  de psicologia; `foto_busca` às vezes literal) e o cérebro **repete a fórmula de open-loop** (variar).
+- **Curadoria do Marcos virou regra (faculdade muito mais funda):** copy (4 pilares + níveis de consciência;
+  fact-check = rigor interno SEM jargão; **storytelling** = cliente-herói/marca-guia + micro-storytelling + looping),
+  design (skin≠composição; teoria das cores 60-30-10; tipografia CONTEXTUAL — Fraunces validada mas não fixa;
+  legibilidade kicker ~24px; **marca-texto** validado; **tipo×imagem** testado a graduar), operação (algoritmo IG
+  2026: original>repost, sends/saves>likes; pilares 40/30/20/10). **Regra-mãe:** repetição ENTRE carrosséis (slide 1/6
+  iguais) invalida o negócio.
+- **Estado:** a máquina produz carrossel **ponta a ponta pela API** com qualidade curada. Faltam as costuras de
+  Estágio 2→B (ledger, foto-auto, postar/anunciar sozinho) — Alvo A (@psi.automatic) avançou forte, mas **sem
+  cliente pagante ainda** (o teste de mercado segue sendo o gargalo real, não a técnica).
+
 ---
 
 ## 10. Como me manter sincronizado (Gemini) daqui pra frente
