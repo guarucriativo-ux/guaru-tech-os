@@ -7,6 +7,7 @@
 // Bracket da marca: frames psi.automatic (preto + gradiente, slides 1 e final) emoldurando a PROVA
 // de psicologia (navy/creme). Design capturado em knowledge-base/design/dna-agencia-trafego-pago.md.
 import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFile } from "node:child_process";
@@ -47,6 +48,21 @@ function fit(texts, { max, min, font, boxW = BOX_W }) {
   const ideal = boxW / (K[font] * max); // nº de chars que cabem em UMA linha no tamanho max
   if (len <= ideal) return max;          // copy dentro do orçamento → tamanho aprovado, intocado
   return Math.max(min, Math.round((max * ideal) / len));
+}
+
+// --- MOLDE REATIVO AO CONTEÚDO (doutrina-de-motor-decisao.md §2) ---
+// "Imagem sem céu não recebe preset de céu": o molde reage ao que o conteúdo REALMENTE tem.
+// Foto inexistente no banco (cérebro alucinou o nome, ou banco vazio) NÃO vira slot quebrado —
+// o slide cai pra TIPOGRÁFICO sólido (foto ruim/ausente é pior que sem foto: foto-vs-texto-carrossel.md).
+const ASSETS_DIR = path.resolve(__dirname, "../03-automation-bridge/creativos/assets");
+const temFoto = (nome) => !!nome && existsSync(path.join(ASSETS_DIR, nome));
+// camadas de foto duotone quando a foto existe; "" (sem foto) caso contrário — e avisa (degradar com elegância).
+function fotoLayers(nome) {
+  if (temFoto(nome)) {
+    return `<div class="bg" style="background-image:url('${ASSET_REL}${nome}')"></div><div class="tint"></div><div class="grad"></div>`;
+  }
+  console.warn(`[montar] ⚠ foto ausente ("${nome ?? "—"}") → slide em modo TIPOGRÁFICO (sem foto).`);
+  return "";
 }
 
 const CSS = `
@@ -114,8 +130,8 @@ const kicker = (c) => `<div class="kicker layer">${c.kicker}</div>`;
 function slideHook(c) {
   const h = c.hook;
   const sz = fit([h.linha1, `${h.linha2} ${h.destaque}`], { max: 78, min: 54, font: "agency" });
-  return `<section class="slide ink ph">
-    <div class="bg" style="background-image:url('${ASSET_REL}${c.hook.foto}')"></div><div class="tint"></div><div class="grad"></div>
+  return `<section class="slide ink${temFoto(h.foto) ? " ph" : ""}">
+    ${fotoLayers(h.foto)}
     ${kicker(c)}
     <div class="mid layer">
       <div class="ah" style="font-size:${sz}px">${h.linha1}</div>
@@ -147,8 +163,8 @@ function slidePitch(c) {
 function slideCapa(c) {
   const v = c.prova.capa;
   const sz = fit([v.disp, v.destaque], { max: 108, min: 74, font: "display" });
-  return `<section class="slide psy ph">
-    <div class="bg" style="background-image:url('${ASSET_REL}${v.foto}')"></div><div class="tint"></div><div class="grad"></div>
+  return `<section class="slide ${temFoto(v.foto) ? "psy ph" : "navy psy"}">
+    ${fotoLayers(v.foto)}
     ${kicker(c)}
     <div class="mid layer">
       <div class="sans-lg">${v.pre}</div>
@@ -187,8 +203,8 @@ function slideSinais(c) {
 function slideAcolhimento(c) {
   const v = c.prova.acolhimento;
   const sz = fit([v.disp, v.destaque], { max: 96, min: 66, font: "display" });
-  return `<section class="slide psy ph">
-    <div class="bg" style="background-image:url('${ASSET_REL}${v.foto}')"></div><div class="tint"></div><div class="grad"></div>
+  return `<section class="slide ${temFoto(v.foto) ? "psy ph" : "navy psy"}">
+    ${fotoLayers(v.foto)}
     ${kicker(c)}
     <div class="mid layer">
       <div class="sans-lg">${v.pre}</div>

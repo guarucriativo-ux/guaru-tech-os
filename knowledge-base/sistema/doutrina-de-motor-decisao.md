@@ -28,6 +28,9 @@ defeito. Uma foto sem rosto não recebe tratamento de pele; uma sem sujeito vai 
 - **Regra de motor:** o molde reage ao que o conteúdo/asset REALMENTE tem. Sem rosto → não forçar layout
   de retrato. Copy que não é citação → não forçar card de citação. Foto fraca → cair pra tipográfico
   (ver ../design/foto-vs-texto-carrossel.md). **Molde reativo, não cego.** Isso evita peça "encaixada à força".
+- **JÁ IMPLEMENTADO (2026-06-24):** `montar.js` checa a foto em disco (`temFoto`/`fotoLayers`); foto
+  ausente (nome alucinado ou banco vazio) → o slide cai pra **tipográfico sólido** (navy/ink) em vez de
+  renderizar slot quebrado, e **avisa** no log (degradar com elegância). Testado com foto inexistente.
 
 ## 3. Bucketing semântico: selecionar por INTENÇÃO, não por nome de arquivo
 As skills pegam uma lista desconhecida (presets do plano do usuário) e **classificam em baldes semânticos**
@@ -61,6 +64,9 @@ Quick Cut roda **3 variações com os mesmos parâmetros** — a IA escolhe mome
 mostra as 3 lado a lado pro usuário escolher. **Regra:** gerar N variações de uma peça (mesmo briefing,
 sementes/ângulos diferentes), apresentar em paralelo, Marcos/cliente escolhe o arranjo. Variedade grátis +
 escolha sem refazer o fluxo. Liga com o gargalo-de-aprovação (humano escolhe, não cria).
+- **JÁ IMPLEMENTADO (2026-06-24):** `gerar-peca.js --n=N` dispara N gerações em paralelo (como o Quick Cut
+  faz 3 de uma vez), grava `conteudo-1.json…conteudo-N.json` e lista o comando de montar cada uma → Marcos
+  escolhe a melhor. Testado com `--n=2`: saíram 2 ângulos genuinamente diferentes da mesma brief.
 
 ### Validar o casamento ANTES de renderizar; molde que reflui (do data-merge)
 1 molde × N dados = N peças (= nossa arquitetura, literal). Disciplina inquebrável:

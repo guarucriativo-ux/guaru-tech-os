@@ -101,24 +101,53 @@ ${fundamentos}
 # Schema EXATO a seguir (responda com um JSON assim, preenchido com o novo tema)
 ${schema}`;
 
+  const n = Math.max(1, Number(arg("n", "1")) || 1); // doutrina nº7: gerar-N-e-escolher
   const anthropic = new Anthropic(); // usa ANTHROPIC_API_KEY do ambiente
-  const response = await anthropic.messages.create({
-    model: process.env.ANTHROPIC_MODEL ?? "claude-sonnet-4-6",
-    max_tokens: 2048,
-    messages: [{ role: "user", content: prompt }],
-  });
-  let text = response.content.filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
-  // tira cercas de código se vierem
-  text = text.replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/```\s*$/i, "").trim();
-
-  const parsed = JSON.parse(text); // valida que é JSON
-  delete parsed._aviso; // não propagar o campo de controle do schema de exemplo
   const outDir = path.resolve(__dirname, "outputs");
   await mkdir(outDir, { recursive: true });
-  const outPath = path.join(outDir, "conteudo.json");
-  await writeFile(outPath, JSON.stringify(parsed, null, 2), "utf-8");
-  console.log(`[gerar] Conteúdo do tema "${parsed.tema}" gerado pela API → ${path.relative(process.cwd(), outPath)}`);
-  console.log(`[gerar] Agora rode:  node montar.js --in=outputs/conteudo.json`);
+
+  // gera UMA variação: mesma brief, a API varia naturalmente → cada chamada é um ângulo diferente.
+  async function gerarVariacao() {
+    const response = await anthropic.messages.create({
+      model: process.env.ANTHROPIC_MODEL ?? "claude-sonnet-4-6",
+      max_tokens: 2048,
+      messages: [{ role: "user", content: prompt }],
+    });
+    let text = response.content.filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
+    text = text.replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/```\s*$/i, "").trim();
+    const parsed = JSON.parse(text); // valida que é JSON
+    delete parsed._aviso; // não propagar o campo de controle do schema de exemplo
+    return parsed;
+  }
+
+  if (n === 1) {
+    const parsed = await gerarVariacao();
+    const outPath = path.join(outDir, "conteudo.json");
+    await writeFile(outPath, JSON.stringify(parsed, null, 2), "utf-8");
+    console.log(`[gerar] Conteúdo do tema "${parsed.tema}" gerado pela API → ${path.relative(process.cwd(), outPath)}`);
+    console.log(`[gerar] Agora rode:  node montar.js --in=outputs/conteudo.json`);
+    return;
+  }
+
+  // N>1: dispara em paralelo (como o Quick Cut faz 3 de uma vez) → você ESCOLHE a melhor.
+  console.log(`[gerar] Gerando ${n} variações em paralelo (mesma brief, ângulos diferentes)…`);
+  const results = await Promise.allSettled(Array.from({ length: n }, () => gerarVariacao()));
+  const ok = [];
+  for (let i = 0; i < results.length; i++) {
+    const r = results[i];
+    if (r.status === "fulfilled") {
+      const file = path.join(outDir, `conteudo-${i + 1}.json`);
+      await writeFile(file, JSON.stringify(r.value, null, 2), "utf-8");
+      ok.push({ i: i + 1, tema: r.value.tema, file, obj: r.value });
+    } else {
+      console.warn(`[gerar] ⚠ variação ${i + 1} falhou: ${r.reason?.message ?? r.reason}`);
+    }
+  }
+  if (!ok.length) throw new Error("Nenhuma variação foi gerada.");
+  // back-compat: conteudo.json = a 1ª variação que deu certo (pra quem roda montar sem --in)
+  await writeFile(path.join(outDir, "conteudo.json"), JSON.stringify(ok[0].obj, null, 2), "utf-8");
+  console.log(`[gerar] ${ok.length}/${n} variações prontas — monte e ESCOLHA a melhor (a máquina gera, você escolhe):`);
+  for (const v of ok) console.log(`   • #${v.i} "${v.tema}"  →  node montar.js --in=${path.relative(process.cwd(), v.file)}`);
 }
 
 main().catch((e) => { console.error("Falha ao gerar (cérebro):", e.message); process.exit(1); });
