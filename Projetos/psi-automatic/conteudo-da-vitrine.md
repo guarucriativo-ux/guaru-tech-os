@@ -16,6 +16,20 @@ A vitrine tem **uma audiência** (o psicólogo) e **um objetivo** (virar cliente
 - **Fonte:** `niches-library/psicologia/oferta-v1.md` + `DIFERENCIAL.md` (já prontos).
 - **DNA/visual:** marca psi.automatic. **CTA:** forte (clique na bio / fale com a gente → LP).
 
+## Como a SaaS diferencia "vitrine" de "cliente" (Marcos perguntou 2026-06-23)
+NÃO é base de nicho nova — é a MESMA base de psicologia (`niches-library/psicologia/`), com
+OBJETIVO + TEMPLATE + DNA diferentes (a "receita"):
+| | @psi.automatic (vitrine) | cliente psicólogo |
+|---|---|---|
+| Objetivo | VENDER nosso serviço | ATRAIR pacientes / educar |
+| Template | fórmula dor→prova→CTA | conteúdo educativo puro |
+| DNA | psi.automatic | do cliente (cores/CRP dele) |
+| CTA | "fale com a gente → link" | suave / "agende" (dele) |
+| Conhecimento psi | niches-library/psicologia | O MESMO |
+Mecânica: a engine lê a CONFIG da "conta" e aplica a receita. @psi.automatic = uma "conta" interna
+configurada pra VENDER. Encaixa na arquitetura pasta-por-cliente (Projetos/psi-automatic/ = DNA +
+este template). HOJE (MVP) quem diferencia é o operador (manual); auto-diferenciação por config = Estágio 3.
+
 ## O que NÃO confundir
 - "Marketing para psicólogos" NÃO é um nicho da biblioteca — é **o que NÓS fazemos**. Nicho = o
   mercado servido (psicologia).
