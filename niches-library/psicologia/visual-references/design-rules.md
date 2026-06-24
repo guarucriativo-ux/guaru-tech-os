@@ -3,6 +3,11 @@
 Padrões estéticos do nicho. Aplicar SOBRE a Base Mãe (`../../design-principles/design-rules.md`,
 camada 1) e ABAIXO do DNA do cliente (camada 3). Hipótese inicial (2026-06-23) — validar a cada peça.
 
+> 📌 Estas regras/refs são de NÍVEL NICHO — **compartilhadas**: servem tanto pro conteúdo de
+> psicologia do NOSSO vitrine (@psi.automatic) quanto pro de CLIENTES psicólogos. **O que muda por
+> output é só o DNA** (camada 3). Exceção: posts de VENDA/pitch do vitrine (nossa marca falando com o
+> psicólogo) são outra categoria — não saem destas refs.
+
 > ⚠️ **PENDENTE (Marcos catou 2026-06-23):** estas regras são TEXTO/hipótese — NÃO estão ancoradas em
 > referências VISUAIS curadas de psicologia (as ~20 refs da Base Mãe são genéricas: comida/fitness/
 > pet, não servem). ANTES de renderizar a 1ª peça do MVP: Marcos cura ~5–10 posts de psicologia
