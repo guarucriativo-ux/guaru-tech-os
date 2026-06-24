@@ -100,6 +100,9 @@ e-cérebro-3D (genérico de marketplace — ❌ evitar). **A unicidade mora na c
 Andorinhas azuis · flores prensadas (delphinium/amor-perfeito/botânica vintage) · **cartela/etiqueta
 vintage** com nº · **moldura damascada/ornamentada** · círculos numerados · **speech-bubble** (tag com
 bico) · polaroids/cards · faixa de 3 fotos · marca-texto. Usar com parcimônia, 1–2 por peça.
+> ✅ **MARCA-TEXTO validado pelo Marcos (2026-06-24):** caixa de cor atrás da palavra-chave — "social media
+> usa bastante pra comunicar, é boa prática". Regra: usar **CONTEXTUAL, não em toda peça** (igual à tipografia —
+> somatória, não lei). A graduar pro motor como helper opcional (palavra-chave em caixa navy/dourado na prova).
 
 ### Composição VARIADA (a lição central — Nicole Holz é a prova)
 **Mesmo DNA, cada slide uma composição diferente.** O motor ROTACIONA arquétipos do nicho (ver

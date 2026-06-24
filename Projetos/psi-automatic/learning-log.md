@@ -11,6 +11,58 @@ Específico do ciclo de design: o que funcionou visualmente e o que ajustar na p
 - **O que ajustar na próxima rodada:**
 -->
 
+## [2026-06-24] TESTE DE CARGA — 3 carrosséis via API (fábrica sob mais demanda)
+- **Rodada:** 3 temas distintos pela API (procrastinação, síndrome do impostor, luto) → guardrail → foto → motor.
+- **✅ Funcionou:** a fábrica entregou os 3 com copy forte (luto: "é o seu amor procurando um novo lugar"; impostor:
+  "você chegou longe e ainda acha que não merece estar aqui"). 3 assinaturas distintas (Vértice/Aurora/Noturno).
+- **🔴 ACHOU + CORRIGIU (robustez):** 1 das 3 chamadas devolveu **JSON inválido** e o cérebro morreu (sem retry).
+  → Endurecido o `gerar-peca.js`: **retry 3× + extração do 1º objeto {...} balanceado**. Re-rodada do impostor passou. Validado.
+- **🟡 Achados pra fila:** (1) a FONTE DE FOTO é o elo fraco — CC0/PDM é magro pra mood conceitual de psicologia e o
+  `foto_busca` do cérebro às vezes é literal demais (volta relógio/prédio); precisa de fonte melhor / queries mais espertas /
+  fallback tipográfico. (2) o cérebro REUSA a fórmula de open-loop ("tem um motivo — faz sentido") entre peças → variar.
+  (3) colisão de assinatura segue (forcei distintas) = ledger ainda necessário.
+- **Custo:** 4 chamadas de API (1 falhou+retry). Guardrails passaram nos 3.
+
+## [2026-06-24] Carrossel "autoestima" — re-estudo das refs → 2 TÉCNICAS NOVAS aplicadas
+- **Peça:** `outputs/carrossel-autoestima.jpg` (artesanal, pós re-leitura de DNA + refs nicho + Base Mãe).
+- **Achado do re-estudo:** eu vinha subaproveitando a jogada premium das refs (//PSICÓLOGO / Nicole Holz):
+  - **(1) TIPO × IMAGEM:** serifa GIGANTE (112px) atravessando a foto na capa (S2), não "texto centralizado
+    sobre foto escurecida". Escala extrema + sobreposição (energia da Base Mãe). Ficou editorial/premium.
+  - **(2) MARCA-TEXTO:** caixa de cor (navy) atrás da palavra-chave na virada (S3) — motivo da Nicole Holz nunca usado.
+- **Pendente:** se o Marcos aprovar, GRADUAR as 2 técnicas pro motor (novo arquétipo de capa tipo×imagem +
+  helper de marca-texto). Tema autoestima (balde top, ainda não feito direto). Guardrail passou.
+- ✅ **VALIDADO (Marcos 2026-06-24):** "gostei: o marca-texto é boa prática, social media usa bastante — não é
+  sempre, mas é boa prática." → PROMOVIDO: marca-texto vira motivo validado (CONTEXTUAL, não em toda peça;
+  `niches-library/psicologia/visual-references/design-rules.md`) e entra na fila de graduação pro motor.
+
+## [2026-06-24] Carrossel "pânico" — COLISÃO de assinatura provou a necessidade do ledger
+- **Peça:** `outputs/carrossel-panico.jpg` (manual/local). Tema fresco (balde pânico/crise de ansiedade).
+- **🔴 Achado importante (ledger):** deixei o hash escolher a assinatura sozinho → caiu em **Vértice de novo**
+  (mesmo do "dependência" imediatamente anterior). DOIS seguidos com a mesma cara = o risco cross-carrossel que
+  o Marcos teme. **Forcei Aurora** (--variant=1) pra ficar distinto. → Confirma: o ledger não é nice-to-have;
+  com 3 assinaturas e hash%3, colisões em sequência são frequentes. O ledger tem que registrar a ÚLTIMA
+  assinatura usada e evitar repetir (não só hash). Prioridade nº1.
+- **Copy:** ético/não-alarmista (crise assusta mas passa; "toda crise tem fim"; sem diagnóstico/promessa); foto
+  da tempestade-que-passa na capa = metáfora perfeita. Guardrail passou.
+
+## [2026-06-24] Carrossel "dependência emocional" — assinatura VÉRTICE (3ª e última das assinaturas)
+- **Peça:** `outputs/carrossel-dependencia-emocional.jpg` (manual/local, --variant=2 = Vértice). Tema fresco (balde relacionamentos).
+- **Fecha a rotação:** Noturno (foco/ansiedade) → Aurora (autocrítica) → Vértice (esta). Vértice = hook foto-ink + pitch PRETO +
+  arco B (capa CREME, reframe navy, aprofunda creme, acolh navy). 3 caras distintas provadas = anti-repetição entre carrosséis funciona.
+- **Copy com amarração temática:** dor do paciente = "depender do outro"; pitch da marca = "pare de DEPENDER só de indicação" (full-circle).
+  Foto = mão segurando celular no escuro (checar a resposta = a cara da dependência). Guardrail passou.
+
+## [2026-06-24] Carrossel "autocrítica" — assinatura AURORA (mostra a anti-repetição do motor)
+- **Peça:** `outputs/carrossel-autocritica.jpg` (manual/local, --variant=1 = Aurora). Tema fresco (perfeccionismo/crítico interno).
+- **Anti-repetição visível:** Aurora = hook TIPOGRÁFICO off-white (≠ dos hooks-foto recentes) + pitch PRETO (≠ dos off-white
+  recentes) + foto na CAPA (navy duotone). Visual claramente distinto de foco/ansiedade (Noturno). É a rotação de assinatura provando valor.
+- **Micro-fix no motor:** Aurora passou pro ARC_A pra o arco de cor alternar certo com a foto na capa (capa navy → reframe cream…). Graduação continua.
+- **Copy:** hook amarra o perfeccionismo ao próprio psicólogo ("Esperando o post perfeito? Ele não vem"); capa concreta + open loop
+  ("Acertou 9, errou 1 — e só vê o erro?" / "esse juiz não nasceu com você"); pitch forte ("Feito todo dia vence o perfeito que nunca sai"). Guardrail passou.
+- ✅ **VALIDADO pelo Marcos:** "gostei! o slide 2 ficou LINDO — foto + diagramação com excelência, esse é o CAMINHO." E **a fonte
+  Fraunces casou MUITO mais** que a Cormorant. → PROMOVIDO: Fraunces vira o serif default da prova (`brand-dna.json` +
+  `tipografia-social-legibilidade-e-fontes.md`); composição "foto na capa em duotone + serifa por cima" = padrão de ouro confirmado.
+
 ## [2026-06-24] 1º carrossel END-TO-END pela API (cérebro v2 → guardrail → foto → motor v2)
 - **Peça:** `outputs/carrossel-ansiedade.jpg` — gerada 100% pela máquina (gerar-peca via API → checar-guardrails →
   foto do banco Openverse → compor.js). Tema "ansiedade" (a própria IA escolheu pelos dados).

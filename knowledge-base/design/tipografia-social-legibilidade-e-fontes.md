@@ -22,9 +22,17 @@ Erro que cometi: tratar a identidade como UMA fonte fixa por papel → "mais do 
 - **Pode entrar OUTRA fonte** num papel (ex.: o "por que a vida…" do slide 2 podia ser outra display) **desde
   que CONVERSE** com o estilo. No feed, os posts se conversam (coerência visual) — quem sabe usar varia as
   fontes/diagramações DENTRO da identidade; quem não sabe acha que a identidade trava e faz tudo igual.
-- Nosso sistema hoje: Archivo (grotesca two-tone da marca) · Cormorant (serifa display da prova) · Poppins
-  (corpo). **Explorar mais display/serifas que conversem** (ex.: uma serifa fashion alternativa pra prova,
-  uma grotesca condensada pra hook) — sem virar bagunça (coerência manda).
+- Nosso sistema hoje: Archivo (grotesca two-tone da marca) · Fraunces / Cormorant (serifas fashion da prova) ·
+  Poppins (corpo). Fraunces **casou bem no registro editorial-emocional** de um post (Marcos 2026-06-24) — mas isso
+  NÃO a torna "a fonte". Explorar mais display/serifas que conversem é parte do trabalho.
+
+### ⚠️ Tipografia é SOMATÓRIA, não fonte FIXA (Marcos corrigiu 2026-06-24)
+A fonte se escolhe **por peça**, somando: **conteúdo do texto** (manchete curta × corpo longo × citação),
+**mood/emoção** que se quer evocar, **escala/hierarquia** e o **par** (uma lidera, outra apoia). A mesma marca
+usa fontes diferentes conforme o texto pede — e às vezes **quebrar a regra** dá frescor à peça. Travar "X é A
+fonte" é o erro oposto de "tudo igual": ambos matam o design. Regra real: **sistema coerente de fontes que
+conversam + escolha contextual**, nunca uma fonte única decretada. (Disciplina: aprender tipografia em social
+media é estudo contínuo, não um veredito.)
 - **Truque de peso aprovado (Marcos):** o kicker misturou **bold + regular** na mesma linha e ficou lindo —
   **aplicar esse contraste de peso também no corpo/sub** (palavra-chave bold dentro de frase regular).
 

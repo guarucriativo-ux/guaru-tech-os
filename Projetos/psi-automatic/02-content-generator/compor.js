@@ -134,7 +134,7 @@ const ARC_A = { capa: "navy", reframe: "cream", aprofunda: "navy", acolhimento: 
 const ARC_B = { capa: "cream", reframe: "navy", aprofunda: "cream", acolhimento: "navy" };
 const SIGNATURES = [
   { nome: "Noturno", hook: "foto", pitch: "claro", arc: ARC_A, foto: { hook: true, aprofunda: true } },
-  { nome: "Aurora", hook: "tipo", pitch: "preto", arc: ARC_B, foto: { capa: true } },
+  { nome: "Aurora", hook: "tipo", pitch: "preto", arc: ARC_A, foto: { capa: true } },
   { nome: "Vértice", hook: "foto", pitch: "preto", arc: ARC_B, foto: { hook: true } },
 ];
 

@@ -24,7 +24,7 @@
   "tipografia_psi_automatic": {
     "titulo_frames_marca": "grotesca BOLD/black TIGHT de agência (estilo Archivo/Aktiv/Helvetica Now), grande, dominando. TWO-TONE: parte neutra (preto/branco) + palavra-chave em GRADIENTE ou magenta (destaque pela COR, não por trocar de fonte).",
     "kicker": "linha-assinatura no topo de TODA peça, letter-spaced, peso misto (nome bold + resto fino). Ex.: 'PSI.AUTOMATIC · MARKETING PARA PSICÓLOGOS'.",
-    "titulo_miolo_prova": "serif display editorial (Cormorant) — SÓ no conteúdo de psicologia (a prova).",
+    "titulo_miolo_prova": "serif display editorial fashion p/ a prova (psicologia). Fraunces casou bem no registro editorial-emocional (Marcos 2026-06-24); Cormorant tb serve. ⚠️ NÃO é fonte FIXA — tipografia é CONTEXTUAL/SOMATÓRIA (texto + mood + escala + par): escolher por peça dentro de um sistema coerente, não travar numa fonte. Ver knowledge-base/design/tipografia-social-legibilidade-e-fontes.md.",
     "corpo": "sans limpa, legível em mobile (Poppins).",
     "nota": "captura das refs 2026-06-24; a leap final de fonte exata é do Marcos."
   },

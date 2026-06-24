@@ -103,16 +103,23 @@ ${fundamentos}
 ${schema}`;
 
   const anthropic = new Anthropic(); // usa ANTHROPIC_API_KEY do ambiente
-  const response = await anthropic.messages.create({
-    model: process.env.ANTHROPIC_MODEL ?? "claude-sonnet-4-6",
-    max_tokens: 2048,
-    messages: [{ role: "user", content: prompt }],
-  });
-  let text = response.content.filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
-  // tira cercas de código se vierem
-  text = text.replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/```\s*$/i, "").trim();
-
-  const parsed = JSON.parse(text); // valida que é JSON
+  // Robustez (teste de carga 2026-06-24 pegou a API devolvendo JSON inválido ~1/3): tenta até 3x,
+  // extrai o 1º objeto {...} balanceado (descarta texto solto) e re-gera se o parse falhar.
+  let parsed = null, lastErr = null;
+  for (let attempt = 1; attempt <= 3 && !parsed; attempt++) {
+    const response = await anthropic.messages.create({
+      model: process.env.ANTHROPIC_MODEL ?? "claude-sonnet-4-6",
+      max_tokens: 2048,
+      messages: [{ role: "user", content: prompt }],
+    });
+    let text = response.content.filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
+    text = text.replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/```\s*$/i, "").trim();
+    const ini = text.indexOf("{"), fim = text.lastIndexOf("}");
+    if (ini >= 0 && fim > ini) text = text.slice(ini, fim + 1); // só o objeto JSON
+    try { parsed = JSON.parse(text); }
+    catch (err) { lastErr = err; console.warn(`[gerar] tentativa ${attempt}/3: JSON inválido (${err.message}). Re-gerando…`); }
+  }
+  if (!parsed) throw new Error(`API não devolveu JSON válido após 3 tentativas: ${lastErr?.message}`);
   delete parsed._aviso; // não propagar o campo de controle do schema de exemplo
   const outDir = path.resolve(__dirname, "outputs");
   await mkdir(outDir, { recursive: true });
