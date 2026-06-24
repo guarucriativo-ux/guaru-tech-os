@@ -68,3 +68,46 @@ reflow):
 ## Obrigatório por ética (carregar no template)
 - Assinatura com **nome + "psicólogo(a)" + CRP nº** (discreta, mas presente — exigência CFP).
 - Tom visual **acolhedor, nunca alarmista**. Sem "antes/depois", sem promessa, sem exposição de caso.
+
+## Amendment [2026-06-24] — Lote 2 de refs estudado pixel a pixel (a linguagem premium do nicho)
+Confirma o Lote 1 e refina. O registro do nicho é **EDITORIAL EMOCIONAL PREMIUM** (família "fashion
+editorial"), NÃO o loud de agência (isso é o frame da MARCA psi.automatic) e NÃO o verde-template-com-Ψ-
+e-cérebro-3D (genérico de marketplace — ❌ evitar). **A unicidade mora na composição autoral variada.**
+
+### Tipografia é a ALMA (a jogada nº1 do nicho)
+- **Serifa display expressiva, alto contraste, FASHION/editorial, muitas vezes ITÁLICA e LIGATURADA**
+  (estilo Reckless/PP Editorial/Canela) — carrega a palavra-payoff emocional. É o coração da peça.
+- **Escala GRITANTE:** a palavra-serifa é gigante (sangra, sobrepõe foto, domina), o corpo é pequeno.
+- **Sans limpa** (geométrica/grotesca) pra estrutura, corpo e kicker — legível em mobile.
+- **Destaque da palavra-chave:** cor de acento (azul), **marca-texto** (caixa azul atrás), itálico, OU
+  só bold quando a troca não casar (lição da Base Mãe). Aspas tipográficas em frases-citação.
+
+### Paleta (dessaturada, calma, premium)
+- Base: **off-white/creme/areia + TEXTURA DE PAPEL/grão** (assinatura — calor, artesanal). 
+- 1 acento dessaturado: **azul-aço/cornflower #5B6E9E → navy #3D5A8A** (Nicole) ou quase-monocromático
+  (editorial //PSICÓLOGO). Slides podem inverter (fundo azul cheio + texto creme). Sem neon, sem alarme.
+
+### Foto (a técnica de ouro: TIPO × IMAGEM)
+- Foto **conceitual/editorial/muted**: mãos de argila, escultura escorrendo, nadadora, moda-de-cima,
+  natureza calma, mão saindo do mar. Tratamento dessaturado/duotone OU cor suave.
+- **O OURO:** o **tipo INTERAGE com a foto** — a serifa gigante sobrepõe/atravessa a imagem (a mão
+  atravessa a palavra, o texto cruza a foto). NÃO é "foto de fundo + texto por cima" plano.
+- **Duotone é UMA opção, não a regra** (Marcos 2026-06-24). Também valem: foto em frame/card, polaroid,
+  faixa de 3 fotos, foto recortada com moldura, foto conceitual full-bleed. Banco free, ligada ao tema.
+- Foto da psicóloga (rosto) = ativo de conversão no CLIENTE real (a vitrine usa stock/mood).
+
+### Grafismos do nicho (parcos, elegantes — tijolos pra rotacionar)
+Andorinhas azuis · flores prensadas (delphinium/amor-perfeito/botânica vintage) · **cartela/etiqueta
+vintage** com nº · **moldura damascada/ornamentada** · círculos numerados · **speech-bubble** (tag com
+bico) · polaroids/cards · faixa de 3 fotos · marca-texto. Usar com parcimônia, 1–2 por peça.
+
+### Composição VARIADA (a lição central — Nicole Holz é a prova)
+**Mesmo DNA, cada slide uma composição diferente.** O motor ROTACIONA arquétipos do nicho (ver
+`knowledge-base/design/arquetipos-de-layout-social.md`, adaptados ao calmo): serifa-gigante-sobre-foto ·
+oval/blob de texto sobre foto azul · colagem de polaroids · lista em cartela numerada · split creme/azul
+com speech-bubble · citação editorial · moldura ornamentada · faixa de 3 fotos. **Nunca repetir o mesmo
+layout slide a slide nem geração a geração.** É assim que se foge do "modelos iguais".
+
+### Guardrails que permanecem
+CTA **tipográfico** (a ref da Lari usa pílula-botão "VEJA NA LEGENDA" — ⚠️ NÃO copiar; mantemos seta/
+keyword sem botão). Ética CFP intacta (sem diagnóstico/promessa/paciente). Assinatura nome+CRP no cliente real.

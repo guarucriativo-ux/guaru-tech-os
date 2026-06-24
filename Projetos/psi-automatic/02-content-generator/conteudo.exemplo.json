@@ -1,48 +1,37 @@
 {
-  "_aviso": "CONTEÚDO DE EXEMPLO (escrito à mão p/ provar a mecânica do molde). O cérebro (gerar-peca.js + API) vai PRODUZIR este JSON sozinho quando a chave estiver no .env. A estrutura é exatamente esta.",
-  "tema": "ansiedade",
-  "kicker": "<b>PSI.AUTOMATIC</b> &middot; MARKETING PARA PSIC&Oacute;LOGOS",
+  "_aviso": "SCHEMA v2 (alinhado à curadoria do Marcos). O cérebro (gerar-peca.js + API) preenche isto. Marcadores: <grad>palavra</grad> = palavra no gradiente da marca; <gold>palavra</gold> = dourado (prova); <br> quebra linha pensada; <b> negrito. O motor (compor.js) escolhe a ASSINATURA visual por tema (anti-repetição) e compõe.",
+  "tema": "foco",
+  "kicker": "<b>PSI.AUTOMATIC</b> &middot; MARKETING PARA PSICÓLOGOS",
+  "foto": "foco-mente-mood.jpg",
   "hook": {
-    "foto": "foto-hook-2.jpg",
-    "linha1": "Você é um ótimo",
-    "linha2": "psicólogo.",
-    "destaque": "Mas quem sabe?",
-    "sub": "Conteúdo que mostra o seu valor — sem você fazer nada. Arrasta. &#8594;"
+    "headline": "Cuidar de paciente já<br>toma o seu dia. Quem<br>cuida do <grad>seu feed</grad>?",
+    "sub": "A nossa equipe. Conteúdo que mostra o seu valor <b>todo dia</b> — sem você parar. Olha um exemplo."
   },
   "prova": {
     "capa": {
-      "foto": "foto-teste.jpg",
-      "pre": "Sua cabeça não desliga —",
-      "disp": "mesmo quando",
-      "destaque": "está tudo bem."
+      "headline": "Releu a mesma frase<br>3 vezes?",
+      "sub": "Tem um motivo por trás — e ele te <b>alivia</b>."
     },
-    "conceito": {
-      "titulo": "Ansiedade<br>não é frescura.",
-      "corpo": "É o corpo em <b>estado de alerta</b> — a mente vivendo no futuro, antecipando perigos que talvez nem cheguem."
+    "reframe": {
+      "eyebrow": "Isso não é preguiça.",
+      "headline": "É o seu cérebro<br><gold>sobrecarregado</gold>.",
+      "corpo": "Ele não foi feito pra fazer mil coisas ao mesmo tempo — ninguém é."
     },
-    "sinais": {
-      "intro": "Você reconhece?",
-      "itens": [
-        "coração acelerado <b>sem motivo</b>",
-        "pensamento que <b>não para</b>",
-        "um cansaço que <b>vem do nada</b>"
-      ]
+    "aprofunda": {
+      "headline": "A cada troca de tarefa,<br>a sua mente paga um pedágio.",
+      "corpo": "São segundos pra reconectar a cada interrupção. Por isso o dia <b>rende menos</b> e o cansaço chega mais cedo."
     },
     "acolhimento": {
-      "foto": "foto-teste-2.jpg",
-      "pre": "Dá pra desacelerar.",
-      "disp": "e não precisa",
-      "destaque": "ser sozinho.",
-      "corpo": "A terapia ensina a sua mente a voltar pro presente."
+      "eyebrow": "Dá pra reaprender",
+      "headline": "a focar.",
+      "corpo": "Não com mais cobrança — com <b>menos ruído</b>. A terapia ajuda a entender o que rouba a sua atenção e a devolver o controle, no seu tempo."
     }
   },
   "pitch": {
-    "linha1": "Conteúdo profissional,",
-    "linha2": "todo dia,",
-    "destaque": "sem você fazer nada.",
-    "corpo": "Sua equipe de marketing por <b>menos de R$&nbsp;4 por dia</b>. Sem agência cara.",
+    "headline": "O seu valor merece<br><grad>atenção</grad> todo dia.",
+    "corpo": "Conteúdo profissional que mostra o seu trabalho — sua equipe por <b>menos de R$&nbsp;4 por dia</b>, sem agência cara.",
     "cta_kw": "QUERO",
-    "cta_sub": "e a nossa equipe te chama."
+    "cta_sub": "e a nossa equipe te chama aqui embaixo."
   },
-  "legenda": "Você é um ótimo psicólogo. Mas quem sabe disso? 🤔\n\nO problema quase nunca é a sua competência — é o seu perfil parado, que não mostra o seu valor pra quem ainda não te conhece.\n\nEsse carrossel sobre ansiedade? É o tipo de conteúdo que a gente cria pro seu Instagram. Todo dia, no seu estilo, sem você parar pra fazer nada.\n\nEnquanto você cuida dos seus pacientes, a nossa equipe cuida do seu marketing — por menos de R$ 4 por dia.\n\nComenta QUERO que a nossa equipe te chama. 👇\n\n#psicologia #psicologo #ansiedade #marketingparapsicologos #consultoriodepsicologia"
+  "legenda": "Você senta pra fazer uma coisa e, em segundos, a cabeça já pulou pra outra? 🌀\n\nIsso não é preguiça nem falta de força de vontade. O seu cérebro não foi feito pra fazer mil coisas ao mesmo tempo. A cada troca de tarefa, a mente paga um \"pedágio\" de segundos pra reconectar — por isso o dia rende menos e o cansaço chega mais cedo.\n\nDá pra reaprender a focar. Não com mais cobrança — com menos ruído. A terapia ajuda a entender o que rouba a sua atenção e a devolver o controle, no seu tempo.\n\nComenta QUERO aqui embaixo 👇 que a nossa equipe te chama.\n\n#foco #produtividade #saudemental #ansiedade #terapia"
 }

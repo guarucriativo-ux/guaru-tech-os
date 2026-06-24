@@ -26,3 +26,10 @@ SNAPSHOT-REPO.md
 # Mantemos o SOURCE (scripts, molde, brand-dna, conteudo.exemplo.json) — não os outputs binários.
 Projetos/psi-automatic/02-content-generator/outputs/
 Projetos/psi-automatic/03-automation-bridge/creativos/outputs/
+
+# Banco de imagem (binário pesado) — fica FORA do Git (regra de infra). Só o manifesto/licença em
+# TEXTO sobe (LICENSES.md, *.LICENSE.txt). Binário vai pro storage de nuvem quando escalar.
+Projetos/psi-automatic/03-automation-bridge/creativos/assets/*.jpg
+Projetos/psi-automatic/03-automation-bridge/creativos/assets/*.jpeg
+Projetos/psi-automatic/03-automation-bridge/creativos/assets/*.png
+Projetos/psi-automatic/03-automation-bridge/creativos/assets/*.webp

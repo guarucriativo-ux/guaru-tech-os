@@ -243,8 +243,38 @@ consistência de marca = brand-DNA + molde parametrizado (consistente por constr
   isso porque o DNA promovia → **a base tem que ser coerente**). Faculdade ganhou: gatilhos, cores, CTA-sem-botão,
   specs de imagem, estrutura de carrossel de venda. Tudo commitado/pushado (`main`).
 
-**Próximo passo:** o que falta é a **leap do Marcos** (designer): **logo/selo/monograma** da psi.automatic +
-**banco de imagem** maior (hoje 3 fotos de teste). Depois: rodar mais peças pela fábrica e consolidar variantes de molde.
+**Atualização — sessão 2026-06-24 (continuação; curadoria de design PESADA + GRADUAÇÃO DO MOTOR + 1º carrossel END-TO-END):**
+- **Salto de QUALIDADE via curadoria do Marcos:** ~5 carrosséis da vitrine compostos sob curadoria peça-a-peça
+  (esgotamento, comparação, solidão, foco + 1 pela API). O olho do Marcos virou REGRA — a faculdade ganhou um
+  **rulebook de agência**:
+  - *Copy:* `copywriting/copy-alta-performance-4-pilares.md` (Psicologia/Dados/Autoridade/Funil + níveis de
+    consciência de Schwartz) · `copy-fundamentada-e-fact-checking.md` (fonte confiável = rigor INTERNO, sem
+    jargão/CID na copy do consumidor) · hook CONCRETO + open loop.
+  - *Operação:* `marketing/operacao-agencia-elite-4-pilares.md` (pilares de conteúdo 40/30/20/10; algoritmo IG
+    2026 — **sends/saves > likes**, **original > repost +40-60% alcance**, SEO por keyword) · `modelo-agencia-entrega.md`.
+  - *Design:* `design/diagramacao-e-composicao-variada.md` (**skin ≠ composição**; identidade NÃO trava numa
+    fonte/layout; variar alinhamento/equilíbrio/foco) · `teoria-das-cores-harmonia.md` (uma cor GOVERNA, 60-30-10)
+    · `tipografia-social-legibilidade-e-fontes.md` (kicker ~24px; múltiplas fontes que conversam) ·
+    `cta-carrossel-sem-botao.md` (**setas: arrasta → / comenta ↓**; CTA varia) · foto do banco em duotone, profissional.
+  - **REGRA-MÃE nova:** repetição ENTRE carrosséis (slide 1/6 iguais) **invalida o negócio** → variar hook E pitch peça a peça.
+- **GRADUAÇÃO PRO MOTOR (o marco técnico):** as regras saíram do learning-log e entraram no CÓDIGO —
+  - `02-content-generator/compor.js` **v2** = novo motor de composição (**substitui o `montar.js`, deprecado**):
+    centralizado/premium, foto do banco em duotone, hierarquia de cor, Archivo+Fraunces+Poppins, kicker 24px,
+    setas certas, gradiente só acento, e **ROTAÇÃO DE ASSINATURA por tema** (Noturno/Aurora/Vértice) = anti-repetição mecânica.
+  - `gerar-peca.js` **v2** = cérebro no **schema v2** (hook/capa/reframe/aprofunda/acolhimento/pitch + foto_busca
+    + legenda) com os frameworks de copy embutidos; aponta pro compor.js. `conteudo.exemplo.json` = schema v2.
+  - **DISCIPLINA cravada (Marcos):** toda regra validada na mão é GRADUADA pro motor — não deixar o motor envelhecer.
+- **1º CARROSSEL 100% PELA MÁQUINA:** cérebro (API Anthropic) → `checar-guardrails.js` → **foto do banco livre
+  (Openverse cc0/pdm, baixada + licença)** → `compor.js` → arte. Funcionou; a IA escreveu copy forte sozinha.
+  O teste ACHOU 2 coisas: um bug de espaçamento no motor (**corrigido**) + o gap do **LEDGER** (a IA repetiu
+  "ansiedade" e a assinatura colidiu — falta registro do que já saiu).
+- **Banco de imagem:** agora puxamos do **banco livre online** (Unsplash/Pexels/Openverse) — baixar pra nossa
+  pasta + **licença salva** (`assets/LICENSES.md`, `*.LICENSE.txt`); binário fica FORA do Git (gitignored), só o manifesto sobe.
+
+**Próximo passo (atualizado):** (1) **LEDGER anti-repetição** (registrar tema+assinatura usados → evitar repetir) —
+**prioridade nº1**; (2) **foto automática** (baixar do banco via `foto_busca` sozinho); (3) coletar as **alterações
+pendentes do Marcos** no carrossel da API; (4) **mais assinaturas** + **multi-formato** (9:16 stories / 1:1). E segue
+pendente a **leap do Marcos** (logo/selo/monograma da psi.automatic).
 
 ---
 

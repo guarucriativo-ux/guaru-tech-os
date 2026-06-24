@@ -21,7 +21,27 @@ com tipografia e composição.
 - **Par slide+legenda**: o CTA do último slide e o da legenda trabalham juntos (a maioria não lê a
   legenda → o comando TEM que estar no visual).
 
+## ⚠️ Direção da SETA = função (regra — Marcos 2026-06-24)
+A seta não é decoração, ela INSTRUI. Apontar pro lado errado é erro de UX de carrossel:
+- **"ARRASTA" (slides de navegação) → seta PARA O LADO (→).** Carrossel é **horizontal**; arrastar é
+  lateral. Nunca seta pra baixo num slide de "arrasta".
+- **CTA "COMENTA" (último slide) → seta PARA BAIXO (↓).** O comentário fica **embaixo** da imagem no app,
+  então a seta aponta pra lá. 
+- **Último slide NUNCA usa seta lateral (→).** Não há pra onde arrastar — é o fim. Seta lateral no último
+  slide é erro. (No "esgotamento"/"comparação" eu inverti as duas: corrigir sempre.)
+
+## ⚠️ O CTA/fechamento tem que VARIAR (não é template — Marcos 2026-06-24)
+"Sempre fechar a última com o mesmo texto" = ctrl-c/ctrl-v, **não fazemos isso.** O comando do último
+slide muda de peça pra peça (copy E composição), como tudo o mais. **Reincidência (Marcos 2026-06-24,
+"solidão"): o S6 saiu "mais do mesmo, não mudou copy nem visual".** O último slide é o MAIS repetido por
+mim — atenção redobrada: **mudar fundo/cor, layout E copy do pitch a cada carrossel** (preto×off-white,
+centralizado×base, com/sem foto, com/sem selo, keyword/frase diferente). Nunca o mesmo fechamento duas vezes. Baralho de fechamento (rotacionar):
+- keyword-to-DM ("Comenta QUERO ↓" / "Comenta EU QUERO ↓") · "Manda pra quem precisa" · "Salva pra não
+  esquecer" · "Me conta nos comentários…" · pergunta que puxa resposta. O ângulo (dor+economia) é constante;
+  o TEXTO e o layout do CTA, não. Casa com `marketing/operacao-agencia-elite-4-pilares.md` (variar é regra).
+
 ## Aplicação no nosso molde
 - **Matar o `.pill` com borda.** CTA vira tipografia + seta/emoji direcional, integrado à composição.
-- Preferir **keyword-to-DM** ("Comenta QUERO 👇") no objetivo de venda (vitrine) — alta conversão + engajamento.
+- Preferir **keyword-to-DM** ("Comenta QUERO ↓") no objetivo de venda (vitrine) — alta conversão + engajamento.
+- **Seta de CTA = ↓** (comenta embaixo); **seta de arrasta = →**. Variar o texto do CTA a cada peça.
 - Regra também na Base Mãe (`niches-library/design-principles/design-rules.md`, Amendment 2026-06-24).

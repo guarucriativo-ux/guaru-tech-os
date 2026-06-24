@@ -39,3 +39,22 @@ alguém · 15% por anonimato · 14% por desconfiança de profissionais.
 - Tom: acolhedor, sem julgamento, acessível — nunca alarmista nem jargão clínico.
 
 > Fontes: [IP-USP](https://www.ip.usp.br/site/noticia/7-perguntas-sobre-saude-mental-que-voce-sempre-quis-fazer/) · [Statista — sintomas mais buscados](https://www.statista.com/statistics/1399319/most-searched-mental-disorder-symptoms-united-states/) · [Mission Connection](https://missionconnectionhealthcare.com/blog/10-most-asked-mental-health-questions/)
+
+## Banco de FORMATOS / ângulos de post (a variedade — cada um vira post distinto)
+<!-- Origem: pesquisa 2026-06-24 (socialmon 57-therapist-ideas, WholeChildCounseling, Headway,
+     PrivatePracticeSkills). O TEMA vem dos baldes de demanda acima; o FORMATO/ângulo abaixo muda a
+     forma → o mesmo balde rende dezenas de posts diferentes. O motor combina (tema × formato × fórmula
+     de hook) pra nunca repetir. Pilares e fórmulas de hook: knowledge-base/marketing/modelo-agencia-entrega.md. -->
+Combinar um TEMA (balde de demanda) com um destes FORMATOS gera peças exclusivas — nunca o mesmo post:
+- **Explicador de conceito** — "o que é a janela de tolerância", distorções cognitivas, resposta luta-fuga.
+- **Mito × verdade** — corrige uma crença buscada ("ansiedade é frescura?" → o que a ciência diz).
+- **Sinais / lista** — "3 sinais de que o estresse virou crônico" (lista digerível, 1 ideia/slide).
+- **Checklist / passo a passo** — "antes da 1ª sessão", técnica de respiração 4-7-8, aterramento 5-4-3-2-1.
+- **Reframe / permissão** — "descansar não é preguiça"; "‘estraguei tudo' → ‘estou sentindo arrependimento'".
+- **Pergunta-FAQ** — "psicólogo × psiquiatra?", "terapia funciona sem remédio?", "quando procurar?".
+- **Normalização** — valida um medo comum ("é normal ter medo de começar terapia") → tira estigma.
+- **Relatável / POV** — "POV: sua cabeça às 3h da manhã" (identificação emocional, sem clínica).
+- **Mini-técnica** — uma ferramenta de uso imediato (respiração, diário de pensamentos, ancoragem).
+- **Bastidores / humanização** — só CLIENTE real (rosto, espaço, dia a dia); na vitrine = mood/stock.
+- **Interativo** — enquete/quiz ("você costuma se sobrecarregar?") como gancho de engajamento.
+> Guardrail: educar, **nunca** diagnosticar/tratar/prometer (CFP). Fonte verificada diz a verdade; demanda diz o tema.

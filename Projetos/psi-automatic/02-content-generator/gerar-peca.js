@@ -41,35 +41,51 @@ async function main() {
   const legendaModelo = await readSafe(path.resolve(ROOT, "niches-library/psicologia/legenda-modelo.md"));
   const schema = await readSafe(path.resolve(__dirname, "conteudo.exemplo.json"));
 
-  // Faculdade: estuda antes de criar (copywriting de venda, gatilhos, guardrail).
+  // Faculdade: estuda antes de criar (frameworks de copy + gatilhos + nível de consciência + guardrail).
   let fundamentos = "";
   try {
     const { queryKnowledgeBase } = await import(pathToFileURL(path.resolve(ROOT, "core/kb-query.js")).href);
-    const q = `carrossel de venda psicólogo gatilho identificação ${tema}`;
-    const hits = await queryKnowledgeBase(q, { top: 5 });
+    const q = `hook copy carrossel ${tema} fórmula de hook open loop concreto nível de consciência fundamentada sem jargão`;
+    const hits = await queryKnowledgeBase(q, { top: 6 });
     if (hits.length) fundamentos = hits.map((h) => `- (${h.file}) ${h.chunk.slice(0, 400).replace(/\s+/g, " ").trim()}`).join("\n");
   } catch (e) { console.warn(`[gerar] Faculdade indisponível (${e.message}).`); }
 
-  const prompt = `Você é o motor de conteúdo da vitrine @psi.automatic (marca-AGÊNCIA que vende marketing
-no automático para PSICÓLOGOS). Produza o conteúdo de UM carrossel de venda, retornando SÓ um JSON
-VÁLIDO no MESMO schema do exemplo abaixo (mesmas chaves), sem texto fora do JSON.
+  const prompt = `Você é o estrategista de conteúdo da vitrine @psi.automatic (marca-AGÊNCIA que vende marketing
+para PSICÓLOGOS). Produza o conteúdo de UM carrossel de venda no SCHEMA v2 do exemplo abaixo (mesmas chaves),
+retornando SÓ um JSON VÁLIDO, sem texto fora do JSON.
 
-# Estrutura obrigatória (modelo "portfólio-que-vende")
-- hook (frame da MARCA): fala com o PSICÓLOGO — dor/objeção dele + open loop ("te provo, arrasta"). NÃO é sobre o paciente.
-- prova (capa, conceito, sinais, acolhimento): um post de PSICOLOGIA exemplo sobre o TEMA, falando com o PACIENTE (demonstra qualidade).
-- pitch (frame da MARCA): vende a psi.automatic — dor+economia ("sua equipe de marketing por menos de R$ 4 por dia, sem agência cara"), CTA keyword-to-DM ("QUERO").
-- legenda: gancho + valor + CTA "Comenta QUERO".
+# Estrutura (bracket: MARCA emoldura a PROVA) — 6 slides
+- hook (MARCA → fala com o PSICÓLOGO): a dor/objeção dele + open loop ("te provo, arrasta"). headline (com <br>
+  pensados + UMA palavra-chave em <grad>...</grad>) e sub curto. NÃO é sobre o paciente.
+- prova (post de PSICOLOGIA exemplo sobre o TEMA, falando com o PACIENTE — demonstra qualidade):
+  · capa = o HOOK da prova: CONCRETO (uma cena que a pessoa reconhece, "isso sou eu") + OPEN LOOP que só
+    fecha arrastando. NUNCA vago. Rotacione a fórmula (pergunta / pattern-break / mito / estatística humana / POV).
+  · reframe = a virada/insight (corrige o mito): eyebrow + headline (serifa, UMA palavra em <gold>) + corpo.
+  · aprofunda = o mecanismo/porquê (1 ideia forte): headline + corpo.
+  · acolhimento = a esperança (a terapia AJUDA — sem prometer cura): eyebrow + headline (palavra-payoff) + corpo.
+- pitch (MARCA → vende a psi.automatic): headline (UMA palavra em <grad>) + corpo dor+economia
+  ("sua equipe por menos de R$ 4 por dia, sem agência cara") + cta_kw ("QUERO") + cta_sub.
+- foto_busca: 2–4 palavras EM INGLÊS pra buscar uma foto-mood CONCEITUAL no banco livre, ligada ao tema
+  (ex.: "rain window night"). Deixe "foto": "" (o passo de banco preenche depois).
+- legenda: gancho + valor + CTA "Comenta QUERO 👇" + 4–5 hashtags relevantes.
 
-# GUARDRAILS (inquebráveis)
+# COPY (princípios — aplique, não decore)
+- CONCRETO > vago; especificidade gera curiosidade. 1 ideia por slide; headline curta (<12 palavras).
+- FUNDAMENTADO mas SEM JARGÃO: a verdade vem de fonte séria (rigor interno), mas o que chega é humano —
+  NUNCA termo técnico/código (ex.: "CID-11") nem jargão clínico. Traduza o dado pro sentimento.
+- Casar a promessa ao NÍVEL DE CONSCIÊNCIA do leitor. Tom acolhedor, sem julgamento, sem alarmismo.
+
+# GUARDRAILS (inquebráveis — há verificador que REPROVA)
 - Ética CFP: SEM promessa de cura/resultado garantido, SEM diagnóstico, SEM expor paciente, SEM alarmismo.
-- Regra de marca: NUNCA dizer "feito por IA"/"nossa IA"; quem cria é "nossa equipe". Vender o BENEFÍCIO, não o mecanismo.
-- ⛔ NUNCA usar "no automático" como bordão/headline de venda (pesa pro lado IA). O NOME da marca é psi.automatic, mas a COPY de venda fala de dor+economia ("sem você fazer nada / todo dia / sua equipe no bolso / menos de R$ 4 por dia"). Há um verificador automático que REPROVA a peça se achar "no automático".
-- Texto curto e de impacto (headline tipo anúncio). Negrito com <b></b> onde destacar. Sem markdown.
-- FOTOS: use só estes arquivos disponíveis — hook.foto e acolhimento.foto = "foto-hook-2.jpg" ou "foto-teste-2.jpg"; capa.foto = "foto-teste.jpg". (banco de imagem ainda pequeno.)
+- Marca: NUNCA "feito por IA"/"nossa IA" — quem cria é "nossa equipe"; venda o BENEFÍCIO, não o mecanismo.
+- ⛔ NUNCA "no automático" como bordão (o nome psi.automatic é OK; a copy vende dor+economia).
+- Marcadores: <grad>1 palavra</grad> (palavra-chave da MARCA no gradiente) · <gold>1 palavra</gold> (destaque na
+  PROVA) · <br> quebra pensada · <b> negrito. UM destaque por headline (parcimônia). Sem markdown.
 - kicker: "<b>PSI.AUTOMATIC</b> &middot; MARKETING PARA PSIC&Oacute;LOGOS".
+- As SETAS, a foto e a composição são do MOTOR — não escreva seta nem layout no texto.
 
-# Tema do carrossel
-${tema ? `Use o tema: "${tema}".` : "Escolha UM tema de alta demanda a partir das pautas abaixo (não repita o óbvio)."}
+# Tema do carrossel (vem de DADO, não de palpite)
+${tema ? `Use o tema: "${tema}".` : "Escolha UM tema dos BALDES DE DEMANDA das pautas abaixo (o que mais converte; NÃO repita o óbvio nem o já usado). Combine com um FORMATO/ângulo do banco de formatos."}
 
 # Brand-DNA da psi.automatic
 ${brandDna}
@@ -103,7 +119,8 @@ ${schema}`;
   const outPath = path.join(outDir, "conteudo.json");
   await writeFile(outPath, JSON.stringify(parsed, null, 2), "utf-8");
   console.log(`[gerar] Conteúdo do tema "${parsed.tema}" gerado pela API → ${path.relative(process.cwd(), outPath)}`);
-  console.log(`[gerar] Agora rode:  node montar.js --in=outputs/conteudo.json`);
+  console.log(`[gerar] Agora rode:  node compor.js --in=outputs/conteudo.json   (o motor escolhe a assinatura e compõe)`);
+  if (parsed.foto_busca) console.log(`[gerar] Foto sugerida (banco livre): "${parsed.foto_busca}" → baixar p/ assets e passar --foto=arquivo.jpg`);
 }
 
 main().catch((e) => { console.error("Falha ao gerar (cérebro):", e.message); process.exit(1); });
