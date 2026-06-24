@@ -3,6 +3,12 @@
 Padrões estéticos do nicho. Aplicar SOBRE a Base Mãe (`../../design-principles/design-rules.md`,
 camada 1) e ABAIXO do DNA do cliente (camada 3). Hipótese inicial (2026-06-23) — validar a cada peça.
 
+> ⚠️ **PENDENTE (Marcos catou 2026-06-23):** estas regras são TEXTO/hipótese — NÃO estão ancoradas em
+> referências VISUAIS curadas de psicologia (as ~20 refs da Base Mãe são genéricas: comida/fitness/
+> pet, não servem). ANTES de renderizar a 1ª peça do MVP: Marcos cura ~5–10 posts de psicologia
+> excelentes → Claude estuda e AFINA estas regras à linguagem visual real do nicho (mesmo padrão que
+> gerou a Base Mãe: refs → regras). Sem isso, risco de peça genérica/fora do tom.
+
 ## Registro visual do nicho (qual dos registros da Base Mãe)
 Psicologia puxa o registro **suave/sofisticado** (família "Kameleon SaaS suave"), **NÃO** o
 agressivo (MONA) nem os de comida. O objetivo emocional é **calma, confiança e acolhimento** —
