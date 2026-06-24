@@ -23,5 +23,16 @@ A vitrine tem **uma audiência** (o psicólogo) e **um objetivo** (virar cliente
 - As referências visuais de psicologia (curadas pelo Marcos) são pro **Tipo A**. O Tipo B é a nossa
   marca (referência seria de post de marca/pitch, não de psicologia).
 
+## Mecânica (Marcos cravou 2026-06-23)
+- O conteúdo Tipo A (prova) **É a saída real do motor** — a SaaS gera o conteúdo de psicologia
+  (sugere + cria, como se fosse pra um psicólogo) e a gente POSTA no @psi.automatic como prova ao
+  vivo ("olha exatamente o que você receberia"). Não é mockup. Bônus: rodar o motor pra isso = TAMBÉM
+  o teste do motor (dogfooding). Uma ação, dois ganhos.
+- **Ponte prova→pitch (pulo do gato):** o post de prova leva uma legenda/CTA que vira pitch — ex.:
+  "este carrossel foi feito pela nossa IA em segundos; imagine no SEU consultório, todo dia, sem
+  você fazer nada → link na bio". A prova encanta, o pitch converte, no mesmo post.
+- ⚠️ Só prova = parece "mais uma conta de psicologia". O PITCH + bio + legenda-ponte é que deixam
+  claro que é um SERVIÇO pro psicólogo. Mix é essencial.
+
 ## No feed
 Mistura A + B: a prova encanta, o pitch converte. Juntos = o "portfólio-que-vende".
