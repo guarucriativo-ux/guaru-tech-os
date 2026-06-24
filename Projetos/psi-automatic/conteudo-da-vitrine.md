@@ -23,16 +23,20 @@ A vitrine tem **uma audiência** (o psicólogo) e **um objetivo** (virar cliente
 - As referências visuais de psicologia (curadas pelo Marcos) são pro **Tipo A**. O Tipo B é a nossa
   marca (referência seria de post de marca/pitch, não de psicologia).
 
-## Mecânica (Marcos cravou 2026-06-23)
-- O conteúdo Tipo A (prova) **É a saída real do motor** — a SaaS gera o conteúdo de psicologia
-  (sugere + cria, como se fosse pra um psicólogo) e a gente POSTA no @psi.automatic como prova ao
-  vivo ("olha exatamente o que você receberia"). Não é mockup. Bônus: rodar o motor pra isso = TAMBÉM
-  o teste do motor (dogfooding). Uma ação, dois ganhos.
-- **Ponte prova→pitch (pulo do gato):** o post de prova leva uma legenda/CTA que vira pitch — ex.:
-  "este carrossel foi feito pela nossa IA em segundos; imagine no SEU consultório, todo dia, sem
-  você fazer nada → link na bio". A prova encanta, o pitch converte, no mesmo post.
-- ⚠️ Só prova = parece "mais uma conta de psicologia". O PITCH + bio + legenda-ponte é que deixam
-  claro que é um SERVIÇO pro psicólogo. Mix é essencial.
+## ⭐ A FÓRMULA-REGRA do carrossel Psi Automatic (Marcos cravou 2026-06-23)
+Não postar prova e pitch SEPARADOS — FUNDIR num carrossel só. NUNCA postar conteúdo de psicologia
+"pelado" (vira "mais uma conta de psicologia"). Estrutura padrão:
+1. **Slide 1 — GANCHO com a DOR** (prende o psicólogo: "ótimo profissional, mas invisível").
+2. **Miolo — MOSTRA o que entrego** = o conteúdo de psicologia (a PROVA, "olha a qualidade"). É a
+   saída real do motor (rodar o motor pra isso = também o dogfooding).
+3. **Último slide — CTA de venda** ("resolvo isso pra você, no automático, todo dia → link").
+→ dor → prova → solução, sempre embrulhado.
 
-## No feed
-Mistura A + B: a prova encanta, o pitch converte. Juntos = o "portfólio-que-vende".
+## 🚫 REGRA DE MARCA (serve pra TUDO): zero menção a "feito por IA"
+- ✅ Vender o BENEFÍCIO: "no automático / todo dia / sem você fazer nada / pronto". ("Automático" =
+  você está livre.)
+- ❌ NÃO vender o MECANISMO: "feito por IA". IA é só a SaaS (interno), nunca a mensagem.
+- Por quê: (1) leigo hoje tem preconceito com IA; (2) protege a autenticidade do psicólogo (gritar
+  "IA fez" mina o conteúdo dele aos olhos do paciente). Ver [[regra-marca-nao-mencionar-ia]].
+- Legenda-ponte correta: "conteúdo profissional pro seu consultório, todo dia, sem você fazer nada
+  → link na bio" (NÃO "feito pela IA").
