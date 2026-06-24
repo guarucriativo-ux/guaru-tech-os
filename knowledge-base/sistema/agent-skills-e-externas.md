@@ -63,6 +63,17 @@ Conector MCP "Adobe for creativity" + 7 habilidades. Avaliadas pelo filtro da re
 produto. Todo output capturado na pasta compartilhada (invariante build×fábrica). 1º teste disciplinado:
 retouch/batch numa foto → salvar no banco do nicho.
 
+### A própria Adobe valida nossa regra de ouro (achado da leitura linha-a-linha, 2026-06-24)
+As skills pro-grade marcam no frontmatter o selo **`Gen AI: ❌`**: retouch, batch-edit, social-variations,
+design-from-template e resize **não usam IA generativa** — tratam foto/asset como **craft** (corte, tom,
+reframe), reservando o generativo (Firefly) só pro insumo upstream (textura/fundo/mood). A ÚNICA que gera
+arte final a partir de template Adobe Express (`design-from-template`) é justamente a "armadilha Canva-AI"
+que marcamos 🔴. Ou seja: **a taxonomia da própria Adobe espelha nossa doutrina** — craft no produto final,
+generativo só na matéria-prima. Confirmação externa de peso (empresa que investiu milhões em IA generativa
+e mesmo assim não a usa pro produto pro-grade). Doutrina de DECISÃO destilada em
+`doutrina-de-motor-decisao.md`; o conector é **MCP HTTP** (`adobe-creativity.adobe.io/mcp`) → pluga no
+Agent SDK como provedor de ferramentas remoto quando a fábrica migrar.
+
 ## Status / próximo passo
 Aprovado em conceito (Marcos 2026-06-24). Roadmap: (1) testar uma skill no BUILD (rápido, Claude Code);
 (2) planejar migração do cérebro p/ Agent SDK + skills + MCP. Não bloqueia a fábrica atual (já funciona).

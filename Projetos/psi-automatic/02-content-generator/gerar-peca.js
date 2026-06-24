@@ -68,6 +68,21 @@ VÁLIDO no MESMO schema do exemplo abaixo (mesmas chaves), sem texto fora do JSO
 - FOTOS: use só estes arquivos disponíveis — hook.foto e acolhimento.foto = "foto-hook-2.jpg" ou "foto-teste-2.jpg"; capa.foto = "foto-teste.jpg". (banco de imagem ainda pequeno.)
 - kicker: "<b>PSI.AUTOMATIC</b> &middot; MARKETING PARA PSIC&Oacute;LOGOS".
 
+# ORÇAMENTO DE CARACTERES (a copy tem que CABER no molde — headline que estoura vaza o slide)
+A peça é diagramada por um molde de largura fixa; headline longa demais encolhe e perde impacto. Respeite
+o nº MÁXIMO de caracteres por campo (conte com espaços; é teto, não meta — quanto mais curto e afiado, melhor):
+- hook.linha1 ≤ 22 · hook.linha2 + " " + hook.destaque ≤ 24 (somados, é UMA linha) · hook.sub ≤ 90
+- prova.capa.disp ≤ 14 · prova.capa.destaque ≤ 14 (cada um é UMA linha grande)
+- prova.conceito.titulo ≤ 30 (pode ter um <br> no meio; cada lado ≤ 16) · prova.conceito.corpo ≤ 150
+- prova.sinais.intro ≤ 28 · cada item de prova.sinais.itens ≤ 42 (3 a 4 itens)
+- prova.acolhimento.disp ≤ 13 · prova.acolhimento.destaque ≤ 13 · prova.acolhimento.corpo ≤ 80
+- pitch.linha1 ≤ 26 · pitch.linha2 + " " + pitch.destaque ≤ 30 (somados) · pitch.corpo ≤ 95 · pitch.cta_sub ≤ 34
+
+# VIBE (alavanca de primeira ordem — pesa mais que qualquer regra mecânica)
+Tom da MARCA (hook/pitch): direto, confiante, parceiro do psicólogo — dor real + alívio econômico, sem hype.
+Tom da PROVA (psicologia): acolhedor, sóbrio, validante — fala com o paciente sem dramatizar. Mantenha os
+DOIS tons distintos na mesma peça (é o bracket loud×calm da marca).
+
 # Tema do carrossel
 ${tema ? `Use o tema: "${tema}".` : "Escolha UM tema de alta demanda a partir das pautas abaixo (não repita o óbvio)."}
 
