@@ -8,9 +8,12 @@ camada 1) e ABAIXO do DNA do cliente (camada 3). Hipótese inicial (2026-06-23) 
 > output é só o DNA** (camada 3). Exceção: posts de VENDA/pitch do vitrine (nossa marca falando com o
 > psicólogo) são outra categoria — não saem destas refs.
 
-> ✅ **LOTE 1 DE REFS RECEBIDO (2026-06-23):** @nicoleholz.psi (6 posts) — ver `referencias.md`.
-> Regras abaixo AFINADAS à linguagem real observada. É UM brand (estilo forte, mas um só) — refinar
-> com mais refs (outros psicólogos) pra capturar a amplitude do nicho. Marcos vai enviar mais.
+> ⚠️ **LEIA ISTO (Marcos corrigiu 2026-06-23):** o texto abaixo é só um RESUMO/anotação do que vi —
+> **NÃO é um spec rígido nem "regra de cor do nicho".** A **referência REAL é VISUAL** (os posts em
+> si). Ao criar: **COMPOR olhando as refs**, pra IGUALAR a diagramação/estilo, e **julgar POR OLHO**
+> (validação visual/curatorial, não codificada — regra da Base Mãe: *"a validação é visual, não
+> geométrica"*). **Design é visual** — estas notas servem só de apoio, nunca substituem olhar a ref.
+> Refs do lote 1: @nicoleholz.psi (ver `referencias.md`); Marcos vai enviar mais.
 
 ## Registro visual do nicho (qual dos registros da Base Mãe)
 Psicologia puxa o registro **suave/sofisticado** (família "Kameleon SaaS suave"), **NÃO** o
