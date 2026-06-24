@@ -1,0 +1,26 @@
+{
+  "marca": "psi.automatic",
+  "handle": "@psi.automatic",
+  "tipo": "Vitrine de conversão (Alvo A) — nicho psicólogo. É a marca do PERFIL de Instagram, NÃO da empresa (= Guaru Tech). Baixo risco, testável.",
+  "posicionamento": "Marketing/conteúdo para psicólogos, no AUTOMÁTICO e acessível. NÃO somos agência cara e humana — somos o produto que entrega conteúdo pronto que enche a agenda, sem o psicólogo fazer nada. O 'automatic' é o nosso wedge (nenhum concorrente sinaliza isso).",
+  "promessa": "Conteúdo pronto que enche sua agenda — no automático.",
+  "voz": {
+    "tom": "claro, direto, profissional-acessível; acolhedor mas confiante",
+    "evitar": "jargão de marketing, promessa de cura/resultado garantido, sensacionalismo, frieza robótica",
+    "lembrar": "o psicólogo teme marketing invasivo e não tem tempo — falar a língua dele, sem peso. Equilibrar o 'automatic' (tech) com calor humano na copy."
+  },
+  "paleta_v1_proposta": {
+    "primaria": "#0E4D52  (petróleo/teal — confiança + sereno + leve toque moderno)",
+    "fundo":    "#F4F1EA  (areia/off-white — calor, respiro)",
+    "acento":   "#8FB79A  (verde-sálvia — frescor, saúde, calma)",
+    "texto":    "#1C2B2D  (quase-preto esverdeado)",
+    "nota": "v1 PROPOSTA — teu olho de designer refina/troca. Bridge entre 'tech/confiança' e 'psicologia/calor'."
+  },
+  "tipografia_v1_proposta": {
+    "titulo": "sans humanista confiante — UMA jogada por peça (regra Base Mãe)",
+    "corpo": "sans limpa, legível em mobile",
+    "nota": "v1 PROPOSTA"
+  },
+  "logo_direcao": "wordmark 'psi.automatic' em minúsculas, limpo; o '.' como microelemento; opcional símbolo Ψ discreto. (Visual final = tua mão de designer.)",
+  "conteudo_que_produz": "As peças-exemplo do feed seguem o registro SUAVE/acolhedor da psicologia (ver niches-library/psicologia/visual-references). A vitrine é o container; o feed é a prova. Multi-formato 4:5 / 9:16 / 1:1."
+}
