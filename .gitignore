@@ -21,3 +21,8 @@ Projetos/Alkimia/Ref. Catalogo/CATALOGO_FINAL (1).pdf
 # Snapshot do repo (gerado por tools/gerar-snapshot.mjs sob demanda p/ anexar a IA externa).
 # Regenerável e pesado — nao versionar; rodar o script quando precisar reanexar.
 SNAPSHOT-REPO.md
+
+# Artefatos GERADOS pela fábrica psi.automatic (regeneráveis: imagens, html montado, conteudo runtime).
+# Mantemos o SOURCE (scripts, molde, brand-dna, conteudo.exemplo.json) — não os outputs binários.
+Projetos/psi-automatic/02-content-generator/outputs/
+Projetos/psi-automatic/03-automation-bridge/creativos/outputs/

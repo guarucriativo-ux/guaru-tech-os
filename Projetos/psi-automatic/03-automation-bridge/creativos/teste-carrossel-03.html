@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  /* ===== BRAND-DNA (parâmetros) ===== */
+  :root{
+    /* paleta de PSICOLOGIA (miolo-prova) */
+    --cream:#EFE8DB; --navy:#1F3B52; --navy-soft:#3A5570; --gold:#B5905A;
+    /* COR PRÓPRIA da psi.automatic (frames: slide 1 + último) */
+    --psi-bg:#0E4D52; --psi-accent:#8FB79A; --psi-text:#F4F1EA;
+    --sans:'Poppins',sans-serif;
+    --display:'Cormorant Garamond',serif;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ background:#cfcabd; }
+  #post{ width:1080px; }
+
+  .slide{ width:1080px; height:1350px; position:relative; overflow:hidden;
+    font-family:var(--sans); display:flex; flex-direction:column; justify-content:space-between;
+    padding:78px 96px 86px; }
+  .slide.cream{ background:var(--cream); color:var(--navy); }
+  .slide.navy{ background:var(--navy); color:var(--cream); }
+  .slide.psi{ background:var(--psi-bg); color:var(--psi-text); }
+  /* textura de papel */
+  .slide::after{ content:""; position:absolute; inset:0; pointer-events:none; opacity:.05; mix-blend-mode:multiply; z-index:1;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='280'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"); }
+  .slide > *{ position:relative; z-index:2; }
+
+  /* ===== ZONA DE FOTO (duotone navy de marca) ===== */
+  .slide.photo{ color:var(--cream); }
+  .photo .bg{ position:absolute; inset:0; z-index:0;
+    background-position:center; background-size:cover; filter:grayscale(1) contrast(1.04); }
+  .photo .tint{ position:absolute; inset:0; z-index:0; background:var(--navy); mix-blend-mode:multiply; opacity:.82; }
+  .photo .grad{ position:absolute; inset:0; z-index:1;
+    background:linear-gradient(180deg, rgba(31,59,82,.25) 0%, rgba(31,59,82,.10) 38%, rgba(31,59,82,.88) 100%); }
+
+  .head{ text-align:center; font-size:21px; font-weight:600; letter-spacing:6px; color:var(--gold); }
+  .navy .head, .photo .head{ color:#D9C49C; }
+  .psi .head{ color:var(--psi-accent); }
+  .foot{ text-align:center; font-size:19px; font-weight:600; letter-spacing:5px; color:var(--gold); }
+  .navy .foot, .photo .foot{ color:#D9C49C; } .psi .foot{ color:var(--psi-accent); }
+  .sign{ font-size:23px; font-weight:300; letter-spacing:1px; text-align:center; color:var(--psi-text); }
+  .sign b{ font-weight:600; color:#fff; }
+
+  .mid{ display:flex; flex-direction:column; justify-content:center; flex:1; }
+  .photo .mid{ justify-content:flex-end; }
+  .sans-lg{ font-size:50px; font-weight:300; line-height:1.25; color:var(--navy-soft); }
+  .navy .sans-lg{ color:#C9D4DE; } .photo .sans-lg{ color:#E7E1D5; } .psi .sans-lg{ color:#Bcd2c6; }
+  .psi .sans-lg{ color:#C3D6CB; }
+  .sans-lg b{ font-weight:600; color:var(--navy); }
+  .navy .sans-lg b, .photo .sans-lg b, .psi .sans-lg b{ color:#fff; }
+  .disp{ font-family:var(--display); font-style:italic; font-weight:600; line-height:1.0; color:var(--navy); }
+  .navy .disp, .photo .disp, .psi .disp{ color:#fff; }
+  .gold{ color:var(--gold); }
+  .psi .disp.gold, .psi .gold{ color:var(--psi-accent); }
+  .body{ font-size:32px; font-weight:300; line-height:1.45; color:var(--navy-soft); }
+  .navy .body{ color:#BFCBD6; } .photo .body{ color:#D7CDBC; } .psi .body{ color:#CFE0D5; }
+  .rule{ width:120px; height:2px; background:var(--gold); margin:30px 0; opacity:.8; }
+  .psi .rule{ background:var(--psi-accent); }
+
+  /* lista de sinais */
+  .item{ font-size:34px; font-weight:300; line-height:1.7; color:#C9D4DE; }
+  .item b{ font-weight:500; color:#fff; }
+  .item .mk{ color:var(--gold); font-family:var(--display); font-style:italic; font-size:40px; margin-right:14px; }
+
+  /* CTA tipográfico (SEM botão — comando visual) */
+  .cta{ font-size:52px; font-weight:600; color:#fff; line-height:1.1; }
+  .cta .kw{ color:var(--psi-accent); border-bottom:4px solid var(--psi-accent); padding-bottom:2px; }
+  .cta-sub{ font-size:30px; font-weight:300; color:var(--psi-text); margin-top:18px; }
+</style>
+</head>
+<body>
+<div id="post">
+
+  <!-- SLIDE 1 — HOOK no PSICÓLOGO (cor própria psi.automatic, open loop / PAS) -->
+  <section class="slide psi">
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="sans-lg">Psicólogo:</div>
+      <div class="disp" style="font-size:84px; margin-top:6px;">você acha que conteúdo bom</div>
+      <div class="disp gold" style="font-size:84px; margin-top:4px;">é caro e dá trabalho?</div>
+      <div class="body" style="margin-top:34px; max-width:820px;">Os próximos slides foram feitos pra te provar que <b style="color:#fff; font-weight:500;">não</b>. &#8594;</div>
+    </div>
+    <div class="foot">ARRASTA &#8594;</div>
+  </section>
+
+  <!-- SLIDE 2 — PROVA: capa (foto duotone) -->
+  <section class="slide photo">
+    <div class="bg" style="background-image:url('assets/foto-teste.jpg');"></div>
+    <div class="tint"></div>
+    <div class="grad"></div>
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="sans-lg">Existe um cansaço</div>
+      <div class="disp" style="font-size:124px; margin-top:6px;">que dormir</div>
+      <div class="disp gold" style="font-size:124px; margin-top:-6px;">não cura.</div>
+    </div>
+    <div class="foot">2 / 6</div>
+  </section>
+
+  <!-- SLIDE 3 — PROVA: conceito (cream) -->
+  <section class="slide cream">
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="disp" style="font-size:76px;">Não é o corpo.<br>É a mente.</div>
+      <div class="rule"></div>
+      <div class="body" style="font-size:40px; max-width:780px;">
+        O <b style="font-family:var(--display); font-style:italic; font-weight:600; color:var(--navy);">cansaço emocional</b>
+        não passa com uma noite de sono — porque ele vem de carregar tudo por dentro, o tempo todo.
+      </div>
+    </div>
+    <div class="foot" style="color:var(--navy-soft); opacity:.6;">3 / 6</div>
+  </section>
+
+  <!-- SLIDE 4 — PROVA: sinais (navy) -->
+  <section class="slide navy">
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="sans-lg" style="margin-bottom:34px;">Você talvez<br>reconheça:</div>
+      <div class="item"><span class="mk">&#8212;</span>acordar e já se sentir <b>sem energia</b></div>
+      <div class="item"><span class="mk">&#8212;</span>irritação com <b>coisas pequenas</b></div>
+      <div class="item"><span class="mk">&#8212;</span>vontade de <b>sumir um pouco</b> de tudo</div>
+    </div>
+    <div class="foot">4 / 6</div>
+  </section>
+
+  <!-- SLIDE 5 — PROVA: acolhimento (foto duotone) -->
+  <section class="slide photo">
+    <div class="bg" style="background-image:url('assets/foto-teste-2.jpg');"></div>
+    <div class="tint"></div>
+    <div class="grad"></div>
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="sans-lg">Descansar a mente</div>
+      <div class="disp" style="font-size:100px; margin-top:6px;">também se</div>
+      <div class="disp gold" style="font-size:100px; margin-top:-6px;">aprende.</div>
+      <div class="body" style="margin-top:26px; max-width:760px;">E quase nunca a gente consegue fazer isso sozinho.</div>
+    </div>
+    <div class="foot">5 / 6</div>
+  </section>
+
+  <!-- SLIDE 6 — PITCH + CTA (cor própria psi.automatic, CTA visual sem botão) -->
+  <section class="slide psi">
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="sans-lg">Posts assim,</div>
+      <div class="disp" style="font-size:88px; margin-top:8px;">todo dia no seu perfil —</div>
+      <div class="disp gold" style="font-size:88px; margin-top:2px;">sem você fazer nada.</div>
+      <div class="body" style="margin-top:28px; max-width:820px;">Sua equipe de conteúdo por <b style="color:#fff; font-weight:500;">menos de R$&nbsp;4 por dia</b>. Sem agência cara.</div>
+      <div class="cta" style="margin-top:44px;">Comenta <span class="kw">QUERO</span> &#128071;</div>
+      <div class="cta-sub">e a nossa equipe te mostra como.</div>
+    </div>
+    <div class="sign"><b>@psi.automatic</b> &#183; a agência de marketing no seu bolso</div>
+  </section>
+
+</div>
+</body>
+</html>

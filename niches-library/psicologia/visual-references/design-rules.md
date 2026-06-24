@@ -46,7 +46,17 @@ com **moderação elegante**, a serviço da serenidade, não da energia.
   calmos — como **mood/fundo**, NUNCA como promessa de produto. A **unicidade mora na composição
   autoral** (lettering, diagramação, cor, grafismo + DNA do cliente), não na foto stock.
 - **Nunca** retratar paciente identificável nem cena clínica de atendimento (sigilo/ética CFP).
-- Vale também a peça **sem foto** (tipografia + cor + grafismo) — frequente e elegante no nicho.
+
+### Foto vs. sem-foto — DEFAULT é COM (pesquisa 2026-06-23, ver Base Mãe + faculdade)
+- **Default = a peça TEM foto/elemento humano.** Carrossel com foto engaja mais que text-only
+  ("Instagram é visual; texto realça a imagem, não a substitui"; guideline ~20% de texto por slide).
+- **Peça 100% tipográfica é exceção EM ROTAÇÃO, não padrão** — ótima como capa conceito/frase de
+  impacto pontual; ruim como estilo do feed inteiro (feed só-texto parece polido demais e converte menos).
+- **Cliente psicólogo: o ROSTO dele é ativo de conversão.** Headshot acolhedor humaniza e gera
+  confiança — terapia se escolhe por conexão. Garantir presença do humano com frequência no feed.
+  (Vitrine @psi.automatic não tem rosto de psicólogo → usa stock-mood/duotone de marca; cliente real, sim.)
+- Sem material do cliente ainda → stock-mood em **duotone de marca** (foto cinza sob camada azul/creme)
+  resolve a falta de foto sem virar genérico, e mantém a regra (a foto é mood, a autoria é a composição).
 
 ## Multi-formato (obrigatório — ver `oferta-v1.md`)
 A mesma peça nasce em formatos por canal — **com layout adaptado, não esticado** (margens seguras,

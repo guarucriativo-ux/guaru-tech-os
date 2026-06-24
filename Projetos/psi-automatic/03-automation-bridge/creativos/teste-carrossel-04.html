@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* paleta de PSICOLOGIA (miolo-prova) */
+    --cream:#EFE8DB; --navy:#1F3B52; --navy-soft:#3A5570; --gold:#B5905A;
+    /* COR PRÓPRIA psi.automatic (frames marca) — espresso + laranja queimado */
+    --psi-bg:#1A1714; --psi-accent:#E2662C; --psi-text:#F4F1EA;
+    --sans:'Poppins',sans-serif;
+    --display:'Cormorant Garamond',serif;   /* SÓ psicologia (prova) */
+    --agency:'Montserrat',sans-serif;        /* SÓ frames psi.automatic (marca) */
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ background:#cfcabd; }
+  #post{ width:1080px; }
+
+  /* zona segura generosa (anti-corte mobile) */
+  .slide{ width:1080px; height:1350px; position:relative; overflow:hidden;
+    font-family:var(--sans); display:flex; flex-direction:column; justify-content:space-between;
+    padding:96px 100px 104px; }
+  .slide.cream{ background:var(--cream); color:var(--navy); }
+  .slide.navy{ background:var(--navy); color:var(--cream); }
+  .slide.psi{ background:var(--psi-bg); color:var(--psi-text); }
+  .slide::after{ content:""; position:absolute; inset:0; pointer-events:none; opacity:.05; mix-blend-mode:multiply; z-index:1;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='280'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"); }
+  .slide > *{ position:relative; z-index:2; }
+
+  /* foto duotone — navy (psicologia) e teal (frame psi.automatic) */
+  .photo{ color:var(--cream); }
+  .photo .bg{ position:absolute; inset:0; z-index:0; background-position:center; background-size:cover; filter:grayscale(1) contrast(1.04); }
+  .photo .tint{ position:absolute; inset:0; z-index:0; mix-blend-mode:multiply; opacity:.82; background:var(--navy); }
+  .photo.psi .tint{ background:var(--psi-bg); opacity:.85; }
+  .photo .grad{ position:absolute; inset:0; z-index:1; background:linear-gradient(180deg, rgba(20,40,55,.25) 0%, rgba(20,40,55,.08) 36%, rgba(20,40,55,.9) 100%); }
+  .photo.psi .grad{ background:linear-gradient(180deg, rgba(26,23,20,.32) 0%, rgba(26,23,20,.06) 34%, rgba(26,23,20,.93) 100%); }
+
+  .head{ text-align:center; font-size:21px; font-weight:600; letter-spacing:6px; color:var(--gold); font-family:var(--agency); }
+  .navy .head, .photo .head{ color:#D9C49C; } .psi .head{ color:var(--psi-accent); }
+  .foot{ text-align:center; font-size:18px; font-weight:600; letter-spacing:5px; color:var(--gold); font-family:var(--agency); }
+  .navy .foot, .photo .foot{ color:#D9C49C; } .psi .foot{ color:var(--psi-accent); }
+  .sign{ font-size:23px; font-weight:400; letter-spacing:.5px; text-align:center; color:var(--psi-text); font-family:var(--agency); }
+  .sign b{ font-weight:700; color:#fff; }
+
+  .mid{ display:flex; flex-direction:column; justify-content:center; flex:1; }
+  .photo .mid{ justify-content:flex-end; padding-bottom:8px; }
+
+  /* ----- tipografia PSICOLOGIA (prova) ----- */
+  .sans-lg{ font-size:50px; font-weight:300; line-height:1.25; color:var(--navy-soft); }
+  .navy .sans-lg{ color:#C9D4DE; } .photo .sans-lg{ color:#E7E1D5; }
+  .sans-lg b{ font-weight:600; color:var(--navy); }
+  .navy .sans-lg b, .photo .sans-lg b{ color:#fff; }
+  .disp{ font-family:var(--display); font-style:italic; font-weight:600; line-height:1.0; color:var(--navy); }
+  .navy .disp, .photo .disp{ color:#fff; }
+  .gold{ color:var(--gold); }
+  .body{ font-size:32px; font-weight:300; line-height:1.45; color:var(--navy-soft); }
+  .navy .body{ color:#BFCBD6; } .photo .body{ color:#D7CDBC; } .psi .body{ color:#CFE0D5; }
+  .body b{ font-weight:600; color:var(--navy); }
+  .rule{ width:120px; height:2px; background:var(--gold); margin:28px 0; opacity:.8; }
+
+  /* ----- tipografia AGÊNCIA (frames psi.automatic) ----- */
+  .psi-h{ font-family:var(--agency); font-weight:800; line-height:1.04; letter-spacing:-.5px; color:#fff; text-transform:uppercase; }
+  .psi-h .ac{ color:var(--psi-accent); }
+
+  /* lista de sinais */
+  .item{ font-size:34px; font-weight:300; line-height:1.75; color:#C9D4DE; }
+  .item b{ font-weight:500; color:#fff; }
+  .item .mk{ color:var(--gold); font-family:var(--display); font-style:italic; font-size:40px; margin-right:14px; }
+
+  /* aspas decorativas (vida no slide 3) */
+  .quote{ font-family:var(--display); font-style:italic; font-weight:600; font-size:200px; line-height:.6;
+    color:var(--gold); opacity:.22; height:96px; }
+
+  /* CTA — comando tipográfico + seta DESENHADA (sem emoji, sem botão) */
+  .cta{ font-family:var(--agency); font-size:46px; font-weight:700; color:#fff; display:flex; align-items:center; gap:18px; }
+  .cta .kw{ color:var(--psi-accent); }
+  .cta svg{ flex:0 0 auto; }
+  .cta-sub{ font-family:var(--sans); font-size:28px; font-weight:300; color:var(--psi-text); margin-top:16px; }
+</style>
+</head>
+<body>
+<div id="post">
+
+  <!-- SLIDE 1 — HOOK (psi.automatic: foto duotone teal + headline de agência + identificação) -->
+  <section class="slide photo psi">
+    <div class="bg" style="background-image:url('assets/foto-hook-2.jpg');"></div>
+    <div class="tint"></div>
+    <div class="grad"></div>
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="psi-h" style="font-size:70px;">Você posta, posta</div>
+      <div class="psi-h" style="font-size:70px;">e a agenda <span class="ac">não enche.</span></div>
+      <div class="body" style="margin-top:28px; max-width:780px; color:#E4EDE7;">O problema não é o seu trabalho — é o seu marketing. Arrasta. &#8594;</div>
+    </div>
+    <div class="foot">ARRASTA &#8594;</div>
+  </section>
+
+  <!-- SLIDE 2 — PROVA: capa (foto duotone navy) -->
+  <section class="slide photo">
+    <div class="bg" style="background-image:url('assets/foto-teste.jpg');"></div>
+    <div class="tint"></div>
+    <div class="grad"></div>
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="sans-lg">Existe um cansaço</div>
+      <div class="disp" style="font-size:118px; margin-top:8px;">que dormir</div>
+      <div class="disp gold" style="font-size:118px; margin-top:-4px;">não cura.</div>
+    </div>
+    <div class="foot">2 / 6</div>
+  </section>
+
+  <!-- SLIDE 3 — PROVA: conceito (cream, com mais vida: aspas + bold simples) -->
+  <section class="slide cream">
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="quote">&#8220;</div>
+      <div class="disp" style="font-size:80px; margin-top:6px;">Não é o corpo.<br>É a mente.</div>
+      <div class="rule"></div>
+      <div class="body" style="font-size:40px; max-width:800px;">
+        O <b>cansaço emocional</b> não passa com uma noite de sono — ele vem de carregar tudo por dentro, o tempo todo.
+      </div>
+    </div>
+    <div class="foot" style="color:var(--navy-soft); opacity:.55;">3 / 6</div>
+  </section>
+
+  <!-- SLIDE 4 — PROVA: sinais (navy, margens seguras) -->
+  <section class="slide navy">
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="sans-lg" style="margin-bottom:36px;">Você talvez<br>reconheça:</div>
+      <div class="item"><span class="mk">&#8212;</span>acordar e já se sentir <b>sem energia</b></div>
+      <div class="item"><span class="mk">&#8212;</span>irritação com <b>coisas pequenas</b></div>
+      <div class="item"><span class="mk">&#8212;</span>vontade de <b>sumir um pouco</b> de tudo</div>
+    </div>
+    <div class="foot">4 / 6</div>
+  </section>
+
+  <!-- SLIDE 5 — PROVA: acolhimento (foto duotone navy) -->
+  <section class="slide photo">
+    <div class="bg" style="background-image:url('assets/foto-teste-2.jpg');"></div>
+    <div class="tint"></div>
+    <div class="grad"></div>
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="sans-lg">Descansar a mente</div>
+      <div class="disp" style="font-size:96px; margin-top:8px;">também se</div>
+      <div class="disp gold" style="font-size:96px; margin-top:-4px;">aprende.</div>
+      <div class="body" style="margin-top:24px; max-width:760px;">E quase nunca a gente consegue fazer isso sozinho.</div>
+    </div>
+    <div class="foot">5 / 6</div>
+  </section>
+
+  <!-- SLIDE 6 — PITCH + CTA (psi.automatic: Montserrat bold, seta desenhada, sem sublinhado) -->
+  <section class="slide psi">
+    <div class="head">@PSI.AUTOMATIC</div>
+    <div class="mid">
+      <div class="psi-h" style="font-size:64px;">Conteúdo profissional,</div>
+      <div class="psi-h" style="font-size:64px;">todo dia, <span class="ac">sem você fazer nada.</span></div>
+      <div class="body" style="margin-top:30px; max-width:820px;">Sua equipe de marketing por <b style="color:#fff; font-weight:600;">menos de R$&nbsp;4 por dia</b>. Sem agência cara.</div>
+      <div class="cta" style="margin-top:46px;">
+        <span>Comenta <span class="kw">QUERO</span></span>
+        <svg width="30" height="40" viewBox="0 0 30 40" fill="none"><path d="M15 2 V32 M5 23 L15 34 L25 23" stroke="#E2662C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="cta-sub">e a nossa equipe te chama.</div>
+    </div>
+    <div class="sign"><b>@psi.automatic</b> &#183; a agência de marketing no seu bolso</div>
+  </section>
+
+</div>
+</body>
+</html>

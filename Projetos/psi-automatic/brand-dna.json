@@ -2,25 +2,41 @@
   "marca": "psi.automatic",
   "handle": "@psi.automatic",
   "tipo": "Vitrine de conversão (Alvo A) — nicho psicólogo. É a marca do PERFIL de Instagram, NÃO da empresa (= Guaru Tech). Baixo risco, testável.",
-  "posicionamento": "Marketing/conteúdo para psicólogos, no AUTOMÁTICO e acessível. NÃO somos agência cara e humana — somos o produto que entrega conteúdo pronto que enche a agenda, sem o psicólogo fazer nada. O 'automatic' é o nosso wedge (nenhum concorrente sinaliza isso).",
-  "promessa": "Conteúdo pronto que enche sua agenda — no automático.",
+  "posicionamento": "Marketing/conteúdo profissional para psicólogos, todo dia e acessível. NÃO somos agência cara e humana — somos o produto que entrega conteúdo pronto que enche a agenda, sem o psicólogo fazer nada. 'automatic' é só o NOME da marca, NUNCA o bordão de venda (a copy vende dor+economia, não o mecanismo).",
+  "promessa": "Conteúdo pronto que enche sua agenda — sem você fazer nada.",
   "voz": {
     "tom": "claro, direto, profissional-acessível; acolhedor mas confiante",
-    "evitar": "jargão de marketing, promessa de cura/resultado garantido, sensacionalismo, frieza robótica, e SOBRETUDO reforçar que é 'feito por IA' (regra de marca: vender o benefício 'no automático/sem você fazer', NUNCA o mecanismo IA — preconceito de leigo + protege a autenticidade do psicólogo)",
-    "lembrar": "o psicólogo teme marketing invasivo e não tem tempo — falar a língua dele, sem peso. Equilibrar o 'automatic' (tech) com calor humano na copy."
+    "evitar": "jargão de marketing, promessa de cura/resultado garantido, sensacionalismo, frieza robótica, e SOBRETUDO reforçar que é 'feito por IA' OU usar 'no automático' como bordão de venda (regra de marca 2026-06-24: vender o benefício — sem você fazer nada / todo dia / sua equipe no bolso —, NUNCA o mecanismo IA nem 'no automático'; preconceito de leigo + protege a autenticidade do psicólogo)",
+    "lembrar": "o psicólogo teme marketing invasivo e não tem tempo — falar a língua dele, sem peso. O nome 'automatic' é a marca; o selling é dor+economia, NÃO 'no automático'."
   },
-  "paleta_v1_proposta": {
-    "primaria": "#0E4D52  (petróleo/teal — confiança + sereno + leve toque moderno)",
-    "fundo":    "#F4F1EA  (areia/off-white — calor, respiro)",
-    "acento":   "#8FB79A  (verde-sálvia — frescor, saúde, calma)",
-    "texto":    "#1C2B2D  (quase-preto esverdeado)",
-    "nota": "v1 PROPOSTA — teu olho de designer refina/troca. Bridge entre 'tech/confiança' e 'psicologia/calor'."
+  "paleta_marca_psi_automatic": {
+    "_uso": "COR PRÓPRIA da marca psi.automatic (frames da vitrine) que BRACKETAM o miolo-prova. O miolo (conteúdo de psicologia) usa a paleta calma navy/creme/dourado. Contraste loud-frame × calm-proof = nossa assinatura anti-genérica.",
+    "_status": "DEFINIDA via REFERÊNCIAS (Marcos enviou refs de agência de tráfego 'Tramontina ADS' 2026-06-24; sistema capturado). Descartados antes: teal (#0E4D52=clínica), espresso+laranja (#1A1714/#E2662C=chocolate BR).",
+    "neutro_escuro": "#0A0A0A (preto rico — fundo)",
+    "neutro_claro":  "#F2F1EE (off-white/cinza-claro — fundo alternativo)",
+    "gradiente_assinatura": "magenta #FF1E8C → laranja #FF6A1A → violeta #8B2FE0 (a ALMA da marca: palavra-chave da headline, ribbons, selo, cantos)",
+    "acento_solido": "#FF1E8C (magenta — palavra destacada)",
+    "gradiente_full": "arco-íris (amarelo→laranja→magenta→violeta) p/ palavra-protagonista pontual",
+    "_diferenciacao": "⚠️ gradiente pink-laranja-roxo é TRENDY/comum (vizinho do IG; erro nº1 de tech é gradiente genérico). OWNa-se via: (1) bracketar PSICOLOGIA calma no miolo; (2) selo/monograma autoral do Marcos. Ver knowledge-base/design/dna-agencia-trafego-pago.md.",
+    "nota": "Sistema capturado por Claude; logo/selo/monograma finais = leap do Marcos (designer)."
   },
-  "tipografia_v1_proposta": {
-    "titulo": "sans humanista confiante — UMA jogada por peça (regra Base Mãe)",
-    "corpo": "sans limpa, legível em mobile",
-    "nota": "v1 PROPOSTA"
+  "tipografia_psi_automatic": {
+    "titulo_frames_marca": "grotesca BOLD/black TIGHT de agência (estilo Archivo/Aktiv/Helvetica Now), grande, dominando. TWO-TONE: parte neutra (preto/branco) + palavra-chave em GRADIENTE ou magenta (destaque pela COR, não por trocar de fonte).",
+    "kicker": "linha-assinatura no topo de TODA peça, letter-spaced, peso misto (nome bold + resto fino). Ex.: 'PSI.AUTOMATIC · MARKETING PARA PSICÓLOGOS'.",
+    "titulo_miolo_prova": "serif display editorial (Cormorant) — SÓ no conteúdo de psicologia (a prova).",
+    "corpo": "sans limpa, legível em mobile (Poppins).",
+    "nota": "captura das refs 2026-06-24; a leap final de fonte exata é do Marcos."
   },
+  "motivos_marca": {
+    "kicker_topo": "assinatura letter-spaced no topo (reconhecimento de marca em toda peça)",
+    "selo_rotativo": "selo circular com texto girando + monograma loop/∞ (device distintivo — Marcos desenha)",
+    "gradiente_ribbon": "fitas/blobs curvos com o gradiente de assinatura (fundo/acento)",
+    "moldura_tracejada": "frame tracejado com quadradinhos de gradiente nos cantos",
+    "mockups": "lockscreen de celular com notificação + laptop com anúncio (vende o BENEFÍCIO/resultado, NUNCA 'IA')",
+    "chips_lista": "itens de lista em chips cinza arredondados",
+    "emoji_3d": "emoji/objeto 3D sobre círculo gradiente, integrado ao estilo (NÃO emoji de SO solto)"
+  },
+  "frame_hook_slide1": "A capa/hook (slide 1) é uma das peças MAIS importantes → quase sempre com FOTO de gatilho de IDENTIFICAÇÃO (psicólogo estressado/frustrado/sobrecarregado) + headline bold de agência. Sem foto e com tipografia simples = fraca. Ver knowledge-base/copywriting/gatilhos-mentais.md.",
   "logo_direcao": "wordmark 'psi.automatic' em minúsculas, limpo; o '.' como microelemento; opcional símbolo Ψ discreto. (Visual final = tua mão de designer.)",
   "conteudo_que_produz": "As peças-exemplo do feed seguem o registro SUAVE/acolhedor da psicologia (ver niches-library/psicologia/visual-references). A vitrine é o container; o feed é a prova. Multi-formato 4:5 / 9:16 / 1:1."
 }

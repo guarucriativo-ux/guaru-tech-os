@@ -47,6 +47,49 @@ humano lê a peça.
 - Validação por código (margem exata em px, payoff contido dentro de uma mancha) **não se aplica
   a este estilo** — a validação passa a ser visual/curatorial, não geométrica.
 
+## Amendment [2026-06-23] — Foto vence text-only em carrossel (pesquisa)
+
+Pesquisa de mercado (Hootsuite/dados 2025–2026, ver `knowledge-base/design/foto-vs-texto-carrossel.md`):
+carrossel **com foto engaja mais** que o text-only — *"Instagram é visual; o texto realça a imagem,
+não a substitui"* (guideline ~20% de texto por slide; mixed-media engaja ainda mais). Implicação
+transversal (qualquer nicho):
+- **Default da peça = TEM foto / elemento visual forte.** A peça puramente tipográfica é **formato
+  válido EM ROTAÇÃO** (capa-conceito, frase de impacto), **não o padrão** do feed — feed só-texto
+  enfraquece a marca e converte menos.
+- Texto **realça** a imagem (overlay enxuto), não a substitui. Continua valendo "foto real bem
+  executada OU ausência total de foto — nunca placeholder/ícone genérico": se não houver foto boa,
+  melhor tipográfica limpa do que foto ruim/genérica.
+- Em nicho de **serviço/autoridade (classe B)**, o **rosto do profissional** é ativo de conversão
+  (confiança/conexão) — a regra de nicho diz quando e como (ver camada 2).
+
+## Amendment [2026-06-24] — Proibido botão de app (UX/UI) na peça; CTA é tipográfico
+
+Marcos pegou um "botão" (pill com borda, tipo target de app) num CTA → **inaceitável**. Peça de
+social media **não usa linguagem de INTERFACE** (botão arredondado com borda/sombra, toggle, ícone
+de app). Isso mete cara de template genérico e mata o peso de branding.
+- **O CTA é o próprio comando VISUAL/tipográfico:** frase forte tratada como headline + pista
+  direcional (seta → ↓ 👇, sublinhado, traço). Nunca um rótulo dentro de uma caixa-botão.
+- **Último slide muda de cor/layout** pra sinalizar "acabou, aja" (não um botão).
+- Em objetivo de venda, **keyword-to-DM** ("Comenta QUERO 👇") converte muito mais que "link na bio".
+- Detalhe e racional na faculdade: `knowledge-base/design/cta-carrossel-sem-botao.md`.
+
+## Amendment [2026-06-24] — Lições de craft (Marcos revisou peça a peça)
+
+- **Margem de segurança (anti-corte mobile):** texto IMPORTANTE nunca colado na borda — o app/UI do
+  celular pode cortar. Manter zona segura generosa em todos os lados; nada crítico nos ~100px de borda.
+- **Emoji/ícone TEM que seguir o estilo da arte.** Emoji genérico de SO (👇 estilo "WhatsApp") fica
+  "fora da caixinha", quebra o padrão visual. Se for usar seta/mão/ícone, ele é **desenhado no mesmo
+  estilo da peça** (mesmo traço, mesma cor, mesma linguagem) — não um emoji solto colado por cima.
+- **Troca de fonte pra compor/destacar é ótima — mas com critério.** Mudar de fonte pra destacar uma
+  palavra/frase é prática forte e bem-vinda; porém nem todo caso pede. Às vezes **só um bold já
+  resolve** e fica mais limpo. Se a troca não "casar" na peça específica, voltar pro bold. (Marcos:
+  a jogada do "cansaço emocional" não casou → era caso de bold simples.)
+- **"Cara de agência" no que é marca/venda:** headline grande, **bold, sans geométrica** (Montserrat/
+  Avenir/Manrope) + acento + respiro. Hook "simples/soft" tem cara de amador. (Serif editorial fica
+  pro conteúdo emocional; venda/branding pede sans bold confiante.) Ver `knowledge-base/copywriting/gatilhos-mentais.md`.
+- **Peça-chave (capa/hook) quase sempre pede FOTO** com gatilho de **identificação** (a pessoa se vê).
+  Capa importante sem foto tende a ficar fraca. Ver Amendment "Foto vence text-only".
+
 ## Diagramação
 - Layout limpo, focado em legibilidade. ~~Alinhamento de texto rigoroso — nunca texto
   centralizado "solto" sem ancoragem.~~ [SUPERSEDED pelo Amendment acima]

@@ -1,0 +1,16 @@
+{
+  "name": "psi-automatic-content-generator",
+  "version": "1.0.0",
+  "description": "Fábrica da vitrine @psi.automatic: cérebro (gerar-peca.js, API) + corpo (montar.js, molde-engine + render).",
+  "type": "module",
+  "scripts": {
+    "gerar": "node gerar-peca.js",
+    "checar": "node checar-guardrails.js outputs/conteudo.json",
+    "montar": "node montar.js --in=outputs/conteudo.json",
+    "peca": "node gerar-peca.js && node checar-guardrails.js outputs/conteudo.json && node montar.js --in=outputs/conteudo.json",
+    "exemplo": "node montar.js --in=conteudo.exemplo.json"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.105.0"
+  }
+}

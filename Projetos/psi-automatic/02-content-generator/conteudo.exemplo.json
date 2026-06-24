@@ -1,0 +1,48 @@
+{
+  "_aviso": "CONTEÚDO DE EXEMPLO (escrito à mão p/ provar a mecânica do molde). O cérebro (gerar-peca.js + API) vai PRODUZIR este JSON sozinho quando a chave estiver no .env. A estrutura é exatamente esta.",
+  "tema": "ansiedade",
+  "kicker": "<b>PSI.AUTOMATIC</b> &middot; MARKETING PARA PSIC&Oacute;LOGOS",
+  "hook": {
+    "foto": "foto-hook-2.jpg",
+    "linha1": "Você é um ótimo",
+    "linha2": "psicólogo.",
+    "destaque": "Mas quem sabe?",
+    "sub": "Conteúdo que mostra o seu valor — sem você fazer nada. Arrasta. &#8594;"
+  },
+  "prova": {
+    "capa": {
+      "foto": "foto-teste.jpg",
+      "pre": "Sua cabeça não desliga —",
+      "disp": "mesmo quando",
+      "destaque": "está tudo bem."
+    },
+    "conceito": {
+      "titulo": "Ansiedade<br>não é frescura.",
+      "corpo": "É o corpo em <b>estado de alerta</b> — a mente vivendo no futuro, antecipando perigos que talvez nem cheguem."
+    },
+    "sinais": {
+      "intro": "Você reconhece?",
+      "itens": [
+        "coração acelerado <b>sem motivo</b>",
+        "pensamento que <b>não para</b>",
+        "um cansaço que <b>vem do nada</b>"
+      ]
+    },
+    "acolhimento": {
+      "foto": "foto-teste-2.jpg",
+      "pre": "Dá pra desacelerar.",
+      "disp": "e não precisa",
+      "destaque": "ser sozinho.",
+      "corpo": "A terapia ensina a sua mente a voltar pro presente."
+    }
+  },
+  "pitch": {
+    "linha1": "Conteúdo profissional,",
+    "linha2": "todo dia,",
+    "destaque": "sem você fazer nada.",
+    "corpo": "Sua equipe de marketing por <b>menos de R$&nbsp;4 por dia</b>. Sem agência cara.",
+    "cta_kw": "QUERO",
+    "cta_sub": "e a nossa equipe te chama."
+  },
+  "legenda": "Você é um ótimo psicólogo. Mas quem sabe disso? 🤔\n\nO problema quase nunca é a sua competência — é o seu perfil parado, que não mostra o seu valor pra quem ainda não te conhece.\n\nEsse carrossel sobre ansiedade? É o tipo de conteúdo que a gente cria pro seu Instagram. Todo dia, no seu estilo, sem você parar pra fazer nada.\n\nEnquanto você cuida dos seus pacientes, a nossa equipe cuida do seu marketing — por menos de R$ 4 por dia.\n\nComenta QUERO que a nossa equipe te chama. 👇\n\n#psicologia #psicologo #ansiedade #marketingparapsicologos #consultoriodepsicologia"
+}
