@@ -7,7 +7,6 @@
 // Bracket da marca: frames psi.automatic (preto + gradiente, slides 1 e final) emoldurando a PROVA
 // de psicologia (navy/creme). Design capturado em knowledge-base/design/dna-agencia-trafego-pago.md.
 import { readFile, writeFile, mkdir } from "node:fs/promises";
-import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFile } from "node:child_process";
@@ -25,45 +24,6 @@ function arg(name, def) {
 }
 // "Sobrecarga e Burnout" -> "sobrecarga-e-burnout" (nome de arquivo limpo, sem espaço/acento)
 const slug = (s) => String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-
-// --- TIPOGRAFIA DIAGNÓSTICA (doutrina-de-motor-decisao.md §1 + §"texto que estoura a caixa") ---
-// Headline de tamanho FIXO estoura o slide quando a copy é longa — a armadilha-mãe do molde-engine:
-// mesma caixa, strings de comprimentos muito diferentes. Aqui o tamanho REAGE ao comprimento real:
-// copy curta mantém o tamanho aprovado (max); copy longa encolhe até um piso (min) em vez de vazar.
-// k = largura média do glifo em frações do font-size, por família — AFERIDO do exemplo aprovado pelo
-// Marcos (conteudo.exemplo.json) de modo que toda peça dentro do orçamento fica IDÊNTICA à de hoje.
-const K = { agency: 0.45, display: 0.58, sans: 0.52 };
-const BOX_W = 888; // 1080 − 96px de padding em cada lado (.slide)
-// texto "puro" pra contar glifos: <br> vira quebra, tags somem, qualquer entidade conta como 1 glifo
-const plain = (s) => String(s)
-  .replace(/<br\s*\/?>/gi, "\n")
-  .replace(/<[^>]+>/g, "")
-  .replace(/&nbsp;|&#160;/gi, " ")
-  .replace(/&[#a-z0-9]+;/gi, "x")
-  .trim();
-const longestLine = (s) => plain(s).split("\n").reduce((m, l) => Math.max(m, l.trim().length), 0);
-// maior tamanho (≤max) que faz a linha mais longa caber em boxW; nunca abaixo de min.
-function fit(texts, { max, min, font, boxW = BOX_W }) {
-  const len = Math.max(1, ...texts.map(longestLine));
-  const ideal = boxW / (K[font] * max); // nº de chars que cabem em UMA linha no tamanho max
-  if (len <= ideal) return max;          // copy dentro do orçamento → tamanho aprovado, intocado
-  return Math.max(min, Math.round((max * ideal) / len));
-}
-
-// --- MOLDE REATIVO AO CONTEÚDO (doutrina-de-motor-decisao.md §2) ---
-// "Imagem sem céu não recebe preset de céu": o molde reage ao que o conteúdo REALMENTE tem.
-// Foto inexistente no banco (cérebro alucinou o nome, ou banco vazio) NÃO vira slot quebrado —
-// o slide cai pra TIPOGRÁFICO sólido (foto ruim/ausente é pior que sem foto: foto-vs-texto-carrossel.md).
-const ASSETS_DIR = path.resolve(__dirname, "../03-automation-bridge/creativos/assets");
-const temFoto = (nome) => !!nome && existsSync(path.join(ASSETS_DIR, nome));
-// camadas de foto duotone quando a foto existe; "" (sem foto) caso contrário — e avisa (degradar com elegância).
-function fotoLayers(nome) {
-  if (temFoto(nome)) {
-    return `<div class="bg" style="background-image:url('${ASSET_REL}${nome}')"></div><div class="tint"></div><div class="grad"></div>`;
-  }
-  console.warn(`[montar] ⚠ foto ausente ("${nome ?? "—"}") → slide em modo TIPOGRÁFICO (sem foto).`);
-  return "";
-}
 
 const CSS = `
 :root{
@@ -129,13 +89,12 @@ const kicker = (c) => `<div class="kicker layer">${c.kicker}</div>`;
 // --- frames da MARCA (preto + gradiente) ---
 function slideHook(c) {
   const h = c.hook;
-  const sz = fit([h.linha1, `${h.linha2} ${h.destaque}`], { max: 78, min: 54, font: "agency" });
-  return `<section class="slide ink${temFoto(h.foto) ? " ph" : ""}">
-    ${fotoLayers(h.foto)}
+  return `<section class="slide ink ph">
+    <div class="bg" style="background-image:url('${ASSET_REL}${c.hook.foto}')"></div><div class="tint"></div><div class="grad"></div>
     ${kicker(c)}
     <div class="mid layer">
-      <div class="ah" style="font-size:${sz}px">${h.linha1}</div>
-      <div class="ah" style="font-size:${sz}px">${h.linha2} <span class="grad-text">${h.destaque}</span></div>
+      <div class="ah">${h.linha1}</div>
+      <div class="ah">${h.linha2} <span class="grad-text">${h.destaque}</span></div>
       <div class="lead">${h.sub}</div>
     </div>
     <div class="foot layer">ARRASTA &#8594;</div>
@@ -143,12 +102,11 @@ function slideHook(c) {
 }
 function slidePitch(c) {
   const p = c.pitch;
-  const sz = fit([p.linha1, `${p.linha2} ${p.destaque}`], { max: 64, min: 46, font: "agency" });
   return `<section class="slide ink">
     ${kicker(c)}
     <div class="mid layer">
-      <div class="ah" style="font-size:${sz}px">${p.linha1}</div>
-      <div class="ah" style="font-size:${sz}px">${p.linha2} <span class="grad-text">${p.destaque}</span></div>
+      <div class="ah" style="font-size:64px">${p.linha1}</div>
+      <div class="ah" style="font-size:64px">${p.linha2} <span class="grad-text">${p.destaque}</span></div>
       <div class="lead">${p.corpo}</div>
       <div class="cta" style="margin-top:42px">Comenta <span class="kw">${p.cta_kw}</span>
         <svg width="30" height="40" viewBox="0 0 30 40" fill="none"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF1E8C"/><stop offset=".5" stop-color="#FF6A1A"/><stop offset="1" stop-color="#8B2FE0"/></linearGradient></defs><path d="M15 2 V32 M5 23 L15 34 L25 23" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -162,26 +120,24 @@ function slidePitch(c) {
 // --- PROVA (psicologia, navy/creme) ---
 function slideCapa(c) {
   const v = c.prova.capa;
-  const sz = fit([v.disp, v.destaque], { max: 108, min: 74, font: "display" });
-  return `<section class="slide ${temFoto(v.foto) ? "psy ph" : "navy psy"}">
-    ${fotoLayers(v.foto)}
+  return `<section class="slide psy ph">
+    <div class="bg" style="background-image:url('${ASSET_REL}${v.foto}')"></div><div class="tint"></div><div class="grad"></div>
     ${kicker(c)}
     <div class="mid layer">
       <div class="sans-lg">${v.pre}</div>
-      <div class="disp" style="font-size:${sz}px;margin-top:8px">${v.disp}</div>
-      <div class="disp gold" style="font-size:${sz}px;margin-top:-4px">${v.destaque}</div>
+      <div class="disp" style="font-size:108px;margin-top:8px">${v.disp}</div>
+      <div class="disp gold" style="font-size:108px;margin-top:-4px">${v.destaque}</div>
     </div>
     <div class="foot layer">2 / 6</div>
   </section>`;
 }
 function slideConceito(c) {
   const v = c.prova.conceito;
-  const sz = fit([v.titulo], { max: 78, min: 54, font: "display" });
   return `<section class="slide cream">
     ${kicker(c)}
     <div class="mid layer">
       <div class="quote">&#8220;</div>
-      <div class="disp" style="font-size:${sz}px;margin-top:6px">${v.titulo}</div>
+      <div class="disp" style="font-size:78px;margin-top:6px">${v.titulo}</div>
       <div class="rule"></div>
       <div class="body" style="font-size:40px;max-width:800px">${v.corpo}</div>
     </div>
@@ -202,14 +158,13 @@ function slideSinais(c) {
 }
 function slideAcolhimento(c) {
   const v = c.prova.acolhimento;
-  const sz = fit([v.disp, v.destaque], { max: 96, min: 66, font: "display" });
-  return `<section class="slide ${temFoto(v.foto) ? "psy ph" : "navy psy"}">
-    ${fotoLayers(v.foto)}
+  return `<section class="slide psy ph">
+    <div class="bg" style="background-image:url('${ASSET_REL}${v.foto}')"></div><div class="tint"></div><div class="grad"></div>
     ${kicker(c)}
     <div class="mid layer">
       <div class="sans-lg">${v.pre}</div>
-      <div class="disp" style="font-size:${sz}px;margin-top:8px">${v.disp}</div>
-      <div class="disp gold" style="font-size:${sz}px;margin-top:-4px">${v.destaque}</div>
+      <div class="disp" style="font-size:96px;margin-top:8px">${v.disp}</div>
+      <div class="disp gold" style="font-size:96px;margin-top:-4px">${v.destaque}</div>
       <div class="body" style="margin-top:24px;max-width:760px">${v.corpo}</div>
     </div>
     <div class="foot layer">5 / 6</div>

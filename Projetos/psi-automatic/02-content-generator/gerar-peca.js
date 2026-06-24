@@ -68,21 +68,6 @@ VÁLIDO no MESMO schema do exemplo abaixo (mesmas chaves), sem texto fora do JSO
 - FOTOS: use só estes arquivos disponíveis — hook.foto e acolhimento.foto = "foto-hook-2.jpg" ou "foto-teste-2.jpg"; capa.foto = "foto-teste.jpg". (banco de imagem ainda pequeno.)
 - kicker: "<b>PSI.AUTOMATIC</b> &middot; MARKETING PARA PSIC&Oacute;LOGOS".
 
-# ORÇAMENTO DE CARACTERES (a copy tem que CABER no molde — headline que estoura vaza o slide)
-A peça é diagramada por um molde de largura fixa; headline longa demais encolhe e perde impacto. Respeite
-o nº MÁXIMO de caracteres por campo (conte com espaços; é teto, não meta — quanto mais curto e afiado, melhor):
-- hook.linha1 ≤ 22 · hook.linha2 + " " + hook.destaque ≤ 24 (somados, é UMA linha) · hook.sub ≤ 90
-- prova.capa.disp ≤ 14 · prova.capa.destaque ≤ 14 (cada um é UMA linha grande)
-- prova.conceito.titulo ≤ 30 (pode ter um <br> no meio; cada lado ≤ 16) · prova.conceito.corpo ≤ 150
-- prova.sinais.intro ≤ 28 · cada item de prova.sinais.itens ≤ 42 (3 a 4 itens)
-- prova.acolhimento.disp ≤ 13 · prova.acolhimento.destaque ≤ 13 · prova.acolhimento.corpo ≤ 80
-- pitch.linha1 ≤ 26 · pitch.linha2 + " " + pitch.destaque ≤ 30 (somados) · pitch.corpo ≤ 95 · pitch.cta_sub ≤ 34
-
-# VIBE (alavanca de primeira ordem — pesa mais que qualquer regra mecânica)
-Tom da MARCA (hook/pitch): direto, confiante, parceiro do psicólogo — dor real + alívio econômico, sem hype.
-Tom da PROVA (psicologia): acolhedor, sóbrio, validante — fala com o paciente sem dramatizar. Mantenha os
-DOIS tons distintos na mesma peça (é o bracket loud×calm da marca).
-
 # Tema do carrossel
 ${tema ? `Use o tema: "${tema}".` : "Escolha UM tema de alta demanda a partir das pautas abaixo (não repita o óbvio)."}
 
@@ -101,53 +86,24 @@ ${fundamentos}
 # Schema EXATO a seguir (responda com um JSON assim, preenchido com o novo tema)
 ${schema}`;
 
-  const n = Math.max(1, Number(arg("n", "1")) || 1); // doutrina nº7: gerar-N-e-escolher
   const anthropic = new Anthropic(); // usa ANTHROPIC_API_KEY do ambiente
+  const response = await anthropic.messages.create({
+    model: process.env.ANTHROPIC_MODEL ?? "claude-sonnet-4-6",
+    max_tokens: 2048,
+    messages: [{ role: "user", content: prompt }],
+  });
+  let text = response.content.filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
+  // tira cercas de código se vierem
+  text = text.replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/```\s*$/i, "").trim();
+
+  const parsed = JSON.parse(text); // valida que é JSON
+  delete parsed._aviso; // não propagar o campo de controle do schema de exemplo
   const outDir = path.resolve(__dirname, "outputs");
   await mkdir(outDir, { recursive: true });
-
-  // gera UMA variação: mesma brief, a API varia naturalmente → cada chamada é um ângulo diferente.
-  async function gerarVariacao() {
-    const response = await anthropic.messages.create({
-      model: process.env.ANTHROPIC_MODEL ?? "claude-sonnet-4-6",
-      max_tokens: 2048,
-      messages: [{ role: "user", content: prompt }],
-    });
-    let text = response.content.filter((b) => b.type === "text").map((b) => b.text).join("\n").trim();
-    text = text.replace(/^```json\s*/i, "").replace(/^```\s*/i, "").replace(/```\s*$/i, "").trim();
-    const parsed = JSON.parse(text); // valida que é JSON
-    delete parsed._aviso; // não propagar o campo de controle do schema de exemplo
-    return parsed;
-  }
-
-  if (n === 1) {
-    const parsed = await gerarVariacao();
-    const outPath = path.join(outDir, "conteudo.json");
-    await writeFile(outPath, JSON.stringify(parsed, null, 2), "utf-8");
-    console.log(`[gerar] Conteúdo do tema "${parsed.tema}" gerado pela API → ${path.relative(process.cwd(), outPath)}`);
-    console.log(`[gerar] Agora rode:  node montar.js --in=outputs/conteudo.json`);
-    return;
-  }
-
-  // N>1: dispara em paralelo (como o Quick Cut faz 3 de uma vez) → você ESCOLHE a melhor.
-  console.log(`[gerar] Gerando ${n} variações em paralelo (mesma brief, ângulos diferentes)…`);
-  const results = await Promise.allSettled(Array.from({ length: n }, () => gerarVariacao()));
-  const ok = [];
-  for (let i = 0; i < results.length; i++) {
-    const r = results[i];
-    if (r.status === "fulfilled") {
-      const file = path.join(outDir, `conteudo-${i + 1}.json`);
-      await writeFile(file, JSON.stringify(r.value, null, 2), "utf-8");
-      ok.push({ i: i + 1, tema: r.value.tema, file, obj: r.value });
-    } else {
-      console.warn(`[gerar] ⚠ variação ${i + 1} falhou: ${r.reason?.message ?? r.reason}`);
-    }
-  }
-  if (!ok.length) throw new Error("Nenhuma variação foi gerada.");
-  // back-compat: conteudo.json = a 1ª variação que deu certo (pra quem roda montar sem --in)
-  await writeFile(path.join(outDir, "conteudo.json"), JSON.stringify(ok[0].obj, null, 2), "utf-8");
-  console.log(`[gerar] ${ok.length}/${n} variações prontas — monte e ESCOLHA a melhor (a máquina gera, você escolhe):`);
-  for (const v of ok) console.log(`   • #${v.i} "${v.tema}"  →  node montar.js --in=${path.relative(process.cwd(), v.file)}`);
+  const outPath = path.join(outDir, "conteudo.json");
+  await writeFile(outPath, JSON.stringify(parsed, null, 2), "utf-8");
+  console.log(`[gerar] Conteúdo do tema "${parsed.tema}" gerado pela API → ${path.relative(process.cwd(), outPath)}`);
+  console.log(`[gerar] Agora rode:  node montar.js --in=outputs/conteudo.json`);
 }
 
 main().catch((e) => { console.error("Falha ao gerar (cérebro):", e.message); process.exit(1); });
