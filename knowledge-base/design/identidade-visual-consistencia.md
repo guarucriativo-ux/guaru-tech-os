@@ -30,3 +30,11 @@ brand integrity at the point of creation". Guidelines são documento VIVO (revis
 - Implicação: o brand-DNA precisa capturar a identidade COMPLETA (paleta com papéis, sistema
   tipográfico título/subtítulo/corpo, grafismos, tratamento de foto, logo), e os moldes precisam ser
   PARAMETRIZADOS por ele.
+
+## Nuance da tipografia (Marcos, 2026-06-23): consistência = mesmo ESTILO, não mesma fonte
+A regra de fonte NÃO é "a mesma fonte sempre" — é o **mesmo ESTILO**. As fontes podem VARIAR desde
+que dentro do mesmo estilo/família (o que cria marca é a coerência de estilo, não a identidade exata
+da fonte). Prova: refs do nicho usam fontes diferentes, mesmo estilo (script/serifa elegante + sans
+limpa). **Exceção:** se o cliente quiser **fonte fixa como padrão**, trava. → brand-DNA tipografia
+tem 2 modos: **estilo (padrão, flexível)** vs **travado (fonte fixa, se o cliente pedir)**. O briefing
+pergunta. Mesmo princípio vale, com bom senso, pros outros elementos (variar dentro do estilo).
