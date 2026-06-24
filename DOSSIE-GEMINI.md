@@ -208,10 +208,25 @@ Instagram-nativo, conteúdo 100% conceitual = fit mais limpo pra provar o sistem
 do universo classe B e a inteligência de mercado de 16 nichos estão em
 **`niches-library/mercado-classe-b.md`** (mapa de expansão — onde clonar depois do Alvo A).
 
-**Próximo passo operacional:** girar o flywheel no psicólogo — construir `niches-library/psicologia/`
-(fundamentado em pesquisa do nicho + Base Mãe), `brand-dna` do Alvo A, gerar o 1º lote de carrosséis,
-capturar feedback → virar regra. Profundidade em UM vertical é defensável; largura é commodity.
-*(Pendente de decisão do Marcos: identidade do Alvo A — conta-vitrine da Guaru vs persona demo.)*
+**Estado (sessão de BUILD, 2026-06-23):** Alvo A nomeado = **@psi.automatic** (vitrine de conversão;
+Guaru Tech segue como a EMPRESA — o @ é só o nome do perfil/MVP). Identidade em `Projetos/psi-automatic/`
+(`brand-dna.json`, `bio.md`, `conteudo-da-vitrine.md` = fórmula **dor→prova→CTA** num post só + como a
+SaaS diferencia vitrine×cliente por config, `legenda-modelo.md`). `niches-library/psicologia/` completa
+(+ `pautas-conteudo`, `panorama-competitivo`, `referencias.md` das refs visuais @nicoleholz.psi /
+@psilarihoffmann destiladas). Faculdade ganhou: naming, métricas de relatório, **identidade-visual/
+consistência**. **Renderizador COMPARTILHADO em `tools/render/`** (HTML+SVG→PNG via puppeteer, instalado
+UMA vez — não duplicar por cliente; antes vivia dentro do freitas-hair, foi promovido). **Peças-teste
+renderizadas:** `teste-01` (capa "ansiedade") e `teste-carrossel-01` (carrossel "amar×depender", já como
+MOLDE parametrizado pelo brand-DNA, com slide navy invertido p/ ritmo).
+
+**Regras-chave travadas nesta sessão (importantes):** a máquina PROPÕE o tema (não pergunta ao humano);
+NÃO mencionar "feito por IA" (vender o BENEFÍCIO "no automático/sem você fazer", não o mecanismo);
+consistência de marca = brand-DNA + molde parametrizado (consistente por construção) e = mesmo ESTILO
+(fonte pode variar, salvo se o cliente travar); design valida-se no OLHO, não codificando cor em regra
+(referência é VISUAL); foto não é regra (mescla); legenda nasce junto/mesmo-tópico, com limite de tamanho.
+
+**Próximo passo:** iterar o visual no olho (mais drama de composição, foto em alguns slides, palavras
+maiores — feedback do Marcos) → consolidar o MOLDE parametrizado. Profundidade em UM vertical é defensável.
 
 ---
 

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+  /* ===== BRAND-DNA (parâmetros — troca aqui = troca a identidade inteira) ===== */
+  :root{
+    --cream:#EFE8DB; --navy:#1F3B52; --navy-soft:#3A5570; --gold:#B5905A;
+    --sans:'Poppins',sans-serif;
+    --display:'Cormorant Garamond',serif;   /* serifa display editorial, com corpo */
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ background:#cfcabd; }
+  #post{ width:1080px; }
+
+  .slide{ width:1080px; height:1350px; position:relative; overflow:hidden;
+    font-family:var(--sans); display:flex; flex-direction:column; justify-content:space-between;
+    padding:78px 96px 86px; }
+  .slide.cream{ background:var(--cream); color:var(--navy); }
+  .slide.navy{ background:var(--navy); color:var(--cream); }
+  /* textura de papel */
+  .slide::after{ content:""; position:absolute; inset:0; pointer-events:none; opacity:.05; mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='280'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"); }
+  .slide > *{ position:relative; z-index:2; }
+
+  .head{ text-align:center; font-size:21px; font-weight:600; letter-spacing:6px; color:var(--gold); }
+  .head span{ color:inherit; opacity:.55; font-weight:300; }
+  .navy .head{ color:#D9C49C; }
+
+  .foot{ text-align:center; font-size:19px; font-weight:600; letter-spacing:5px; color:var(--gold); }
+  .sign{ font-size:24px; font-weight:300; letter-spacing:1px; color:var(--navy-soft); text-align:center; }
+  .sign b{ font-weight:600; color:var(--navy); }
+
+  .mid{ display:flex; flex-direction:column; justify-content:center; flex:1; }
+  .sans-lg{ font-size:50px; font-weight:300; line-height:1.25; color:var(--navy-soft); }
+  .navy .sans-lg{ color:#C9D4DE; }
+  .sans-lg b{ font-weight:600; color:var(--navy); }
+  .navy .sans-lg b{ color:#fff; }
+  .disp{ font-family:var(--display); font-style:italic; font-weight:600; line-height:.98; color:var(--navy); }
+  .navy .disp{ color:#fff; }
+  .gold{ color:var(--gold); }
+  .body{ font-size:32px; font-weight:300; line-height:1.45; color:var(--navy-soft); }
+  .navy .body{ color:#BFCBD6; }
+  .rule{ width:120px; height:2px; background:var(--gold); margin:30px 0; opacity:.8; }
+  .pill{ display:inline-block; border:1.6px solid var(--gold); border-radius:44px; padding:15px 36px;
+    font-size:20px; font-weight:600; letter-spacing:4px; color:var(--gold); }
+</style>
+</head>
+<body>
+<div id="post">
+
+  <!-- SLIDE 1 — CAPA -->
+  <section class="slide cream">
+    <div class="head">DRA. MARINA REIS <span>·</span> PSICÓLOGA</div>
+    <div class="mid">
+      <div class="sans-lg">Existe uma diferença<br>silenciosa entre</div>
+      <div class="disp" style="font-size:188px; margin-top:8px;">amar</div>
+      <div class="disp gold" style="font-size:120px; margin-top:-6px;">&amp; depender</div>
+    </div>
+    <div class="foot">ARRASTA &#8594;</div>
+  </section>
+
+  <!-- SLIDE 2 — CONTRASTE -->
+  <section class="slide cream">
+    <div class="head">DRA. MARINA REIS <span>·</span> PSICÓLOGA</div>
+    <div class="mid">
+      <div class="disp" style="font-size:78px;">Amar é querer<br>estar junto.</div>
+      <div class="rule"></div>
+      <div class="body" style="font-size:40px; max-width:760px;">
+        <b style="font-family:var(--display); font-style:italic; font-weight:600; color:var(--navy);">Depender</b>
+        é sentir que você não consegue <b style="font-weight:600; color:var(--navy);">ficar sem</b> — mesmo quando dói.
+      </div>
+    </div>
+    <div class="foot" style="color:var(--navy-soft); opacity:.6;">2 / 4</div>
+  </section>
+
+  <!-- SLIDE 3 — INVERTIDO (ritmo) -->
+  <section class="slide navy">
+    <div class="head">DRA. MARINA REIS <span>·</span> PSICÓLOGA</div>
+    <div class="mid">
+      <div class="sans-lg">Quando o cuidado<br>vira controle,</div>
+      <div class="disp" style="font-size:130px; margin-top:14px;">o amor vira <span class="gold">medo</span>.</div>
+      <div class="body" style="margin-top:30px; max-width:780px;">E aí você se perde tentando segurar o outro — e esquece de cuidar de você.</div>
+    </div>
+    <div class="foot" style="color:#D9C49C; opacity:.6;">3 / 4</div>
+  </section>
+
+  <!-- SLIDE 4 — CTA -->
+  <section class="slide cream">
+    <div class="head">DRA. MARINA REIS <span>·</span> PSICÓLOGA</div>
+    <div class="mid">
+      <div class="sans-lg">Dá pra amar</div>
+      <div class="disp" style="font-size:128px; margin-top:6px;">por inteiro,</div>
+      <div class="sans-lg" style="margin-top:6px;">sem se <b>anular</b>.</div>
+      <div style="margin-top:42px;"><span class="pill">SALVE PARA LEMBRAR &#8595;</span></div>
+    </div>
+    <div class="sign">Se você se reconheceu, a terapia ajuda.<br><b>Dra. Marina Reis</b> · CRP 06/00000</div>
+  </section>
+
+</div>
+</body>
+</html>
