@@ -1,0 +1,10 @@
+{
+  "name": "guaru-render",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Renderizador COMPARTILHADO do Guaru Tech: HTML+SVG -> PNG via Puppeteer. Usado por todos os projetos (psi-automatic, etc.) — NÃO duplicar puppeteer por cliente. Método autoral, ver niches-library/design-principles/metodo-criativo.md",
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}
