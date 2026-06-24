@@ -225,8 +225,26 @@ consistência de marca = brand-DNA + molde parametrizado (consistente por constr
 (fonte pode variar, salvo se o cliente travar); design valida-se no OLHO, não codificando cor em regra
 (referência é VISUAL); foto não é regra (mescla); legenda nasce junto/mesmo-tópico, com limite de tamanho.
 
-**Próximo passo:** iterar o visual no olho (mais drama de composição, foto em alguns slides, palavras
-maiores — feedback do Marcos) → consolidar o MOLDE parametrizado. Profundidade em UM vertical é defensável.
+**Atualização — sessão 2026-06-24 (BUILD pesado; a fábrica começou a rodar):**
+- **Identidade da @psi.automatic DEFINIDA** a partir de refs de **agência de tráfego** (Marcos enviou):
+  preto `#0A0A0A` + off-white + **gradiente assinatura magenta→laranja→violeta**, headline grotesca BOLD
+  **two-tone** (palavra-chave em gradiente), **kicker** no topo. Capturado em
+  `knowledge-base/design/dna-agencia-trafego-pago.md` + `Projetos/psi-automatic/brand-dna.json`. (Antes
+  descartados: teal=clínica, espresso+laranja=Páscoa/chocolate — lição: cor = emoção + **cultura BR** + categoria.)
+- **MODELO BRACKET:** frames pretos+gradiente da MARCA (slide 1 hook no psicólogo + último pitch)
+  emoldurando a PROVA de psicologia calma (navy/creme). Hook = dor do psicólogo + foto de IDENTIFICAÇÃO.
+- **FÁBRICA montada e RODOU AO VIVO** em `Projetos/psi-automatic/02-content-generator/`: 🧠 `gerar-peca.js`
+  (lê brand-DNA + pautas + faculdade → **API da Anthropic** escreve o `conteudo.json`) → ⛔ `checar-guardrails.js`
+  (**portão**: reprova a peça se achar frase proibida — teste de regressão) → 🏭 `montar.js` (molde-engine
+  monta o HTML na identidade + renderiza). `npm run peca` faz tudo. **API key local mora em `.env` na raiz**
+  (gitignored); na nuvem é o segredo da Action. **Custo: centavos por geração.**
+- **Renderizador** agora no spec da Meta (1080×1350 **JPEG sRGB**, flags `--slides/--scale/--q`).
+- **Regra cravada + enforced:** "no automático" saiu do DNA como bordão de venda (o teste pegou a IA usando
+  isso porque o DNA promovia → **a base tem que ser coerente**). Faculdade ganhou: gatilhos, cores, CTA-sem-botão,
+  specs de imagem, estrutura de carrossel de venda. Tudo commitado/pushado (`main`).
+
+**Próximo passo:** o que falta é a **leap do Marcos** (designer): **logo/selo/monograma** da psi.automatic +
+**banco de imagem** maior (hoje 3 fotos de teste). Depois: rodar mais peças pela fábrica e consolidar variantes de molde.
 
 ---
 
