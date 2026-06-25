@@ -35,7 +35,13 @@
 ## Protocolo entre terminais (sempre seguir)
 - `git pull` ANTES de mexer em qualquer terminal; `commit` + `push` DEPOIS de qualquer mudança.
 - **Um lugar de cada vez** — não editar o mesmo arquivo no celular e no PC ao mesmo tempo sem sincronizar.
-- Ao voltar ao PC depois do celular, o Marcos avisa "voltei do celular" → eu dou pull antes de tudo.
+- **Como a nuvem devolve trabalho:** o Claude Code na web trabalha numa BRANCH isolada e empurra como
+  **PR** (não escreve direto na `main`). Então mudança feita pelo celular fica num PR até ser mesclada.
+- **Ao salvar algo pelo celular (ex.: foto em `references/`):** push na branch + criar o PR + anotar o
+  nome da branch aqui no ESTADO-ATUAL, pra facilitar mesclar depois.
+- **Ao voltar ao PC depois do celular:** o Marcos avisa "voltei do celular" → eu faço TUDO por ele:
+  mesclo o(s) PR(s) pendente(s) na `main` e dou `git pull`, e os arquivos aparecem na pasta local.
+  Marcos não encosta em git.
 
 ## Ideias/pendências abertas (não-bloqueantes)
 - **Mural de aprovação no Notion/Canva** (apps que o Marcos já tem) pra ver/aprovar arte em tela cheia
