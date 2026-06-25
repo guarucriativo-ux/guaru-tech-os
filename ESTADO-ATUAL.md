@@ -9,8 +9,19 @@
 
 ## Última atualização
 - **Data:** 2026-06-25
-- **Terminal:** PC (notebook do Marcos, VS Code)
-- **Quem vai assumir a seguir:** Marcos pelo **celular** (app do Claude → aba "Code" → repo `guaru-tech-os`)
+- **Terminal:** celular/nuvem (Claude Code na web)
+- **Quem vai assumir a seguir:** Marcos — **terminando a curadoria do lote de régua do Guaru Estúdio** (ver abaixo)
+
+## 🔴 FRENTE ATIVA — Régua visual do Guaru Estúdio (NÃO processar antes da hora)
+- **Onde:** `Projetos/guaru-estudio/references/regua/`. Já tem **5 imagens cruas** lá (`1.png` + 4 `.jpg` de hash),
+  **ainda sem ficha nem nome-padrão** — são o 1º lote, mas **incompleto**.
+- **⚠️ TRAVA DO MARCOS (2026-06-25):** ele **ainda está curando** essas refs. **NÃO ler/renomear/destilar agora** —
+  ler um lote incompleto contamina a destilação do sistema visual que vai pro DNA. **Esperar ele avisar que fechou.**
+- **Protocolo QUANDO ele fechar a curadoria:** absorver o lote inteiro → ler **pixel a pixel** → escrever a ficha de
+  anatomia de cada uma → renomear pro padrão `estudio--<movimento>--NN.jpg` → **extrair o sistema visual IGNORANDO o
+  produto** (diagramação · equilíbrio · cores · grafismos · tratamento de tipo) → **graduar pro `brand-dna.json` +
+  motor + Olho** ("esse É o nosso look"). Guardrail: linguagem absorvida vira peça AUTORAL com copy nossa, nunca clone.
+  Doutrina completa: `Projetos/guaru-estudio/references/regua/README.md` (adendos só-do-estúdio).
 
 ## Onde paramos (o que foi feito nesta sessão)
 1. **Acesso pelo celular destravado.** Caminho oficial = app do Claude → aba **"Code"** (Claude Code na
