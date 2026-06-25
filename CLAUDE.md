@@ -57,6 +57,10 @@ web) e nuvem. O inimigo é a **divergência**: um terminal ficar desatualizado e
 - **Ritmo anti-divergência (padrão automático, não preciso ser lembrado):** `git pull` ANTES de
   mexer em qualquer terminal; `git commit` + `git push` DEPOIS de qualquer mudança. O Claude do
   celular já trabalha direto na nuvem. Assim os terminais sempre se reencontram no GitHub.
+- **Comando "sincroniza":** quando o Marcos voltar ao PC e disser "sincroniza" (ou similar), rodar
+  `node tools/sincronizar.mjs`. Ele busca tudo da nuvem, mescla na `main` o trabalho feito pelo
+  celular (branches), empurra de volta e mostra um resumo — deixando PC/nuvem/celular 100% iguais.
+  É seguro: para se houver mudança local não salva e aborta mescla com conflito (me chamar pra resolver).
 
 ### Continuidade entre terminais — `ESTADO-ATUAL.md` (bastão de contexto)
 

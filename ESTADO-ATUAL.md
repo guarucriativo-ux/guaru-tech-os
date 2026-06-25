@@ -39,9 +39,10 @@
   **PR** (não escreve direto na `main`). Então mudança feita pelo celular fica num PR até ser mesclada.
 - **Ao salvar algo pelo celular (ex.: foto em `references/`):** push na branch + criar o PR + anotar o
   nome da branch aqui no ESTADO-ATUAL, pra facilitar mesclar depois.
-- **Ao voltar ao PC depois do celular:** o Marcos avisa "voltei do celular" → eu faço TUDO por ele:
-  mesclo o(s) PR(s) pendente(s) na `main` e dou `git pull`, e os arquivos aparecem na pasta local.
-  Marcos não encosta em git.
+- **Ao voltar ao PC depois do celular:** o Marcos diz **"sincroniza"** (ou "voltei do celular") →
+  eu rodo **`node tools/sincronizar.mjs`**, que faz TUDO por ele: busca da nuvem, mescla na `main`
+  o trabalho feito pelo celular, empurra de volta e resume o que chegou. Marcos não encosta em git.
+  (Seguro: para se houver mudança local não salva; aborta mescla com conflito e avisa.)
 
 ## Ideias/pendências abertas (não-bloqueantes)
 - **Mural de aprovação no Notion/Canva** (apps que o Marcos já tem) pra ver/aprovar arte em tela cheia
