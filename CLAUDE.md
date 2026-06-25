@@ -58,6 +58,16 @@ web) e nuvem. O inimigo é a **divergência**: um terminal ficar desatualizado e
   mexer em qualquer terminal; `git commit` + `git push` DEPOIS de qualquer mudança. O Claude do
   celular já trabalha direto na nuvem. Assim os terminais sempre se reencontram no GitHub.
 
+### Continuidade entre terminais — `ESTADO-ATUAL.md` (bastão de contexto)
+
+Cada sessão é isolada: o Claude de um terminal **não herda a conversa** de outro. O contexto de
+"onde paramos" vive no repo, em **`ESTADO-ATUAL.md`** (ponto de parada vivo, que viaja via GitHub):
+
+- **No INÍCIO de toda sessão:** ler `ESTADO-ATUAL.md` (+ este `CLAUDE.md` + `MANIFESTO.md`) pra
+  entrar no contexto de onde a fábrica parou.
+- **No FIM de toda sessão ou mudança relevante:** atualizar `ESTADO-ATUAL.md` (o que foi feito,
+  onde paramos, próximo passo, pendências) e dar `push`. Nunca deixá-lo envelhecer.
+
 ## Protocolo de Geração de Design (obrigatório)
 
 Nenhum HTML/CSS de criativo nasce no vazio. Antes de gerar qualquer peça visual, ler nesta
