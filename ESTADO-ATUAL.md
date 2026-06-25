@@ -23,6 +23,15 @@
   motor + Olho** ("esse É o nosso look"). Guardrail: linguagem absorvida vira peça AUTORAL com copy nossa, nunca clone.
   Doutrina completa: `Projetos/guaru-estudio/references/regua/README.md` (adendos só-do-estúdio).
 
+## Estudo profundo da fábrica (sessão nuvem 2026-06-25)
+- A pedido do Marcos, o Claude fez **varredura completa do repo** — leu TODO o código-máquina linha a linha
+  (`core/`, `cli/`, `tools/`, motores psi/template, hooks, CI, configs) + destilou TODA a documentação densa
+  (estratégia raiz, `knowledge-base/`, `niches-library/`, todas as pastas de `Projetos/`). Contexto 100% absorvido.
+- **Achados a resolver quando der (não-bloqueantes):** (1) **preço divergente** entre docs — BUSINESS-MODEL diz
+  R$200–1.200/mês vs PRODUTO/PLANO-FINANCEIRO base R$147/mês (falta reconciliar a tabela oficial); (2) **README.md
+  defasado** (crava Alkimia como 1º cliente "com caixa", contradito pelo foco atual psi.automatic + 0 pagante);
+  (3) **ledger anti-repetição** do motor novo psi.automatic segue como prioridade nº1 a construir (colisão de tema/assinatura).
+
 ## Onde paramos (o que foi feito nesta sessão)
 1. **Acesso pelo celular destravado.** Caminho oficial = app do Claude → aba **"Code"** (Claude Code na
    nuvem, PC pode estar desligado), conectado ao repo via GitHub (conta `guarucriativo-ux`). O modo
