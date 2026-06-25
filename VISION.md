@@ -1,8 +1,9 @@
 # Guaru Tech — Visão (North Star)
 
 > O norte do projeto, nas palavras do Marcos (fundador), organizado em 2026-06-22. Este é o
-> documento de visão; o `CLAUDE.md` cobre o "como operamos" e o `BRIEFING-GUARU-TECH.md` é o
-> resumo portátil. Atualizar quando a visão evoluir — nunca deixar isso viver só na cabeça.
+> documento de visão; o `CLAUDE.md` cobre o "como operamos", o [MANIFESTO.md](MANIFESTO.md) é a **alma/cultura
+> da fábrica** (o *porquê*) e o `BRIEFING-GUARU-TECH.md` é o resumo portátil. Atualizar quando a visão
+> evoluir — nunca deixar isso viver só na cabeça.
 
 ## Para quem
 O empreendedor de **pequeno e médio porte** preso na operação — sem tempo e sem domínio para

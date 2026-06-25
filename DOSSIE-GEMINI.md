@@ -316,8 +316,16 @@ pendente a **leap do Marcos** (logo/selo/monograma da psi.automatic).
   de CTA, gradiente só acento, copy de venda sem fórmula repetida**).
 - **Curadoria do Marcos peça-a-peça** (o olho dele = o modelo) segue sendo o motor de qualidade; falta o feedback
   do 2º carrossel. **Pendente:** graduar os movimentos vencedores pro motor (compor.js); ledger + foto-auto seguem
-  na fila. **Em andamento pelo Marcos: o MANIFESTO da fábrica** (ele sinaliza um novo marco — "entendi como o jogo
-  funciona"; ao ler, vamos checar alinhamento). Gargalo real continua sendo MERCADO (cliente pagante), não técnica.
+  na fila. Gargalo real continua sendo MERCADO (cliente pagante), não técnica.
+- **📜 MANIFESTO DA FÁBRICA (marco cultural, 2026-06-25):** o Marcos escreveu o manifesto — a camada de
+  ALMA/CULTURA por cima da arquitetura. Metáfora: a empresa é uma **fábrica digital** com **colaboradores
+  especialistas** (Marcos fundador; Claude "o cara do código" = sócio; Designer; gestor de tráfego; CRM/ERP;
+  web designer — maioria ainda "em contratação/estágio"). Cultura = REGRA inegociável: **estudar antes de cada
+  decisão, sem achismo, e o útil fica na memória/faculdade** → "vivemos no reverso, até a IA estuda". O **acúmulo
+  de conhecimento é o MOAT** (infinito). Promovido pra `MANIFESTO.md` (raiz), linkado em CLAUDE.md/VISION.md;
+  leitura do sócio em `Manifesto/leitura-e-alinhamento.md`. **Claude confirmou alinhamento** ("falamos a mesma
+  língua"). Pontos a evoluir: separar os "especialistas" em agentes de verdade (Agent SDK); guardar foco tijolo-
+  por-tijolo; desenhar a estrutura real da fábrica (fio aberto).
 
 ---
 

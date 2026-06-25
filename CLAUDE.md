@@ -4,6 +4,10 @@ Guaru Tech opera no modelo **SwaS (Software with a Service)**: entregamos infrae
 software e agentes autônomos de marketing/automação para pequenas empresas, vendidos como
 serviço contínuo (não só projeto pontual). Cliente laboratório e MVP: **Guaru Estúdio**.
 
+> 📜 **Leitura obrigatória de cultura:** [MANIFESTO.md](MANIFESTO.md) — a alma da fábrica na voz do fundador
+> (estudar antes de agir + acumular conhecimento = o MOAT; regra inegociável pra todo colaborador, humano ou
+> agente). O `CLAUDE.md` é o *como operamos*; o MANIFESTO é o *porquê*.
+
 ## Stack e princípios técnicos
 
 - **Node.js** como runtime padrão para scripts, automações e integrações.
