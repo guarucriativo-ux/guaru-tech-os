@@ -1,0 +1,147 @@
+<!doctype html><html lang="pt-br"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Archivo:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* DNA: marca = preto/off-white + gradiente SÓ acento. Prova = navy governa(60)/creme(30)/dourado(10).
+   Fonte nova explorada: Fraunces (serifa fashion da prova) — identidade não trava numa fonte. */
+:root{--ink:#0A0A0A;--paper:#F2F1EE;--navy:#1F3B52;--navy-soft:#3A5570;--cream:#EFE8DB;--gold:#B5905A;
+ --sans:'Poppins',sans-serif;--fr:'Fraunces',serif;--ag:'Archivo',sans-serif;
+ --g1:#FF1E8C;--g2:#FF6A1A;--g3:#8B2FE0;}
+*{margin:0;padding:0;box-sizing:border-box}html,body{background:#cfcabd}#post{width:1080px}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:var(--sans)}
+.ink{background:var(--ink);color:#fff}.paper{background:var(--paper);color:var(--ink)}
+.navy{background:var(--navy);color:var(--cream)}.cream{background:var(--cream);color:var(--navy)}
+.slide::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;mix-blend-mode:multiply;z-index:9;
+ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='280'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+/* foto duotone navy (do banco livre, licença salva) */
+.ph{position:absolute;inset:0;background-size:cover;background-position:center;filter:grayscale(1) contrast(1.06) brightness(.85);z-index:1}
+.duo{position:absolute;inset:0;background:var(--navy);mix-blend-mode:multiply;opacity:.8;z-index:2}
+.scrim-b{position:absolute;inset:0;z-index:3;background:linear-gradient(180deg,rgba(20,40,55,.15),rgba(20,40,55,.05) 42%,rgba(20,40,55,.94))}
+/* tipografia — tamanhos MAIORES (legível em celular: nada < ~28px) */
+.kick{position:absolute;top:78px;left:0;right:0;text-align:center;z-index:6;font-family:var(--ag);
+ font-size:30px;letter-spacing:5px;font-weight:400;text-transform:uppercase;color:#8a8a8a}
+.kick b{font-weight:800}
+.paper .kick{color:#8f8a82}.paper .kick b{color:#2a2a2a}.ink .kick{color:#8a8a8a}.ink .kick b{color:#e0e0e0}
+.navy .kick{color:#9fb0bf}.navy .kick b{color:#eee7da}.cream .kick{color:#8f8a82}.cream .kick b{color:#2a2a2a}
+.grad{background:linear-gradient(100deg,var(--g1),var(--g2),var(--g3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.gold{color:var(--gold)}
+.ah{font-family:var(--ag);font-weight:800;line-height:1.05;letter-spacing:-1.5px}
+.fr{font-family:var(--fr);font-style:italic;font-weight:500;line-height:1.04}
+.foot{position:absolute;bottom:84px;z-index:6;font-family:var(--ag);font-size:26px;letter-spacing:4px;font-weight:700}
+.foot-c{left:0;right:0;text-align:center}.foot-r{right:96px}.foot-l{left:96px}
+.ink .foot,.paper .foot{color:#9a9a9a}.navy .foot{color:#D9C49C}.cream .foot{color:var(--navy-soft);opacity:.6}
+
+/* S1 — MARCA hook · off-white · texto à ESQUERDA, centro-vertical + régua de gradiente (acento) */
+.s1{padding:0 96px}
+.s1 .wrap{position:absolute;top:50%;left:96px;transform:translateY(-50%);max-width:880px}
+.s1 .h{font-size:90px;color:var(--ink)}
+.s1 .rule{width:130px;height:6px;border-radius:3px;margin:38px 0 30px;background:linear-gradient(100deg,var(--g1),var(--g2),var(--g3))}
+.s1 .sub{font-size:34px;font-weight:300;color:#4a4a4a;max-width:760px;line-height:1.4}
+.s1 .sub b{font-weight:600;color:#1a1a1a}
+
+/* S2 — PROVA capa · FOTO duotone navy · texto embaixo (tipo × imagem) */
+.s2 .txt{position:absolute;left:96px;right:96px;bottom:150px;z-index:6}
+.s2 .pre{font-size:38px;font-weight:300;color:#C9D4DE;margin-bottom:14px}
+.s2 .fr{font-size:90px;color:#fff}
+
+/* S3 — PROVA virada · creme governa · serifa grande à DIREITA, dourado acento */
+.s3 .txt{position:absolute;right:96px;top:300px;text-align:right;max-width:880px}
+.s3 .small{font-size:38px;font-weight:300;color:var(--navy-soft);margin-bottom:8px}
+.s3 .fr{font-size:104px;color:var(--navy)}
+.s3 .rule{margin-left:auto;width:150px;height:3px;background:var(--gold);margin-top:40px}
+
+/* S4 — PROVA verdade · navy governa + FOTO baixa opacidade (apoio que conversa) · texto no TOPO */
+.s4 .ph{opacity:.14;filter:grayscale(1) contrast(1.05) brightness(1.05)}
+.s4 .txt{position:absolute;left:96px;right:120px;top:300px;z-index:6}
+.s4 .fr{font-size:76px;color:#fff}
+.s4 .body{font-size:38px;font-weight:300;color:#C9D4DE;margin-top:30px;max-width:820px;line-height:1.45}
+.s4 .body b{font-weight:500;color:#fff}
+
+/* S5 — PROVA acolhimento · creme · CENTRALIZADO, esperançoso */
+.s5{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 120px;padding-top:120px}
+.s5 .pre{font-size:42px;font-weight:300;color:var(--navy-soft)}
+.s5 .big{font-size:96px;color:var(--gold);margin-top:6px}
+.s5 .rule{width:120px;height:2px;background:var(--gold);margin:36px 0;opacity:.85}
+.s5 .body{font-size:36px;font-weight:300;color:var(--navy-soft);max-width:780px;line-height:1.5}
+.s5 .body b{font-weight:500;color:var(--navy)}
+
+/* S6 — MARCA pitch · preto · base-esq + selo topo-dir · CTA seta PRA BAIXO (comenta embaixo) */
+.s6 .selo{position:absolute;top:96px;right:96px;z-index:7}
+.s6 .blk{position:absolute;left:96px;right:96px;bottom:150px;z-index:6}
+.s6 .h{font-size:82px;color:#fff}
+.s6 .sub{font-size:32px;font-weight:300;color:#d6d6d6;margin-top:24px;max-width:780px;line-height:1.4}
+.s6 .sub b{font-weight:600;color:#fff}
+.s6 .cta{font-family:var(--ag);font-size:50px;font-weight:800;color:#fff;margin-top:38px;display:flex;align-items:center;gap:18px}
+.s6 .ctasub{font-size:30px;font-weight:300;color:#d6d6d6;margin-top:12px}
+.s6 .sign{position:absolute;left:0;right:0;bottom:56px;text-align:center;font-family:var(--ag);font-size:23px;color:#8a8a8a;z-index:6}
+.s6 .sign b{color:#fff;font-weight:800}
+</style></head><body><div id="post">
+
+<section class="slide paper s1">
+  <div class="kick"><b>PSI.AUTOMATIC</b>&nbsp;·&nbsp;MARKETING PARA PSIC&Oacute;LOGOS</div>
+  <div class="wrap">
+    <h1 class="ah h">Você cuida de gente<br>o dia todo. No feed,<br>você <span class="grad">desaparece</span>.</h1>
+    <div class="rule"></div>
+    <p class="sub">A nossa equipe faz o seu trabalho <b>ser visto</b> todo dia — sem você parar. Olha um exemplo real.</p>
+  </div>
+  <div class="foot foot-r">ARRASTA&nbsp;&#8594;</div>
+</section>
+
+<section class="slide navy s2">
+  <div class="ph" style="background-image:url('../../03-automation-bridge/creativos/assets/solidao-mood.jpg')"></div>
+  <div class="duo"></div><div class="scrim-b"></div>
+  <div class="kick"><b>PSI.AUTOMATIC</b>&nbsp;·&nbsp;MARKETING PARA PSIC&Oacute;LOGOS</div>
+  <div class="txt">
+    <p class="pre">Existe uma solidão</p>
+    <div class="fr">que não passa nem<br>no meio da multidão.</div>
+  </div>
+  <div class="foot foot-r">2 / 6</div>
+</section>
+
+<section class="slide cream s3">
+  <div class="kick"><b>PSI.AUTOMATIC</b>&nbsp;·&nbsp;MARKETING PARA PSIC&Oacute;LOGOS</div>
+  <div class="txt">
+    <p class="small">A solidão não é falta de gente.</p>
+    <div class="fr">É falta de se<br>sentir <span class="gold">visto</span>.</div>
+    <div class="rule"></div>
+  </div>
+  <div class="foot foot-l">3 / 6</div>
+</section>
+
+<section class="slide navy s4">
+  <div class="ph" style="background-image:url('../../03-automation-bridge/creativos/assets/solidao-mood.jpg')"></div>
+  <div class="kick"><b>PSI.AUTOMATIC</b>&nbsp;·&nbsp;MARKETING PARA PSIC&Oacute;LOGOS</div>
+  <div class="txt">
+    <div class="fr">Não é sobre ter mais<br>gente por perto.</div>
+    <p class="body">É sobre ter <b>com quem ser você de verdade</b> — sem máscara, sem precisar fingir que está tudo bem.</p>
+  </div>
+  <div class="foot foot-l">4 / 6</div>
+</section>
+
+<section class="slide cream s5">
+  <div class="kick"><b>PSI.AUTOMATIC</b>&nbsp;·&nbsp;MARKETING PARA PSIC&Oacute;LOGOS</div>
+  <p class="pre">Você não precisa</p>
+  <div class="fr big">dar conta sozinho.</div>
+  <div class="rule"></div>
+  <p class="body">A terapia é um lugar onde você pode <b>tirar a máscara</b> e ser ouvido por inteiro — o primeiro passo pra se sentir acompanhado de novo.</p>
+  <div class="foot foot-c">5 / 6</div>
+</section>
+
+<section class="slide ink s6">
+  <div class="kick"><b>PSI.AUTOMATIC</b>&nbsp;·&nbsp;MARKETING PARA PSIC&Oacute;LOGOS</div>
+  <svg class="selo" width="120" height="120" viewBox="0 0 100 100">
+   <defs><path id="r" d="M50,50 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0"/>
+    <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF1E8C"/><stop offset=".5" stop-color="#FF6A1A"/><stop offset="1" stop-color="#8B2FE0"/></linearGradient></defs>
+   <circle cx="50" cy="50" r="48" fill="none" stroke="#fff" stroke-width=".8" opacity=".45"/>
+   <text font-family="Archivo,sans-serif" font-weight="600" font-size="7" letter-spacing="2.1" fill="#fff" opacity=".7"><textPath href="#r" startOffset="0%">PSI.AUTOMATIC · MARKETING NO SEU BOLSO · </textPath></text>
+   <text x="50" y="63" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="900" font-size="38" fill="url(#rg)">&#8734;</text></svg>
+  <div class="blk">
+    <h2 class="ah h">O seu trabalho<br>merece <span class="grad">ser encontrado</span>.</h2>
+    <p class="sub">Conteúdo que mostra o seu valor todo dia — sua equipe por <b>menos de R$&nbsp;4 por dia</b>, sem agência cara.</p>
+    <div class="cta">Comenta <span class="grad">QUERO</span>&nbsp;&#8595;</div>
+    <p class="ctasub">e a nossa equipe te chama aqui embaixo.</p>
+  </div>
+  <div class="sign"><b>@psi.automatic</b>&nbsp;·&nbsp;sua equipe de marketing no bolso</div>
+</section>
+
+</div></body></html>

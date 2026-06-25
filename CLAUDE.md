@@ -41,6 +41,23 @@ Guaru Tech/
 Cada novo cliente nasce de uma cópia de `template-client-base/`. Nada de estrutura ad-hoc por
 cliente — divergências de estrutura quebram o reaproveitamento entre projetos.
 
+## Sincronização e Nuvem (regra de ouro)
+
+A fábrica precisa rodar **idêntica em todo lugar** — PC, celular (app do Claude / Claude Code na
+web) e nuvem. O inimigo é a **divergência**: um terminal ficar desatualizado em relação ao outro.
+
+- **A nuvem (GitHub) é a FONTE DA VERDADE.** Tudo que a fábrica **cria e precisa pra rodar vai
+  pro Git** — scripts, regras, faculdade, brand-DNA, copy **e as artes geradas (outputs)**. É tudo
+  leve (post otimizado ≈ centenas de KB), então cabe sem problema.
+- **Só fica FORA do Git:** matéria-prima crua e pesada do cliente (vídeo `.MOV/.mp4`, `.psd`,
+  catálogo `.pdf` grande, fotos originais gigantes), segredos e `node_modules`. Isso é pesado **e**
+  é propriedade do cliente — fica na gaveta privada local/storage, não viaja entre terminais.
+  (Foi o erro da Alkimia: subir uma pasta de material bruto inteira.)
+- **Output sempre OTIMIZADO** (JPG leve, não PNG de vários MB), pra fábrica nunca mais engordar.
+- **Ritmo anti-divergência (padrão automático, não preciso ser lembrado):** `git pull` ANTES de
+  mexer em qualquer terminal; `git commit` + `git push` DEPOIS de qualquer mudança. O Claude do
+  celular já trabalha direto na nuvem. Assim os terminais sempre se reencontram no GitHub.
+
 ## Protocolo de Geração de Design (obrigatório)
 
 Nenhum HTML/CSS de criativo nasce no vazio. Antes de gerar qualquer peça visual, ler nesta

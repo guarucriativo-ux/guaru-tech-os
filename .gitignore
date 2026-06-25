@@ -1,13 +1,26 @@
+# ============================================================
+# REGRA DE OURO DE SYNC (2026-06-25): a nuvem (GitHub) é a FONTE DA VERDADE.
+# Tudo que a fábrica CRIA e PRECISA pra rodar vai pro Git — porque é tudo leve.
+# Só fica de fora: matéria-prima CRUA e pesada do cliente (vídeo, PSD, catálogo
+# PDF, fotos originais gigantes) + segredos + dependências.
+# Assim a fábrica roda IGUAL no PC, no celular e na nuvem — zero divergência.
+# ============================================================
+
+# --- Matéria-prima crua e pesada do cliente (gaveta privada / storage, NUNCA no Git) ---
+# É pesada E é propriedade do cliente; não viaja entre terminais. (Foi o erro da Alkimia.)
 *.mp4
 *.MOV
 *.mov
 *.rar
 *.psd
 *.zip
+Projetos/Alkimia/Ref. Catalogo/CATALOGO_FINAL (1).pdf
+
+# --- Sistema / dependências ---
 node_modules/
 .DS_Store
 
-# Segredos / credenciais — nunca versionar
+# --- Segredos / credenciais — nunca versionar ---
 api_key/
 *.key
 key.txt
@@ -15,21 +28,11 @@ key.txt
 .env.*
 !.env.example
 
-# Arquivos > 100MB que o GitHub rejeita (limite rigido)
-Projetos/Alkimia/Ref. Catalogo/CATALOGO_FINAL (1).pdf
-
-# Snapshot do repo (gerado por tools/gerar-snapshot.mjs sob demanda p/ anexar a IA externa).
-# Regenerável e pesado — nao versionar; rodar o script quando precisar reanexar.
+# --- Snapshot do repo (regenerável e pesado; rodar tools/gerar-snapshot.mjs sob demanda) ---
 SNAPSHOT-REPO.md
 
-# Artefatos GERADOS pela fábrica psi.automatic (regeneráveis: imagens, html montado, conteudo runtime).
-# Mantemos o SOURCE (scripts, molde, brand-dna, conteudo.exemplo.json) — não os outputs binários.
-Projetos/psi-automatic/02-content-generator/outputs/
-Projetos/psi-automatic/03-automation-bridge/creativos/outputs/
-
-# Banco de imagem (binário pesado) — fica FORA do Git (regra de infra). Só o manifesto/licença em
-# TEXTO sobe (LICENSES.md, *.LICENSE.txt). Binário vai pro storage de nuvem quando escalar.
-Projetos/psi-automatic/03-automation-bridge/creativos/assets/*.jpg
-Projetos/psi-automatic/03-automation-bridge/creativos/assets/*.jpeg
-Projetos/psi-automatic/03-automation-bridge/creativos/assets/*.png
-Projetos/psi-automatic/03-automation-bridge/creativos/assets/*.webp
+# --- Banco de imagem EM ESCALA (binário pesado, futuro): vai pro storage de nuvem quando crescer.
+#     Só o manifesto/licença em TEXTO sobe (image-bank.json, LICENSES.md).
+#     ATENÇÃO: o material LEVE de trabalho da fábrica (outputs de posts e mood/assets) AGORA SOBE
+#     pro Git — ver a regra de ouro de sync no topo. Output deve sair OTIMIZADO (JPG leve, não PNG
+#     de vários MB) pra fábrica nunca mais engordar. ---
