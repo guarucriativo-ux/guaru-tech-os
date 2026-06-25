@@ -1,22 +1,38 @@
 {
   "client": "Guaru Estúdio",
+  "handle": "@guaruestudio",
+  "local": "Guarujá - SP",
+  "tipo": "Estúdio de design HUMANO — cliente/projeto REAL nº1 da fábrica e o BRAÇO DE CAIXA (serviços) da Guaru Tech. Vende serviço recorrente de social media + projetos de identidade visual pra pequenos negócios. A fábrica é o multiplicador INVISÍVEL; o cliente paga PREMIUM pelo toque humano (taste do Marcos), NUNCA por 'posts de IA'.",
+  "posicionamento": "Você cuida do negócio. A gente cuida de como ele aparece. Estúdio de design que faz o pequeno negócio parecer profissional — design que vende, estratégia que funciona, resultado que aparece.",
+  "promessa": "Seu negócio, bem visto — sem você parar a gestão pra cuidar do visual.",
   "tagline": "Seu negócio, bem visto.",
-  "palette": {
-    "primary": "#CCFF00",
-    "secondary": "",
-    "text": "#000000",
-    "text_box_bg": "#000000",
-    "text_on_box": "#FFFFFF",
-    "accent_on_box": "#CCFF00"
+  "voz": {
+    "tom": "direto, empreendedor, confiante, empático com o dono de negócio sobrecarregado; brasileiro, sem jargão",
+    "estrutura_recorrente": "PAS — dor do empreendedor (fornecedor atrasado / equipe / cliente / conta pra pagar) → agitação (negócio bom que parece amador perde cliente e deixa grana na mesa) → solução (design que vende) → CTA (chama no direct)",
+    "evitar": "vender 'IA' / 'no automático' como mecanismo (REGRA DE MARCA: vender o BENEFÍCIO e o TOQUE HUMANO; a fábrica é invisível) — isso derruba o premium e o estigma de leigo; promessa vazia; design genérico"
   },
-  "typography": {
-    "style": "bold minúscula",
-    "font_family": "Arial Black, Arial, Helvetica, sans-serif"
+  "paleta_guaru_estudio": {
+    "primaria": "#CCFF00 (verde-limão / lime — a cor-assinatura, alto impacto)",
+    "tinta": "#0A0A0A (preto rico)",
+    "papel": "#FFFFFF / off-white",
+    "regra_de_uso": "alto contraste lime + preto + branco. O LIME governa como acento/blob/swoosh; preto e branco são a base. Bold, moderno, impactante. (Mesma família de energia das refs de agência — ver psi.automatic, mas a cor própria é o lime.)"
   },
-  "shapes": ["circulares orgânicas"],
-  "logos": {
-    "primary": "",
-    "alternate": ""
+  "tipografia_guaru_estudio": {
+    "titulo": "grotesca BOLD/black, tight, caixa-alta pra impacto (ex.: 'RESOLVE TUDO NO SEU NEGÓCIO')",
+    "acento": "serifa itálica editorial pra contraste/elegância (ex.: 'Você', 'O visual fica pra depois?', 'Design que vende.')",
+    "corpo": "sans limpa, legível em mobile"
   },
+  "motivos_marca": {
+    "swoosh_lime": "grafismo de espiral/swoosh lime — assinatura visual (fundo/acento)",
+    "wordmark": "'guaru' minúsculo dentro do círculo lime; lockup 'guaru ESTÚDIO'",
+    "ilustracao": "ilustração linear simples (ex.: empreendedor sobrecarregado na mesa) sobre o lime",
+    "speech_bubble": "balão de fala preto com a lista de dores (PAS)"
+  },
+  "logos": { "primary": "wordmark 'guaru' em círculo lime", "alternate": "lockup 'guaru ESTÚDIO'" },
+  "servicos": {
+    "recorrente_CAIXA": "GESTÃO DE CONTEÚDO / social media — X posts/mês por mensalidade (o motor de caixa recorrente)",
+    "projeto_cheque_maior": "IDENTIDADE VISUAL / branding — projeto pontual, ticket alto (ex.: SAKEIH, TEQUILOKA)"
+  },
+  "diferenciacao": "Estúdio HUMANO. O cliente compra o taste do Marcos + estratégia, entregue por 'EU + A FÁBRICA' = a parte manual de uma agência inteira, com custo de produção perto de zero (margem alta). NUNCA posicionar como 'IA/posts automáticos' — a fábrica é o segredo INTERNO. Expansível no futuro: web design, gestor de tráfego, etc. (mais serviços = ticket maior + valuation).",
   "references_dir": "references/"
 }
