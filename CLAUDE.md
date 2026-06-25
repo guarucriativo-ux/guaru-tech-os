@@ -57,10 +57,15 @@ web) e nuvem. O inimigo é a **divergência**: um terminal ficar desatualizado e
 - **Ritmo anti-divergência (padrão automático, não preciso ser lembrado):** `git pull` ANTES de
   mexer em qualquer terminal; `git commit` + `git push` DEPOIS de qualquer mudança. O Claude do
   celular já trabalha direto na nuvem. Assim os terminais sempre se reencontram no GitHub.
-- **Comando "sincroniza":** quando o Marcos voltar ao PC e disser "sincroniza" (ou similar), rodar
-  `node tools/sincronizar.mjs`. Ele busca tudo da nuvem, mescla na `main` o trabalho feito pelo
-  celular (branches), empurra de volta e mostra um resumo — deixando PC/nuvem/celular 100% iguais.
-  É seguro: para se houver mudança local não salva e aborta mescla com conflito (me chamar pra resolver).
+- **Comando "sincroniza" (vale em qualquer terminal, comportamento se adapta):** o Marcos pode dizer
+  "sincroniza" (ou "voltei", "tá tudo certo?") em qualquer lugar — sempre confiro o estado antes de seguir.
+  - **No PC:** rodar `node tools/sincronizar.mjs` — busca da nuvem, mescla na `main` o trabalho feito
+    pelo celular (branches), empurra de volta e resume. É AQUI que a sincronização mais importa (o PC
+    precisa baixar as novidades). Seguro: para se houver mudança local não salva e aborta mescla com conflito.
+  - **No celular/nuvem:** a sessão já abre da versão mais nova (clona do zero), então "sincroniza" =
+    confirmar que estou na última e que o trabalho subiu; o "juntar na main" acontece no retorno ao PC.
+  - **"Ninguém se perde na fábrica"** independe do script: garantido pelo `ESTADO-ATUAL.md`, lido no
+    início de TODA sessão em TODO terminal. ESTADO-ATUAL cuida do CONTEXTO; "sincroniza" cuida dos ARQUIVOS.
 
 ### Continuidade entre terminais — `ESTADO-ATUAL.md` (bastão de contexto)
 
