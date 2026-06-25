@@ -1,5 +1,10 @@
 # O poder da fábrica vs. o cenário (feedback honesto do sócio)
 
+> 📑 **Doc de ESTRATÉGIA (camada raiz, ao lado de `VISION.md` / `MANIFESTO.md` / `DIFERENCIAL.md`).**
+> Mora FORA de `knowledge-base/` de propósito: a faculdade é o RAG que os motores consultam pra *produzir uma
+> peça*; este aqui explica *quem somos e pra onde vamos* — entraria como ruído na geração. Critério da casa:
+> "ajuda a FAZER uma peça?" → faculdade · "explica QUEM somos / pra ONDE vamos?" → raiz (estratégia).
+
 <!-- Origem: pedido do Marcos numa conversa de fortalecimento de Manifesto/Visão (sessão nuvem 2026-06-25).
      Marcos pediu um feedback HONESTO sobre o poder da engrenagem (colaborador que aprende sozinho, aplicado a
      vários especialistas) + comparação com o que o mercado está fazendo. Baseado em pesquisa do cenário 2026
