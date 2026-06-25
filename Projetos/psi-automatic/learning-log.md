@@ -11,7 +11,43 @@ Específico do ciclo de design: o que funcionou visualmente e o que ajustar na p
 - **O que ajustar na próxima rodada:**
 -->
 
-## [2026-06-24] TESTE DE CARGA — 3 carrosséis via API (fábrica sob mais demanda)
+## [2026-06-24] MÉTODO NOVO validado end-to-end — 1ª peça pela régua de movimentos + Olho
+- **Peça:** `03-automation-bridge/creativos/metodo-novo-medo-decepcionar.html` → `outputs/metodo-medo-1..6.jpg`.
+  Tema "medo de decepcionar / agradar todo mundo" (people-pleasing, fresco, por dado). Hand-composta (o motor
+  ainda não faz esse nível — é o ALVO de graduação).
+- **Método rodado (study→create→Olho→fix→curadoria):** (1) estudei a régua (50 refs, vocabulário de movimentos);
+  (2) compus aplicando o vocabulário — cada slide um eixo/device diferente; (3) guardrails ✓; (4) render Meta;
+  (5) **rodei o Olho no meu próprio output** contra a régua; (6) corrigi os bugs que o Olho pegou; (7) → curadoria.
+- **🟢 Salto conquistado (a "monotonia premium" QUEBROU):** foto editorial em 3 slides (bruma S2, mãos+luz S5,
+  duotone quente) — não mais "foto só no S1"; **devices reais**: marca-texto (S3), elipses-escalonadas (S4),
+  tag-colchete (S5), andorinhas (S3); **eixo varia por slide** (foto-serifa / tipo-à-esquerda / elipses-diagonal /
+  foto-overlay); cor quente texturizada governando. Copy concreta, ética, sem jargão.
+- **👁️ O OLHO funcionou (pegou os óbvios sozinho):** (1) S3 caixa marca-texto colidindo com a linha de cima →
+  entrelinha corrigida; (2) S6 selo ∞ sobre o "6/6" → número removido. **Corrigidos e re-renderizados.** = prova
+  de que o crítico visual automatiza a 1ª passada (curadoria do Marcos sobra pro sutil).
+- **⏳ Pendente:** curadoria do Marcos (o sutil) → se aprovar, **GRADUAR pro motor** (compor.js) os movimentos
+  vencedores: tipo-como-layout, foto-em-mais-slides, devices (marca-texto/elipse/tag-colchete), grão quente,
+  eixo-varia-por-slide. Disciplina: regra validada na mão GRADUA pro motor.
+
+## [2026-06-24] AUDITORIA VISUAL do lote (Claude leu os prints) — veredito de MATURAÇÃO
+- **Método:** Claude abriu os JPGs renderizados em ordem (A/B do início do dia → autoestima/impostor do fim) e
+  comparou no olho. (Lição de processo: os "prints" da fábrica = os próprios renders em `outputs/`; auditar o
+  output renderizado, não só o código.)
+- **Salto de maturidade em ~6h (régua atual):** de manhã (A/B) a fábrica estava em **"molde amador"**; à tarde
+  (autoestima/impostor) subiu pra **"premium consistente"** — um degrau inteiro no mesmo dia. Mortos no caminho:
+  - 🔴→✅ foto em octógono fraca → **foto full-bleed + serifa gigante por cima** (tipo×imagem).
+  - 🔴→✅ lista de travessões (cara de PowerPoint) no S4 → serifa + corpo editorial.
+  - 🔴→✅ número do slide colidindo com texto (A-2, B-5) → centralizado, limpo.
+  - 🔴→✅ kicker quebrando em 2 linhas → 1 linha.
+  - 🆕 marca-texto (caixa navy atrás da palavra) + selo ∞ no pitch entraram em produção.
+- **NOVO FRONTIER (o defeito mudou de lugar — ficou sutil): MONOTONIA PREMIUM.** Os 4 slides de prova (S2–S5)
+  rodam no mesmo ritmo (serifa centralizada, navy/creme alternando, foto só no S1); falta variar EIXO/ESCALA/
+  diagramação DENTRO da peça. E entre carrosséis recentes a "pegada serifa-centralizada" ficou uniforme demais
+  (ganhou consistência de marca, perdeu variedade-entre-peças). Próximo degrau = **"parece designer humano que
+  compõe cada slide diferente"**: mais foto, quebra de eixo, escala extrema — sem perder o premium.
+- **Copy:** segue sendo a peça mais madura (hook concreto + open loop, ético, sem jargão). Não é o gargalo.
+
+
 - **Rodada:** 3 temas distintos pela API (procrastinação, síndrome do impostor, luto) → guardrail → foto → motor.
 - **✅ Funcionou:** a fábrica entregou os 3 com copy forte (luto: "é o seu amor procurando um novo lugar"; impostor:
   "você chegou longe e ainda acha que não merece estar aqui"). 3 assinaturas distintas (Vértice/Aurora/Noturno).

@@ -294,6 +294,31 @@ pendente a **leap do Marcos** (logo/selo/monograma da psi.automatic).
   Estágio 2→B (ledger, foto-auto, postar/anunciar sozinho) — Alvo A (@psi.automatic) avançou forte, mas **sem
   cliente pagante ainda** (o teste de mercado segue sendo o gargalo real, não a técnica).
 
+**Atualização — 2026-06-25 (MARCO: a fábrica ganhou OLHOS + régua visual em 3 camadas):**
+- **3º órgão — O OLHO (visão no loop).** A fábrica aprendia design por 2 vias (estudo/faculdade em texto +
+  feedback/curadoria do Marcos), ambas convertendo VISÃO→linguagem (lossy). Faltava o órgão onde a visão
+  continua visual: um **crítico visual multimodal** que, pós-render, mede o output contra a régua e pega o erro
+  ANTES do humano (escala a curadoria: o olho do Marcos vira a RÉGUA, não o operador). Doutrina cravada em
+  `knowledge-base/sistema/doutrina-do-olho-referencia-como-regua.md`. Princípio-mãe do Marcos: **"referência é
+  RÉGUA, não regra"** (medir o NÍVEL, não extrair regrinha nem copiar a peça).
+- **Banco visual em PIXEL, em 3 camadas** (espelha o protocolo de design): (1) **nicho psicologia** — ~50 refs
+  curadas (~22 contas, editorial-emocional) em `niches-library/psicologia/visual-references/regua/`; (2) **marca
+  psi.automatic** — 34 refs (= **Tramontina ADS**, a agência que é a marca-mãe do nosso DNA) em
+  `Projetos/psi-automatic/references/regua-marca/`. Cada banco tem o VOCABULÁRIO DE MOVIMENTOS destilado. Antes
+  a régua só existia como texto; agora é pixel (o Olho precisa enxergar, inclusive na nuvem).
+- **2 carrosséis validados ponta a ponta pelo método novo** (estudar régua → criar → Olho → curadoria): "medo
+  de decepcionar" (terracota, foto-driven) e "culpa de descansar" (azul-aço, type-driven) — propositalmente
+  DIFERENTES entre si (regra-mãe: repetição entre carrosséis invalida). **Salto de qualidade:** o miolo-prova
+  saiu de "minimal centralizado / monotonia premium" pra **editorial-colagem rico** (foto integrada, tipo-como-
+  layout, devices: marca-texto/elipses/tag-colchete/citação editorial, cor quente texturizada, eixo variando por
+  slide). Os frames de MARCA (S1/S6) foram recriados FORA DO MOLDE com a régua da Tramontina (moldura-tracejada
+  com cantos de gradiente, two-tone, escala), respeitando os vetos do Marcos (**sem esfera, sem selo ∞, sem botão
+  de CTA, gradiente só acento, copy de venda sem fórmula repetida**).
+- **Curadoria do Marcos peça-a-peça** (o olho dele = o modelo) segue sendo o motor de qualidade; falta o feedback
+  do 2º carrossel. **Pendente:** graduar os movimentos vencedores pro motor (compor.js); ledger + foto-auto seguem
+  na fila. **Em andamento pelo Marcos: o MANIFESTO da fábrica** (ele sinaliza um novo marco — "entendi como o jogo
+  funciona"; ao ler, vamos checar alinhamento). Gargalo real continua sendo MERCADO (cliente pagante), não técnica.
+
 ---
 
 ## 10. Como me manter sincronizado (Gemini) daqui pra frente
