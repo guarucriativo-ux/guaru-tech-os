@@ -7,6 +7,11 @@
 
 ---
 
+## ⏭️ AGORA (Marcos chegando em casa) — INSTALAR OS AGENTES
+> Próxima ação concreta = subir o `_estudo-xquads/` e rodar a Fase 0. **Passo a passo no bloco "🖥️ PRÓXIMA
+> SESSÃO NO DESKTOP" abaixo.** (Aprendizados do Rafa+Rony já guardados — ver RETOMADA. Montar oferta NÃO é
+> agora; fica parado até o Marcos pedir.)
+
 ## 🔄 RUMO NOVO (Marcos 2026-06-26) — produtizar COM os agentes, não treinar do zero
 > O cérebro vem pronto no **kit de agentes (Xquads)**. O trabalho agora **não é mais ensinar colaboradores do
 > zero** — é **(1) como usar o kit na fábrica** e **(2) quais PRODUTOS os agentes entregam automático**. Estudar
