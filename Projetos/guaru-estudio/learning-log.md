@@ -14,7 +14,24 @@ Formato de cada entrada:
 - **O que ajustar na próxima rodada:**
 -->
 
-## [2026-06-22] post-semana-03.png (teste "design de alta performance")
+## [2026-06-26] carrossel "Seu negócio, bem visto" (1ª peça pós-instalação dos agentes)
+- **Peça:** `outputs/bem-visto-1..6.jpg` (6 slides, 1080×1350, HTML em `outputs/carrossel-bem-visto.html`, copy em `...copy.json`)
+- **Contexto:** 1º teste da LINHA COMPLETA depois de instalar os 160 agentes/107 skills. Carrossel de VENDA do
+  Estúdio (rede quente/prova no feed). Rodou copy-primeiro (gate + `checar-guardrails.js` passou) → craft (3
+  camadas + 5 marcadores) → render. Copy via PAS: dor (negócio bom parece amador) → agita (perde p/ concorrente
+  que só parece melhor) → ponte ("você cuida do negócio, a gente de como ele aparece") → prova (design que vende,
+  não vaidade) → pitch+CTA (assinatura DNA: Anton + Fraunces itálico "bem visto." + CTA keyword-to-DM, sem botão).
+- **O que funcionou:** lime dominando (S2/S6 full-bleed), variedade real de composição (6 fundos/arquétipos
+  distintos, sem template disfarçado), marca-texto limpo, assinatura grotesca+serifa-itálica no slide final.
+- **Auto-crítica do gate pegou 2 reprovas na 1ª render (e corrigiu antes de entregar):** (1) S1 — caixa lime do
+  "FEED" colidia com a linha de cima (entrelinha < 1.0 faz o bg do highlight invadir a linha vizinha → corrigido
+  p/ line-height 1.1); (2) S5 — ghost "VENDE" + marca-texto atropelavam o título (ilegível) → separei em 2 blocos
+  e removi o ghost. **Lição de craft reaproveitável:** *highlight/marca-texto inline exige line-height ≥ 1.0;
+  ghost word nunca sobre o título principal.*
+- **Pendente p/ feedback do Marcos:** validar se está no nível "designer sênior" ou se algum slide volta. Possível
+  ajuste fino: S5 o sparkle fica meio escondido atrás da caixa lime (decorativo, não atrapalha leitura).
+- **Promovido para Base Mãe?** A regra "highlight inline pede line-height ≥1.0 / ghost longe do texto-herói" é
+  candidata — promover a `niches-library/design-principles/` se reaparecer noutro cliente.
 - **Peça:** `03-automation-bridge/outputs/post-semana-03.png`
 - **Feedback do Marcos:** grid quebrado (margem de 90px ausente), contraste quebrado (texto
   preto sobre fundo preto), caixa sólida ausente — pediu que as regras da Base Mãe fossem
