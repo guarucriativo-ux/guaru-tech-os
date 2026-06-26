@@ -64,9 +64,21 @@ async function main() {
   for (const r of results) {
     if (salvos >= n) break;
     if (await jaUsada(r.url)) continue; // anti-repetição: não rebaixa a mesma foto
-    let bytes;
-    try { const img = await fetch(r.url, { headers: { "User-Agent": "GuaruTech-foto-auto/1.0" } }); if (!img.ok) continue; bytes = Buffer.from(await img.arrayBuffer()); }
-    catch { continue; }
+    // Baixa o original (melhor qualidade, funciona no PC com rede aberta); se o CDN do banco estiver
+    // bloqueado (nuvem só libera api.openverse.org, não cdn.stocksnap/flickr/etc → 403), cai no proxy
+    // de thumbnail do próprio Openverse, que roda no host JÁ liberado. Assim funciona PC e nuvem.
+    const fontes = [r.url, `https://api.openverse.org/v1/images/${r.id}/thumb/?full_size=true&compressed=false`];
+    let bytes, viaThumb = false;
+    for (let i = 0; i < fontes.length; i++) {
+      try {
+        const img = await fetch(fontes[i], { headers: { "User-Agent": "GuaruTech-foto-auto/1.0" } });
+        if (!img.ok) continue;
+        bytes = Buffer.from(await img.arrayBuffer());
+        viaThumb = i > 0;
+        break;
+      } catch { /* tenta próxima fonte */ }
+    }
+    if (!bytes) continue;
     const file = salvos === 0 ? `${name}.jpg` : `${name}-${salvos + 1}.jpg`;
     await writeFile(path.join(outDir, file), bytes);
     const lic = [
@@ -74,7 +86,7 @@ async function main() {
       `- Título: "${r.title || "(sem título)"}" · Fonte: ${r.source || r.provider || "Openverse"}`,
       `- Licença: ${r.license}${r.license_version ? " " + r.license_version : ""} — uso comercial OK, modificação OK, sem atribuição exigida`,
       `- Busca (foto_busca): "${query}"`,
-      `- Baixado: ${new Date().toISOString().slice(0, 10)} · URL: ${r.url}`,
+      `- Baixado: ${new Date().toISOString().slice(0, 10)} · URL: ${r.url}${viaThumb ? " (via proxy de thumbnail do Openverse — CDN original bloqueado pela rede; resolução menor)" : ""}`,
       `- Página: ${r.foreign_landing_url || "—"}`,
       "",
     ].join("\n");

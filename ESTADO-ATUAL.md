@@ -15,17 +15,19 @@
 > ```
 > Confirme com `git branch --show-current` (tem que ser `claude/sync-resume-progress-4nd64x`).
 >
-> ### ❌ TESTE DO foto-auto (2026-06-26, sessão nova) — A REDE AINDA ESTÁ FECHADA
-> Rodei `node tools/foto-auto.mjs "colorful healthy food bowl" ... --n=1` → **403**. Diagnóstico conclusivo
-> (não é o Openverse, é o ambiente): `curl` ao host devolve **`CONNECT tunnel failed, response 403`** = o
-> **gateway da rede do sandbox NEGOU a conexão por política** (`api.openverse.org` não está na allowlist desta sessão).
-> Ou seja: **mesmo sendo sessão nova, a rede NÃO pegou.** Provável causa: o environment ainda está em **Trusted**,
-> ou foi salvo em **Custom sem `api.openverse.org`** na lista.
-> **➡️ AÇÃO DO MARCOS (só ele faz, é config de ambiente, não de repo):** abrir o environment no app →
-> **Network access → Full** (mais simples) **ou Custom** colando estes domínios (1 por linha, manter "include
-> default package managers"): `api.openverse.org` · `images.openverse.org` · `*.pexels.com` · `*.unsplash.com`
-> · `design.canva.ai` · `*.canva.com`. **Salvar e ABRIR UMA SESSÃO NOVA** (a política só vale em sessão iniciada
-> DEPOIS de salvar). Passo a passo: `knowledge-base/sistema/infra-de-producao-e-rede.md`.
+> ### ✅ TESTE DO foto-auto (2026-06-26, sessão nova) — REDE OK + foto-auto CONSERTADO E RODANDO NA NUVEM
+> A rede **pegou nesta sessão nova**: `api.openverse.org` responde **HTTP 200** (antes era 403). Mas o teste
+> ainda falhava no 2º passo — diagnóstico conclusivo: a busca (API) funciona, mas o **download da imagem** dava
+> **403** porque o Openverse aponta pra **CDNs de terceiros** (`cdn.stocksnap.io`, flickr, wikimedia…) que **não
+> estão na allowlist** — e não adianta liberar um a um (cada foto usa um CDN diferente).
+> **Conserto (no código, sem depender da rede):** o `foto-auto.mjs` agora baixa a imagem pelo **proxy de
+> thumbnail do próprio Openverse** (`/v1/images/<id>/thumb/?full_size=true&compressed=false`), que roda no host
+> **já liberado** (`api.openverse.org`). Tenta o original primeiro (melhor no PC com rede aberta) e cai no proxy
+> na nuvem. **Testado de ponta a ponta: baixou um JPEG cc0 real, 960×720, ~754 KB. EXIT 0.** ➡️ **foto-auto
+> agora funciona na nuvem** (download automático de foto nova, não só as ~30 já curadas). Detalhe técnico do
+> proxy fica registrado em cada `.LICENSE.txt` quando o fallback é usado.
+> _(Obs.: `undici` não está instalado no sandbox, então o proxy explícito do fetch não é setado — mas o gateway
+> transparente já roteia os hosts liberados, então não bloqueou. Não-crítico.)_
 
 ---
 
@@ -107,12 +109,11 @@ ledger/aprendizado, modelo clone template→cliente, designer sênior `compor`/`
 
 ## Próximo passo imediato — plano "POR PARTES" (acordado 2026-06-26, mão na massa)
 Ordem proposta (cada parte é um tijolo; 2 e 3 rodam neste terminal SEM rede):
-1. **Rede** — ✅ **Marcos ABRIU a rede (Full/Custom) em 2026-06-26.** ⚠️ **Mas só vale em SESSÃO NOVA** — a
-   sessão onde ele abriu já estava na política antiga (Trusted) e a rede fica travada pra vida da sessão (proxy
-   não mudou ao vivo). **➡️ NESTA SESSÃO NOVA, 1ª COISA: testar a foto.** Rode:
-   `node tools/foto-auto.mjs "colorful healthy food bowl" --out=Projetos/guaru-estudio/references --name=teste --n=1`
-   — se baixar a foto, a rede está OK (apaga o teste depois). Se vier **403**, a política não pegou: conferir o
-   **Network access** do environment no app (pedir print ao Marcos). Como fazer: `knowledge-base/sistema/infra-de-producao-e-rede.md`.
+1. **Rede** — ✅ **RESOLVIDO em sessão nova 2026-06-26.** A rede pegou (`api.openverse.org` = 200) e o `foto-auto`
+   foi consertado pra baixar via proxy de thumbnail do Openverse (host liberado), driblando os CDNs bloqueados.
+   **Download automático de foto nova funciona na nuvem agora.** (Ver bloco ✅ no topo deste arquivo.) Nada mais
+   pendente do Marcos aqui — se um dia quiser o original em resolução máxima sempre, aí sim Network→Full libera
+   os CDNs; mas pro fluxo da fábrica o proxy já entrega resolução de sobra.
 2. **▶️ AFINAR O DESIGNER (recomendado começar aqui)** — Marcos manda alterações (Estúdio "Seu negócio, bem visto"
    e/ou psi "procrastinação"); Claude itera peça/motor e **grava o aprendizado** no `learning-log` do cliente
    (gradua de estagiário). Não precisa de rede. É a base — o gestor depende do designer pronto.
