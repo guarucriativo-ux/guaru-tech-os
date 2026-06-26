@@ -115,6 +115,34 @@ construir) — pesquisar tools/produtos/repos do mercado. Bater cabeça reinvent
 tempo humano perdido. Recon de mercado é o passo 0 de qualquer frente nova. (Cravado depois de descobrir o
 Xquads tarde.)
 
+## INTEGRAÇÃO NA FÁBRICA — arquitetura + contrato + o que mexer no código (meio de campo, 2026-06-26)
+**Princípio que protege a criatividade:** o Xquads encurta a **curadoria de CONTEÚDO**; a **criatividade
+VISUAL continua no designer** (senão vira o template que o Marcos reprovou). Então não é "spec → template
+rígido"; é um **handoff por briefing**.
+
+**Fluxo:**
+`cérebro de conteúdo (Xquads/nosso)` → **briefing de peça** (copy aprovada no gate + estrutura sugerida +
+brief de foto) → `designer (agente) compõe HTML AUTORAL` (varia arquétipo/tipo/composição) → **portão de
+craft** → `tools/render/render-creative.js` (HTML→JPG) → slides. Foto via `tools/foto-auto.mjs` quando precisa.
+
+**Contrato pronto:** `tools/briefing-de-peca.template.json` (a interface; o cérebro preenche, o designer consome).
+
+**O que JÁ existe (não precisa reescrever):** render (`render-creative.js` + fontes do DNA) · foto
+(`foto-auto.mjs`) · os 2 gates (copy/craft) · DNA/faculdade. A metade do RENDER está pronta.
+
+**O que vai precisar de NOVAS LINHAS (montar no desktop, em ordem):**
+1. **Adaptador `xquads → briefing-de-peca.json`** — converte o output deles (formato de task/agente) pro nosso
+   contrato. *Só dá pra escrever depois de ver os arquivos reais em `_estudo-xquads/`.* (1º código a fazer.)
+2. **(opcional) `tools/gate-check.mjs`** — imprime os checklists do gate de copy e de craft pro designer
+   auto-auditar a peça (rápido, independe do Xquads).
+3. **(opcional) orquestrador `tools/pipeline-peca.mjs`** — encadeia: lê briefing → `foto-auto` (se precisa) →
+   [designer compõe HTML = passo do agente] → `render-creative` → imprime gate-check. Montar quando o fluxo estiver fechado.
+4. **(fase escalar) manifestos de "squad"** dos nossos colaboradores (config .yaml/.md, padrão BMAD) — não é
+   código, é organização; só quando formos formalizar os colaboradores.
+
+> Resumo: o grosso do "novo código" é o **adaptador (1)**, que depende dos arquivos. O resto (contrato, render,
+> foto, gates) já está adiantado. Por isso o gargalo agora é só o Marcos subir o `_estudo-xquads/`.
+
 ## Pendência
 - Marcos decidir: (1) quem roda a Fase 0 (PC dele x eu instalo na nuvem) · (2) modelo de adoção A/B/C.
-- Marcos subir `_estudo-xquads/` (passo a passo acima) → libera a Fase 0 de verdade.
+- Marcos subir `_estudo-xquads/` (passo a passo acima) → libera a Fase 0 + escrever o adaptador (item 1).

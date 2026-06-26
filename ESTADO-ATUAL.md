@@ -7,6 +7,15 @@
 
 ---
 
+## 🖥️ PRÓXIMA SESSÃO NO DESKTOP — checklist (Marcos a caminho)
+> Meio de campo armado pra ganhar tempo. Quando chegar no PC:
+> 1. Baixar Xquads (ZIP): https://github.com/ohmyjahh/xquads-squads/archive/refs/heads/main.zip → descompactar.
+> 2. Jogar em **`_estudo-xquads/`** (já existe a pasta + README) → `git add _estudo-xquads && commit && push`.
+> 3. Avisar **"subi o xquads"** → o Claude lê os arquivos reais e roda a **Fase 0** (testa um carrossel do nosso nicho).
+> 4. Decidir: modelo de adoção **A/B/C** (recomendado **C híbrido**) + comprar ou não o pacote (R$67, garantia 7d).
+> 5. 1º código a montar: **adaptador `xquads → tools/briefing-de-peca.json`** (já existe o contrato; falta o conversor — depende dos arquivos).
+> Tudo detalhado em `decisoes/avaliacao-xquads-squads.md` (seção INTEGRAÇÃO). Render/foto/gates já prontos.
+
 ## 🧭 RETOMADA RÁPIDA — leia ISTO primeiro (atualizado 2026-06-26)
 > Sessão longa (faculdade + colaboradores + operação). **Para retomar qualquer assunto, abra o mapa:**
 > **`decisoes/roadmap-pontas-abertas.md`** (todas as pontas abertas, por prioridade). Resumo do estado:
