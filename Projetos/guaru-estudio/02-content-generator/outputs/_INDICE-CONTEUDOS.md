@@ -14,7 +14,8 @@
 | 2 | `pilot-regua-v2` | v1 com bugs corrigidos (sobreposição/strike) | ❌ Ainda "estagiário" — superado |
 | 3 | **`pilot-regua-v3`** | Fecha o gap de craft: lime domina, camadas, grafismo sangrando, escala | ✅ Craft no nível — **versão atual da régua** |
 | 4 | `preco-percepcao-v1` | Copy "preço x percepção" (ninguém paga caro no que parece barato) | ✅ Copy aprovada por Marcos |
-| 5 | **`seguidor-vs-cliente-v1`** | Fluxo completo (copy+craft): "não precisa de seguidor, precisa de cliente" | 🟡 Entregue — **aguardando feedback do Marcos** |
+| 5 | `seguidor-vs-cliente-v1` | "não precisa de seguidor, precisa de cliente" (1º com os 2 portões) | ❌ "Mais do mesmo" — mesmo molde, só copy trocada (+ coração feio). Superado |
+| 6 | **`seguidor-vs-cliente-v2`** | Mesma copy, **roupagem recomposta**: 5 arquétipos distintos (split·checklist·duelo·mockup·herói) | 🟡 Entregue — **aguardando feedback do Marcos** |
 
 ## Onde estamos
 - **Atual / aguardando feedback:** peça #5 (`seguidor-vs-cliente-v1`). Perguntas abertas pro Marcos:
@@ -26,4 +27,7 @@
 - Copy primeiro, sempre (Regra Nº0). Proibido copy no escuro.
 - Craft: cor de marca domina · camadas/profundidade · grafismo nunca atrapalha leitura · tipografia com
   escala · quadro cheio · entregar slides individuais em alta (nunca folha de contato).
+- **CRIATIVIDADE (cravada 2026-06-26):** cada peça com roupagem NOVA; trocar só a copy no mesmo molde =
+  "mais do mesmo" = reprovado. Rotacionar arquétipos e variar composição slide a slide (3+ slides no mesmo
+  eixo = template disfarçado). Régua, não regra — vale até pros meus próprios layouts anteriores.
 - Fontes do DNA instaladas localmente (sem depender de rede) — `tools/render/fonts/`.

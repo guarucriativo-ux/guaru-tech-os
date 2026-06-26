@@ -30,23 +30,38 @@ Cada passo aponta pro doc fundo que já existe na faculdade. Não pular nenhum.
    ler-referencia.md` + regras de craft em `design-rules.md` (tipografia/marca-texto/grafismo, hábitos
    de designer) + `crop-de-detalhe-fonte-grande.md` (fonte GRANDE, output LEVE).
 
-4. **Renderizar, OLHAR e auto-criticar (o portão).** Renderizar, abrir CADA slide e comparar lado a lado
-   com a referência nos 5 marcadores. Só entrega se passar no checklist abaixo. Entregar **slides
+4. **CRIATIVIDADE / variedade — roupagem NOVA, nunca copy trocada no mesmo molde (regra cravada).**
+   Criatividade é princípio de designer, não enfeite. Trocar só a copy mantendo o mesmo layout = "mais do
+   mesmo" = reprovado (Marcos 2026-06-26). Antes de diagramar: **olhar as últimas peças geradas** e escolher
+   DE PROPÓSITO uma roupagem diferente. Girar as alavancas de composição **slide a slide E peça a peça**:
+   - **Rotacionar arquétipos** do baralho (`arquetipos-de-layout-social.md`) — palavra-herói, citação, chips
+     de lista, passos numerados, diagrama/duelo, mockup, full-bleed, etc. Nunca o mesmo em todos os slides.
+   - **Variar alinhamento** (esq/centro/dir), **equilíbrio** (simétrico/assimétrico/radial), **ponto de
+     entrada** (topo/centro/base/canto) e **eixo de leitura** (F/Z/diagonal/radial). → `diagramacao-e-
+     composicao-variada.md` + `variedade-no-mesmo-dna.md`.
+   - **Sinal de alerta (= template disfarçado):** 3+ slides com o mesmo eixo/alinhamento, ou a peça nova com
+     a mesma cara da anterior. Se bateu, **recompõe** — não entrega.
+   - DNA fixo (cor/tipo/selo) mantém a marca; a COMPOSIÇÃO muda. Consistência = padrão reconhecível, ≠ repetição.
+
+5. **Renderizar, OLHAR e auto-criticar (o portão).** Renderizar, abrir CADA slide e comparar lado a lado
+   com a referência nos marcadores. Só entrega se passar no checklist abaixo. Entregar **slides
    individuais em alta** (nunca folha de contato/contact sheet baixa), output JPG leve.
 
 ## Checklist do portão (se algum NÃO → volta pro layout, não entrega)
 - [ ] Li o CONJUNTO de refs e extraí a ESTRUTURA (não copiei o enfeite de uma só)?
 - [ ] A cor de marca DOMINA a peça (não é um risquinho tímido)?
 - [ ] Tem camadas/profundidade (palavra fantasma, grafismo sangrando, textura) — não está chapado?
-- [ ] O grafismo estrutural tem peso E **não cobre / não atrapalha** nenhum texto?
+- [ ] O grafismo estrutural tem peso E **não cobre / não atrapalha** nenhum texto? (E não é feio/mal-feito.)
 - [ ] A tipografia tem escala e personalidade (grande, sangra, coerente ao DNA) — não "comportada no meio"?
 - [ ] O quadro está cheio de borda a borda (sem metade morta, sem "não soube o que pôr")?
+- [ ] **CRIATIVIDADE:** esta peça tem roupagem DIFERENTE das últimas (não é copy trocada no mesmo molde)?
+- [ ] **COMPOSIÇÃO varia slide a slide** (arquétipo/alinhamento/eixo) — sem 3+ slides no mesmo eixo?
 - [ ] As **fontes do DNA carregaram** (não caiu em serifa/fallback)? Nenhum elemento escapa/sobrepõe texto?
 - [ ] Entrego **slides individuais em alta** (não contact sheet), em JPG leve?
 - [ ] Comparei a peça lado a lado com a referência — está no NÍVEL dela, não "estagiário"?
 
-> Régua, não regra: as referências são exemplos/ideias, não molde a copiar. O que se reaproveita é o
-> nível de craft e a estrutura — vestidos no DNA do cliente, com criatividade autoral.
+> Régua, não regra: as referências (E os meus próprios layouts anteriores) são exemplos/ideias, NUNCA molde
+> a copiar. O que se reaproveita é o nível de craft e a estrutura — vestidos no DNA com criatividade autoral.
 
 ## Liga com
 - Protocolo de Geração de Design (passo 4 — portão de entrega) em `CLAUDE.md`.

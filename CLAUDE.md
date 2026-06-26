@@ -102,9 +102,11 @@ ordem (cada camada é mais específica que a anterior):
    estagiário reprova a peça igual copy fraca. Cumprir o **gate de craft** em
    `knowledge-base/design/craft-primeiro-o-gate.md`: ler a referência certo (conjunto/estrutura, não
    enfeite) → aplicar as 3 camadas → bater os **5 marcadores** (cor domina · camadas · grafismo
-   estrutural que NÃO atrapalha leitura · tipografia com escala · quadro cheio) → renderizar, OLHAR
-   cada slide e comparar lado a lado com a referência. Entregar **slides individuais em alta** (nunca
-   folha de contato), output leve. Peça abaixo da régua volta pro layout — não se entrega.
+   estrutural que NÃO atrapalha leitura · tipografia com escala · quadro cheio) → **CRIATIVIDADE/
+   variedade** (roupagem NOVA, nunca copy trocada no mesmo molde; rotacionar arquétipos e variar
+   composição slide a slide — 3+ slides no mesmo eixo = template disfarçado, reprovado) → renderizar,
+   OLHAR cada slide e comparar lado a lado com a referência. Entregar **slides individuais em alta**
+   (nunca folha de contato), output leve. Peça abaixo da régua volta pro layout — não se entrega.
 
 O design final tem a qualidade/diagramação da Base Mãe, ajustada aos padrões do nicho, vestida
 com a identidade do cliente. **Nunca usar estilo genérico.** Se qualquer uma das três camadas
