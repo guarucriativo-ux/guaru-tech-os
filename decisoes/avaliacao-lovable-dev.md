@@ -3,6 +3,27 @@
 <!-- Marcos pediu (2026-06-26) análise do Lovable.dev e se ajuda a fábrica. Pesquisa jun/2026 (direcional).
      É avaliação de FERRAMENTA/decisão → mora em decisoes/, não na knowledge-base. -->
 
+## ⭐ REVISÃO (Marcos 2026-06-26): "isso a gente já faz com VSCode" — CORRETO
+> Marcos cravou: o que o Lovable faz, a fábrica já faz com o que tem (Claude Code no VSCode). **Ele está certo,
+> e eu tinha superestimado o Lovable.** **O Claude Code É um dev de IA** — gerar app full-stack (React/Supabase/
+> login/Stripe/landing/dashboard) direto no NOSSO repo é exatamente o que eu faço. "Construir o app" **não é**
+> uma capacidade que nos falta.
+>
+> **O que o Lovable adiciona de verdade (e só isso):** um **embrulho GERENCIADO** — (a) hosting/deploy 1-clique
+> + Supabase pré-fiado + domínio (tira o trabalho de DevOps), e (b) **preview visual + edição por prompt pra
+> não-programador** (o Marcos mexer sem mim). É **conveniência de infra/UX, não capacidade de código.**
+>
+> **Custo de adotar:** assinatura recorrente + **lock-in** + dados no Supabase deles + o "último 30%" que briga.
+> Isso vai **contra** a nossa cultura (dono de tudo, sem lock-in, sem custo recorrente desnecessário, a fábrica
+> constrói as próprias ferramentas).
+>
+> **VEREDITO REVISADO:** **default = construir nós mesmos** (eu + VSCode + host grátis tipo Vercel/Supabase
+> que a gente controla). O Lovable **só se paga** se a gente quiser (1) pular DevOps num MVP bem rápido, ou (2)
+> dar pro Marcos editar no visual sem mim. Pra agora, **não precisamos** — a gente já tem o dev (eu). O gargalo
+> real não é "construir o app", é **decidir o host/infra de produção** (o tijolo grande do Estágio 3→4) — e isso
+> a gente resolve escolhendo nossa stack, não terceirizando no Lovable. _(O texto abaixo é o estudo original,
+> mantido como registro — mas lido sob esta revisão.)_
+
 ## O que é (em uma linha)
 **Construtor de app full-stack por IA ("vibe coding"):** você descreve em texto e ele gera o app web pronto —
 front (React/TypeScript/Tailwind) + back (Supabase: banco, login, pagamento Stripe, storage) + **deploy 1 clique**
