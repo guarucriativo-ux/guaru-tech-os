@@ -43,7 +43,12 @@
   **Decisão: DNA pelas PASTAS** (`brand-dna.json`), não pelo brand kit do Canva (caixa-preta). Foto = do cliente
   na pasta / Canva no PC / ou liberar `design.canva.ai`+bancos em Network→Custom. Detalhe:
   `knowledge-base/sistema/fontes-de-dna-e-asset-pasta-vs-canva.md`.
-- **foto-auto** segue pendente (depende de rede liberada ou rodar no PC).
+- **foto-auto (esclarecido, pra não repetir a dúvida "isso já não estava pronto?"):** usar foto na arte JÁ
+  funciona (`compor --foto`) e o psi tem **~30 fotos reais já curadas no Git** (com licença) → dá pra fazer
+  carrossel COM foto **offline, neste terminal**. O que **NUNCA foi codado** é o **download automático**
+  (`foto_busca` → baixar do banco): isso é **manual** (ver `LICENSES.md`, "Baixado: …"). "Funciona no desktop e
+  não no celular" = no desktop dá pra baixar foto nova à mão (rede livre); na nuvem a rede bloqueia o banco.
+  Logo: nicho que JÁ tem foto curada (psi) roda com foto aqui; nicho novo precisa de rede aberta/PC pra baixar.
 
 ## Backlog técnico — alinhamento código × visão ampla (auditado 2026-06-25)
 Auditoria do código contra `visao-ampla-forca-de-trabalho-digital.md`. Fundação alinhada (faculdade/kb-query,
@@ -78,14 +83,15 @@ ledger/aprendizado, modelo clone template→cliente, designer sênior `compor`/`
    tudo leve); só material cru pesado do cliente fica fora (vídeo/PSD/PDF catálogo/fotos originais —
    foi o erro da Alkimia). Output sempre OTIMIZADO. `.gitignore` ajustado. 230 artes subiram pro Git.
 
-## Próximo passo imediato (o que o Marcos vai testar AGORA no celular)
-- **Testar abastecer o projeto pelo celular:** no app do Claude → Code → sessão do `guaru-tech-os`,
-  tocar no **"+"** → "Adicionar arquivos ou fotos" → anexar **1 foto de referência** da galeria →
-  pedir: *"salva essa imagem em `references/` e me confirma"*.
-- **Objetivo do teste:** confirmar que foto da galeria → vira arquivo no repo (commit/push) =
-  fluxo de abastecimento remoto funcionando, sem navegador, com PC desligado.
-- ⚠️ Claude Code na web está em "research preview"; há bug conhecido de upload de imagem em iPad/Safari.
-  Se der erro, é hiccup de plataforma, não erro do Marcos.
+## Próximo passo imediato — plano "POR PARTES" (acordado 2026-06-26, mão na massa)
+Ordem proposta (cada parte é um tijolo; 2 e 3 rodam neste terminal SEM rede):
+1. **Rede** *(ação do Marcos, ~2 min)* — abrir Network→Custom/Full → destrava foto NOVA neste terminal. Só
+   pré-requisito pra testar foto nova; o resto não depende. (Como fazer: `knowledge-base/sistema/infra-de-producao-e-rede.md`.)
+2. **▶️ AFINAR O DESIGNER (recomendado começar aqui)** — Marcos manda alterações (Estúdio "Seu negócio, bem visto"
+   e/ou psi "procrastinação"); Claude itera peça/motor e **grava o aprendizado** no `learning-log` do cliente
+   (gradua de estagiário). Não precisa de rede. É a base — o gestor depende do designer pronto.
+3. **Gestor de tráfego** — código: fechar a ponta da Meta API + os 3 tetos de gasto.
+4. **Infra de produção** — servidor 24/7 + WhatsApp API (Estágio 3→4, o tijolo grande).
 
 ## Protocolo entre terminais (sempre seguir)
 - `git pull` ANTES de mexer em qualquer terminal; `commit` + `push` DEPOIS de qualquer mudança.

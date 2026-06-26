@@ -14,6 +14,16 @@ a rede e liberamos exatamente os hosts necessários (bancos de imagem, Canva, Me
   (não dá pra mudar por código/de dentro). Ou rodar no PC (rede livre).
 - O conector MCP (ex.: Canva metadados) funciona mesmo no Trusted, pois roteia pela Anthropic — mas **pixels** não.
 
+## Como abrir a rede neste terminal (passo a passo — ação do Marcos)
+1. No app do Claude Code, achar o **ícone de nuvem** (aparece onde se inicia a sessão na nuvem / configura routine).
+2. **Abrir o environment para edição** → usar o seletor **"Network access"**.
+3. Escolher **Custom** → no campo **"Allowed domains"** colar (1 por linha) e manter marcado *"include default
+   package managers"*:
+   `design.canva.ai` · `*.canva.com` · `api.openverse.org` · `images.openverse.org` · `*.pexels.com` · `*.unsplash.com`
+   *(ou escolher **Full** = libera tudo, mais simples/menos seguro.)*
+4. Salvar. Pronto — foto do Canva e dos bancos passam a fluir neste terminal.
+> ⚠️ É config de ambiente, **não** de repo — o Claude **não** consegue mudar de dentro. Doc oficial: `claude-code-on-the-web`.
+
 ## Ambiente de PRODUÇÃO (o destino — Estágio 3→4, a construir)
 ```
 Usuário (WhatsApp dele) ↔ WhatsApp Business API ↔ NOSSO SISTEMA (servidor/infra nossa, nuvem)
