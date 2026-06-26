@@ -8,9 +8,26 @@
 // Carrega o HTML por file:// (resolve assets/fontes relativos), espera fontes + rede.
 // Método autoral — ver niches-library/design-principles/metodo-criativo.md
 import puppeteer from "puppeteer";
-import { mkdir } from "node:fs/promises";
+import { mkdir, readdir } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+
+// Acha o Chromium do ambiente quando o puppeteer não baixou o próprio (ex.: nuvem usa o pré-instalado em
+// /opt/pw-browsers, com nº de versão que muda). Sem isso, render falha na nuvem ("Could not find Chrome").
+// Ordem: PUPPETEER_EXECUTABLE_PATH explícito → bundle do puppeteer → varredura do PLAYWRIGHT_BROWSERS_PATH.
+async function acharChromium() {
+  if (process.env.PUPPETEER_EXECUTABLE_PATH) return process.env.PUPPETEER_EXECUTABLE_PATH;
+  try { const p = puppeteer.executablePath(); if (p && existsSync(p)) return p; } catch {}
+  const base = process.env.PLAYWRIGHT_BROWSERS_PATH || "/opt/pw-browsers";
+  try {
+    for (const dir of (await readdir(base)).filter((d) => d.startsWith("chromium-")).sort().reverse()) {
+      const cand = path.join(base, dir, "chrome-linux", "chrome");
+      if (existsSync(cand)) return cand;
+    }
+  } catch {}
+  return undefined; // deixa o puppeteer tentar do jeito padrão
+}
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
@@ -35,7 +52,8 @@ const outPath = path.resolve(__dirname, outArg);
 // formato por extensão: .jpg/.jpeg => JPEG sRGB (entrega Meta, mais leve); senão PNG (texto puro/transparência)
 const shotOpts = (p) => (/\.jpe?g$/i.test(p) ? { path: p, type: "jpeg", quality } : { path: p });
 
-const browser = await puppeteer.launch({ args: ["--no-sandbox"] });
+const executablePath = await acharChromium();
+const browser = await puppeteer.launch({ args: ["--no-sandbox"], ...(executablePath ? { executablePath } : {}) });
 try {
   const page = await browser.newPage();
   await page.setViewport({ width, height, deviceScaleFactor: scale });

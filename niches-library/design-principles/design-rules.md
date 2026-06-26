@@ -90,6 +90,32 @@ de app). Isso mete cara de template genérico e mata o peso de branding.
 - **Peça-chave (capa/hook) quase sempre pede FOTO** com gatilho de **identificação** (a pessoa se vê).
   Capa importante sem foto tende a ficar fraca. Ver Amendment "Foto vence text-only".
 
+## Amendment [2026-06-26] — Doutrina do CROP: fonte GRANDE, output LEVE (o designer estuda)
+
+> Lição do Marcos (2026-06-26). Vale pra **qualquer nicho**. Detalhe e exemplo trabalhado:
+> `knowledge-base/design/crop-de-detalhe-fonte-grande.md`.
+
+Separar **FONTE** de **OUTPUT** — são duas coisas, com tamanhos opostos:
+
+- **OUTPUT (o que vai pro post) = padrão Instagram, LEVE.** A peça final é 1080×1350 (o tamanho que a
+  Meta exibe — não fazer oversize), **JPEG q85–90** (100 piora na Meta). Arquivo de **dezenas a poucas
+  centenas de KB**, nunca PNG de vários MB. É a regra de output otimizado do CLAUDE.md, agora cravada no
+  design. O renderizador já entrega assim (`tools/render`, scale 1, q90).
+- **FONTE (a foto-matéria) = GRANDE de propósito.** Existe uma prática de design real: **cortar um
+  detalhe** da foto (um macro — a pedra, a textura, a marca da ferramenta) e pôr **diagramação de texto por
+  cima**. Pro crop sair em ALTA, a foto-fonte precisa ser grande (**≥1600px**, foto-herói Pexels/Unsplash).
+  De uma fonte pequena (~960px do Openverse) o mesmo recorte sai **borrado**.
+
+Regra prática:
+- **Planejou crop de detalhe? Baixe a foto-herói em alta** (`foto-auto --source=pexels`, ≥1600px). A fonte
+  grande mora em `assets/`/`references/` (pode até ficar fora do Git se for pesada); o **output** é sempre o
+  JPEG leve. A fonte é insumo, não entrega.
+- **Crop de detalhe + 1 frase curta** é formato autoral forte — em nichos de macro (joalheria, comida,
+  produto) é a maior prova de artesania/qualidade. O mesmo arquivo-fonte rende hero (cor cheia full-bleed)
+  **e** um ou mais slides de detalhe (zoom em regiões diferentes) — multiplicador grátis de variedade.
+- **Régua, não regra:** o designer decide por peça se faz o crop, qual detalhe, qual tratamento. A
+  ferramenta serve os dois níveis (fundo tratado ~960px **e** foto-herói ≥1600px) pra nunca limitar a decisão.
+
 ## Diagramação
 - Layout limpo, focado em legibilidade. ~~Alinhamento de texto rigoroso — nunca texto
   centralizado "solto" sem ancoragem.~~ [SUPERSEDED pelo Amendment acima]

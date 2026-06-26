@@ -1,0 +1,84 @@
+<!doctype html><html lang="pt-br"><head><meta charset="utf-8">
+   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <style>
+:root{--ink:#16130F;--gold:#C8A45D;--paper:#F3EDE2;
+ --disp:'Cormorant Garamond',serif;--sans:'Inter',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#cfcabd}
+#post{width:1080px}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:var(--sans);
+ display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:150px 120px}
+.slide.ink{background:var(--ink);color:var(--paper)}
+.slide.paper{background:var(--paper);color:var(--ink)}
+.slide.foto,.slide.crop{justify-content:flex-end;color:#fff;padding-bottom:180px}
+/* grão sutil premium */
+.slide::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.04;mix-blend-mode:multiply;z-index:9;
+ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+/* FOTO: cor cheia full-bleed; CROP: zoom num detalhe da MESMA fonte grande (via inline style) */
+.ph{position:absolute;inset:0;background-size:cover;background-position:center;z-index:1}
+/* scrim escuro só na base, pra texto ler sem matar o brilho da joia no topo */
+.scrim{position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(12,10,8,.82) 0%,rgba(12,10,8,.45) 32%,rgba(12,10,8,0) 60%)}
+.z{position:relative;z-index:6;max-width:860px}
+/* kicker (wordmark) + rodapé */
+.kick{position:absolute;top:88px;left:0;right:0;text-align:center;z-index:6;
+ font-family:var(--sans);font-size:24px;letter-spacing:9px;font-weight:500;text-transform:uppercase}
+.ink .kick{color:var(--gold)}.paper .kick{color:#8a7d63}.foto .kick,.crop .kick{color:#e7d9b9}
+.foot{position:absolute;bottom:90px;left:0;right:0;text-align:center;z-index:6;
+ font-family:var(--sans);font-size:22px;letter-spacing:5px;font-weight:400;text-transform:uppercase}
+.ink .foot{color:#8f877a}.paper .foot{color:#a99c83}.foto .foot,.crop .foot{color:#cdbf9f}
+/* tipografia: serifa display de alto contraste protagonista */
+.headline{font-family:var(--disp);font-weight:600;font-size:104px;line-height:1.02;letter-spacing:-1px}
+.foto .headline,.crop .headline{font-size:96px;text-shadow:0 2px 30px rgba(0,0,0,.45)}
+.ac{font-style:italic;font-weight:500}
+.gd{color:var(--gold)}
+.sub{font-family:var(--sans);font-size:36px;font-weight:300;line-height:1.4;margin-top:34px;max-width:760px}
+.ink .sub{color:#d8cfbe}.paper .sub{color:#5a5346}.foto .sub,.crop .sub{color:#ece3d0;text-shadow:0 1px 16px rgba(0,0,0,.5)}
+/* filete dourado — assinatura do nicho */
+.rule{width:84px;height:1px;background:var(--gold);margin:38px auto 0;opacity:.9}
+.foto .rule,.crop .rule{margin:30px auto 0}
+/* CTA tipográfico (sem botão de app — Base Mãe): frase + filete + seta */
+.cta{font-family:var(--disp);font-style:italic;font-weight:600;font-size:62px;margin-top:30px}
+.ink .cta,.foto .cta,.crop .cta{color:var(--gold)}.paper .cta{color:var(--ink)}
+.ctasub{font-family:var(--sans);font-size:26px;font-weight:300;letter-spacing:1px;margin-top:18px}
+.ink .ctasub{color:#cabf9f}.paper .ctasub{color:#6a6253}.foto .ctasub,.crop .ctasub{color:#d8cdb3}
+/* selo monograma L */
+.selo{position:absolute;top:84px;right:96px;z-index:7;width:84px;height:84px;border:1px solid var(--gold);border-radius:50%;
+ display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:600;font-size:46px;color:var(--gold)}
+.paper .selo{opacity:.85}
+</style></head><body><div id="post"><section class="slide foto">
+   <div class="ph" style="background-image:url('../assets/lapidar-hero.jpg')"></div><div class="scrim"></div><div class="selo">L</div>
+   <div class="kick">LAPIDAR</div>
+   <div class="z"><h1 class="headline">A aliança de vocês não cabe numa <span class="ac">vitrine</span>.</h1><p class="sub">Ela cabe na história de vocês — e só nela.</p></div>
+   <div class="foot">ARRASTA →</div>
+  </section>
+<section class="slide crop">
+   <div class="ph" style="background-image:url('../assets/lapidar-hero.jpg');background-size:230%;background-position:59% 88%"></div><div class="scrim"></div>
+   <div class="kick">LAPIDAR</div>
+   <div class="z"><h1 class="headline">Cada <span class="gd">marca</span> é proposital.</h1><p class="sub">Forjada e polida à mão — o detalhe que máquina nenhuma repete igual.</p><div class="rule"></div></div>
+   <div class="foot">2 / 6</div>
+  </section>
+<section class="slide ink">
+   
+   <div class="kick">LAPIDAR</div>
+   <div class="z"><h1 class="headline">Feita à mão, em <span class="gd">ouro 18k</span>.</h1><p class="sub">Do esboço à cera, da fundição ao polimento — peça por peça, no nosso atelier.</p><div class="rule"></div></div>
+   <div class="foot">3 / 6</div>
+  </section>
+<section class="slide paper">
+   
+   <div class="kick">LAPIDAR</div>
+   <div class="z"><h1 class="headline">Sob medida não é <span class="ac">caro</span>. É <span class="ac">certo</span>.</h1><p class="sub">Você não paga por estoque parado. Paga pela joia que é só de vocês.</p><div class="rule"></div></div>
+   <div class="foot">4 / 6</div>
+  </section>
+<section class="slide ink">
+   
+   <div class="kick">LAPIDAR</div>
+   <div class="z"><h1 class="headline">Do <span class="ac">esboço</span> ao “sim”.</h1><p class="sub">Você aprova o desenho antes da gente fundir. Sem surpresa — só a sua joia.</p><div class="rule"></div></div>
+   <div class="foot">5 / 6</div>
+  </section>
+<section class="slide crop">
+   <div class="ph" style="background-image:url('../assets/lapidar-hero.jpg');background-size:200%;background-position:57% 82%"></div><div class="scrim"></div>
+   <div class="kick">LAPIDAR</div>
+   <div class="z"><h1 class="headline">Comecem pelo <span class="ac">desenho</span>.</h1><div class="rule"></div><div class="cta">Chama no direct →</div><p class="ctasub">A primeira conversa e o esboço são por nossa conta.</p></div>
+   <div class="foot">@lapidar.joias</div>
+  </section></div></body></html>

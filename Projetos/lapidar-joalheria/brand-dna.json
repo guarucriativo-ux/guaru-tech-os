@@ -1,0 +1,37 @@
+{
+  "client": "Lapidar — Joalheria Autoral",
+  "handle": "@lapidar.joias",
+  "local": "São Paulo - SP",
+  "ficticio": true,
+  "tipo": "Cliente FICTÍCIO de teste — atelier de joias autorais e alianças sob medida (ouro 18k, prata 950, pedras naturais). Criado para validar o designer-generalista da fábrica num nicho NOVO (joalheria) e para demonstrar a doutrina do crop (foto-fonte grande → recorte de detalhe em alta + diagramação). NÃO é cliente real.",
+  "posicionamento": "Joia que é só de vocês. Atelier que desenha e forja à mão a peça que não existe em vitrine — do esboço ao polimento, acompanhado por quem vai usar.",
+  "promessa": "A joia da sua história, feita à mão pra durar como herança.",
+  "tagline": "Feito à mão. Feito pra durar.",
+  "voz": {
+    "tom": "elegante, caloroso, confiante sem ser pomposo; fala de afeto e de qualidade, brasileiro, sem jargão técnico frio",
+    "estrutura_recorrente": "desejo/afeto (a joia única, não a de vitrine) → detalhe/artesania (prova de feito à mão) → diferenciador (sob medida vale: você não paga estoque, paga o que é só seu) → processo/confiança (do esboço ao sim) → convite (comecem pelo desenho)",
+    "evitar": "linguagem de liquidação ('imperdível', 'desconto', 'últimas unidades') — mata o premium; fundo branco de marketplace com preço grande; especificação técnica fria como manchete; prometer barato (o valor é exclusividade, não preço)"
+  },
+  "paleta_lapidar": {
+    "tinta": "#16130F (charcoal quase-preto, rico e quente)",
+    "dourado": "#C8A45D (ouro champagne — ACENTO: palavra-chave, filete, selo; nunca fundo inteiro)",
+    "papel": "#F3EDE2 (marfim quente)",
+    "regra_de_uso": "escuro governa o registro premium; marfim é o respiro claro; dourado só como acento e filete fino. Paleta restrita 3 cores. Respiro generoso = luxo (slide nunca lotado)."
+  },
+  "tipografia_lapidar": {
+    "titulo": "serifa display de alto contraste (Cormorant Garamond), elegante; caixa-alta com tracking aberto na marca",
+    "acento": "serifa itálica para a palavra de afeto (ex.: 'vitrine', 'certo', 'desenho')",
+    "corpo": "sans limpa e fina (Inter), legível em mobile; kicker em sans com letter-spacing largo"
+  },
+  "motivos_marca": {
+    "filete_dourado": "linha fina dourada como divisor/assinatura elegante",
+    "selo": "monograma 'L' em serifa dentro de um círculo de filete fino dourado",
+    "macro": "crop de detalhe da joia como recurso visual recorrente (a textura, a pedra)"
+  },
+  "logos": { "primary": "wordmark 'LAPIDAR' em serifa caixa-alta tracking aberto", "alternate": "monograma 'L' em círculo de filete dourado" },
+  "servicos": {
+    "carro_chefe": "alianças sob medida (casamento) — ticket alto, alto envolvimento",
+    "outros": "joias autorais sob encomenda, redesenho de ouro de herança, anéis de formatura/data"
+  },
+  "references_dir": "references/"
+}

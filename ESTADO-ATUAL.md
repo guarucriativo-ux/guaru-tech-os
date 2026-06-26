@@ -17,6 +17,24 @@
 > **Único item que ainda falta (não bloqueia):** gerar a chave do **Unsplash** (`UNSPLASH_ACCESS_KEY`) e
 > adicionar na mesma tela do ambiente — Pexels sozinho já entrega a foto-herói, Unsplash só amplia o leque.
 
+## ✅ TESTE DESIGNER-GENERALISTA + DOUTRINA DO CROP (2026-06-26, sessão nova) — 4º NICHO VALIDADO
+> Marcos pediu: escolher um nicho FICTÍCIO, estudar o social media dele e rodar a geração no automático;
+> e atentar à qualidade de imagem (padrão Instagram, leve) **mas** sabendo que existe a prática de trabalhar
+> com arquivo grande pra cortar um detalhe e diagramar texto por cima — "isso vai pra faculdade, o designer estuda".
+> - **Nicho escolhido:** joalheria/ourivesaria autoral (não existia na biblioteca). Cliente fictício
+>   **Lapidar** (`Projetos/lapidar-joalheria/`). Criada a niche-lib `niches-library/joalheria/` (pautas de social
+>   media + design-rules) e o motor `compor.js` (estrutura conteudo-direto, DNA joalheria, **com foto-herói cor
+>   cheia E slide de CROP de detalhe**).
+> - **Rodou no automático:** carrossel "Alianças que não existem em vitrine", 6 slides 1080×1350 JPEG q88,
+>   carrossel inteiro **~670 KB** (leve). Slides 2 e 6 = crop macro das alianças da MESMA foto-fonte grande
+>   (Pexels 1600×2400). **4º registro distinto** (psi/estúdio/nutri/joalheria) = "designer = 1 cérebro + config".
+> - **DOUTRINA DO CROP gravada na faculdade** (o pedido do Marcos): separar **FONTE** (grande ≥1600px, aguenta o
+>   recorte em alta) de **OUTPUT** (padrão Instagram, leve). Amendment em `niches-library/design-principles/
+>   design-rules.md` + nota `knowledge-base/design/crop-de-detalhe-fonte-grande.md`. O designer DEVE estudar.
+> - **Infra consertada:** `tools/render/render-creative.js` agora **acha o Chromium do ambiente sozinho**
+>   (varre `/opt/pw-browsers`), então render roda na nuvem sem ajuste manual. ⚠️ Sessão nova ainda precisa de
+>   `npm install` em `tools/render/` (puppeteer; node_modules fica fora do Git por regra).
+
 ## 🔁 RETOMADA (leia PRIMEIRO se você é uma sessão nova — 2026-06-26)
 > ✅ **O trabalho recente JÁ FOI MESCLADO NA `main`** (2026-06-26 noite) — a `main` voltou a ser a fonte da
 > verdade. Sessão nova nasce com tudo: o `foto-auto` multi-banco + este contexto. Não precisa trocar de branch.
