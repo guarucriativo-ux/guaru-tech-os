@@ -28,6 +28,9 @@ chão de fábrica onde eu escrevo o código, a gente roda, prevê (preview), dep
 - **Host/deploy/produção:** o VSCode é de onde a gente configura e publica, mas **algo tem que hospedar** o app
   (Vercel/Netlify/Supabase/servidor nosso). **Essa é a decisão de verdade** — o "tijolo grande" do Estágio
   3→4 (ver `decisoes/infra-de-producao-e-rede.md`). Não é o editor que falta; é escolher a NOSSA stack de produção.
+  - 🌐 **Domínio já existe (Marcos 2026-06-26):** `guaruestudio.com.br` (conferir se foi registrado com ou sem
+    acento — IDN `guaruestúdio` é válido no .br, mas o comum é sem acento; idealmente ter os dois). É a primeira
+    peça do host: quando subirmos o site/mural do Estúdio, é só apontar o domínio pro host escolhido.
 - **Editor visual no-code pro Marcos:** VSCode é código. O Marcos **não edita código** — e não precisa. A
   interface DELE com a fábrica é o **chat (eu) + o preview/output**: ele dirige, eu construo. (Era o único
   "extra" real do Lovable, e a gente não precisa dele.)
