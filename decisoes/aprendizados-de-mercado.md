@@ -41,3 +41,35 @@ repost spam. É a diferença entre "fábrica de lixo viral" e "fábrica de marca
 ### Ações que isto gera (foram pro roadmap)
 - Avaliar **ferramentas de agendamento/postagem em massa** (speedpost.com.br e similares) ao construir a distribuição.
 - Reforça a camada de **motion/vídeo em massa** (molde × N) já mapeada.
+
+## [2026-06-26] 2 perfis de referência (Marcos): @rafa.grandi + @rony — automação com Claude Code
+> Estudo via prints + busca pública (não o conteúdo pago deles). Filtro: separar a MECÂNICA reaproveitável.
+
+### @rafa.grandi — Rafa Grandi (estúdio sow / raxo / vibecoding) = O CRIADOR DO XQUADS
+A fonte do kit que a gente já avalia (`avaliacao-xquads-squads.md`). Playbook público dele (reels):
+- **"O fim dos prompts — construa seus LOOPS":** o pulo do gato é montar **loops autônomos** no Claude Code
+  (rodar sem supervisão, iterar) + **agentes em PARALELO** (Anthropic documenta auto-accept/headless/SDK p/ runs
+  longos; tutorial "6 agentes paralelo"). → é o motor da nossa LINHA DE PRODUÇÃO (produzir em massa via loops).
+- **"= postagens infinitas":** auto-distribuição multi-plataforma (IG/TikTok/X/LinkedIn). → exatamente o elo de
+  **distribuição** que já mapeamos como pendente (speedpost & cia).
+- Fica nos **modelos novos** (Fable 5, Claude/Anthropic). 
+- **Aplicar:** loops + agentes paralelos = como a fábrica produz em escala; auto-postagem = o elo que falta. O
+  kit dele (Xquads) é o cérebro; quando subir o `_estudo-xquads/`, casar isso com o nosso render.
+
+### @rony — Rony Meisler (Reserva ~R$2bi / Manual de Donos, 1,1mi seguidores)
+NÃO é concorrente direto do Estúdio — é **mestre de marca/venda** e a audiência dele **É o nosso buyer persona
+(donos)**. Ouro pra POSICIONAMENTO e OFERTA, não pra técnica:
+- **Modelo "Manual de Donos":** escola de negócios por e-mail (assinatura/comunidade, 9,6k), cadência semanal,
+  **"Manual de IA": pega um problema REAL do dono e dá o passo a passo, SEM tecniquês**. Vendeu **15 assistentes
+  de IA que plugam nas ferramentas do dono (financeiro/e-mail/design/planilha) por <R$150/mês**.
+- **Aplicar:** (a) **jeito de vender pro dono** — problema-primeiro, sem jargão, benefício direto (igual nossa
+  copy de benefício; ele faz no nível de mestre — estudar a "Aula de Vendas: 4 mecanismos"); (b) **cadência de
+  conteúdo** (semanal, problema→solução) como modelo do feed do Estúdio; (c) o produto dele (assistentes <R$150/
+  mês, DIY) **valida a demanda E reforça a nossa brecha**: ele vende ferramenta/ensino DIY; nós vendemos
+  **done-for-you premium com craft** — o "meio" que ninguém ocupa.
+- **Marca:** ele construiu a Reserva — referência de brand-building (estudar como acumula audiência e vende).
+
+### Síntese
+Rafa = o **MOTOR** (loops/agentes/distribuição = a linha de produção). Rony = o **MERCADO/VENDA** (como falar e
+vender pro dono + validação da demanda + a nossa brecha do "done-for-you premium"). Os dois reforçam o norte:
+produzir em escala com agentes (Rafa) e vender resultado/benefício pro dono ocupando o meio premium (Rony).
