@@ -17,6 +17,17 @@
 > da linha · MERCADO/oferta · escala/custo · o que construir). C/D começam já; A/B/E dependem do kit no ar.
 > (O estudo de perfil do IG que o Marcos pediu entra como parte da frente 2 — mercado/concorrente/referência.)
 
+## ✅ NORTE DEFINIDO (pesquisa profunda concluída 2026-06-26) → `decisoes/estudo-mercado-frente-c.md` (v2)
+> Pesquisa de mercado profunda (5 agentes) respondeu a pergunta central. **Norte em 1 frase:**
+> *caixa RÁPIDO = Estúdio recorrente (done-for-you) na rede quente (1ª venda em horas-dias, CAC≈0, margem 60-85%);
+> aposta de MARGEM/oceano azul = automação & agentes de IA pra PME (setup R$8-25k + R$800-2.5k/mês, é o DNA);
+> 2º produto/escala = kit/produto digital (margem 90%+, depende de audiência).*
+> **Brecha defensável:** ocupar o MEIO entre "vende o kit" (Xquads R$67) e "mão de obra genérica/posts de IA" =
+> agentes entregues como SERVIÇO pronto + recorrente, com craft + taste. Mercado VALIDA a tese (IA virou
+> commodity · Instagram anti-cara-de-IA · regulação) → craft humano/anti-template/nicho protege margem.
+> **Próximo passo:** montar a OFERTA (pacote Estúdio preço/escopo + esboço da frente automação pra PME). Frentes
+> A/B (o que o kit entrega de fato) dependem do `_estudo-xquads/` subir. Perfil de IG do Marcos ainda pendente.
+
 ## 🖥️ PRÓXIMA SESSÃO NO DESKTOP — checklist (Marcos a caminho)
 > Meio de campo armado pra ganhar tempo. Quando chegar no PC:
 > 1. Baixar Xquads (ZIP): https://github.com/ohmyjahh/xquads-squads/archive/refs/heads/main.zip → descompactar.
