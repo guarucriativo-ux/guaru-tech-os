@@ -29,9 +29,13 @@
 >   INDIVIDUAIS qualidade cheia. Aguardando feedback do Marcos.
 > - **Workflow gravado na faculdade:** `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`
 >   + ponteiro no `metodo-criativo.md`.
-> - **⚠️ Atrito a decidir:** Behance/Pinterest/blogs **bloqueiam scraping no proxy (403)** → na nuvem só dá
->   pra estudar via WebSearch (resumo), não baixar a imagem-referência. **Hipótese:** melhor o Marcos curar
->   3–5 refs do nicho (como a régua do Estúdio) e a fábrica destilar. Decidir com ele qual caminho seguir.
+> - **✅ DECIDIDO (Marcos): LIBERAR A REDE.** O 403 é negação de política no gateway (não anti-bot), então
+>   liberar os domínios resolve. **⏳ AÇÃO DO MARCOS — adicionar em Network → Custom** (onde já tem pexels/unsplash):
+>   `behance.net`, `*.behance.net`, `pinterest.com`, `*.pinterest.com`, **`pinimg.com`, `*.pinimg.com`** (CDN
+>   das imagens do Pinterest — domínio SEPARADO, essencial), e (opcional) `dribbble.com`, `*.dribbble.com`,
+>   `cdn.dribbble.com`. **Só vale em sessão NOVA** (regra de sempre). Na sessão nova eu uso o Chromium do
+>   ambiente (Puppeteer OK) pra abrir e screenshotar o moodboard. Detalhe em
+>   `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`.
 
 ## 🔴 FEEDBACK DURO DO MARCOS NO TESTE DA JOALHERIA (2026-06-26) — TUDO GRAVADO NA FACULDADE
 > O carrossel da Lapidar foi **REPROVADO**. O feedback virou regra (acumulativo — "não ensinar 2x").

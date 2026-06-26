@@ -40,3 +40,20 @@ pesquisa). É o MANIFESTO aplicado: **estudar antes de agir**.
 ## Veredito preliminar (a confirmar com o feedback do Marcos)
 Estudar antes pareceu o melhor caminho (peça mais coesa e "de mercado"). O gargalo não é o método — é o
 ACESSO às imagens na nuvem. Resolver o acesso (curadoria do Marcos ou rede aberta) destrava o workflow.
+
+## ✅ CAMINHO ESCOLHIDO (Marcos 2026-06-26): LIBERAR A REDE pra abrir as referências
+Diagnóstico confirmado: o 403 é **negação de política de rede no gateway** (`connect_rejected: gateway
+answered 403 to CONNECT — policy denial`), não bloqueio anti-bot. Logo, **adicionar os domínios na allowlist
+resolve.** Marcos vai liberar em **Network → Custom** (mesma tela onde já tem `*.pexels.com`/`*.unsplash.com`):
+
+- `behance.net` e `*.behance.net` (páginas + CDN de imagem `mir-s3-cdn-cf.behance.net`)
+- `pinterest.com` e `*.pinterest.com` (páginas)
+- `pinimg.com` e `*.pinimg.com` ← **domínio SEPARADO** do Pinterest (CDN das imagens, `i.pinimg.com`). Sem
+  ele as páginas abrem mas as imagens não carregam.
+- (opcional, ótimas refs de design e menos chato que o Pinterest) `dribbble.com`, `*.dribbble.com`, `cdn.dribbble.com`
+
+⚠️ **Regra de sempre:** mudança de rede só vale em **sessão NOVA** (iniciada DEPOIS de salvar) — igual à
+`PEXELS_API_KEY`. Na sessão nova eu uso o **Chromium do ambiente (Puppeteer já funciona)** pra abrir as
+páginas e **screenshotar/baixar** o moodboard de verdade. Ressalva: Pinterest às vezes exige login e pode
+bot-bloquear mesmo com rede liberada → os **CDNs de imagem** (`pinimg.com`, `mir-s3-cdn-cf.behance.net`) e o
+**Dribbble** tendem a ser mais fáceis. Se algum resistir, a curadoria do Marcos (3–5 refs) continua sendo o plano B.
