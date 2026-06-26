@@ -51,6 +51,7 @@
 > - **🟢 REGRA Nº0 cravada (2026-06-26):** *copy primeiro — design sem copy pesquisada que converte é bosta.*
 >   Gate obrigatório `knowledge-base/copywriting/copy-primeiro-o-gate.md` (5 passos: dor→ângulo→hook→edita→auto-check),
 >   ligado no Protocolo de Design (passo 0 do `CLAUDE.md`) e na Base Mãe (Regra Nº0). Nenhuma peça vira HTML sem passar.
+> - **Lições Rafa+Rony** (`decisoes/licoes-rafa-rony-aplicar.md`): técnica da linha (loops/headless/agentes paralelos/auto-postagem/roteamento de modelo) + venda/marca/oferta do Rony (4 mecanismos · hooks · ancoragem · SwaS como assinatura).
 > - **🟢 Portão de craft cravado (companheiro):** `knowledge-base/design/craft-primeiro-o-gate.md` — na ENTREGA:
 >   ler a ref certo → 3 camadas → 5 marcadores (cor domina · camadas · grafismo que não atrapalha · tipografia
 >   com escala · quadro cheio) → comparar lado a lado com a ref. Passo 4 do Protocolo (`CLAUDE.md`) + Base Mãe.
