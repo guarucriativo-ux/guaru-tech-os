@@ -14,6 +14,15 @@ Salve as imagens-régua **neste diretório**:
 Depois me avisa ("cheguei a régua do estúdio") que eu **leio do disco**, escrevo a ficha de cada uma e o motor
 passa a mirar nela.
 
+### Como enviar EM MASSA (não use o chat — limite de 5 + efêmero)
+Dois jeitos de jogar MUITAS imagens de uma vez, sem git e sem limite:
+- **A) GitHub no navegador (celular ou PC, mais fácil):** abrir o repo no github.com → entrar nesta pasta
+  (`Projetos/guaru-estudio/references/regua/`) → **"Add file → Upload files"** → arrastar TODAS as imagens →
+  **Commit**. (Sobe dezenas de uma vez, sem precisar saber git.)
+- **B) No PC:** arrastar todas as imagens pra esta pasta no explorador de arquivos → dizer **"sincroniza"**
+  (o Claude roda `tools/sincronizar.mjs` e empurra). 
+Depois é só avisar **"cheguei a régua"** que eu puxo e absorvo o lote inteiro.
+
 ## O que abastecer aqui
 A régua do **estilo/nível do próprio estúdio** (posts do @guaruestudio): design bold/moderno de agência-estúdio
 que te faça babar — o sarrafo que você quer que os posts do estúdio alcancem. Pode incluir as suas próprias
