@@ -12,6 +12,8 @@ Os elos 2 (tráfego) e 3 (landing) são o gargalo. Construir, nesta ordem de seg
 1. **Gestor — 3 TETOS DE GASTO** (segurança primeiro): account limit + stop-loss + teto por cliente. Hoje só
    `daily_budget` num JSON. Spec em `knowledge-base/marketing/guardrails-gasto-3-tetos-canone.md`.
 2. **Gestor — ponta real da Meta API** (criar campanha + ler relatório + loop). Hoje é maquete (PAUSED placeholder).
+   - **Auto-postagem/agendamento em massa** (parte da distribuição orgânica): avaliar ferramentas tipo
+     `speedpost.com.br` (postar N vídeos/dia sozinho). Insight em `decisoes/aprendizados-de-mercado.md` (2026-06-26).
 3. **Web — 1ª LANDING real** (começar pelo **Guaru Estúdio**, domínio `guaruestudio.com.br` já comprado).
    Método em `knowledge-base/web/landing-page-e-cro-canone.md`.
 4. **DECISÃO DE HOST/infra de produção** (o "tijolo grande", Estágio 3→4): onde hospedar (Vercel/Netlify/
