@@ -56,5 +56,39 @@ faculdade **aprende com cada peça** (este loop de design inteiro é prova disso
 4. Decidir com o Marcos se vale, no futuro, empacotar nossos colaboradores nesse formato (provavelmente sim, na
    fase de escalar) — mas **tijolo por tijolo**, sem abrir frente agora.
 
+## PLANO — capturar o atalho (Marcos: "o modelo dele já está pronto, encurta nosso caminho")
+**Insight central (confirmado nos arquivos):** o Xquads entrega o **CÉREBRO DE CONTEÚDO curado** (copy/
+estratégia/branding como agentes + tasks + checklists de qualidade). Ele **NÃO renderiza arte** (sem JPG/DNA/
+fontes — README confirma: "conteúdo e planejamento, não renderização"). A copy-squad gera headline/oferta/
+sales-letter/crítica; não tem task de render. Logo: a metade do RENDER (HTML→JPG + DNA + fontes + gates +
+taste) **já é nossa e está pronta**. Não é trocar a fábrica por ele — é **plugar o cérebro de conteúdo dele
+no nosso render**. E é exatamente a parte que mais penei (curadoria de copy/estratégia) que ele entrega pronta.
+
+**Como ele "já funciona" (a curadoria embutida):** persona-expert (frameworks do Aaker/Halbert/etc. no system
+prompt) + **tasks** com passos/inputs/outputs + **checklist output-quality** (portão) + **workflow** que
+encadeia + **routing-catalog** + **orquestrador**. Invocação BMAD: `@copy-chief` → `*diagnose`/`*full-copy-project`.
+
+### Fases
+- **Fase 0 — VALIDAR a promessa (barato, ANTES de comprometer):** rodar um teste real (zip de
+  `xquads.vercel.app/xquads/downloads` ou `npx aios-core install`) e pedir um carrossel/post no NOSSO nicho.
+  Avaliar honesto: a curadoria é tão boa quanto parece? Em PT-BR? Serve a pequeno negócio? ⚠️ Na nuvem o git de
+  terceiro é bloqueado (proxy só libera nosso repo); roda melhor **no PC do Marcos** ou via npm se liberar.
+- **Fase 1 — Modelo de adoção:** (A) usar/adaptar os squads direto (rápido; risco genérico+licença) · (B)
+  replicar o PADRÃO com a NOSSA faculdade curada (alinhado ao MOAT; mais trabalho) · (C) **HÍBRIDO
+  (recomendado):** estrutura + conteúdo deles como BASE, vestida com nosso DNA + gates + taste do Marcos.
+- **Fase 2 — Conectar ao render:** definir o "contrato" — a copy/estrutura aprovada vira input do nosso
+  pipeline (gate de copy → 3 camadas DNA → portão de craft → JPG). Xquads não renderiza; nós sim.
+- **Fase 3 — Taste/acúmulo:** cada peça + feedback do Marcos refina nossos tasks/checklists (o que o pacote
+  genérico nunca terá — é o nosso MOAT por cima da base dele).
+
+### Licença (gate antes de usar comercialmente)
+Repo público e clonável, **sem arquivo LICENSE declarado**, com página de download e `npx`. Sem termos
+explícitos = zona cinza pra uso comercial. **Estudar/aprender o método: ok.** Usar o conteúdo deles em
+entrega paga: confirmar condições com o vendedor (sowsales) antes. (Reforça a opção B/C — nosso conteúdo curado.)
+
+### Primeiro passo concreto (recomendado)
+Fase 0: rodar UM teste real e comparar o output cru deles com o que a nossa fábrica faz hoje → decidir A/B/C
+com dado, não achismo. Definir quem roda (PC do Marcos x instalar na nuvem).
+
 ## Pendência
-- Marcos decidir: adotar o padrão squad/manifesto pros nossos colaboradores agora ou deixar como ponta aberta?
+- Marcos decidir: (1) quem roda a Fase 0 (PC dele x eu instalo na nuvem) · (2) modelo de adoção A/B/C.
