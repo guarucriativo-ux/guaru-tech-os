@@ -33,11 +33,14 @@
 >   A rede passou a permitir os hosts, MAS os sites **bloqueiam acesso automático** (Behance 403 anti-bot;
 >   Pinterest 403/login nas buscas) e o **navegador headless não atravessa o proxy MITM** deste ambiente
 >   (sem certutil/HTTP2). Imagens do Pinterest (`pinimg.com`) nem foram liberadas (domínio separado).
-> - **✅ VEREDITO FINAL (Marcos): o melhor caminho é o que JÁ testamos** = estudar o mercado via **WebSearch +
->   Claude destila e aplica** (o fluxo que gerou a Lume). É o DEFAULT oficial — roda 100% na nuvem, sem raspar
->   site. **Raspar Behance/Pinterest = descartado** (anti-bot + proxy MITM). **Curadoria do Marcos** (colar ref
->   no chat / salvar em `references/`) = **booster OPCIONAL** pra elevar o teto de uma peça, não obrigatório.
->   Detalhe em `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`.
+> - **✅ VEREDITO FINAL (Marcos): o MELHOR caminho é a CURADORIA do Marcos abastecendo a fábrica.** Ele cura
+>   a referência manualmente (o olho dele = filtro; Behance = régua alta) → salva em `references/` (ou cola no
+>   chat) → o Claude VÊ a imagem, destila o sistema visual e **configura** (DNA + regras de nicho) → a fábrica
+>   **roda mais liso**. É o MOAT (taste vira config). Casa com "cure o critério, não cada arquivo" + régua do Estúdio.
+>   _(Correção: o Claude tinha rotulado a curadoria como "opcional" — errado; é o caminho PRINCIPAL.)_
+>   **WebSearch (texto) = só apoio** (gerou a Lume sem imagem, ficou bom, mas o teto sobe com a curadoria).
+>   **Raspar Behance/Pinterest na nuvem = descartado** (anti-bot + proxy MITM). Detalhe em
+>   `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`.
 
 ## 🔴 FEEDBACK DURO DO MARCOS NO TESTE DA JOALHERIA (2026-06-26) — TUDO GRAVADO NA FACULDADE
 > O carrossel da Lapidar foi **REPROVADO**. O feedback virou regra (acumulativo — "não ensinar 2x").

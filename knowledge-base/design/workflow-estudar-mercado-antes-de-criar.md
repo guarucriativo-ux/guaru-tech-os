@@ -37,16 +37,26 @@ pesquisa). É o MANIFESTO aplicado: **estudar antes de agir**.
   critério > garimpar arquivo (CLAUDE.md). A pesquisa por texto (WebSearch) é boa pra entender o padrão, mas
   o olho humano na curadoria das imagens é o que garante referência de qualidade.
 
-## ✅ VEREDITO FINAL (Marcos 2026-06-26): o melhor caminho é o que JÁ tínhamos testado
-**Workflow DEFAULT validado = estudar o mercado via WebSearch + o Claude destilar e aplicar** (o fluxo que
-gerou a Lume). Simples, roda 100% na nuvem, sem depender de raspar site nenhum. Foi o que produziu a melhor
-peça e é o caminho oficial daqui pra frente.
+## ✅ VEREDITO FINAL (Marcos 2026-06-26): o MELHOR caminho é a CURADORIA do Marcos abastecendo a fábrica
+> ⚠️ Correção: numa primeira versão o Claude rotulou a curadoria como "booster opcional" — **errado**. O
+> Marcos corrigiu: **a curadoria manual dele é o caminho PRINCIPAL**, não um extra.
 
-- **Raspar Behance/Pinterest na nuvem = descartado** (beco sem saída: anti-bot 403 + proxy MITM; ver teste
-  abaixo). Não revisitar.
-- **Curadoria do Marcos (colar ref no chat / salvar em `references/`) = booster OPCIONAL**, não obrigatório —
-  usar só quando ele quiser elevar o teto visual de uma peça específica (Behance é régua alta). O default não
-  exige curadoria; a curadoria é um extra.
+**Workflow OFICIAL = o Marcos abastece a fábrica com REFERÊNCIA, pela curadoria manual dele** (o olho do
+Marcos é o filtro de qualidade — ainda mais no Behance, que é régua alta). Com a referência curada, a fábrica
+**configura** (destila o sistema visual pro `brand-dna.json` / niche-lib) e **roda mais liso**. É o MOAT do
+MANIFESTO: o taste do Marcos vira config reaproveitável; quanto mais ele cura, mais redonda a fábrica fica.
+Casa com o CLAUDE.md ("cure o critério, não cada arquivo") e com a régua do Estúdio.
+
+**Como o Marcos abastece (os dois jeitos que o Claude lê de verdade):**
+1. **Salva as referências curadas** em `Projetos/<cliente>/references/` ou `niches-library/<nicho>/visual-
+   references/` → o Claude lê a imagem (tool Read VÊ imagem), escreve a ficha de anatomia e **destila o
+   sistema visual** pra config (DNA + regras de nicho). É o jeito que "configura a fábrica" pra rodar liso.
+2. **Cola a referência no chat** → o Claude vê e destila na hora (rápido pra uma peça pontual).
+
+**Papéis dos outros caminhos (apoio, não principal):**
+- **WebSearch (texto)** = apoio pra entender o padrão do nicho de graça, mas NÃO substitui a curadoria do
+  Marcos (foi o que gerou a Lume sem imagem — ficou bom, mas o teto sobe com a curadoria dele).
+- **Raspar Behance/Pinterest na nuvem = descartado** (anti-bot 403 + proxy MITM; ver teste abaixo). Não revisitar.
 
 ## ✅ CAMINHO ESCOLHIDO (Marcos 2026-06-26): LIBERAR A REDE pra abrir as referências
 Diagnóstico confirmado: o 403 é **negação de política de rede no gateway** (`connect_rejected: gateway
