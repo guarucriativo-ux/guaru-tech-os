@@ -38,7 +38,7 @@
 > 1. Baixar Xquads (ZIP): https://github.com/ohmyjahh/xquads-squads/archive/refs/heads/main.zip → descompactar.
 > 2. Jogar em **`_estudo-xquads/`** (já existe a pasta + README) → `git add _estudo-xquads && commit && push`.
 > 3. Avisar **"subi o xquads"** → o Claude lê os arquivos reais e roda a **Fase 0** (testa um carrossel do nosso nicho).
-> 4. Decidir: modelo de adoção **A/B/C** (recomendado **C híbrido**) + comprar ou não o pacote (R$67, garantia 7d).
+> 4. Decidir adoção A/B/C + comparar **fonte LIVRE (`npx aios-core install` / coleções abertas) vs Xquads R$67** (ver `decisoes/de-onde-vem-os-agentes-fontes-livres.md`).
 > 5. 1º código a montar: **adaptador `xquads → tools/briefing-de-peca.json`** (já existe o contrato; falta o conversor — depende dos arquivos).
 > Tudo detalhado em `decisoes/avaliacao-xquads-squads.md` (seção INTEGRAÇÃO). Render/foto/gates já prontos.
 
