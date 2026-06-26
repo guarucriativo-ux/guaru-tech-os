@@ -98,5 +98,23 @@ garantia, o custo de descobrir é mínimo. Definir quem instala/roda (PC do Marc
 valer a pena, **destilar pra NOSSA faculdade** (não virar dependente do tool; o conteúdo curado tem que ser
 nosso — é o MOAT que sobrevive mesmo se largarmos o pacote).
 
+## 📥 Download grátis + passo a passo (Marcos no PC)
+- **Repo (grátis):** https://github.com/ohmyjahh/xquads-squads
+- **ZIP direto:** https://github.com/ohmyjahh/xquads-squads/archive/refs/heads/main.zip
+- Alternativas: `xquads.vercel.app/xquads/downloads` · `npx aios-core install`.
+
+**Passos (PC):** (1) baixar ZIP + descompactar → (2) abrir a fábrica no Claude Code → (3) criar pasta de
+estudo **`_estudo-xquads/`** na raiz e colocar os arquivos lá → (4) `git add _estudo-xquads && commit && push`
+(ou `node tools/sincronizar.mjs`) → (5) avisar "subi o xquads" → o Claude (nuvem) lê, roda a Fase 0 e desenha
+a integração com o render. ⚠️ Pasta de ESTUDO temporária (não é a faculdade); depois destila o método pro
+nosso DNA e apaga os arquivos deles (sem licença declarada → aprender e reconstruir, não virar refém).
+
+## 🧭 Lição de processo (Marcos 2026-06-26) — RECON antes de construir do zero
+Antes de ensinar/treinar um colaborador do ZERO, **verificar se já existe solução pronta** (comprar vs
+construir) — pesquisar tools/produtos/repos do mercado. Bater cabeça reinventando o que já existe pronto =
+tempo humano perdido. Recon de mercado é o passo 0 de qualquer frente nova. (Cravado depois de descobrir o
+Xquads tarde.)
+
 ## Pendência
 - Marcos decidir: (1) quem roda a Fase 0 (PC dele x eu instalo na nuvem) · (2) modelo de adoção A/B/C.
+- Marcos subir `_estudo-xquads/` (passo a passo acima) → libera a Fase 0 de verdade.
