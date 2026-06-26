@@ -12,6 +12,9 @@
 > zero** — é **(1) como usar o kit na fábrica** e **(2) quais PRODUTOS os agentes entregam automático**. Estudar
 > de novo: **MERCADO + o que dá pra construir/vender com os agentes.** Nosso valor por cima = render + gates +
 > taste + produto/oferta. Currículos do zero = DESPRIORIZADOS. Detalhes: `decisoes/rumo-produtos-com-agentes.md`.
+> **FASE ATUAL = LINHA DE PRODUÇÃO (fase final)** — pedido/tema → produto pronto, mínimo manual. É onde mora o
+> estudo pesado agora (é o que dá o norte). Agenda de estudo A–E no doc do rumo (catálogo de produtos · estações
+> da linha · MERCADO/oferta · escala/custo · o que construir). C/D começam já; A/B/E dependem do kit no ar.
 > (O estudo de perfil do IG que o Marcos pediu entra como parte da frente 2 — mercado/concorrente/referência.)
 
 ## 🖥️ PRÓXIMA SESSÃO NO DESKTOP — checklist (Marcos a caminho)
