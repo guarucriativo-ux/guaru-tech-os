@@ -23,6 +23,13 @@ despejo — ensinam por **método**. Adotamos os pilares:
    o `learning-log`/`learned-lessons` é o caderno; a régua-não-regra é o olhar treinado.
 5. **Pré-requisito e progressão** — Fundamentos → Núcleo → Especialização → Prática Profissional, como num BFA.
 
+### ⚠️ COBERTURA ≠ MAESTRIA (correção Marcos 2026-06-26)
+Ter uma nota nossa que TOCA num assunto **não** é dominar a disciplina — é uma **semente**. Formar um
+colaborador = **estudar o CÂNONE** (os livros que as melhores faculdades mandam ler) e **destilar em regra**,
+módulo a módulo, em **modo caverna**, ancorado pela crítica do Marcos. Por isso cada grade lista a
+**bibliografia canônica** por matéria e é **honesta no diagnóstico** (calouro vs. formando). Nunca superestimar
+o nível do colaborador — isso é preguiça e leva a entrega ruim.
+
 ## Como ler uma grade
 Cada módulo traz: **Ementa** (o que a faculdade renomada ensina) · **Competência** (que entrega ele constrói) ·
 **No nosso acervo** (docs que já cobrem = "crédito cursado") · **Lacuna** (o que falta criar/estudar). As

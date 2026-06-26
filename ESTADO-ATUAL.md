@@ -12,13 +12,15 @@
 > por função). Estudei os currículos de elite (RISD/Parsons/SVA pra design; Meta Blueprint/Google/performance
 > pra tráfego) e o método de ENSINO (studio + crítica = a crítica do Marcos é o professor-mestre + Backward
 > Design + depth>breadth). Criada `knowledge-base/curriculos/`:
-> - ✅ **`designer-grafico.md`** (matrícula nº1): 4 fases (Fundamentos→Núcleo→Especialização→Prática), mapeando
->   TODO o acervo como "créditos cursados". Diagnóstico: **quase formado**; lacunas: princípios visuais/Gestalt,
->   repertório/história, e consolidar os 3 docs de cor.
-> - ✅ **`gestor-de-trafego.md`** (matrícula nº2): mesma estrutura; diagnóstico **calouro** (é maquete) — a grade
->   é também o ROTEIRO de construção. Fila: 🔴 3 tetos de gasto → Meta Ads/estrutura → tracking → escala/loop.
-> - As **lacunas viram a fila de estudo** da faculdade (Backward Design: nasce da entrega). O que o Marcos
->   ensina entra como matéria obrigatória, seguida à risca.
+> - ✅ **`designer-grafico.md`** (matrícula nº1): 4 fases, com **bibliografia canônica por módulo** (Bringhurst,
+>   Müller-Brockmann, Albers, Wheeler, Meggs, Ogilvy…).
+> - ✅ **`gestor-de-trafego.md`** (matrícula nº2): mesma estrutura; cânone = Meta Blueprint/Google + Cialdini etc.
+> - **⚠️ CORREÇÃO IMPORTANTE (Marcos):** eu tinha dito que o designer estava "quase formado" — **errado, foi
+>   preguiça.** Cobertura ≠ maestria: uma nota nossa é SEMENTE, não diploma. Régua corrigida: o designer é
+>   **CALOURO (≈5%)**, forte só na Fase 4 (método/craft — o que o Marcos ensina direto). **Próximo passo = MODO
+>   CAVERNA**: estudar o cânone módulo a módulo e destilar em regra, ancorado pela crítica do Marcos. Princípio
+>   "cobertura ≠ maestria" cravado no `curriculos/README.md`. Fila do designer: F1 Gestalt → F2 Tipografia →
+>   F3 Cor → N1 Grid → N3 Branding → N4 Copy → N2 Imagem → N5 História.
 
 ## 🎓 CULTURA DE CURADORIA DA FACULDADE — cravada (2026-06-26)
 > Marcos: faculdade é ENSINO que vira RESULTADO, não depósito; conhecimento errado/excesso = "gordura no

@@ -7,6 +7,11 @@
 >
 > ⚠️ **Estado real:** este colaborador está **no começo do curso** — hoje é maquete (zero integração real com a
 > API da Meta; ver backlog no `ESTADO-ATUAL.md`). Esta grade é também o **roteiro de construção**.
+>
+> ⚠️ **Cobertura ≠ maestria** (ver `README.md`): os ✅ aqui são **sementes/intros**, não domínio. O cânone real
+> da função (estudar a fundo, modo caverna): **Meta Blueprint** + **Google Skillshop** (certificações) ·
+> Cialdini, *Influence* · Miller, *Building a StoryBrand* · *Digital Marketing* (Chaffey) · análise de mídia
+> paga atual. Diagnóstico honesto: **calouro** — ver fila de estudo no fim.
 
 ---
 

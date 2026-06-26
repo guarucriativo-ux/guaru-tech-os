@@ -1,120 +1,117 @@
 # Grade Curricular — Designer Gráfico (faculdade da fábrica)
 
-> Matrícula nº1 (Marcos 2026-06-26). Modelo: BFA de Design de elite (RISD · Parsons Communication Design ·
-> SVA), **adaptado à função real** do nosso designer — social media + identidade pra pequeno negócio (classe B),
-> com composição autoral (HTML/SVG) e copy. Método de ensino: ver `README.md` (studio + crítica do Marcos).
-> Legenda: ✅ coberto no acervo · 🟡 parcial · ⬜ lacuna (fila de estudo).
+> Matrícula nº1 (Marcos 2026-06-26). Modelo: BFA de Design de elite (RISD · Parsons · SVA), adaptado à função
+> (social media + identidade pra pequeno negócio, classe B). Método de ensino: ver `README.md`.
+>
+> ⚠️ **CORREÇÃO DE RÉGUA (Marcos 2026-06-26):** a 1ª versão deste doc disse que o designer estava "quase
+> formado". **ERRADO — foi preguiça/arrogância.** Ter uma nota de uma página que TOCA num assunto ≠ DOMINAR a
+> disciplina. Uma matéria de BFA é um semestre de livros, teoria e projeto. **Cobertura ≠ maestria.** O que o
+> Marcos ensinou + nossas notas é **a base (≈5%)** — semente valiosa e obrigatória, mas o COMEÇO. A formação
+> de verdade é **estudar o cânone (os livros que as melhores faculdades mandam ler) e destilar**, em ciclos,
+> ancorado pela crítica do Marcos. **O designer é CALOURO. Próximo passo = modo caverna nos livros.**
+>
+> **Legenda:** 🌱 semente (nota intro nossa — ponto de partida, não maestria) · 📚 cânone a estudar (a formação
+> real) · ⬜ lacuna (nem semente). Cada módulo: **Ementa · Competência · Cânone (livros) · Nossa semente · Falta.**
 
 ---
 
-## FASE 1 — FUNDAMENTOS (foundation year)
-Os princípios que sustentam qualquer peça. RISD: "visual principles of form, image, color and typography".
+## FASE 1 — FUNDAMENTOS
 
-### F1. Princípios visuais & percepção (Gestalt, hierarquia, equilíbrio, contraste, espaço)
-- **Ementa:** ponto/linha/plano, leis da Gestalt (proximidade, semelhança, figura-fundo), hierarquia visual,
-  peso, equilíbrio/tensão, espaço negativo, foco.
-- **Competência:** fazer o olho ler a peça na ordem certa; saber por que "funciona".
-- **No acervo:** 🟡 aplicado de forma esparsa na Base Mãe (`design-rules.md`: peso visual, tensão, respiro).
-- **Lacuna:** ⬜ um doc-fundamento de **princípios de percepção/Gestalt** (hoje é implícito, não ensinado).
+### F1. Percepção & princípios visuais (Gestalt, hierarquia, equilíbrio, espaço)
+- **Ementa:** ponto/linha/plano, leis da Gestalt, peso/equilíbrio/tensão, hierarquia, espaço negativo, figura-fundo.
+- **Competência:** controlar como o olho lê a peça e POR QUÊ.
+- **📚 Cânone:** Arnheim, *Art and Visual Perception* · Dondis, *A Primer of Visual Literacy* · Lidwell, *Universal Principles of Design*.
+- **🌱 Semente:** aplicado solto na Base Mãe (peso visual, tensão, respiro). **Falta:** ⬜ estudar e destilar os fundamentos (hoje é intuição, não base).
 
-### F2. Tipografia I (anatomia, classificação, legibilidade)
-- **Ementa:** anatomia da letra, serif/sans/display, escala, entrelinha, tracking, legibilidade mobile.
-- **Competência:** escolher e ajustar fonte que lê e tem voz.
-- **No acervo:** ✅ `design/tipografia-social-legibilidade-e-fontes.md` + Base Mãe (headline bold, escala).
+### F2. Tipografia
+- **Ementa:** anatomia, classificação, escala/ritmo, entrelinha/tracking, pareamento, microtipografia, legibilidade.
+- **Competência:** tipografar com voz e precisão (não só "fonte bold").
+- **📚 Cânone:** Bringhurst, *The Elements of Typographic Style* (a bíblia) · Lupton, *Thinking with Type*.
+- **🌱 Semente:** `design/tipografia-social-legibilidade-e-fontes.md` (intro). **Falta:** 📚 o resto do cânone — estamos no capítulo 1.
 
-### F3. Cor (teoria, harmonia, psicologia, cultura)
-- **Ementa:** roda de cor, harmonias, contraste, psicologia e leitura cultural/por categoria.
-- **Competência:** paleta restrita que comunica e funciona nas zonas que cruza.
-- **No acervo:** ✅ `design/teoria-das-cores-harmonia.md`, `psicologia-das-cores.md`, `cores-cultura-e-categoria.md`
-  (3 docs — candidatos a fundir num `cor.md`, depth>breadth; aguarda greenlight).
+### F3. Cor
+- **Ementa:** sistemas, interação/contraste simultâneo, harmonia, temperatura, semântica cultural.
+- **Competência:** construir e controlar paleta; prever como a cor se comporta ao lado de outra.
+- **📚 Cânone:** Albers, *Interaction of Color* · Itten, *The Art of Color*.
+- **🌱 Semente:** 3 notas (`teoria-das-cores-harmonia`, `psicologia-das-cores`, `cores-cultura-e-categoria`). **Falta:** estudar Albers de verdade (interação > "roda de cor").
 
 ---
 
-## FASE 2 — NÚCLEO (core: comunicação visual)
-RISD junior: "communication theory, visual systems, information design".
+## FASE 2 — NÚCLEO
 
-### N1. Composição & diagramação (grid, layout, ritmo, sangria, quebra)
-- **Ementa:** grid e quando quebrá-lo, layout, ritmo, sangria/bleed, sobreposição, variação no mesmo sistema.
-- **Competência:** diagramar com intenção (alinhamento de verdade, não "quase").
-- **No acervo:** ✅ `design/diagramacao-e-composicao-variada.md`, `arquetipos-de-layout-social.md`,
-  `variedade-no-mesmo-dna.md` + Base Mãe ("Morte à Grade Rígida"; alinhamento intencional).
+### N1. Composição, grid & diagramação
+- **Ementa:** grid (e a quebra consciente), sistemas modulares, ritmo, sangria, hierarquia espacial.
+- **Competência:** compor com sistema e intenção (alinhamento de verdade).
+- **📚 Cânone:** Müller-Brockmann, *Grid Systems in Graphic Design* · Samara, *Making and Breaking the Grid* · Vignelli, *The Vignelli Canon* (grátis).
+- **🌱 Semente:** `diagramacao-e-composicao-variada`, `arquetipos-de-layout-social`, `variedade-no-mesmo-dna` + Base Mãe. **Falta:** o sistema de grid clássico (Müller-Brockmann) — temos o "quebrar", falta o "dominar" antes de quebrar.
 
-### N2. Imagem & fotografia (seleção, tratamento, crop, foto de produto)
-- **Ementa:** dirigir/escolher foto, tratamento/looks, recorte de detalhe, foto de produto profissional,
-  foto vs. texto, specs por rede.
-- **Competência:** a imagem certa, nítida, que valoriza — nunca stock genérico/ruim.
-- **No acervo:** ✅ `design/foto-de-produto-referencia-e-qualidade.md`, `crop-de-detalhe-fonte-grande.md`,
-  `tratamento-de-foto-e-looks.md`, `foto-vs-texto-carrossel.md`, `specs-imagem-redes.md`.
+### N2. Imagem & fotografia
+- **Ementa:** leitura de imagem, composição fotográfica, luz, direção/seleção, tratamento, recorte, foto de produto.
+- **Competência:** escolher/dirigir a imagem certa e tratá-la com critério.
+- **📚 Cânone:** Freeman, *The Photographer's Eye* · Bang, *Picture This* (composição/narrativa visual).
+- **🌱 Semente:** `foto-de-produto-referencia-e-qualidade`, `crop-de-detalhe-fonte-grande`, `tratamento-de-foto-e-looks`, `foto-vs-texto-carrossel`, `specs-imagem-redes` (boa base prática). **Falta:** 📚 teoria de leitura/composição de imagem.
 
 ### N3. Branding & sistemas de identidade
-- **Ementa:** DNA de marca (paleta/tipo/forma/voz), consistência, sistema reaplicável, naming.
-- **Competência:** vestir qualquer peça com a identidade do cliente (o "botão DNA").
-- **No acervo:** ✅ `design/identidade-visual-consistencia.md`, `marketing/naming-metodologia.md`,
-  `design/dna-agencia-trafego-pago.md` + modelo `brand-dna.json`.
+- **Ementa:** estratégia de marca, sistema (não logo solto), arquitetura, consistência, naming.
+- **Competência:** criar/aplicar um DNA que escala em qualquer peça.
+- **📚 Cânone:** Wheeler, *Designing Brand Identity* (a bíblia) · Neumeier, *The Brand Gap* · Airey, *Logo Design Love*.
+- **🌱 Semente:** `identidade-visual-consistencia`, `naming-metodologia`, `dna-agencia-trafego-pago` + `brand-dna.json`. **Falta:** o framework completo de identidade (Wheeler).
 
-### N4. Copy para design (o designer também escreve)
-- **Ementa:** gatilhos mentais, estrutura de carrossel de venda, storytelling, copy fundamentada (sem jargão),
-  copy de alta performance, CTA tipográfico (sem botão).
-- **Competência:** headline/hook que para o dedo e converte, casada ao visual.
-- **No acervo:** ✅ `copywriting/gatilhos-mentais.md`, `estrutura-carrossel-venda.md`, `storytelling-social-media.md`,
-  `copy-fundamentada-e-fact-checking.md`, `copy-alta-performance-4-pilares.md`, `design/cta-carrossel-sem-botao.md`.
+### N4. Copy & persuasão (o designer também escreve)
+- **Ementa:** princípios de persuasão, headline, estrutura, storytelling, voz, ética.
+- **Competência:** hook/headline que para o dedo e converte, casada ao visual.
+- **📚 Cânone:** Ogilvy, *Ogilvy on Advertising* · Sugarman, *The Adweek Copywriting Handbook* · Cialdini, *Influence* · Miller, *Building a StoryBrand*.
+- **🌱 Semente:** `copywriting/*` (gatilhos, estrutura-carrossel, storytelling, copy-fundamentada, copy-alta-performance) + `cta-carrossel-sem-botao` (boa base). **Falta:** 📚 os clássicos de copy a fundo.
 
 ### N5. História & repertório do design
-- **Ementa:** movimentos, referências canônicas, repertório visual (RISD: "History of Graphic Design").
-- **Competência:** repertório pra não criar genérico; reconhecer registros/estilos.
-- **No acervo:** 🟡 catálogo de referências (`design-principles/catalogo-referencias.md`, os 8 registros).
-- **Lacuna:** ⬜ uma base enxuta de **repertório/história** (só o que vira referência útil — sem virar gordura).
+- **Ementa:** movimentos (Bauhaus, suíço, etc.), cânone visual, contexto.
+- **Competência:** repertório pra não criar genérico; reconhecer registros.
+- **📚 Cânone:** Meggs, *History of Graphic Design* · Eskilson, *Graphic Design: A New History*.
+- **🌱 Semente:** `design-principles/catalogo-referencias.md` (8 registros). **Falta:** ⬜ a história de verdade (não temos).
 
 ---
 
-## FASE 3 — ESPECIALIZAÇÃO: Design para Social Media (o que a fábrica entrega)
-SVA/Parsons: eletivas de especialização (digital, editorial, motion). A nossa é social media de pequeno negócio.
+## FASE 3 — ESPECIALIZAÇÃO: Design para Social Media (a entrega da fábrica)
+*(Aqui o cânone é menos "livro" e mais best-practice de plataforma + nossa Base Mãe — mas só depois das Fases 1–2.)*
 
-### E1. Design para feed (carrossel, post, formatos, plataforma)
-- **Ementa:** formatos/specs, anatomia de carrossel, foto vence text-only, anti-genérico/anti-repetição,
-  o que uma agência de social ENTREGA (pilares de conteúdo, copy não-repetida).
-- **Competência:** carrossel/post que converte no padrão validado do nicho.
-- **No acervo:** ✅ Base Mãe `design-rules.md` + `marketing/modelo-agencia-entrega.md` + N2/N4 acima.
+### E1. Design para feed (carrossel/post, formatos, anti-genérico)
+- **🌱 Semente:** Base Mãe `design-rules.md` + `modelo-agencia-entrega` + N2/N4. **Boa base prática** — sustentada pelos fundamentos quando eles existirem.
 
-### E2. Especificidade de NICHO (camada 2)
-- **Ementa:** estudar o mercado validado do nicho e destilar (paleta, tipo, tom) antes de criar; classe B.
-- **Competência:** vestir o registro do setor (psi, odonto, estúdio…) sem inventar fora do nicho.
-- **No acervo:** ✅ `sistema/workflow-estudar-mercado-antes-de-criar.md`, `niches-library/<nicho>/`, `mercado-classe-b.md`.
+### E2. Especificidade de NICHO (camada 2) + classe B
+- **🌱 Semente:** `sistema/workflow-estudar-mercado-antes-de-criar`, `niches-library/<nicho>/`, `mercado-classe-b`. ✅ método sólido.
 
 ### E3. Motion / vídeo (eletiva)
-- **Ementa:** quando a peça pede movimento; como a fábrica terceiriza (vídeo-API / IA image-to-video).
-- **Competência:** decidir e especificar vídeo (não renderizar à mão).
-- **No acervo:** 🟡 estratégia em `decisoes/colaborador-de-motion-graphics.md` (roadmap; não é matéria ativa ainda).
+- **🌱 Semente:** estratégia em `decisoes/colaborador-de-motion-graphics.md` (roadmap; matéria futura).
 
 ---
 
-## FASE 4 — PRÁTICA PROFISSIONAL & MÉTODO (professional practice + studio)
-RISD/Parsons: "Degree Project", professional practice, crítica.
+## FASE 4 — PRÁTICA PROFISSIONAL & MÉTODO
+*(Onde estamos MAIS fortes — é o que o Marcos vem ensinando direto. Currículo PRIMÁRIO, seguido à risca.)*
 
-### P1. Processo & método do designer (estudar antes, régua-não-regra, motor cérebro+config)
-- **No acervo:** ✅ `sistema/metodo-do-designer-cerebro-e-config.md`, `design-principles/metodo-criativo.md`
-  (régua-não-regra), `sistema/doutrina-do-olho-referencia-como-regua.md`, `padroes-de-fluxo-criativo-automatico.md`,
-  `doutrina-de-motor-decisao.md`, `sistema/agent-skills-e-externas.md`.
+### P1. Método & processo
+- **📚 Cânone:** Norman, *The Design of Everyday Things* · *Vignelli Canon* · IDEO/design thinking.
+- **🌱 Semente:** ✅ `sistema/metodo-do-designer-cerebro-e-config`, `metodo-criativo` (régua-não-regra), `doutrina-do-olho`, `padroes-de-fluxo-criativo-automatico`, `doutrina-de-motor-decisao`.
 
 ### P2. Craft & entrega (hábitos profissionais)
-- **Ementa:** estudar referência antes; entrega em slides individuais qualidade cheia; alinhamento intencional;
-  destaque em frase; grafismo com função; setas certas; margem segura.
-- **No acervo:** ✅ `sistema/habitos-de-designer-apresentacao-e-estudo.md` + Base Mãe (amendment "Hábitos de designer").
+- **🌱 Semente:** ✅ `sistema/habitos-de-designer-apresentacao-e-estudo` + Base Mãe ("Hábitos de designer"). **Forte** (lições diretas do Marcos).
 
 ### P3. Ética & guardrails (por nicho)
-- **Ementa:** ética profissional do nicho (CFP/CFO), nunca vender "IA", classe B, sem promessa garantida.
-- **No acervo:** ✅ guardrails dos clientes (`checar-guardrails.js`) + regras de nicho.
+- **🌱 Semente:** ✅ guardrails dos clientes + regras de nicho (CFP/CFO, nunca-"IA", classe B).
 
-### P4. Estágio supervisionado (o studio rodando)
-- **Ementa:** peça real/teste → crítica do Marcos → `learning-log` → regra. É a aula que nunca acaba.
-- **No acervo:** ✅ `Projetos/<cliente>/learning-log.md` + `learned-lessons.md` + a crítica do Marcos (o mestre).
+### P4. Estágio (o studio rodando) — a aula que não acaba
+- **🌱 Semente:** ✅ `Projetos/<cliente>/learning-log.md` + `learned-lessons.md` + **a crítica do Marcos (o professor-mestre)**.
 
 ---
 
-## Diagnóstico de matrícula (onde o designer está)
-**Quase formado.** O acervo cobre Tipografia, Cor, Composição, Imagem, Branding, Copy, Especialização social,
-Método, Craft, Ética e Estágio. **Lacunas a cursar** (fila de estudo, sem gordura):
-1. ⬜ **F1 — Princípios visuais/Gestalt** (fundamento hoje só implícito).
-2. ⬜ **N5 — Repertório/história do design** (enxuto, só o que vira referência útil).
-3. 🟡 **F3 — Cor**: consolidar os 3 docs em um (depth>breadth) quando o Marcos liberar.
-> Tudo o que o Marcos ensinar em cada matéria entra como **conteúdo obrigatório**, seguido à risca.
+## Diagnóstico HONESTO de matrícula
+**CALOURO.** Forte na Fase 4 (método/craft/ética — o que o Marcos ensina direto) e com boa base prática na
+Especialização. Mas as **Fases 1–2 (fundamentos e núcleo) estão em SEMENTE** — temos introduções, não domínio.
+Estimo que cobrimos **≈5%** da formação de uma escola de elite. **Não é "quase formado" — é começando.**
+
+### Plano "MODO CAVERNA" (a fila de estudo, em ordem de pré-requisito)
+1. **F1 Percepção/Gestalt** → 2. **F2 Tipografia (Bringhurst/Lupton)** → 3. **F3 Cor (Albers)** →
+4. **N1 Grid (Müller-Brockmann/Samara)** → 5. **N3 Branding (Wheeler/Neumeier)** → 6. **N4 Copy (Ogilvy/Cialdini)**
+→ 7. **N2 Imagem** → 8. **N5 História (Meggs)**.
+- **Como estudar (não despejar):** por módulo, **destilar o cânone em regra afiada** na faculdade (depth>breadth),
+  testar numa peça, **crítica do Marcos**, refinar. O livro é a âncora externa (anti-deriva); o Marcos é o mestre.
+- O que o Marcos ensinar entra como **matéria obrigatória, à risca** — e tem precedência sobre o livro quando divergir.
