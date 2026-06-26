@@ -8,6 +8,13 @@
 // Portável PC + nuvem: se houver HTTPS_PROXY (nuvem), roteia o fetch pelo proxy (precisa do host liberado em
 // Network→Custom: api.openverse.org + CDNs de imagem). No PC (sem proxy) vai direto. Licença filtrada cc0/pdm
 // (uso comercial + modificação OK, sem atribuição exigida) — mesma regra das fotos já curadas.
+//
+// RESOLUÇÃO (estudo 2026-06-26, NÃO "consertar" como se fosse pouco): o proxy do Openverse entrega ~960–1024px
+// no lado maior. ISSO BASTA pra fábrica — a peça final é SEMPRE 1080x1350 (o render-creative fixa o canvas; a
+// foto é background `cover`, não a tela) e a foto entra grayscale + duotone multiply (.74-.8) + vinheta, onde o
+// upscale é invisível. As ~30 fotos já aprovadas/publicadas são 1024px-class (815x1024, 683x1024…) — mesma faixa.
+// Só valeria buscar original ≥1080 (Pexels/Network→Full) SE o design passar a usar foto full-bleed colorida como
+// herói (sem duotone). Não é o design atual. Ver ESTADO-ATUAL.md.
 import { writeFile, mkdir, readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 

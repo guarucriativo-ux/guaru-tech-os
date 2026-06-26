@@ -28,6 +28,19 @@
 > proxy fica registrado em cada `.LICENSE.txt` quando o fallback é usado.
 > _(Obs.: `undici` não está instalado no sandbox, então o proxy explícito do fetch não é setado — mas o gateway
 > transparente já roteia os hosts liberados, então não bloqueou. Não-crítico.)_
+>
+> ### ✅ ESTUDO DE QUALIDADE DA FOTO (2026-06-26) — RESOLVIDO, sem mexer em nada
+> Marcos perguntou se a foto vem em qualidade boa pro Instagram. O proxy entrega ~960–1024px (não o original de
+> 5–6 mil px). **Conclusão do estudo: já está na qualidade que a fábrica precisa — não há o que consertar.** Provas:
+> 1. **A peça final é SEMPRE 1080×1350** (medido nas peças já geradas). O `render-creative.js` fixa o canvas nesse
+>    tamanho; a foto é `background:cover`, NÃO a tela — então foto de 960px não faz o post sair em 960px.
+> 2. **A foto entra sempre sob tratamento pesado** (grayscale + duotone multiply .74-.8 + vinheta; no miolo opacity
+>    .13). Vira fundo texturizado escuro → o upscale de ~960→1080 é invisível. Nunca é foto-herói nítida colorida.
+> 3. **As ~30 fotos já aprovadas/publicadas são 1024px-class** (815×1024, 683×1024, 576×1024…) = a MESMA faixa do
+>    proxy. O foto-auto baixa a classe de qualidade que o Marcos já validou e publicou.
+> **Não instalar upscaler nem plugar Pexels pra esse uso** (problema inexistente; CLAUDE.md proíbe abstração
+> prematura). Só revisitar (Pexels/Network→Full p/ original ≥1080) SE o design mudar pra foto full-bleed colorida
+> como herói, sem duotone. Não é o design atual.
 
 ---
 
