@@ -7,16 +7,18 @@
 
 ---
 
-## 🎬 MOTION GRAPHICS — estudo + POC (2026-06-26)
-> Marcos: "estude motion graphics e pense como a fábrica tem um colaborador que faça isso". Estudo + plano em
-> `knowledge-base/sistema/colaborador-de-motion-graphics.md`. **Sacada:** a nossa arquitetura JÁ é um motor de
-> vídeo (HTML/CSS+Puppeteer+ffmpeg = o que o Remotion faz). Plano em 3 camadas: **Tier 1** = nosso motor
-> (HTML animado → Puppeteer frame a frame → ffmpeg), começar aqui; **Tier 2** = Remotion (só se travar);
-> **Lottie** = banco de micro-animação curado.
-> - **POC feito** (`sandbox/motion-poc/`): kinetic typography da Lume, **90 frames @30fps @1080×1350**
->   capturados na nuvem ✅. **Encode trava na nuvem** (ffmpeg do ambiente só VP8/sem PNG; ffmpeg-static
->   segfault; screencast travou) → encode final precisa de ffmpeg completo (PC). Pipeline provado; falta só o codec.
-> - É um **especialista futuro** (como o Olho / gestor de tráfego): mesmo cérebro + config, reusa DNA do still.
+## 🎬 VÍDEO/MOTION — estudo REVISADO (olhar amplo, 2026-06-26): NÃO construir, ALAVANCAR
+> Marcos pediu pra estudar motion; depois corrigiu: "kinetic type frame a frame qualquer app faz; ache uma
+> saída mais simples e de melhor resultado". **Reframe (a conclusão que vale):** a fábrica **não constrói
+> renderizador de vídeo** — terceiriza, em 2 estradas:
+> 1. **Vídeo-como-API** (JSON2Video/Creatomate/Shotstack) = workhorse do feed: manda **conteudo.json + assets**,
+>    recebe MP4 pronto (legenda animada, áudio, transição, TTS). Zero infra nossa; o cérebro (copy/DNA) continua nosso.
+> 2. **IA image-to-video** (Kling/Veo/Pika via fal.ai) = camada UAU cirúrgica: anima nossa foto-herói/arte
+>    (clip 4–10s cinematográfico). Custo por clip → usar pra peça-UAU/banco de b-roll, não por post.
+> - **Construir o próprio** (Puppeteer+ffmpeg; POC em `sandbox/motion-poc/` capturou 90 frames mas o encode
+>   trava na nuvem) = **fallback**, superado. Avatar IA (HeyGen) parqueado (pesa/autenticidade).
+> - Doutrina completa (com a REVISÃO no topo): `knowledge-base/sistema/colaborador-de-motion-graphics.md`.
+> - ⚠️ Decisão do Marcos (custo/conta/chave + allowlist dos hosts): qual estrada testar primeiro.
 
 ## ✅ FOTO-HERÓI PEXELS — CONFIRMADA EM ALTA (2026-06-26, sessão nova)
 > Teste rodado de ponta a ponta nesta sessão nova: a `PEXELS_API_KEY` (56 chars) **apareceu** no ambiente e o

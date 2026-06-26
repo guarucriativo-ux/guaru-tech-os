@@ -4,6 +4,48 @@
      (2026-06-26). Pesquisa de mercado + arquitetura. Doutrina de COMO um futuro especialista da fábrica OPERA.
      Liga com metodo-do-designer-cerebro-e-config.md, padroes-de-fluxo-criativo-automatico.md, infra-de-producao-e-rede.md. -->
 
+## ⭐ REVISÃO (olhar amplo, Marcos 2026-06-26): NÃO construir renderizador — ALAVANCAR o que já existe
+> Marcos: "kinetic type frame a frame qualquer app de edição faz; pesquise amplo, ache uma saída mais simples
+> e de melhor resultado." Ele está certo. O 1º estudo (abaixo) foi pelo caminho de **construir um motor de
+> vídeo** (Puppeteer+ffmpeg) — isso é reinventar o CapCut/Canva e dá só texto animado tier-editor. **Alavanca
+> errada.** Reframe: a pergunta não é "como a fábrica RENDERIZA vídeo" e sim **"qual o caminho mais simples pra
+> a fábrica TER vídeo bom"**. Resposta: **terceirizar a renderização** — duas estradas prontas, por tipo de vídeo:
+
+### Estrada 1 — "VÍDEO-COMO-API" (o cavalo de batalha do feed) ⟶ a mais simples
+Serviços que recebem **JSON + nossos assets e devolvem o MP4 renderizado na nuvem deles** (transições,
+legendas animadas, locução TTS, trilha — tudo incluso): **JSON2Video** (feito pra "coding agents" = encaixe
+perfeito no nosso agente), **Creatomate** (template + editor visual; o Marcos desenha o template, a fábrica só
+troca os dados), **Shotstack** (JSON→vídeo, robusto). 
+- **Por que é a saída certa:** zero infra nossa (nada de Puppeteer/ffmpeg/frames pra manter), e já vem com o
+  que o editor manual faz (caption animada, áudio, transição). Nosso **conteudo.json + DNA continua sendo o
+  cérebro** — só trocamos "renderiza HTML local" por "manda JSON pro serviço e recebe MP4". MESMO modelo do
+  still, mais barato de manter.
+- **Cobre o workhorse do nicho:** Reel "text-on-screen" / b-roll + legenda + áudio de trend (15–30s) — o
+  formato que mais carrega feed de pequeno negócio e converte.
+
+### Estrada 2 — "IA IMAGE-TO-VIDEO" (a camada UAU, cirúrgica) ⟶ o melhor RESULTADO
+Pegar a **nossa arte/foto-herói que já é boa** e **animá-la** com IA (Kling, Google Veo, Pika, Runway — via
+agregador pay-as-you-go tipo **fal.ai**/Higgsfield, uma API só pra vários modelos). Clip de 4–10s de movimento
+cinematográfico real (a foto "ganha vida", b-roll gerado) — muito acima de texto deslizando.
+- **Constrói SOBRE nossa força:** a fábrica já faz a still + tem foto-herói; a IA traz movimento. 
+- **Custo por clip** → usar **cirurgicamente** (peça-UAU / abastecer o banco de b-roll), **não por post** —
+  mesma doutrina da geração de imagem por IA ("IA alimenta o BANCO; o banco alimenta os posts").
+
+### Veredito da revisão
+**Não construir motor de vídeo.** Workhorse do feed = **vídeo-como-API** (1 conta + chave, mandar JSON).
+Camada UAU = **IA image-to-video** cirúrgica sobre nossas stills. As duas são API (simples) e dão resultado
+**acima** de qualquer kinetic-type caseiro. O "construir o próprio" (estudo abaixo / POC) vira **último
+recurso** (só se um dia precisarmos de controle total e os serviços não servirem) — não é o caminho.
+- **Avatar IA / talking-head** (HeyGen/Synthesia): existe, mas pesa e arranha autenticidade de pequeno
+  negócio → **parqueado**. Faceless (b-roll + caption + áudio) é o registro certo do nicho.
+- ⚠️ **Caveats a validar:** custo recorrente das APIs (bate no preço do SwaS — medir por cliente); enviar
+  asset/dados do cliente pra serviço externo (privacidade/licença); na nuvem, liberar os hosts das APIs na
+  allowlist (como foi com a Pexels) + guardar a chave. Decisão de produto/conta é do Marcos.
+
+---
+_O estudo abaixo (caminho de CONSTRUIR o renderizador) fica como registro/fallback — superado como
+recomendação pela revisão acima._
+
 ## Por que (o mercado já virou motion)
 - **Reels/Stories são vídeo-first** e os posts que mais compartilham hoje "parecem motion design": texto
   animando pra entrar, título cinético, micro-transições. Animação aumenta retenção e compartilhamento de
