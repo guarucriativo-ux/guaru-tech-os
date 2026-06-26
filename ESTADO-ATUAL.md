@@ -38,11 +38,11 @@
 > - **Peças de teste do Estúdio** (em `02-content-generator/outputs/`, índice + status em `_INDICE-CONTEUDOS.md`):
 >   régua v3 (craft) · preço-percepção (copy aprovada) · seguidor×cliente v1→v2 (composição variou) ·
 >   **`estudio-beneficio-v1`** (eixo benefício + serifa editorial + FOTO no domínio certo).
-> - **🟢 DOUTRINA (Marcos 2026-06-26):** *a fábrica entrega forte SEM depender de foto* (`knowledge-base/design/
->   criatividade-independente-de-foto.md`). Foto é BÔNUS (material real do cliente OU arte/mockup NOSSO), nunca
->   muleta de stock. Designer criativo resolve com design (tipo/cor/grafismo/composição). Aplicado: o slide 1 de
->   `estudio-beneficio-v1` agora é um **mockup de feed desenhado por NÓS** (`@seunegócio` genérico) — sem foto de
->   terceiro, sem direito de imagem, mostrando nosso trabalho.
+> - **🟢 DOUTRINA — foto é o PADRÃO (Marcos 2026-06-26, corrigiu uma conclusão errada minha):** bom conteúdo
+>   TEM foto (`knowledge-base/design/foto-no-conteudo-padrao-da-fabrica.md`). Cliente sem foto → a fábrica
+>   PESQUISA a melhor foto de banco LIVRE que serve à copy e não traz problema de direito. Sem-foto/só-diagramação
+>   = exceção, só a pedido do cliente. (Eu tinha cravado o oposto — "entregar sem depender de foto" — ERRADO.)
+>   Aplicado: `estudio-beneficio-v1` usa 2 fotos reais (dona criando conteúdo / florista) — banco livre, sem direito de terceiro.
 > - **🟡 ESTAMOS NO CAMINHO CERTO, mas ainda precisa de bastante ajuste (retomar AQUI):** continuar o loop de
 >   feedback do Marcos sobre `estudio-beneficio-v1` (eixo benefício + serifa editorial + mockup próprio).
 >   Pendências antigas seguem: fechar curadoria da régua (absorver as 65) + fusão dos 3 docs de cor + crítica dos currículos.

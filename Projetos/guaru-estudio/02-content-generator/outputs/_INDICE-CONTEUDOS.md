@@ -16,7 +16,7 @@
 | 4 | `preco-percepcao-v1` | Copy "preço x percepção" (ninguém paga caro no que parece barato) | ✅ Copy aprovada por Marcos |
 | 5 | `seguidor-vs-cliente-v1` | "não precisa de seguidor, precisa de cliente" (1º com os 2 portões) | ❌ "Mais do mesmo" — mesmo molde, só copy trocada (+ coração feio). Superado |
 | 6 | `seguidor-vs-cliente-v2` | Mesma copy, roupagem recomposta: 5 arquétipos distintos | 🟡 Entregue (composição variou, mas tipografia/copy ainda "mais do mesmo") |
-| 7 | **`estudio-beneficio-v1`** | Copy de BENEFÍCIO · serifa editorial (Fraunces) · slide 1 = **mockup de feed NOSSO** (sem foto de terceiro, independente de foto) | 🟡 Entregue — **aguardando feedback do Marcos** |
+| 7 | **`estudio-beneficio-v1`** | Copy de BENEFÍCIO · serifa editorial (Fraunces) · **2 fotos reais** de banco livre (dona criando conteúdo / florista), sem direito de terceiro | 🟡 Entregue — **aguardando feedback do Marcos** |
 
 ## Onde estamos
 - **Atual / aguardando feedback:** peça #5 (`seguidor-vs-cliente-v1`). Perguntas abertas pro Marcos:
@@ -40,6 +40,8 @@
     resultado, não um artesão literal que confunde). Teste: estranho vê imagem+copy e entende, ou confunde?
   - **Nunca repetir a mesma foto** na mesma peça (= preguiça). Fotos diferentes ou tipográfico — não force foto fraca.
   - 🔒 **Direito de imagem/autoral:** nunca usar perfil/@/rosto/conteúdo identificável de terceiro implicando que
-    é cliente/nosso trabalho (a licença do stock cobre a foto, não a identidade da pessoa). Usar mockup anonimizado
-    ou — melhor — o NOSSO próprio trabalho. (Regra: gate de craft + `CLAUDE.md` › Regras de Assets.)
+    é cliente/nosso trabalho (a licença do stock cobre a foto, não a identidade da pessoa). (gate de craft + `CLAUDE.md`.)
+- **FOTO É O PADRÃO (cravada 2026-06-26):** bom conteúdo TEM foto. Cliente sem foto → a fábrica PESQUISA a melhor
+  foto de banco LIVRE que serve à copy e sem problema de direito. Só-diagramação = exceção a pedido do cliente.
+  (Doc: `knowledge-base/design/foto-no-conteudo-padrao-da-fabrica.md`. Correção de uma conclusão errada anterior.)
 - Fontes do DNA instaladas localmente (sem depender de rede) — `tools/render/fonts/`.
