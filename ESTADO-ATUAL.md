@@ -19,7 +19,9 @@
 > - **🔴 Próximo grande passo (quando voltarmos):** construir o motor de resultado — 3 tetos de gasto + ponta da
 >   Meta (gestor) + 1ª landing real do Estúdio (web) + decidir o host. Tudo no roadmap acima.
 > - **Pendências do Marcos:** fechar a curadoria da régua do Estúdio (libera o teste); greenlight da fusão dos 3 docs de cor.
-> - **Branch desta sessão:** `claude/pexels-hero-photo-test-0vbct1` (PR aberto pra mesclar na `main` — ver fim do arquivo).
+> - **Branch desta sessão:** `claude/pexels-hero-photo-test-0vbct1` → **PR #1 aberto** (github.com/guarucriativo-ux/
+>   guaru-tech-os/pull/1) pra mesclar na `main`. No PC: rodar `node tools/sincronizar.mjs` (ou mesclar o PR) pra
+>   o trabalho chegar nos outros terminais. **`main` é a fonte da verdade** — depois de mesclar, todo terminal nasce com tudo.
 
 ---
 
