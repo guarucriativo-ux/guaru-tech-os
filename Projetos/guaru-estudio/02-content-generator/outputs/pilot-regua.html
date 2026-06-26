@@ -1,0 +1,83 @@
+<!doctype html><html lang="pt-br"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--lime:#CCFF00;--ink:#0A0A0A;--paper:#F4F2EC}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#cfcabd}#post{width:1080px}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:'Inter',sans-serif,sans-serif}
+.paper{background:var(--paper);color:var(--ink)}
+.ink{background:var(--ink);color:#fff}
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;mix-blend-mode:multiply;z-index:9;
+ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+/* ficha técnica (spec-sheet) — movimento juju */
+.rule{position:absolute;left:96px;right:96px;height:2px;background:currentColor;opacity:.85}
+.spec{position:absolute;left:96px;right:96px;display:flex;justify-content:space-between;gap:20px;
+ font-family:'Inter',sans-serif;font-size:19px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+.spec span{opacity:.55}.spec b{font-weight:700;opacity:.9}
+.brandrow{position:absolute;top:74px;left:96px;display:flex;align-items:center;gap:14px;font-family:'Anton','Archivo Black','Arial Narrow',sans-serif;
+ font-size:26px;letter-spacing:2px;text-transform:uppercase}
+.dot{width:22px;height:22px;background:var(--lime);border-radius:5px;transform:rotate(45deg)}
+.foot{position:absolute;bottom:74px;left:96px;font-family:'Anton','Archivo Black','Arial Narrow',sans-serif;font-size:26px;letter-spacing:3px;text-transform:uppercase;opacity:.8}
+/* tipografia-pôster */
+.poster{position:absolute;left:96px;right:96px;font-family:'Anton','Archivo Black','Arial Narrow',sans-serif;font-weight:400;line-height:.96;
+ letter-spacing:-1px;text-transform:uppercase}
+.s1 .poster{top:300px;font-size:128px}
+.serif{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:600;text-transform:none;letter-spacing:-2px}
+.hl{position:relative;display:inline-block}
+/* gesto neon à mão (movimento juju) — traço lime cruzando a palavra */
+.brush{position:absolute;z-index:0;pointer-events:none}
+.s1 .gword{position:relative;z-index:1}
+/* slide 2 — trocadilho visual VISTO=check */
+.s2{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 96px}
+.s2 .pun{font-family:'Anton','Archivo Black','Arial Narrow',sans-serif;font-size:104px;line-height:.94;text-transform:uppercase;letter-spacing:-2px;display:flex;flex-wrap:wrap;align-items:baseline;gap:0 6px}
+.s2 .check{display:inline-block;width:80px;height:104px;vertical-align:baseline}
+.s2 .cap{margin-top:54px;font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;font-size:40px;max-width:760px;line-height:1.25}
+.s2 .cap b{color:#5a5a2a}
+/* slide 3 — dark + swoosh + payoff + cta */
+.s3{display:flex;flex-direction:column;justify-content:center;padding:0 96px}
+.swoosh{position:absolute;right:-120px;bottom:-120px;width:620px;height:620px;z-index:0;opacity:.95}
+.s3 .pay{position:relative;z-index:2;font-family:'Anton','Archivo Black','Arial Narrow',sans-serif;font-size:108px;line-height:1.0;text-transform:uppercase;letter-spacing:-1px;max-width:880px}
+.limebox{background:var(--lime);color:var(--ink);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.s3 .cta{position:relative;z-index:2;margin-top:48px;font-family:'Anton','Archivo Black','Arial Narrow',sans-serif;font-size:64px;letter-spacing:1px;text-transform:uppercase;color:var(--lime)}
+.s3 .sign{position:absolute;z-index:2;bottom:74px;left:96px;font-family:'Anton','Archivo Black','Arial Narrow',sans-serif;font-size:26px;letter-spacing:3px;text-transform:uppercase;opacity:.8}
+</style></head>
+<body><div id="post">
+
+<!-- SLIDE 1 — tipografia-pôster + gesto neon + ficha técnica (mov. juju) -->
+<section class="slide paper grain s1">
+  <div class="brandrow"><span class="dot"></span>GUARU&nbsp;ESTÚDIO</div>
+  <div class="rule" style="top:210px"></div>
+  <div class="spec" style="top:170px"><span>Design que <b>vende</b></span><span>@guaruestudio</span><span>Guarujá—SP</span><span><b>2026</b></span></div>
+  <h1 class="poster">Seu negócio é <span class="serif">bom</span>.<br>No feed, parece
+    <span class="hl gword">amador
+      <svg class="brush" viewBox="0 0 600 120" style="left:-12px;top:18px;width:680px;height:120px" preserveAspectRatio="none">
+        <path d="M12 86 C 150 40, 360 36, 588 70 C 360 58, 150 66, 18 104" fill="#CCFF00" opacity="0.92"/></svg>
+    </span>.</h1>
+  <div class="rule" style="bottom:150px"></div>
+  <div class="spec" style="bottom:110px"><span>O cliente decide em <b>3 segundos</b></span><span>—</span><span><b>Arrasta →</b></span></div>
+</section>
+
+<!-- SLIDE 2 — trocadilho visual: VISTO = ✓ (mov. Clipnox) -->
+<section class="slide paper grain s2">
+  <div class="brandrow"><span class="dot"></span>GUARU&nbsp;ESTÚDIO</div>
+  <div class="pun">
+    <span>Seu&nbsp;negócio,</span><br>
+    <span>bem</span><svg class="check" viewBox="0 0 100 130"><path d="M8 64 L40 104 L96 12" fill="none" stroke="#CCFF00" stroke-width="20" stroke-linecap="square"/></svg><span>isto.</span>
+  </div>
+  <p class="cap">Em português, <b>visto</b> é as duas coisas: o que foi <b>aprovado</b> — e o que foi <b>notado</b>. Seu negócio merece os dois.</p>
+  <div class="foot">2 / 3</div>
+</section>
+
+<!-- SLIDE 3 — dark + swoosh + payoff destacado + CTA (mov. zenon) -->
+<section class="slide ink grain s3">
+  <div class="brandrow" style="color:#fff"><span class="dot"></span>GUARU&nbsp;ESTÚDIO</div>
+  <svg class="swoosh" viewBox="0 0 200 200" fill="none"><path d="M30 150 C 30 70, 90 30, 170 40 C 110 50, 70 90, 80 160 C 60 170, 40 165, 30 150 Z" fill="#CCFF00"/></svg>
+  <h2 class="pay">Você cuida do negócio.<br>A gente cuida de como ele <span class="limebox">aparece</span>.</h2>
+  <div class="cta">Chama no direct</div>
+  <div class="sign">@guaruestudio &nbsp;·&nbsp; seu negócio, bem visto</div>
+</section>
+
+</div></body></html>
