@@ -27,7 +27,7 @@
 >   branco+navy-teal (nada de preto — bate com o exemplo do Marcos), Poppins, respiro, alinhamento LEFT
 >   intencional, highlight em FRASE, CTA "Comenta AVALIAÇÃO ↓" (sem seta no direct). Entregue em SLIDES
 >   INDIVIDUAIS qualidade cheia. Aguardando feedback do Marcos.
-> - **Workflow gravado na faculdade:** `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`
+> - **Workflow gravado na faculdade:** `knowledge-base/sistema/workflow-estudar-mercado-antes-de-criar.md`
 >   + ponteiro no `metodo-criativo.md`.
 > - **✅ TESTADO (Marcos liberou behance.net + pinterest.com) — VEREDITO: raspar na nuvem NÃO rola.**
 >   A rede passou a permitir os hosts, MAS os sites **bloqueiam acesso automático** (Behance 403 anti-bot;
@@ -40,12 +40,12 @@
 >   _(Correção: o Claude tinha rotulado a curadoria como "opcional" — errado; é o caminho PRINCIPAL.)_
 >   **WebSearch (texto) = só apoio** (gerou a Lume sem imagem, ficou bom, mas o teto sobe com a curadoria).
 >   **Raspar Behance/Pinterest na nuvem = descartado** (anti-bot + proxy MITM). Detalhe em
->   `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`.
+>   `knowledge-base/sistema/workflow-estudar-mercado-antes-de-criar.md`.
 
 ## 🔴 FEEDBACK DURO DO MARCOS NO TESTE DA JOALHERIA (2026-06-26) — TUDO GRAVADO NA FACULDADE
 > O carrossel da Lapidar foi **REPROVADO**. O feedback virou regra (acumulativo — "não ensinar 2x").
 > **Onde está gravado:** Base Mãe `design-rules.md` (amendment "Hábitos de designer" + correção do crop);
-> `knowledge-base/design/habitos-de-designer-apresentacao-e-estudo.md`; `.../foto-de-produto-referencia-e-qualidade.md`;
+> `knowledge-base/sistema/habitos-de-designer-apresentacao-e-estudo.md`; `.../foto-de-produto-referencia-e-qualidade.md`;
 > regra "direct sem seta" em `.../cta-carrossel-sem-botao.md`; logs da Lapidar; `mercado-classe-b.md`.
 > **As lições (resumo):**
 > 1. **ESTUDAR referência ANTES de criar** (visual E copy) — falha-raiz. Copy feita no escuro NÃO converte

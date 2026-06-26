@@ -94,7 +94,7 @@ de app). Isso mete cara de template genérico e mata o peso de branding.
 
 > Feedback duro do Marcos no teste da joalheria (Lapidar). **Cada item é hábito inegociável** — é o
 > MANIFESTO aplicado ("estudar antes de agir"). Acumulativo: não fazer o Marcos ensinar 2x. Detalhe e
-> exemplos em `knowledge-base/design/habitos-de-designer-apresentacao-e-estudo.md` e
+> exemplos em `knowledge-base/sistema/habitos-de-designer-apresentacao-e-estudo.md` e
 > `knowledge-base/design/foto-de-produto-referencia-e-qualidade.md`.
 
 **1. ESTUDAR REFERÊNCIA ANTES de criar (a falha-raiz).** Não criar "no escuro". Antes de qualquer peça,

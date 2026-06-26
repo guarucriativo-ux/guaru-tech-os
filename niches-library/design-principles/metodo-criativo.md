@@ -36,7 +36,7 @@ de criar** (não inventa no escuro): Behance + Pinterest (`nicho + social media`
 no Instagram → **destila os conceitos visuais e de copy** → salva em `niches-library/<nicho>/visual-references/
 estudo-de-referencias.md` → só então cria, com DNA do cliente **dentro do nicho** (cores/tipografia que batem
 com o mercado; saúde não é preto). Processo completo + atrito (proxy 403) em
-`knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`. Casa com a régua do Estúdio (curar o
+`knowledge-base/sistema/workflow-estudar-mercado-antes-de-criar.md`. Casa com a régua do Estúdio (curar o
 critério) e com "designer sem boas referências não é ninguém".
 
 ## Fluxo padrão (do briefing à peça)

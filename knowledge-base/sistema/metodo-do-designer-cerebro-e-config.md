@@ -28,3 +28,16 @@ repete em 2+ clientes (ou que o Marcos confirma como geral) **sobe pra Base Mãe
 ## A foto vem DEPOIS do conteúdo
 Nunca foto aleatória (foge do contexto = genérico). O cérebro define a copy e gera `foto_busca` (palavras que
 descrevem a foto EXATA que aquele conteúdo pede) → só então busca ESSA foto. A foto serve à mensagem, não o contrário.
+
+## Como a CONFIG é abastecida (o "botão Nicho/DNA" vem da curadoria do Marcos)
+O caminho oficial de montar a config de um nicho/cliente é a **curadoria manual do Marcos**: ele cura a
+referência (olho dele = filtro; Behance = régua alta), salva em `references/` (ou cola no chat), e o designer
+**destila o sistema visual** pra dentro do `brand-dna.json` + regras de nicho. Quanto mais ele cura, mais a
+fábrica roda lisa (taste → config = o MOAT). WebSearch (texto) é só apoio; raspar Behance/Pinterest na nuvem
+foi descartado. Doutrina completa: [workflow-estudar-mercado-antes-de-criar.md](workflow-estudar-mercado-antes-de-criar.md).
+
+## Re-validações do método (acúmulo)
+O "1 cérebro + config" já foi exercitado em registros bem distintos, provando que muda só a config:
+psi.automatic (vitrine) · Guaru Estúdio · nutri · **joalheria/Lapidar (4º, 2026-06-26)** · **odontologia/Lume
+(5º, 2026-06-26)**. Cada teste alimentou a faculdade (a Lapidar gerou os "hábitos de designer"; a Lume validou
+o workflow de estudar o mercado). Testes são fictícios e descartáveis — o que fica é a LIÇÃO, já promovida.
