@@ -69,6 +69,13 @@ Pegar um stock qualquer "porque referência usa foto" é o mesmo pecado da copy 
   entende o assunto, ou confunde? Se confunde, foto errada.)
 - **NUNCA repetir a mesma foto na mesma peça** (usei a mesma no slide 1 e 5 = preguiça/sem criatividade). Se
   usar foto em mais de um slide, são imagens DIFERENTES (ou trata a mesma de formas distintas com intenção).
+- **DIREITO DE IMAGEM E AUTORAL (inquebrável).** A licença do stock cobre a FOTO — não o direito de usar a
+  IDENTIDADE de uma pessoa real nem o CONTEÚDO dela. Proibido usar imagem que mostre **perfil/@handle/rosto/
+  conteúdo identificável de terceiro** de um jeito que sugira que é nosso cliente, que nos endossa, ou que é
+  nosso trabalho (erro que cometi: stock de um perfil real de Instagram → implica falsa associação + usa o
+  conteúdo da pessoa). Para imagem de "feed/resultado": usar **mockup ANONIMIZADO** (sem @, rosto ou posts
+  reais reconhecíveis) ou — melhor e mais forte — **o NOSSO PRÓPRIO trabalho** (um feed que a gente desenhou).
+  Rosto de pessoa em foto-mood genérica de banco é ok; **perfil/identidade reconhecível como "cliente" não é.**
 
 ## Checklist do portão (se algum NÃO → volta pro layout, não entrega)
 - [ ] **FOTO (se houver):** foi escolhida pra SERVIR a copy/conceito (brief tirado da copy), não "foto no

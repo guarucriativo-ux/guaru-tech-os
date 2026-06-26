@@ -21,16 +21,28 @@
 > - **🟢 REGRA Nº0 cravada (2026-06-26):** *copy primeiro — design sem copy pesquisada que converte é bosta.*
 >   Gate obrigatório `knowledge-base/copywriting/copy-primeiro-o-gate.md` (5 passos: dor→ângulo→hook→edita→auto-check),
 >   ligado no Protocolo de Design (passo 0 do `CLAUDE.md`) e na Base Mãe (Regra Nº0). Nenhuma peça vira HTML sem passar.
-> - **🟢 Portão de craft cravado (companheiro):** `knowledge-base/design/craft-primeiro-o-gate.md` — na ENTREGA,
->   ler a referência certo + bater os 5 marcadores (cor domina · camadas · grafismo que não atrapalha · tipografia
->   com escala · quadro cheio) + comparar lado a lado com a ref. Passo 4 do Protocolo (`CLAUDE.md`) + pointer na Base Mãe.
-> - **3 peças de teste do Estúdio** (todas em `Projetos/guaru-estudio/02-content-generator/outputs/`, índice em
->   `_INDICE-CONTEUDOS.md`): **(1)** régua v3 (`pilot-regua-v3-*`, craft no nível) · **(2)** `preco-percepcao-v1-*`
->   (copy aprovada por Marcos) · **(3)** `seguidor-vs-cliente-v1-*` (1ª rodando os 2 portões — copy+craft).
-> - **🟡 AGUARDANDO FEEDBACK do Marcos (retomar AQUI):** ele vai criticar a peça #3 (seguidor x cliente) — duas
->   perguntas abertas: a **copy** chegou no nível "quente/converte"? o **craft** está na régua? O que ele ajustar
->   vira regra (atualizar gates/Base Mãe). Também pendente: fechar curadoria da régua (libera absorver as 65) +
->   greenlight da fusão dos 3 docs de cor + crítica dos currículos dos 3 colaboradores.
+> - **🟢 Portão de craft cravado (companheiro):** `knowledge-base/design/craft-primeiro-o-gate.md` — na ENTREGA:
+>   ler a ref certo → 3 camadas → 5 marcadores (cor domina · camadas · grafismo que não atrapalha · tipografia
+>   com escala · quadro cheio) → comparar lado a lado com a ref. Passo 4 do Protocolo (`CLAUDE.md`) + Base Mãe.
+> - **🟢 LOOP DE DESIGN — regras cravadas neste loop (peça a peça, feedback do Marcos):** *(todas no gate de craft)*
+>   1. **Copy primeiro** (Regra Nº0) — proibido copy no escuro; eixo alinhado ao que o Estúdio entrega (dor OU
+>      benefício/transformação — explorar eixos diversos no nicho, não repetir o mesmo).
+>   2. **Criatividade/roupagem NOVA** — trocar só a copy no mesmo molde = "mais do mesmo" reprovado; rotacionar
+>      arquétipos e variar composição (3+ slides no mesmo eixo = template disfarçado).
+>   3. **Tipografia explora o DNA** — não martelar Anton sempre; serifa itálica editorial (Fraunces) dá premium.
+>   4. **Foto serve à COPY** — brief tirado da copy → buscar com intenção → julgar candidatas. Sub-regras:
+>      **(a)** domínio certo, não literal (peça de marketing → feed/estratégia/resultado, não tangente que confunde);
+>      **(b)** nunca repetir a mesma foto na peça; **(c)** 🔒 **DIREITO DE IMAGEM/AUTORAL** — proibido perfil/@/
+>      rosto/conteúdo identificável de terceiro implicando que é cliente/nosso trabalho. Usar mockup anonimizado
+>      ou o NOSSO próprio trabalho. (Regra também em `CLAUDE.md` › Regras de Assets.)
+> - **Peças de teste do Estúdio** (em `02-content-generator/outputs/`, índice + status em `_INDICE-CONTEUDOS.md`):
+>   régua v3 (craft) · preço-percepção (copy aprovada) · seguidor×cliente v1→v2 (composição variou) ·
+>   **`estudio-beneficio-v1`** (eixo benefício + serifa editorial + FOTO no domínio certo).
+> - **🟡 ESTAMOS NO CAMINHO CERTO, mas ainda precisa de bastante ajuste (retomar AQUI):** continuar o loop de
+>   feedback do Marcos sobre `estudio-beneficio-v1`. **Ajuste aberto imediato:** a foto do slide 1 mostra um
+>   perfil real (direito de imagem) — trocar por **mockup anonimizado ou um feed desenhado por NÓS** (caminho
+>   melhor a longo prazo: mostrar nosso próprio trabalho, não stock de terceiro). Pendências antigas seguem:
+>   fechar curadoria da régua (absorver as 65) + fusão dos 3 docs de cor + crítica dos currículos.
 > - **Branch desta sessão:** `claude/pexels-hero-photo-test-0vbct1` → **PR #1 aberto** (github.com/guarucriativo-ux/
 >   guaru-tech-os/pull/1) pra mesclar na `main`. No PC: rodar `node tools/sincronizar.mjs` (ou mesclar o PR) pra
 >   o trabalho chegar nos outros terminais. **`main` é a fonte da verdade** — depois de mesclar, todo terminal nasce com tudo.

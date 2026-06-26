@@ -39,4 +39,7 @@
   - **Domínio certo, não literal:** imagem vive no campo da SOLUÇÃO/assunto (peça de marketing → feed/estratégia/
     resultado, não um artesão literal que confunde). Teste: estranho vê imagem+copy e entende, ou confunde?
   - **Nunca repetir a mesma foto** na mesma peça (= preguiça). Fotos diferentes ou tipográfico — não force foto fraca.
+  - 🔒 **Direito de imagem/autoral:** nunca usar perfil/@/rosto/conteúdo identificável de terceiro implicando que
+    é cliente/nosso trabalho (a licença do stock cobre a foto, não a identidade da pessoa). Usar mockup anonimizado
+    ou — melhor — o NOSSO próprio trabalho. (Regra: gate de craft + `CLAUDE.md` › Regras de Assets.)
 - Fontes do DNA instaladas localmente (sem depender de rede) — `tools/render/fonts/`.

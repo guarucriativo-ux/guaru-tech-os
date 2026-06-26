@@ -124,6 +124,14 @@ Existem duas gavetas de imagem, e elas NUNCA se misturam:
 - **Banco compartilhado do nicho** — só imagens **licenciadas que a Guaru tem direito** (stock
   pago, banco livre com licença anotada, ou geradas por IA). Essas, sim, rodam entre clientes do nicho.
 
+### Direito de imagem e autoral de terceiros (regra inquebrável)
+A licença do stock cobre a FOTO — **não** o direito de usar a IDENTIDADE de uma pessoa real nem o CONTEÚDO
+dela. **Proibido** usar imagem que mostre **perfil/@handle/rosto/conteúdo identificável de terceiro** de modo
+que sugira que é nosso cliente, que nos endossa, ou que é nosso trabalho (ex.: stock de um perfil real do
+Instagram numa peça nossa = falsa associação + uso indevido do conteúdo da pessoa). Para "feed/resultado":
+**mockup anonimizado** (sem @, rosto ou posts reais reconhecíveis) ou **o nosso próprio trabalho**. Foto-mood
+genérica com rosto = ok; identidade/perfil reconhecível como "cliente" = não.
+
 ### Anti-genérico / anti-repetição (4 camadas, nesta ordem)
 Banco fixo e pequeno faz todo cliente do nicho ficar igual. Para evitar peça repetida/genérica:
 1. **Foto do cliente primeiro** (única e isolada) — sempre que o cliente real tiver material.
