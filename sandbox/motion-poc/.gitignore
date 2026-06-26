@@ -1,0 +1,5 @@
+frames/
+*.webm
+*.mp4
+*.gif
+node_modules/

@@ -7,6 +7,17 @@
 
 ---
 
+## 🎬 MOTION GRAPHICS — estudo + POC (2026-06-26)
+> Marcos: "estude motion graphics e pense como a fábrica tem um colaborador que faça isso". Estudo + plano em
+> `knowledge-base/sistema/colaborador-de-motion-graphics.md`. **Sacada:** a nossa arquitetura JÁ é um motor de
+> vídeo (HTML/CSS+Puppeteer+ffmpeg = o que o Remotion faz). Plano em 3 camadas: **Tier 1** = nosso motor
+> (HTML animado → Puppeteer frame a frame → ffmpeg), começar aqui; **Tier 2** = Remotion (só se travar);
+> **Lottie** = banco de micro-animação curado.
+> - **POC feito** (`sandbox/motion-poc/`): kinetic typography da Lume, **90 frames @30fps @1080×1350**
+>   capturados na nuvem ✅. **Encode trava na nuvem** (ffmpeg do ambiente só VP8/sem PNG; ffmpeg-static
+>   segfault; screencast travou) → encode final precisa de ffmpeg completo (PC). Pipeline provado; falta só o codec.
+> - É um **especialista futuro** (como o Olho / gestor de tráfego): mesmo cérebro + config, reusa DNA do still.
+
 ## ✅ FOTO-HERÓI PEXELS — CONFIRMADA EM ALTA (2026-06-26, sessão nova)
 > Teste rodado de ponta a ponta nesta sessão nova: a `PEXELS_API_KEY` (56 chars) **apareceu** no ambiente e o
 > comando `node tools/foto-auto.mjs "warm cozy coffee shop interior" --source=pexels ... --orient=portrait`
