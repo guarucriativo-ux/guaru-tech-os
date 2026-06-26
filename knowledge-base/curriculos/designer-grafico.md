@@ -113,7 +113,9 @@ Estimo que cobrimos **≈5%** da formação de uma escola de elite. **Não é "q
 - ✅ **F2 — Tipografia** destilado → `design/tipografia-fundamentos-canone.md` (Bringhurst/Lupton).
 - ✅ **F3 — Cor** destilado → `design/cor-fundamentos-canone.md` (Albers/Itten).
 - ✅ **N1 — Grid/Composição** destilado → `design/grid-composicao-canone.md` (Müller-Brockmann/Samara/Vignelli).
-- ⏳ em andamento: N3 Branding → N4 Copy → N2 Imagem → N5 História.
+- ✅ **N3 — Branding/Identidade** destilado → `design/branding-identidade-canone.md` (Wheeler/Neumeier/Airey).
+- ✅ **N4 — Copy/Persuasão** destilado → `copywriting/copy-persuasao-canone.md` (Ogilvy/Sugarman/Cialdini/StoryBrand).
+- ⏳ em andamento: N2 Imagem → N5 História.
 > Cada um é uma **destilação do cânone (v1)** — semente vira regra. Vira "cursado de verdade" só depois da
 > **crítica do Marcos** + aplicar numa peça (a prova). Drafts ≠ formado (não repetir o erro do "quase formado").
 
