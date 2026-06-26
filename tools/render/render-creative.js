@@ -8,10 +8,30 @@
 // Carrega o HTML por file:// (resolve assets/fontes relativos), espera fontes + rede.
 // Método autoral — ver niches-library/design-principles/metodo-criativo.md
 import puppeteer from "puppeteer";
-import { mkdir, readdir } from "node:fs/promises";
+import { mkdir, readdir, copyFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
+import { execFile } from "node:child_process";
+import { homedir } from "node:os";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+
+// FONTES INSTALADAS (como um designer tem): a fábrica carrega a própria biblioteca de fontes (tools/render/
+// fonts/*.ttf) pro fontconfig em TODA sessão — assim o Chromium acha as fontes do DNA LOCALMENTE, sem depender
+// do Google Fonts via rede (que flapa e cai em serifa errada). "Design gráfico sem fontes não faz nada."
+async function instalarFontes(fontsDir) {
+  try {
+    if (!existsSync(fontsDir)) return;
+    const dest = path.join(homedir(), ".fonts");
+    await mkdir(dest, { recursive: true });
+    let copiou = 0;
+    for (const f of await readdir(fontsDir)) {
+      if (!/\.(ttf|otf)$/i.test(f)) continue;
+      const d = path.join(dest, f);
+      if (!existsSync(d)) { await copyFile(path.join(fontsDir, f), d); copiou++; }
+    }
+    if (copiou) await new Promise((r) => execFile("fc-cache", ["-f", dest], () => r())); // idempotente; ignora se não houver fc-cache
+  } catch {}
+}
 
 // Acha o Chromium do ambiente quando o puppeteer não baixou o próprio (ex.: nuvem usa o pré-instalado em
 // /opt/pw-browsers, com nº de versão que muda). Sem isso, render falha na nuvem ("Could not find Chrome").
@@ -52,6 +72,7 @@ const outPath = path.resolve(__dirname, outArg);
 // formato por extensão: .jpg/.jpeg => JPEG sRGB (entrega Meta, mais leve); senão PNG (texto puro/transparência)
 const shotOpts = (p) => (/\.jpe?g$/i.test(p) ? { path: p, type: "jpeg", quality } : { path: p });
 
+await instalarFontes(path.join(__dirname, "fonts")); // carrega a biblioteca de fontes da fábrica (local, sem rede)
 const executablePath = await acharChromium();
 const browser = await puppeteer.launch({ args: ["--no-sandbox"], ...(executablePath ? { executablePath } : {}) });
 try {

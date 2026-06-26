@@ -129,6 +129,31 @@ imagem em baixa → o cliente lê "entrega baixa". Errar na apresentação destr
 (depende de foto de produto, "não é o meu produto") — fica **parqueada** (ver `niches-library/
 mercado-classe-b.md`). Escolher classe A sem necessidade foi erro de partida.
 
+## Amendment [2026-06-26] — Tipografia, marca-texto e grafismo (Marcos revisou o piloto da régua)
+
+> Feedback do Marcos no 1º piloto de aplicação de régua. Detalhe: as referências de estúdio/agência mostram
+> o NÍVEL de tipografia a alcançar. Acumulativo (não reensinar).
+
+**1. TIPOGRAFIA é a régua — e post SEM FOTO exige tipografia + composição impecáveis.** Sem foto, a tipografia
+E a diagramação carregam a peça sozinhas → não dá pra ser "ok", tem que ser **caprichado** (composição da
+tipografia, ritmo, hierarquia, espaçamento). As refs mostram o sarrafo. Tipografia fraca/genérica reprova a peça.
+
+**2. FONTE TEM que casar com o DNA.** Usar a fonte do cliente (ex.: Estúdio = Anton grotesca + Fraunces serifa
+itálica). Fonte fora do DNA quebra a marca. (Infra: as fontes da fábrica ficam INSTALADAS localmente —
+`tools/render/fonts/` — pra nunca cair em fallback errado. "Design sem fontes não faz nada.")
+
+**3. MARCA-TEXTO = caixa ATRÁS do texto (texto sobre o bloco de cor), feito limpo.** É a forma certa (ex.:
+"aparece" sobre o bloco lime). NÃO é riscar/sublinhar torto. **Pesquisar o uso da técnica ANTES de aplicar** —
+"como os designers fazem marca-texto / highlight" — em vez de inventar a execução. (Vale pra qualquer técnica:
+ver referência da TÉCNICA antes de usar.)
+
+**4. GRAFISMO NUNCA atrapalha a leitura do texto (reforço — já ensinado).** Elemento gráfico (swoosh, mancha,
+blob) no canto que **encosta/sobrepõe o texto** = erro. O grafismo tem zona própria, com folga do texto. (Erro
+repetido no piloto: o swoosh no canto inferior cobriu o rodapé — não repetir.)
+
+**5. CRIATIVIDADE na tipografia, não só frase grande.** Statement chapado em bold = sem graça. Buscar a jogada
+(escala extrema, troca serifa×grotesca com sentido, trocadilho visual, palavra que vira imagem) — como nas refs.
+
 ## Amendment [2026-06-26] — Doutrina do CROP: fonte GRANDE, output LEVE (o designer estuda)
 
 > Lição do Marcos (2026-06-26). Vale pra **qualquer nicho**. Detalhe e exemplo trabalhado:
