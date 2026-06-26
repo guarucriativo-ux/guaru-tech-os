@@ -38,11 +38,14 @@
 > - **Peças de teste do Estúdio** (em `02-content-generator/outputs/`, índice + status em `_INDICE-CONTEUDOS.md`):
 >   régua v3 (craft) · preço-percepção (copy aprovada) · seguidor×cliente v1→v2 (composição variou) ·
 >   **`estudio-beneficio-v1`** (eixo benefício + serifa editorial + FOTO no domínio certo).
+> - **🟢 DOUTRINA (Marcos 2026-06-26):** *a fábrica entrega forte SEM depender de foto* (`knowledge-base/design/
+>   criatividade-independente-de-foto.md`). Foto é BÔNUS (material real do cliente OU arte/mockup NOSSO), nunca
+>   muleta de stock. Designer criativo resolve com design (tipo/cor/grafismo/composição). Aplicado: o slide 1 de
+>   `estudio-beneficio-v1` agora é um **mockup de feed desenhado por NÓS** (`@seunegócio` genérico) — sem foto de
+>   terceiro, sem direito de imagem, mostrando nosso trabalho.
 > - **🟡 ESTAMOS NO CAMINHO CERTO, mas ainda precisa de bastante ajuste (retomar AQUI):** continuar o loop de
->   feedback do Marcos sobre `estudio-beneficio-v1`. **Ajuste aberto imediato:** a foto do slide 1 mostra um
->   perfil real (direito de imagem) — trocar por **mockup anonimizado ou um feed desenhado por NÓS** (caminho
->   melhor a longo prazo: mostrar nosso próprio trabalho, não stock de terceiro). Pendências antigas seguem:
->   fechar curadoria da régua (absorver as 65) + fusão dos 3 docs de cor + crítica dos currículos.
+>   feedback do Marcos sobre `estudio-beneficio-v1` (eixo benefício + serifa editorial + mockup próprio).
+>   Pendências antigas seguem: fechar curadoria da régua (absorver as 65) + fusão dos 3 docs de cor + crítica dos currículos.
 > - **Branch desta sessão:** `claude/pexels-hero-photo-test-0vbct1` → **PR #1 aberto** (github.com/guarucriativo-ux/
 >   guaru-tech-os/pull/1) pra mesclar na `main`. No PC: rodar `node tools/sincronizar.mjs` (ou mesclar o PR) pra
 >   o trabalho chegar nos outros terminais. **`main` é a fonte da verdade** — depois de mesclar, todo terminal nasce com tudo.

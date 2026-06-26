@@ -16,7 +16,7 @@
 | 4 | `preco-percepcao-v1` | Copy "preço x percepção" (ninguém paga caro no que parece barato) | ✅ Copy aprovada por Marcos |
 | 5 | `seguidor-vs-cliente-v1` | "não precisa de seguidor, precisa de cliente" (1º com os 2 portões) | ❌ "Mais do mesmo" — mesmo molde, só copy trocada (+ coração feio). Superado |
 | 6 | `seguidor-vs-cliente-v2` | Mesma copy, roupagem recomposta: 5 arquétipos distintos | 🟡 Entregue (composição variou, mas tipografia/copy ainda "mais do mesmo") |
-| 7 | **`estudio-beneficio-v1`** | **3 eixos novos:** copy de BENEFÍCIO/transformação · tipografia serifa editorial (Fraunces) · FOTO real | 🟡 Entregue — **aguardando feedback do Marcos** |
+| 7 | **`estudio-beneficio-v1`** | Copy de BENEFÍCIO · serifa editorial (Fraunces) · slide 1 = **mockup de feed NOSSO** (sem foto de terceiro, independente de foto) | 🟡 Entregue — **aguardando feedback do Marcos** |
 
 ## Onde estamos
 - **Atual / aguardando feedback:** peça #5 (`seguidor-vs-cliente-v1`). Perguntas abertas pro Marcos:
