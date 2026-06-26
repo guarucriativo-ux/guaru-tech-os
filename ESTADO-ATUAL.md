@@ -7,6 +7,19 @@
 
 ---
 
+## 🎓 GRADE CURRICULAR DOS COLABORADORES — matrículas (2026-06-26)
+> Marcos: matricular cada colaborador numa faculdade COMPLETA, modelo das melhores do mundo (grade curricular
+> por função). Estudei os currículos de elite (RISD/Parsons/SVA pra design; Meta Blueprint/Google/performance
+> pra tráfego) e o método de ENSINO (studio + crítica = a crítica do Marcos é o professor-mestre + Backward
+> Design + depth>breadth). Criada `knowledge-base/curriculos/`:
+> - ✅ **`designer-grafico.md`** (matrícula nº1): 4 fases (Fundamentos→Núcleo→Especialização→Prática), mapeando
+>   TODO o acervo como "créditos cursados". Diagnóstico: **quase formado**; lacunas: princípios visuais/Gestalt,
+>   repertório/história, e consolidar os 3 docs de cor.
+> - ✅ **`gestor-de-trafego.md`** (matrícula nº2): mesma estrutura; diagnóstico **calouro** (é maquete) — a grade
+>   é também o ROTEIRO de construção. Fila: 🔴 3 tetos de gasto → Meta Ads/estrutura → tracking → escala/loop.
+> - As **lacunas viram a fila de estudo** da faculdade (Backward Design: nasce da entrega). O que o Marcos
+>   ensina entra como matéria obrigatória, seguida à risca.
+
 ## 🎓 CULTURA DE CURADORIA DA FACULDADE — cravada (2026-06-26)
 > Marcos: faculdade é ENSINO que vira RESULTADO, não depósito; conhecimento errado/excesso = "gordura no
 > cérebro" (dilui o RAG). Estudei o método das melhores faculdades (Backward Design, Constructive Alignment,
