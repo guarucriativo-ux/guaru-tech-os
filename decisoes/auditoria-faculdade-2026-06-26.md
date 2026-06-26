@@ -13,8 +13,13 @@ com DECISÃO/INFRA (não é faculdade). Assumo que **eu contribui pra gordura ne
 exploração de motion na faculdade). Corrigido. O resto é curadoria antiga do Marcos → recomendo, não mexo.
 
 ## ✅ Executado nesta auditoria
-- **Movido pra `decisoes/`:** `mapa-de-custo-video-api-vs-ia.md` (procurement) e `colaborador-de-motion-graphics.md`
-  (roadmap de capacidade não-construída). Não passam no teste 1 (não mudam entrega hoje) nem 2 (não é princípio).
+- **Movido pra `decisoes/`** (não-ensino — gordura na faculdade): `mapa-de-custo-video-api-vs-ia.md` (procurement),
+  `colaborador-de-motion-graphics.md` (roadmap não-construído), **`modelo-servico-produtizado-assinatura.md`**
+  (modelo de NEGÓCIO), **`infra-de-producao-e-rede.md`** (infra). Critério do Marcos: "ensino de qualidade
+  mantém, gordura muda de local."
+- **Correção de veredito:** `modelo-agencia-entrega.md` — ao conferir o TEOR (não o nome), é **ENSINO**
+  (estratégia de conteúdo, pilares, anti-copy-repetida → muda a entrega). **MANTIDO.** Lição: julgar pelo
+  conteúdo, não pelo título.
 
 ## Veredito por arquivo
 
@@ -35,7 +40,8 @@ exploração de motion na faculdade). Corrigido. O resto é curadoria antiga do 
 | metricas-relatorio-redes-sociais | **MANTER** se o especialista de relatório existir (melhora a entrega "relatório"). |
 | naming-metodologia | **MANTER** — método de uma entrega real (naming/branding do Estúdio). |
 | operacao-agencia-elite-4-pilares | ⚠️ **REVER** — operação de agência é doutrina de negócio, não craft de peça. _(a confirmar)_ |
-| **modelo-agencia-entrega** · **modelo-servico-produtizado-assinatura** | ⚠️ **MOVER → raiz/decisoes** — é **modelo de negócio** (QUEM somos / como cobramos), não ensino de entrega. _(a confirmar)_ |
+| modelo-agencia-entrega | ✅ **MANTIDO** — conferido o teor: é ENSINO (estratégia de conteúdo/pilares/anti-repetição). |
+| ~~modelo-servico-produtizado-assinatura~~ | ✅ **MOVIDO → decisoes/** (modelo de negócio, não ensino). |
 
 ### `knowledge-base/sistema/` — saco de gato: separar MÉTODO de DECISÃO/INFRA
 | Arquivo | Veredito |
@@ -43,13 +49,15 @@ exploração de motion na faculdade). Corrigido. O resto é curadoria antiga do 
 | metodo-do-designer-cerebro-e-config · padroes-de-fluxo-criativo-automatico · doutrina-de-motor-decisao · doutrina-do-olho-referencia-como-regua · habitos-de-designer-apresentacao-e-estudo · workflow-estudar-mercado-antes-de-criar | **MANTER** — é MÉTODO de como o colaborador opera/entrega (ensino legítimo). |
 | agent-skills-e-externas | **MANTER** (borderline) — método de uso de ferramenta. |
 | fontes-de-dna-e-asset-pasta-vs-canva | ⚠️ **REVER** — é registro de DECISÃO (pasta vs Canva); ou vira método enxuto, ou vai pra `decisoes/`. _(a confirmar)_ |
-| infra-de-producao-e-rede | ⚠️ **MOVER → decisoes/** — infra/rede não é ensino de entrega. _(a confirmar)_ |
-| ~~mapa-de-custo-video-api-vs-ia~~ · ~~colaborador-de-motion-graphics~~ | ✅ **JÁ MOVIDOS** pra `decisoes/`. |
+| ~~infra-de-producao-e-rede~~ | ✅ **MOVIDO → decisoes/** (infra, não ensino). |
+| ~~mapa-de-custo-video-api-vs-ia~~ · ~~colaborador-de-motion-graphics~~ | ✅ **MOVIDOS** pra `decisoes/`. |
 
-## Recomendação ao Marcos (greenlight pra eu executar a 2ª onda)
-1. **Fundir os 3 docs de cor** em um `cor.md` afiado (mantendo o que muda a peça).
-2. **Mover modelos de negócio** (`modelo-agencia-entrega`, `modelo-servico-produtizado-assinatura`) e
-   **`infra-de-producao-e-rede`** pra fora da faculdade.
-3. **Decidir** `edicao-video-highlight`, `dna-agencia-trafego-pago`, `operacao-agencia-elite-4-pilares`,
-   `fontes-de-dna-e-asset-pasta-vs-canva` (manter como método enxuto OU mover).
-4. **Cravar a auditoria semanal** (eu rodo o teste dos 4 e te trago o diff toda semana).
+## Resolução (critério do Marcos: "ensino de qualidade mantém, gordura muda de local")
+- ✅ **Gordura movida** pra `decisoes/`: `modelo-servico-produtizado-assinatura`, `infra-de-producao-e-rede`
+  (+ `mapa-de-custo-video-api-vs-ia` e `colaborador-de-motion-graphics`, já antes).
+- ✅ **Mantidos como ENSINO** (os "a rever" eram teaching de verdade, conferido o TEOR, não o título):
+  `modelo-agencia-entrega` (estratégia de conteúdo), `dna-agencia-trafego-pago`, `edicao-video-highlight`,
+  `operacao-agencia-elite-4-pilares`, `fontes-de-dna-e-asset-pasta-vs-canva`.
+- ⏸️ **Único pendente (opcional — fundir é editar ensino, não mover gordura):** unir os 3 docs de cor num
+  `cor.md` afiado (depth>breadth). Só com greenlight do Marcos.
+- ✅ **Auditoria semanal cravada** (ver `ESCOPO-ESTUDO.md` + ESTADO-ATUAL).
