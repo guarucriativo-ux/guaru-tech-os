@@ -24,24 +24,15 @@
 - **Régua de craft de referência:** peça #3 (`pilot-regua-v3`).
 - **Versões superadas (#1, #2):** mantidas só como histórico da evolução; não usar como referência.
 
-## Aprendizados que já viraram regra (não repetir os erros)
-- Copy primeiro, sempre (Regra Nº0). Proibido copy no escuro.
-- Craft: cor de marca domina · camadas/profundidade · grafismo nunca atrapalha leitura · tipografia com
-  escala · quadro cheio · entregar slides individuais em alta (nunca folha de contato).
-- **CRIATIVIDADE (cravada 2026-06-26):** cada peça com roupagem NOVA; trocar só a copy no mesmo molde =
-  "mais do mesmo" = reprovado. Rotacionar arquétipos e variar composição slide a slide (3+ slides no mesmo
-  eixo = template disfarçado). Régua, não regra — vale até pros meus próprios layouts anteriores.
-- **TIPOGRAFIA explora dentro do DNA:** não martelar Anton sempre; a serifa itálica editorial (Fraunces) é
-  registro do DNA e dá tom premium. Variar registro tipográfico por peça, não só a composição.
-- **FOTO serve à COPY (cravada 2026-06-26):** proibido "foto no escuro" (pegar a 1ª genérica porque "ref usa
-  foto"). Tirar o BRIEF da copy → buscar com intenção → julgar candidatas contra o conceito. Foto que não
-  conta a história da copy é pior que tipográfico limpo. (Gate de craft + `foto-vs-texto-carrossel.md`.)
-  - **Domínio certo, não literal:** imagem vive no campo da SOLUÇÃO/assunto (peça de marketing → feed/estratégia/
-    resultado, não um artesão literal que confunde). Teste: estranho vê imagem+copy e entende, ou confunde?
-  - **Nunca repetir a mesma foto** na mesma peça (= preguiça). Fotos diferentes ou tipográfico — não force foto fraca.
-  - 🔒 **Direito de imagem/autoral:** nunca usar perfil/@/rosto/conteúdo identificável de terceiro implicando que
-    é cliente/nosso trabalho (a licença do stock cobre a foto, não a identidade da pessoa). (gate de craft + `CLAUDE.md`.)
-- **FOTO É O PADRÃO (cravada 2026-06-26):** bom conteúdo TEM foto. Cliente sem foto → a fábrica PESQUISA a melhor
-  foto de banco LIVRE que serve à copy e sem problema de direito. Só-diagramação = exceção a pedido do cliente.
-  (Doc: `knowledge-base/design/foto-no-conteudo-padrao-da-fabrica.md`. Correção de uma conclusão errada anterior.)
-- Fontes do DNA instaladas localmente (sem depender de rede) — `tools/render/fonts/`.
+## Os aprendizados NÃO moram aqui — moram na FACULDADE (geral, replicável a TODO cliente)
+> Tudo que aprendi nos feedbacks do Marcos é **conhecimento de designer**, não "coisa do Guaru Estúdio".
+> Por isso vive na faculdade (compartilhada) e se aplica a qualquer cliente futuro — este índice só guarda o
+> **status das peças** do Estúdio. As regras gerais (cravadas peça a peça neste loop):
+> - **Copy primeiro** (Regra Nº0) → `knowledge-base/copywriting/copy-primeiro-o-gate.md`
+> - **Craft + criatividade/variedade + foto** (5 marcadores · roupagem nova · foto serve à copy + domínio +
+>   não repetir + direito de imagem) → `knowledge-base/design/craft-primeiro-o-gate.md`
+> - **Foto é o padrão** (pesquisar a certa de banco livre) → `knowledge-base/design/foto-no-conteudo-padrao-da-fabrica.md`
+> - **Tipografia explora o DNA** (serifa editorial, não só Anton) → `niches-library/design-principles/design-rules.md`
+>
+> Ambos os gates estão ligados no **Protocolo de Geração de Design (`CLAUDE.md`)**, que roda pra **todo
+> cliente** — é assim que o aprendizado replica (o MOAT: acúmulo, não silo por cliente).
