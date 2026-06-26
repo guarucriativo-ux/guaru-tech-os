@@ -85,3 +85,14 @@ gasto** — são lacunas. **Fila de estudo (ordem sugerida, batendo com o backlo
 3. ⬜ **N3 — tracking (pixel/GA4)**.
 4. ⬜ **E1 — otimização/escala** + **P3 — loop real da Meta API**.
 > O que o Marcos ensinar em cada matéria entra como obrigatório, seguido à risca.
+
+### 📓 Progresso do modo caverna (dever de casa — sessão 2026-06-26)
+Destilados do cânone (Meta Blueprint/Google + Schwartz + best practices 2026):
+- ✅ **F1 — Funil & Consciência** → `marketing/funil-e-consciencia-canone.md` (Schwartz 5 níveis + full-funnel).
+- ✅ **F2/N1 — Mídia Paga & Estrutura** → `marketing/midia-paga-meta-google-canone.md` (Advantage+/CBO/learning phase).
+- ✅ **N3 — Mensuração & Tracking** → `marketing/mensuracao-tracking-canone.md` (Pixel/CAPI/GA4/KPIs).
+- ✅ **E1 — Otimização & Escala** → `marketing/otimizacao-e-escala-canone.md`.
+- ✅ **E2 — Guardrails de Gasto (3 tetos) 🔴** → `marketing/guardrails-gasto-3-tetos-canone.md` (doutrina + spec de build).
+> **A TEORIA-base do gestor está destilada (v1).** Mas, diferente do designer, o gestor depende de **CONSTRUIR**
+> (Meta API real, os 3 tetos em código, loop 24/7 — backlog do `ESTADO-ATUAL.md`). Estudar ≠ operante: falta
+> o código + a prática + a crítica do Marcos. Drafts ≠ formado.
