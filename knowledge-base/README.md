@@ -67,6 +67,10 @@ RAG). **Curar é subtrair tanto quanto somar.** Um doc só entra/permanece se pa
 não-construída, infra, status, teste. **Auditoria SEMANAL** (`decisoes/auditoria-faculdade-<data>.md`): o que
 não passa nos 4 testes, funde/move/poda.
 
+> ⭐ **Exceção que manda em tudo:** o que o **Marcos ensina** é currículo PRIMÁRIO — **sempre entra** e o
+> colaborador **segue à risca** (lição do Marcos = REGRA, não régua). A poda é só pra gordura (decisão/
+> duplicata/órfão/não-ensino), **nunca** pras lições dele. Faculdade = curadoria do Marcos **+** estudos, juntos.
+
 ## Princípio (não cair no mito)
 Encher a pasta NÃO deixa o modelo (Claude) mais inteligente sozinho — ele é congelado. O que fica
 mais inteligente é o **sistema**, porque passa a **consultar** este acervo ao gerar, e porque a

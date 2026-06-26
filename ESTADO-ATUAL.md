@@ -16,9 +16,14 @@
 > **NÃO é faculdade** (→ `decisoes/`): decisão, preço de fornecedor, roadmap não-construído, infra, status, teste.
 > - **Nova pasta `decisoes/`** (não-ensino). Já movidos pra lá: o **mapa de custo de vídeo** e a **exploração
 >   de motion** (eram gordura na faculdade — meu erro desta sessão, corrigido).
-> - **1ª auditoria feita:** `decisoes/auditoria-faculdade-2026-06-26.md` (veredito por arquivo). ⏳ Aguardando
->   greenlight do Marcos pra 2ª onda (fundir 3 docs de cor; mover modelos de negócio + infra pra fora).
-> - **Ritual:** auditoria SEMANAL (faculdade vs. aplicado) — eu rodo o teste dos 4 e trago o diff.
+> - **1ª auditoria feita:** `decisoes/auditoria-faculdade-2026-06-26.md` (veredito por arquivo). ⏸️ 2ª onda
+>   (fundir 3 docs de cor; mover modelos de negócio + infra) **EM ESPERA** — Marcos autorizou só a auditoria
+>   semanal por ora; não mexer na curadoria antiga sem o ok dele.
+> - 🗓️ **RITUAL CRAVADO — AUDITORIA SEMANAL** (faculdade vs. aplicado): rodar o Teste dos 4 em cada doc, trazer
+>   o diff (funde/move/poda). **Última: 2026-06-26 · Próxima: ~2026-07-03.** Toda sessão checa se está vencida.
+> - ⭐ **Regra que manda em tudo (Marcos):** o que o Marcos ensina é currículo PRIMÁRIO — sempre entra, o
+>   colaborador segue **à risca** (lição = REGRA). A poda é só pra gordura, NUNCA pras lições dele. Faculdade =
+>   curadoria do Marcos + estudos, juntos. (Cravado em `ESCOPO-ESTUDO.md` + `knowledge-base/README.md`.)
 
 ## 🎬 VÍDEO/MOTION — estudo REVISADO (olhar amplo, 2026-06-26): NÃO construir, ALAVANCAR
 > Marcos pediu pra estudar motion; depois corrigiu: "kinetic type frame a frame qualquer app faz; ache uma

@@ -61,6 +61,19 @@ Sem âncora, vira um menino aprendendo errado e repetindo com confiança. **A cu
 > dá a ILUSÃO de "coberto" o que não está. **Curar é subtrair tanto quanto somar.** Não precisamos de excesso —
 > precisamos de conhecimento que muda a entrega.
 
+### ⭐ A curadoria do Marcos é o CURRÍCULO PRIMÁRIO (Marcos 2026-06-26) — nunca confundir com gordura
+> A faculdade = **curadoria do Marcos + estudos, JUNTOS.** Os estudos (pesquisa/frameworks) **apoiam**; a
+> curadoria do Marcos **ancora e lidera**. O designer precisa das duas coisas juntas.
+
+- **Tudo que o Marcos ensina ENTRA na faculdade** — é o conteúdo de MAIOR valor. Ele gasta tempo ensinando
+  **como um designer humano trabalha**; isso vira regra reaproveitável = o **MOAT** (o taste dele dura).
+- O colaborador **entende e segue à risca** o que o Marcos ensina. **Lição do Marcos = REGRA (obriga)**, não
+  régua. (Distinção da Base Mãe: *referência estudada = régua* — mede a decisão; *lição do Marcos = regra* —
+  obedece. Ver `metodo-criativo.md`.)
+- ⚠️ O Teste de Entrada e a auditoria **podam GORDURA** (decisão, preço, duplicata, órfão, não-ensino) —
+  **NUNCA as lições do Marcos.** Na dúvida sobre algo que ele ensinou: **mantém.** Subtrair vale pra ruído,
+  jamais pra curadoria humana (ela é a âncora anti-deriva, acima).
+
 Método das melhores faculdades (Wiggins & McTighe, *Backward Design* · Biggs, *Constructive Alignment* ·
 Meyer & Land, *Threshold Concepts* · *depth over breadth*), traduzido pra nossa curadoria:
 
