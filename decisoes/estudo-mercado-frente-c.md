@@ -1,54 +1,99 @@
-# Frente C — Estudo de mercado (preço · oferta · concorrentes) · v1 (2026-06-26)
+# NORTE — Qual produto digital construir com a fábrica de agentes + caminho mais rápido pro $ · v2 (2026-06-26)
 
-> ⚠️ v1 mirou nos NOSSOS serviços/preço (parcial). A pergunta REAL do Marcos (qual produto digital em alta a
-> fábrica deve produzir + caminho mais rápido pra faturar, Brasil nacional) está numa DEEP-RESEARCH rodando
-> (run wf_0ca2cdc3-019) → vira a v2. Ver `rumo-produtos-com-agentes.md` (Pergunta Central).
->
-> Parte do estudo da LINHA DE PRODUÇÃO (`rumo-produtos-com-agentes.md`). Define preço/quem-compra/como-vende
-> por produto = metade do "norte". v1 = o que dá pra estudar SEM o kit (pesquisa de mercado BR). Fontes no fim.
-> Faixas são de mercado (estimativas de várias tabelas 2025/26) — refinar com dado real do nosso funil.
+> Responde a PERGUNTA CENTRAL do Marcos (`rumo-produtos-com-agentes.md`): "qual produto digital está em alta?
+> com os agentes, o que produzimos e ganhamos dinheiro COMO? qual o caminho mais RÁPIDO?". Mercado: Brasil.
+> Base: pesquisa profunda (4 frentes concluídas + teardown de concorrentes ainda apurando). Fontes no fim.
+> ⚠️ Faixas de R$ e tamanhos de mercado são de relatórios/tabelas (estimativas), não dados auditados.
 
-## 1. Faixas de preço por produto (mercado BR)
-| Produto | Faixa de mercado | Observações |
-|---|---|---|
-| **Gestão de conteúdo (mensal)** | freelancer R$800–1.500 · intermediário R$1.500–3.500 · sênior/agência R$4.000–10.000+ | pacote SME comum R$1.200–2.500/mês (2 redes + relatório). Foto/vídeo, impulsionamento e ferramentas **à parte**. |
-| **Identidade visual / branding** | Essencial R$800–2.500 · Profissional R$2.500–8.000 (média citada ~R$8.000) | projeto pontual, ticket alto. |
-| **Landing page / funil** | R$2.500–4.500 (completa c/ copy) · com VSL/A-B/CRM R$8.000+ · básica R$497–7.100 | depende se inclui copy (a maioria barata NÃO inclui). |
-| **Copy de anúncio / roteiro de reels / e-mail** | add-on (avulso ou dentro do pacote) | a copy-squad cobre; vender como upsell. |
-| **Setup + manutenção (modelo agência de IA)** | setup R$3.000–5.000 + manutenção R$1.500–2.500/mês | padrão emergente de "agência de IA". |
+## 1. Ranking de produtos por OPORTUNIDADE (demanda × velocidade de $ × fit com a fábrica × margem)
+| Produto | Demanda | Saturação | Fit fábrica de IA | Margem | Veloc. p/ 1ª venda | Papel |
+|---|---|---|---|---|---|---|
+| **Gestão de conteúdo (social) recorrente** | Alta | **Alta** | **Alto** (copy+design+carrossel) | Alta c/ fábrica (60–85%) | **Rápida** (rede quente) | **ÂNCORA / caixa JÁ** |
+| **Automação / agentes de IA p/ empresas** | Alta e subindo | **BAIXA (azul)** | **Alto** (é o DNA) | **Alta** | Média (venda B2B) | **APOSTA de maior margem** |
+| **Identidade visual / branding** | Média-alta | Média-alta | Alto | Alta | Média (projeto) | Produto de ENTRADA (ticket cheio) |
+| **Landing page / funil** | Média | Média | Alto (copy+design) | Alta | Média | Casa c/ tráfego/info |
+| **Reels / vídeo** | Alta (subindo) | Média | Médio (roteiro=alto; corte=humano) | Média | Média | UPSELL |
+| **Tráfego pago (gestão)** | Alta | Alta | Baixo-médio (criativo=alto; gestão=humano) | Média | Média | Recorrente premium acoplado |
+| **Kit/template de agentes (tipo Xquads)** | Alta | Subindo | Alto | **90%+** | Média (precisa audiência/volume) | 2º PRODUTO / escala |
+| **Infoproduto / curso** | Alta (R$8,8–10,6 bi/2025) | Alta | Alto (empacotar) | 70–95% | Baixa s/ audiência | Projeto futuro |
+| **Micro-SaaS / assinatura** | Média | Média | Médio | Alta recorrente | **Baixa** (lento p/ 1º caixa) | Longo prazo (LTV) |
 
-## 2. Os DOIS modelos de negócio (escolher onde a gente joga)
-- **(1) Vender o SERVIÇO** (done-for-you) pro pequeno negócio → é o **Estúdio**: mensalidade de conteúdo +
-  projetos (identidade/landing). É onde estamos. A linha de produção barateia/escala isto.
-- **(2) Vender o KIT/curso** (agentes/automação) pra outros operadores → é o que **raxo/xquads** fazem
-  (info-produto/SaaS, R$67 isca + funil). Modelo diferente; possível expansão futura, não o foco agora.
-> Nosso foco = (1). O kit é INSUMO interno pra entregar (1) com margem alta — não o que a gente revende.
+## 2. O NORTE (a resposta)
+**Caminho mais RÁPIDO pro dinheiro AGORA:** **serviço done-for-you recorrente** (gestão de conteúdo/criativos
+= o Estúdio) vendido na **rede quente por social selling/WhatsApp** — 1ª venda em **horas–dias**, CAC ≈ zero, e
+a **fábrica de agentes derruba o custo de entrega → margem 60–85%**. É o caixa imediato e já é o que temos.
 
-## 3. A onda / concorrentes (contexto)
-- Explodiu "**agência de IA**" (Intelecta, Brabaflow, GPTMaker etc.): "IA virou produto vendável, margem alta,
-  custo operacional baixíssimo, 1 pessoa toca". Frase que descreve EXATAMENTE o nosso modelo: *"equipe de 2–5
-  pessoas supervisiona uma fábrica de 50+ agentes executando o processo ponta a ponta."*
-- Concorrência se divide em: **barato/genérico** (freelancer + "posts de IA" crus) × **agência cara**.
-- Risco do genérico: "posts de IA" viraram commodity e derrubam preço/percepção.
+**Aposta de maior margem / oceano azul:** posicionar a fábrica também como **automação & agentes de IA pra
+PMEs** (conteúdo, atendimento, processos). Saturação BAIXA, BR lidera adoção na América Latina, IA agêntica
+projetada p/ crescer ~25x até 2030 — e é **literalmente o DNA da casa**. Ticket maior, concorrência menor.
+Construir em paralelo ao caixa do Estúdio.
 
-## 4. O NORTE que isto aponta (oportunidade da nossa linha)
-- **Posição premium no meio:** entregar **qualidade de agência** com **estrutura de custo de fábrica** (agentes)
-  + **toque humano/taste** (nosso MOAT) + **nicho/rede quente**. Vender o BENEFÍCIO, fábrica invisível
-  (regra de marca do Estúdio) — **nunca** "posts de IA" (commodity).
-- **Âncora de preço sugerida (validar):** pacote de conteúdo mensal **R$1.500–3.500** (acima do freelancer,
-  abaixo da agência cara), com custo de produção ≈ zero → **margem alta**. Identidade R$2.500–8.000. Landing/
-  funil R$2.500–4.500+. Upsell de tráfego/anúncio/reels.
-- **Vantagem da linha:** o que justifica o premium e a margem é a fábrica (agentes + render + gates + taste)
-  produzir rápido e consistente — o concorrente barato não tem craft, o caro não tem custo baixo.
+**2º produto / escala:** empacotar a própria capacidade num **kit/produto digital** (margem 90%+), tipo o
+modelo raxo/xquads — mas depende de audiência/distribuição, então entra DEPOIS (ou apoiado na rede). Info-
+produto e SaaS escalam, mas são lentos pro 1º caixa sem audiência.
 
-## Pendências (pra fechar o norte)
-- **A/B (catálogo + estações):** depende do kit no ar (`_estudo-xquads/`) — mapear que produto cada squad
-  entrega de fato e a qualidade.
-- **Perfil de Instagram** (Marcos vai mandar): encaixa aqui como concorrente/referência de oferta — analisar o
-  que vende, como precifica/posiciona, o que copiar da lógica (não a identidade).
-- Refinar faixas com dado real do nosso funil/rede quente (Guarujá).
+> **Sequência recomendada:** (1) caixa rápido = Estúdio recorrente na rede quente → (2) em paralelo, abrir a
+> frente premium de **agentes/automação pra PME** (margem + oceano azul; preço de mercado: setup R$8–25k +
+> R$800–2.5k/mês) → (3) quando houver audiência/caixa, empacotar **kit/produto digital** (escala). Tudo com a MESMA fábrica.
 
-## Fontes
-mLabs · aintegrare · socialmediaemsaopaulo · TAGX · jamilefernandes (SMAM) · Hostinger · GPTMaker (precificação
-agência de IA / serviços) · Meio&Mensagem (agências precificando IA) · Intelecta · Brabaflow · id7 · wedologos ·
-coonectadp · FVS7 · bqhost · crowd · zoho. (pesquisa web 2026-06-26 — links nos resultados da sessão)
+**A posição defensável (a BRECHA do mercado — ver §5):** entre quem vende o **kit** ("você monta") e quem vende
+**mão de obra genérica** ("posts de IA" baratos), ninguém ocupa o MEIO. A Guaru ocupa: **o poder dos agentes
+entregue como SERVIÇO pronto e recorrente, com craft + taste humano.** Preço de fábrica, qualidade de agência.
+
+## 3. Buyer persona + dores (quem compra e por quê)
+**Base gigante:** ~24 mi de empresas ativas no Brasil (2025), **~15 mi de MEIs** (metade), **+3,8 mi de novos
+MEIs em 2025 (+22%)**. **59% das MPEs e 39% dos MEIs** já investem em divulgação online; **~57% querem aumentar**.
+**Dores documentadas do dono de PME (GoDaddy):** 31% **sem tempo** de postar · 38% **sem ideia** do que postar ·
+59% **não convertem** seguidor em cliente · 65% não alcançam o público certo · **90% acham rede social importante**.
+- **Gatilhos de compra:** ganhar TEMPO, sair do achismo, presença constante sem esforço, e sobretudo **CONVERTER
+  em venda** (não vaidade de seguidor). → é exatamente o eixo da nossa copy de benefício.
+- **Objeções:** "tá caro", "eu mesmo faço", medo de não ter retorno. → mensalidade previsível + foco em conversão.
+- **Disposição a pagar:** sensível (MEI gasta pouco e ~56% nem medem o retorno). Ancorar **abaixo da agência,
+  acima do "faço sozinho"**, provando conversão. (Persona B — "operador digital" que compra kits/cursos de IA —
+  existe e é grande, mas é mercado da frente "kit", não do serviço.)
+
+## 4. Tendências e AMEAÇAS (e o que isso valida na nossa tese)
+- **"Post de IA" virou commodity → preço caiu e o mercado cobra RESULTADO** (TI Inside abr/2026: "pressão por
+  resultado, IA e queda de preços reconfiguram social media"). Defesa = SwaS + provar venda, não volume.
+- **Instagram virou ANTI-cara-de-IA:** memorando do Mosseri (31/12/2025) prioriza conteúdo **humano/"raw"** em
+  2026; conteúdo original ganha **40–60% mais distribuição**; agregadores perderam 60–80% de alcance. → **valida
+  100% o nosso gate de craft (anti-template, autoral) e a regra "toque humano, nunca posts de IA".**
+- **Regulação/direito (valida nossa regra de imagem):** PL 2338 (Marco Legal da IA, sanção até R$50 mi),
+  LGPD (rosto/voz = dado sensível), Lei 15.123/2025. → reforça: stock cobre a foto, não a identidade.
+- **O que PROTEGE MARGEM no longo prazo:** nicho real · dado proprietário (nosso ledger/learning-log) ·
+  relacionamento/recorrência · sistema documentado. → é literalmente o MOAT que a gente já persegue.
+
+## 5. Teardown de concorrentes (completo)
+**(a) Agências de IA / automação (Intelecta, Brabaflow):** vendem RESULTADO, não tecnologia; entrada por
+**diagnóstico** (consultivo). Preços de mercado: agente de WhatsApp **R$8–25 mil setup + R$800–2.500/mês**;
+RPA R$12–40 mil; consultoria/diagnóstico R$3–10 mil; app c/ IA R$30–150 mil+. Modelo dominante = **setup alto +
+mensalidade** (SwaS), payback prometido 4–8 meses. → referência de preço pra nossa frente "automação pra PME".
+
+**(b) Kits/cursos de agentes (vibe coding):** **3 faixas** — isca **R$67 (Xquads)** → mid **R$400–1.500**
+(Hora de Codar / n8n) → premium **R$2.000–3.500** (NoCode StartUp "Agentic Builder", de R$3.497 por R$1.997).
+Funil: isca barata → comunidade/assinatura → formação premium. Promessa universal: "exército de especialistas/
+clones de gênios" + "do zero ao deploy" + **garantia 7 dias**. ⚠️ **raxo = sowsales = Xquads (a MESMA oferta,
+R$67, em 2 domínios)** — não são players distintos. Vivem de VOLUME (ticket baixo, margem 90%+).
+
+**(c) Social media produtizado/freelancer:** R$500–1.500 (freelancer) · R$800–2.500 (pacote/agência) ·
+R$1.500–3.500 (intermediário) · R$3.500–10 mil+ (avançado). Tráfego/vídeo/stories **à parte** (upsell padrão).
+
+**🎯 A BRECHA (o nosso lugar):** o grupo (b) vende a **ferramenta/kit** ("você monta") e o (c) vende **mão de
+obra genérica** ("posts de IA" baratos). **Ninguém ocupa o MEIO:** pegar o poder dos agentes do (b) e **entregar
+como SERVIÇO pronto e recorrente** pra PME, com o **craft de design + taste** que o social barato não tem. É
+exatamente o nosso modelo — e é uma posição defensável (preço de fábrica, qualidade de agência, toque humano).
+
+## 6. Próximos passos
+- Integrar o teardown completo (agente rodando) → fechar a seção 5.
+- Cruzar com a Frente A/B (o que o kit Xquads entrega de fato) quando o `_estudo-xquads/` subir → confirmar o
+  fit "agentes/automação pra PME".
+- Traduzir o norte numa OFERTA: pacote do Estúdio (preço/escopo) + esboço da frente de automação pra PME.
+
+## Fontes (pesquisa web 2026-06-26)
+Demanda/persona: Sebrae · Receita/IBPT · Poder360 · GoDaddy · HubPME · Conselho Digital · CartaCapital ·
+Secom/gov.br. Produtos/mercado: We Are Social/Meltwater · TI Inside (IA agêntica 25x) · Olhar Digital ·
+Jornal do Brás (infoprodutos R$8,8bi) · Hotmart/FGV · Noovid (UGC) · IAB (mídia digital). Preços: jamilefernandes ·
+aintegrare · wedologos · coonectadp · zoho · bluepaper · wisedata · rocketmidia · crazystack. Monetização:
+microsaas.substack · Cubo Suite · 99freelas/Workana (Ganhe Recompensa) · IEV/InOut (social selling).
+Tendências/risco: TI Inside · acontecendoaqui · seeyu.ai · creatorflow · dataslayer · Senado (PL 2338) ·
+ialocus · togetherprivacy · estellesadv · almcorp. (URLs completas nos transcripts dos agentes desta sessão.)
