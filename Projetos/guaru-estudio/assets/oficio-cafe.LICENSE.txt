@@ -1,8 +1,0 @@
-## oficio-cafe.jpg
-- ID: pexels:12420819  ·  Título: "Barista holding a portafilter preparing coffee in a cozy café environment."
-- Fonte: Pexels — foto de Vitaly Gorbachev
-- Licença: Pexels License — uso comercial OK, sem atribuição exigida (crédito é boa prática)
-- Crédito (se for usar): Vitaly Gorbachev (https://www.pexels.com/@vitalyagorbachev)
-- Busca (foto_busca): "barista making coffee hands closeup focused"
-- Baixado: 2026-06-26 · 5546KB · URL: https://images.pexels.com/photos/12420819/pexels-photo-12420819.png?auto=compress&cs=tinysrgb&w=1600
-- Página: https://www.pexels.com/photo/barista-holding-portafilter-12420819/
