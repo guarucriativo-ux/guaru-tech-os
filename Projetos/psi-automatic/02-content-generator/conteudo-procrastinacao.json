@@ -1,0 +1,37 @@
+{
+  "_aviso": "Copy de validação escrita pelo estrategista (sem API key no ambiente). Schema v2. Tema novo (anti-repetição). Estrutura VITRINE: hook=marca→psicólogo, prova=psicologia exemplo→paciente, pitch=marca vende.",
+  "tema": "procrastinação",
+  "kicker": "<b>PSI.AUTOMATIC</b> &middot; MARKETING PARA PSIC&Oacute;LOGOS",
+  "foto": "",
+  "hook": {
+    "headline": "Você sabe que devia<br>postar. E sempre fica<br>pra <grad>depois</grad>.",
+    "sub": "A nossa equipe tira isso da sua lista — conteúdo que atrai paciente <b>sem você parar</b>. Olha um exemplo."
+  },
+  "prova": {
+    "capa": {
+      "headline": "Adiou hoje<br>de novo?",
+      "sub": "Não é preguiça — e entender o porquê já te <b>alivia</b>."
+    },
+    "reframe": {
+      "eyebrow": "Não é falta de vontade.",
+      "headline": "É a sua mente fugindo<br>do <gold>desconforto</gold>.",
+      "corpo": "Adiar alivia a tensão na hora — por isso o cérebro insiste, mesmo quando atrapalha você."
+    },
+    "aprofunda": {
+      "headline": "Quanto mais você adia,<br>maior o monstro fica.",
+      "corpo": "A tarefa não cresce. Cresce o <b>peso</b> de carregar ela na cabeça o dia inteiro."
+    },
+    "acolhimento": {
+      "eyebrow": "Dá pra sair do ciclo",
+      "headline": "um passo por vez.",
+      "corpo": "Não com mais cobrança — com <b>passos menores</b>. A terapia ajuda a entender do que você foge e a começar sem se afogar."
+    }
+  },
+  "pitch": {
+    "headline": "Tirar do papel<br>é a nossa <grad>parte</grad>.",
+    "corpo": "Conteúdo profissional que mostra o seu trabalho — sua equipe por <b>menos de R$&nbsp;4 por dia</b>, sem agência cara.",
+    "cta_kw": "QUERO",
+    "cta_sub": "e a nossa equipe te chama aqui embaixo."
+  },
+  "legenda": "Você senta pra fazer aquilo que importa e… deixa pra depois. De novo. 🌀\n\nIsso não é preguiça nem falta de força de vontade. Adiar alivia a tensão na hora — então o cérebro aprende a fugir do desconforto. O problema: a tarefa não cresce, mas o peso de carregar ela na cabeça o dia todo, sim.\n\nDá pra sair desse ciclo um passo por vez. Não com mais cobrança — com passos menores. A terapia ajuda a entender do que você foge e a começar sem se afogar.\n\nComenta QUERO aqui embaixo 👇 que a nossa equipe te chama.\n\n#procrastinacao #saudemental #ansiedade #terapia #autoconhecimento"
+}
