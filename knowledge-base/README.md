@@ -38,6 +38,23 @@ Hierarquia de valor (o que rende mais pro RAG):
 **Legal/qualidade:** alimentar para o sistema **aprender o princípio**, nunca para republicar texto
 literal numa peça de cliente. Anote a origem de cada arquivo.
 
+## Regra de captura — NO MOMENTO, nunca "depois" (alinhamento Marcos 2026-06-26)
+"Organizar a faculdade depois" é hábito ruim: vira dívida, obriga a reler tudo pra decidir o que importa, e
+queima produtividade. **Captura-se o aprendizado na HORA em que ele acontece** — e usa-se o roteador abaixo pra
+não pensar caso a caso.
+
+**Teste rápido:** *"isso vai ser CONSULTADO/REUSADO depois?"* — Não → **não salva**. Sim → vai pro lugar certo, AGORA:
+
+| O aprendizado é… | Onde mora |
+|---|---|
+| Framework/regra/método que ajuda a **FAZER uma peça** | `knowledge-base/<área>/` (faculdade) |
+| Como a **fábrica/o especialista OPERA** (doutrina de método) | `knowledge-base/sistema/` |
+| Conhecimento de **UM cliente** (o que funcionou/falhou) | `Projetos/<cliente>/learned-lessons.md` |
+| **Feedback de design** por peça de um cliente | `Projetos/<cliente>/learning-log.md` |
+| Regra de design que virou **GERAL** (Marcos confirma OU 2+ clientes) | `niches-library/design-principles/` (Base Mãe) |
+| **QUEM somos / pra ONDE vamos / quanto valemos** (estratégia/identidade) | raiz do repo |
+| ❌ **Teste descartável, exercício, craft pontual não-validado, qualquer coisa que não se reusa** | **não salva** |
+
 ## Princípio (não cair no mito)
 Encher a pasta NÃO deixa o modelo (Claude) mais inteligente sozinho — ele é congelado. O que fica
 mais inteligente é o **sistema**, porque passa a **consultar** este acervo ao gerar, e porque a
