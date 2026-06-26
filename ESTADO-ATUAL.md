@@ -19,6 +19,15 @@
 > com a **PROVA**: crítica do Marcos por módulo + aplicar numa peça. O gestor ainda depende de CONSTRUIR (Meta API/3 tetos).
 > **➡️ Quando o Marcos voltar:** criticar os módulos (começar pelos do designer) — o que ele ajustar vira regra à risca.
 
+## 🏭 OPERAÇÃO DA FÁBRICA — cadeia de valor cravada (2026-06-26)
+> Marcos refletiu sobre a importância do gestor de tráfego + web designer. Cravei a doutrina de operação em
+> `knowledge-base/sistema/operacao-da-fabrica-cadeia-de-valor.md`. **Tese:** designer faz parecer bom; **gestor
+> + web fazem dar dinheiro.** Linha de produção: Estratégia → Criativo (designer) → Distribuição (gestor) →
+> Conversão (web/landing) → Captura (CRM) → Mensuração → Aprendizado. Os elos 2 (tráfego) e 3 (landing) são o
+> **MOTOR DE RESULTADO** (transformam arte em caixa); sem eles o funil vaza. **Maturidade hoje:** conteúdo
+> forte ✅, distribuição maquete 🔴, conversão recém-matriculada 🔴 → a fábrica "produz mas não converte" → os
+> elos 2-3 são o GARGALO e a PRIORIDADE de build (ligar o caixa). Triângulo: designer ↔ gestor ↔ web (message match).
+
 ## 🌐 NOVO COLABORADOR: WEB DESIGNER — matriculado (2026-06-26)
 > Marcos: a fábrica sem web designer é fraca e converte menos (sem landing pra levar o funil). Matriculado:
 > `knowledge-base/curriculos/web-designer.md`. **Não começa do zero:** HERDA a fundação visual do gráfico
