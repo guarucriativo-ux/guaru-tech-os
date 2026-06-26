@@ -47,7 +47,23 @@ Cada passo aponta pro doc fundo que já existe na faculdade. Não pular nenhum.
    com a referência nos marcadores. Só entrega se passar no checklist abaixo. Entregar **slides
    individuais em alta** (nunca folha de contato/contact sheet baixa), output JPG leve.
 
+## FOTO serve à copy — proibido "foto no escuro" (regra cravada 2026-06-26)
+Usar foto é DECISÃO do designer por peça (régua, não regra: às vezes chapado/tipográfico, às vezes foto).
+Mas se entrar foto, ela tem que **servir à copy/conceito** — não a primeira imagem genérica que aparece.
+Pegar um stock qualquer "porque referência usa foto" é o mesmo pecado da copy no escuro. Disciplina:
+1. **Derivar o BRIEF da imagem a partir da copy** ANTES de buscar: o que a imagem precisa MOSTRAR pra
+   reforçar a mensagem? (ex.: copy "você cuida do que sabe fazer" → foto do dono ABSORVIDO no ofício/mãos
+   trabalhando — não um sorriso posado pra câmera, que não diz nada da mensagem).
+2. **Buscar com intenção** (query que descreve o conceito, não "pessoa sorrindo") e **trazer candidatas**.
+3. **Julgar cada candidata contra o conceito** (Freeman/Bang — `imagem-e-fotografia-canone.md`): conta a
+   história da copy? o enquadramento/emoção batem? autêntica, não publicitária-genérica? Se não serve, descarta.
+4. Foto genérica/desalinhada é **pior** que tipográfica limpa. Na dúvida entre foto-que-não-serve e sem-foto,
+   vai de tipográfico. → `foto-vs-texto-carrossel.md` + doutrina do `tools/foto-auto.mjs` ("a foto SEMPRE serve
+   ao conteúdo, nunca aleatória").
+
 ## Checklist do portão (se algum NÃO → volta pro layout, não entrega)
+- [ ] **FOTO (se houver):** foi escolhida pra SERVIR a copy/conceito (brief tirado da copy), não "foto no
+      escuro"/primeira genérica? Conta a história da mensagem? (Se não serve → troca a foto ou vai tipográfico.)
 - [ ] Li o CONJUNTO de refs e extraí a ESTRUTURA (não copiei o enfeite de uma só)?
 - [ ] A cor de marca DOMINA a peça (não é um risquinho tímido)?
 - [ ] Tem camadas/profundidade (palavra fantasma, grafismo sangrando, textura) — não está chapado?

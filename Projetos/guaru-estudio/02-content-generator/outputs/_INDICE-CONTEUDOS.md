@@ -31,4 +31,9 @@
 - **CRIATIVIDADE (cravada 2026-06-26):** cada peça com roupagem NOVA; trocar só a copy no mesmo molde =
   "mais do mesmo" = reprovado. Rotacionar arquétipos e variar composição slide a slide (3+ slides no mesmo
   eixo = template disfarçado). Régua, não regra — vale até pros meus próprios layouts anteriores.
+- **TIPOGRAFIA explora dentro do DNA:** não martelar Anton sempre; a serifa itálica editorial (Fraunces) é
+  registro do DNA e dá tom premium. Variar registro tipográfico por peça, não só a composição.
+- **FOTO serve à COPY (cravada 2026-06-26):** proibido "foto no escuro" (pegar a 1ª genérica porque "ref usa
+  foto"). Tirar o BRIEF da copy → buscar com intenção → julgar candidatas contra o conceito. Foto que não
+  conta a história da copy é pior que tipográfico limpo. (Gate de craft + `foto-vs-texto-carrossel.md`.)
 - Fontes do DNA instaladas localmente (sem depender de rede) — `tools/render/fonts/`.
