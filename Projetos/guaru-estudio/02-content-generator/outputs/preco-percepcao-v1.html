@@ -1,0 +1,91 @@
+<!doctype html><html lang="pt-br"><head><meta charset="utf-8">
+<style>
+:root{--lime:#CCFF00;--ink:#0A0A0A;--paper:#F4F2EC}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#cfcabd}#post{width:1080px}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;font-family:'Inter',sans-serif;padding:84px}
+.lime{background:var(--lime);color:var(--ink)}
+.paper{background:var(--paper);color:var(--ink)}
+.ink{background:var(--ink);color:#fff}
+.an{font-family:'Anton','Archivo Black',sans-serif;text-transform:uppercase;font-weight:400;line-height:.92;letter-spacing:-1px}
+.fr{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:600;text-transform:none;letter-spacing:-1px}
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:multiply;z-index:8;
+ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+/* numeração editorial — motivo recorrente (lógica nova) */
+.num{position:absolute;top:60px;right:84px;font-family:'Anton',sans-serif;font-size:30px;letter-spacing:2px;z-index:6;opacity:.9}
+/* aspas gigantes — motivo de "o que o cliente pensa" */
+.q{position:absolute;font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:600;line-height:.7;z-index:1;pointer-events:none}
+.box{padding:0 .1em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.box-lime{background:var(--lime);color:var(--ink)}
+.brand{position:absolute;bottom:70px;left:84px;display:flex;align-items:center;gap:12px;z-index:6;
+ font-family:'Anton',sans-serif;text-transform:uppercase;font-size:23px;letter-spacing:2px}
+.dot{width:19px;height:19px;background:var(--lime);border-radius:5px;transform:rotate(45deg)}
+.lead{font-family:'Inter',sans-serif;font-size:33px;line-height:1.4;font-weight:500;z-index:3;position:relative}
+.lead b{font-weight:800}
+.wrap{position:absolute;left:84px;right:84px;z-index:3}
+.tag{display:inline-block;font-family:'Inter',sans-serif;font-size:18px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:2px solid currentColor;border-radius:30px;padding:8px 20px;z-index:6}
+</style></head><body><div id="post">
+
+<!-- 01 — HOOK: a fala exata do cliente (motivo aspas) -->
+<section class="slide ink grain">
+  <div class="num" style="color:var(--lime)">01 — A FALA</div>
+  <div class="q" style="top:120px;left:60px;font-size:340px;color:var(--lime);opacity:.9">“</div>
+  <div class="wrap" style="top:50%;transform:translateY(-50%)">
+    <div class="an" style="font-size:180px;line-height:.86">Tá<br>caro<span style="color:var(--lime)">.</span></div>
+    <p class="lead" style="margin-top:40px;max-width:820px;color:#dcdcdc">Você escuta isso, trava, e <b>abaixa o preço pra fechar</b>.<br>O problema começa exatamente aqui.</p>
+  </div>
+  <div class="brand" style="color:#fff"><span>GUARU&nbsp;ESTÚDIO</span><span class="dot"></span></div>
+</section>
+
+<!-- 02 — AGITA: você abaixa, o concorrente dobra -->
+<section class="slide ink grain">
+  <div class="num" style="color:#fff;opacity:.6">02 — O JOGO</div>
+  <div class="wrap" style="top:300px">
+    <div class="an" style="font-size:84px;line-height:.98">Você dá <span style="color:var(--lime)">desconto</span><br>pra fechar.</div>
+    <div class="an" style="font-size:84px;line-height:.98;margin-top:54px;color:#777">O concorrente<br>cobra o <span style="color:var(--lime)">dobro</span>—</div>
+    <div class="an" style="font-size:84px;line-height:.98;margin-top:10px">e fecha do<br>mesmo jeito.</div>
+    <p class="lead" style="margin-top:54px;max-width:760px;color:#dcdcdc">A diferença não está no <b>trabalho</b>. Está no que o cliente <b>vê</b> antes de perguntar o preço.</p>
+  </div>
+  <div class="brand" style="color:#fff"><span>GUARU&nbsp;ESTÚDIO</span><span class="dot"></span></div>
+</section>
+
+<!-- 03 — MECANISMO (slide-herói, a frase que converte) -->
+<section class="slide lime grain">
+  <div class="num" style="color:var(--ink)">03 — A VERDADE</div>
+  <div class="wrap" style="top:50%;transform:translateY(-50%)">
+    <div class="an" style="font-size:104px;line-height:1.02;color:var(--ink)">Ninguém</div>
+    <div class="an" style="font-size:104px;line-height:1.02;color:var(--ink)">paga caro</div>
+    <div class="an" style="font-size:104px;line-height:1.02;color:var(--ink)">no que</div>
+    <div class="an" style="font-size:104px;line-height:1.0;margin:30px 0"><span style="background:var(--ink);color:var(--lime);padding:.02em .12em">parece</span></div>
+    <div class="an" style="font-size:104px;line-height:1.02;color:var(--ink)">barato.</div>
+    <p class="lead" style="margin-top:40px;max-width:820px;color:var(--ink)">O olho decide o <b>valor</b> antes de ler o <b>preço</b>. Feed amador faz qualquer preço parecer alto.</p>
+  </div>
+  <div class="brand" style="color:var(--ink)"><span>GUARU&nbsp;ESTÚDIO</span><span class="dot" style="background:var(--ink)"></span></div>
+</section>
+
+<!-- 04 — A VIRADA (desejo) -->
+<section class="slide paper grain">
+  <div class="num" style="color:var(--ink);opacity:.6">04 — A VIRADA</div>
+  <div class="q" style="bottom:-60px;right:40px;font-size:300px;color:var(--ink);opacity:.05">”</div>
+  <div class="wrap" style="top:340px">
+    <p class="fr" style="font-size:72px;line-height:1.05">Quando a sua imagem alcança o seu</p>
+    <div class="an" style="font-size:130px;line-height:.9;margin:8px 0">trabalho,</div>
+    <p class="fr" style="font-size:72px;line-height:1.05">o preço para de ser a <span class="box box-lime">conversa</span>.</p>
+    <p class="lead" style="margin-top:48px;max-width:720px">O cliente <b>para de comparar</b>. E começa a <b>querer</b>.</p>
+  </div>
+  <div class="brand" style="color:var(--ink)"><span>GUARU&nbsp;ESTÚDIO</span><span class="dot" style="background:var(--ink)"></span></div>
+</section>
+
+<!-- 05 — CTA -->
+<section class="slide ink grain">
+  <div class="num" style="color:var(--lime)">05 — O CONVITE</div>
+  <div class="wrap" style="top:300px">
+    <div class="tag" style="color:var(--lime)">DESIGN QUE VENDE</div>
+    <div class="an" style="font-size:96px;line-height:.96;margin-top:40px">A gente faz seu<br>negócio <span style="color:var(--lime)">parecer</span><br>o que ele já <span class="fr" style="color:var(--lime);font-size:104px">é</span>.</div>
+    <p class="lead" style="margin-top:48px;max-width:760px;color:#dcdcdc">Pare de competir por preço. Comece a ser escolhido pelo <b>valor</b>.</p>
+    <div class="an" style="font-size:52px;margin-top:48px;color:var(--ink)"><span class="box box-lime">Chama no direct</span></div>
+  </div>
+  <div class="brand" style="color:#fff"><span>GUARU&nbsp;ESTÚDIO</span><span class="dot"></span></div>
+</section>
+
+</div></body></html>
