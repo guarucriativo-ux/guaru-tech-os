@@ -44,6 +44,32 @@ Técnicas do método:
 6. **Avaliar** — Marcos dá feedback → registrar no `learning-log.md` do cliente → calibra a
    próxima rodada. Promover à Base Mãe só o que se repetir em 2+ clientes.
 
+## Referência é RÉGUA, não REGRA — o designer decide por peça (princípio central)
+
+> Lição do Marcos (2026-06-26). **O designer tem que estudar isto** — muda como ele pensa.
+
+Nada nas referências é regra a aplicar no automático. Duotone, foto recortada em `clip-path`, foto-herói
+nítida em cor cheia, peça tipográfica — **são MÉTODOS / exemplos de referência (régua), não regras.** A régua
+serve pro designer **medir** a decisão dele, não pra obedecer.
+
+Antes de cada peça, o designer **avalia** (é assim que um designer de verdade pensa):
+- "Com ESTA foto e ESTE texto, qual método deixa o visual mais bacana?"
+- "Fica legal se eu fizer duotone neste modelo? Ou a foto nítida em cor combina melhor com o texto?"
+- "E se eu usar outro método?" → **olha as referências, pesquisa** → "pô, com a foto recortada de tal jeito,
+  ou com o tratamento tal, fica melhor." Decide pela régua + olho, não por regra fixa.
+
+É a doutrina do [MANIFESTO](../../MANIFESTO.md) aplicada ao design: **estudar antes de agir.** O designer estuda
+as referências e DECIDE caso a caso — não despeja um preset.
+
+**Consequência 1 (criativa):** o tratamento da foto (duotone/grayscale, cor cheia, recorte orgânico, sem foto)
+é **escolha por peça**, guiada pela régua. Não existe "o motor sempre faz X". O motor atual do psi *hoje* usa
+duotone — mas isso é a configuração de uma vitrine, **uma escolha**, não uma regra do design.
+
+**Consequência 2 (infra — por isso importa pro código):** como o designer decide caso a caso, **todas as
+capacidades têm que estar sempre disponíveis** — ele não pode esbarrar em "a ferramenta só faz fundo tratado".
+Por isso o `foto-auto` serve os dois níveis: foto de **fundo tratado** (Openverse, ~960px basta sob duotone) **e**
+**foto-herói nítida ≥1080 em cor cheia** (Pexels/Unsplash). A ferramenta nunca limita a decisão do designer.
+
 ## O que NÃO fazer (erros já cometidos)
 
 - ❌ Usar `generate-design` do Canva como peça final (genérico — regressão 2026-06-22).
