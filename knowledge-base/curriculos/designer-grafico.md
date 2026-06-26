@@ -115,7 +115,11 @@ Estimo que cobrimos **≈5%** da formação de uma escola de elite. **Não é "q
 - ✅ **N1 — Grid/Composição** destilado → `design/grid-composicao-canone.md` (Müller-Brockmann/Samara/Vignelli).
 - ✅ **N3 — Branding/Identidade** destilado → `design/branding-identidade-canone.md` (Wheeler/Neumeier/Airey).
 - ✅ **N4 — Copy/Persuasão** destilado → `copywriting/copy-persuasao-canone.md` (Ogilvy/Sugarman/Cialdini/StoryBrand).
-- ⏳ em andamento: N2 Imagem → N5 História.
+- ✅ **N2 — Imagem/Fotografia** destilado → `design/imagem-e-fotografia-canone.md` (Freeman/Bang).
+- ✅ **N5 — História/Repertório** destilado → `design/historia-repertorio-canone.md` (Meggs/Eskilson/Kleon).
+- 🎓 **FASES 1–2 (Fundamentos + Núcleo) DESTILADAS (v1)** — 8 módulos do cânone. Fases 3–4 já estavam fortes
+  (especialização social + método/craft que o Marcos ensina). Falta: a **PROVA** (crítica do Marcos por módulo
+  + aplicar numa peça). **Drafts v1 ≠ formado** — é o teórico-base no papel; a maestria vem da crítica + prática.
 > Cada um é uma **destilação do cânone (v1)** — semente vira regra. Vira "cursado de verdade" só depois da
 > **crítica do Marcos** + aplicar numa peça (a prova). Drafts ≠ formado (não repetir o erro do "quase formado").
 
