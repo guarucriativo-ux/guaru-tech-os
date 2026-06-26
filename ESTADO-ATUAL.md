@@ -21,12 +21,9 @@
 > adicionar na mesma tela. Não bloqueia — Pexels sozinho já entrega a foto-herói.
 
 ## 🔁 RETOMADA (leia PRIMEIRO se você é uma sessão nova — 2026-06-26)
-> ⚠️ **Todo o trabalho recente está na branch `claude/sync-resume-progress-4nd64x`, NÃO na `main`.**
-> Se você abriu na `main`, você NÃO está vendo o trabalho. Faça antes de tudo:
-> ```
-> git fetch origin && git checkout claude/sync-resume-progress-4nd64x && git pull
-> ```
-> Confirme com `git branch --show-current` (tem que ser `claude/sync-resume-progress-4nd64x`).
+> ✅ **O trabalho recente JÁ FOI MESCLADO NA `main`** (2026-06-26 noite) — a `main` voltou a ser a fonte da
+> verdade. Sessão nova nasce com tudo: o `foto-auto` multi-banco + este contexto. Não precisa trocar de branch.
+> (A branch `claude/sync-resume-progress-4nd64x` foi a de trabalho; agora `main` == ela.)
 >
 > ### ✅ TESTE DO foto-auto (2026-06-26, sessão nova) — REDE OK + foto-auto CONSERTADO E RODANDO NA NUVEM
 > A rede **pegou nesta sessão nova**: `api.openverse.org` responde **HTTP 200** (antes era 403). Mas o teste
