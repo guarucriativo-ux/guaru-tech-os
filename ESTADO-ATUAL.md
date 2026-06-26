@@ -7,6 +7,19 @@
 
 ---
 
+## ⏳ PENDENTE PRA PRÓXIMA SESSÃO NOVA (2026-06-26 noite) — TESTAR FOTO-HERÓI PEXELS
+> Marcos **gerou e salvou a `PEXELS_API_KEY`** nas Variáveis de ambiente do environment ("Rede aberta 2",
+> Network já tem `*.pexels.com`/`*.unsplash.com`). Mas a sessão em que ele salvou era ANTIGA → a chave NÃO
+> apareceu nela (regra de sempre: env var só vale em sessão iniciada DEPOIS de salvar). **1ª COISA nesta sessão
+> nova:** rodar o teste de verdade —
+> ```
+> node tools/foto-auto.mjs "warm cozy coffee shop interior" --source=pexels --out=Projetos/guaru-estudio/references --name=teste-hero --n=1 --orient=portrait
+> ```
+> Se baixar JPEG ≥1080 cor cheia → **foto-herói em alta CONFIRMADA**; apaga o teste e avisa o Marcos. Se vier
+> "sem PEXELS_API_KEY" de novo → conferir se a var foi salva mesmo (nome exato `PEXELS_API_KEY`, sem aspas).
+> **Ainda falta (Marcos cansou, deixou pra depois):** gerar a chave do **Unsplash** (`UNSPLASH_ACCESS_KEY`) e
+> adicionar na mesma tela. Não bloqueia — Pexels sozinho já entrega a foto-herói.
+
 ## 🔁 RETOMADA (leia PRIMEIRO se você é uma sessão nova — 2026-06-26)
 > ⚠️ **Todo o trabalho recente está na branch `claude/sync-resume-progress-4nd64x`, NÃO na `main`.**
 > Se você abriu na `main`, você NÃO está vendo o trabalho. Faça antes de tudo:
