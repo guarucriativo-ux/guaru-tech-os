@@ -12,8 +12,10 @@ Os elos 2 (tráfego) e 3 (landing) são o gargalo. Construir, nesta ordem de seg
 1. **Gestor — 3 TETOS DE GASTO** (segurança primeiro): account limit + stop-loss + teto por cliente. Hoje só
    `daily_budget` num JSON. Spec em `knowledge-base/marketing/guardrails-gasto-3-tetos-canone.md`.
 2. **Gestor — ponta real da Meta API** (criar campanha + ler relatório + loop). Hoje é maquete (PAUSED placeholder).
-   - **Auto-postagem/agendamento em massa** (parte da distribuição orgânica): avaliar ferramentas tipo
-     `speedpost.com.br` (postar N vídeos/dia sozinho). Insight em `decisoes/aprendizados-de-mercado.md` (2026-06-26).
+   - **Auto-postagem/agendamento em massa** (distribuição orgânica): pesquisa + spec "1 metro" em
+     `decisoes/distribuicao-auto-postagem.md`. Recomendação: dono-de-tudo (self-host Postiz/Mixpost ou Graph API
+     oficial + nosso scheduler), decidir junto com o HOST. Achado: auto-postagem orgânica = campo aberto no código
+     (traffic-manager só faz blueprint de tráfego pago). Conta de cliente = só API oficial (nada de método cinza).
 3. **Web — 1ª LANDING real** (começar pelo **Guaru Estúdio**, domínio `guaruestudio.com.br` já comprado).
    Método em `knowledge-base/web/landing-page-e-cro-canone.md`.
 4. **DECISÃO DE HOST/infra de produção** (o "tijolo grande", Estágio 3→4): onde hospedar (Vercel/Netlify/
@@ -27,10 +29,15 @@ A "prova" = crítica do Marcos por módulo + aplicar numa peça. Drafts v1 ≠ f
   responsivo → acessibilidade/perf → stack/host → IA → interação → SEO/analytics. (`curriculos/web-designer.md`)
 - **Próximas matrículas:** Olho (crítico visual) · Copywriter · CRM/Atendimento (o elo 4 da cadeia de valor).
 
-## 🟡 TESTE pendente — Guaru Estúdio
-- A **régua visual do Estúdio está CONGELADA** até o Marcos fechar a curadoria das refs (`Projetos/guaru-estudio/
-  references/regua/`). Quando ele avisar que fechou → absorver/destilar a régua → testar uma peça do Estúdio com
-  a faculdade nova. Até lá, usar Base Mãe + DNA (sem a régua).
+## 🟡 TESTE pendente — Guaru Estúdio (PRONTO PRA RECEBER A CURADORIA)
+- **Recepção organizada (Marcos vai mandar "bastante" imagem):** ele dropa as refs curadas em
+  `Projetos/guaru-estudio/references/regua/` (no PC, e dá push) **ou** cola no chat → avisa **"cheguei a régua do
+  estúdio"** → o Claude absorve. Protocolo no README da pasta + `sistema/doutrina-do-olho-referencia-como-regua.md`.
+- **O que o Claude faz ao receber:** lê pixel a pixel → ficha de anatomia por imagem → renomeia pro padrão
+  `estudio--<movimento>--NN.jpg` → extrai o SISTEMA VISUAL (ignora o produto) → **gradua pro `brand-dna.json` +
+  motor + Olho** ("esse é o nosso look"). Guardrail: linguagem absorvida → peça AUTORAL, nunca clone.
+- ⚠️ Já há **5 imagens cruas** na pasta (sem ficha/nome) — parte do lote; absorver junto quando o Marcos fechar.
+- Depois da absorção → **testar uma peça do Estúdio** com a régua + a faculdade nova (é o teste que ficou pendente).
 
 ## 🟢 FACULDADE — manutenção (cultura cravada)
 - **Auditoria semanal** (Teste dos 4): última 2026-06-26, **próxima ~2026-07-03**. (`ESCOPO-ESTUDO.md` + `decisoes/auditoria-faculdade-2026-06-26.md`)
