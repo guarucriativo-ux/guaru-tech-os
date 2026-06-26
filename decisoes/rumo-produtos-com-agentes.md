@@ -29,6 +29,14 @@
 2. **MERCADO + PRODUTOS:** o que dá pra **construir e vender** com esses agentes — linhas de produto/ofertas
    automáticas, preço, quem compra, concorrentes. (Estudo de mercado, backward da entrega.)
 
+## ❓ PERGUNTA CENTRAL (Marcos 2026-06-26 — responder ISTO primeiro)
+> "Qual **produto digital está EM ALTA**? Com esses agentes novos, **o que conseguimos produzir**? E **ganhar
+> dinheiro COMO**? Qual o **caminho mais RÁPIDO**?" — o produto será escolhido **com base em DADOS**, não achismo.
+> **Mercado: Brasil nacional.** Não é precificar o cardápio atual — é **descobrir, com pesquisa, qual produto
+> digital em alta a fábrica deve produzir e a rota mais rápida pra faturar.** É o que destrava todo o resto.
+> 🔬 Pesquisa profunda rodando nisso (deep-research, run wf_0ca2cdc3-019) → vira a base do norte. (A 1ª pesquisa
+> tinha mirado nos nossos serviços/preço atuais = errado; corrigida e relançada nesta pergunta.)
+
 ## FASE ATUAL = LINHA DE PRODUÇÃO (a fase final) — onde mora o estudo PESADO agora
 > Marcos 2026-06-26: "a ideia é a mesma, só que pulamos pra a fase final, a linha de produção. Aí é que precisa
 > de muito mais estudo — é isso que vai dar o norte." Com o cérebro pronto (kit) + a nossa camada (render+gates+

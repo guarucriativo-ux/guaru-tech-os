@@ -1,5 +1,9 @@
 # Frente C — Estudo de mercado (preço · oferta · concorrentes) · v1 (2026-06-26)
 
+> ⚠️ v1 mirou nos NOSSOS serviços/preço (parcial). A pergunta REAL do Marcos (qual produto digital em alta a
+> fábrica deve produzir + caminho mais rápido pra faturar, Brasil nacional) está numa DEEP-RESEARCH rodando
+> (run wf_0ca2cdc3-019) → vira a v2. Ver `rumo-produtos-com-agentes.md` (Pergunta Central).
+>
 > Parte do estudo da LINHA DE PRODUÇÃO (`rumo-produtos-com-agentes.md`). Define preço/quem-compra/como-vende
 > por produto = metade do "norte". v1 = o que dá pra estudar SEM o kit (pesquisa de mercado BR). Fontes no fim.
 > Faixas são de mercado (estimativas de várias tabelas 2025/26) — refinar com dado real do nosso funil.
