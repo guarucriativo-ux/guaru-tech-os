@@ -85,8 +85,12 @@ ledger/aprendizado, modelo clone template→cliente, designer sênior `compor`/`
 
 ## Próximo passo imediato — plano "POR PARTES" (acordado 2026-06-26, mão na massa)
 Ordem proposta (cada parte é um tijolo; 2 e 3 rodam neste terminal SEM rede):
-1. **Rede** *(ação do Marcos, ~2 min)* — abrir Network→Custom/Full → destrava foto NOVA neste terminal. Só
-   pré-requisito pra testar foto nova; o resto não depende. (Como fazer: `knowledge-base/sistema/infra-de-producao-e-rede.md`.)
+1. **Rede** — ✅ **Marcos ABRIU a rede (Full/Custom) em 2026-06-26.** ⚠️ **Mas só vale em SESSÃO NOVA** — a
+   sessão onde ele abriu já estava na política antiga (Trusted) e a rede fica travada pra vida da sessão (proxy
+   não mudou ao vivo). **➡️ NESTA SESSÃO NOVA, 1ª COISA: testar a foto.** Rode:
+   `node tools/foto-auto.mjs "colorful healthy food bowl" --out=Projetos/guaru-estudio/references --name=teste --n=1`
+   — se baixar a foto, a rede está OK (apaga o teste depois). Se vier **403**, a política não pegou: conferir o
+   **Network access** do environment no app (pedir print ao Marcos). Como fazer: `knowledge-base/sistema/infra-de-producao-e-rede.md`.
 2. **▶️ AFINAR O DESIGNER (recomendado começar aqui)** — Marcos manda alterações (Estúdio "Seu negócio, bem visto"
    e/ou psi "procrastinação"); Claude itera peça/motor e **grava o aprendizado** no `learning-log` do cliente
    (gradua de estagiário). Não precisa de rede. É a base — o gestor depende do designer pronto.
