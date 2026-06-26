@@ -7,18 +7,15 @@
 
 ---
 
-## ⏳ PENDENTE PRA PRÓXIMA SESSÃO NOVA (2026-06-26 noite) — TESTAR FOTO-HERÓI PEXELS
-> Marcos **gerou e salvou a `PEXELS_API_KEY`** nas Variáveis de ambiente do environment ("Rede aberta 2",
-> Network já tem `*.pexels.com`/`*.unsplash.com`). Mas a sessão em que ele salvou era ANTIGA → a chave NÃO
-> apareceu nela (regra de sempre: env var só vale em sessão iniciada DEPOIS de salvar). **1ª COISA nesta sessão
-> nova:** rodar o teste de verdade —
-> ```
-> node tools/foto-auto.mjs "warm cozy coffee shop interior" --source=pexels --out=Projetos/guaru-estudio/references --name=teste-hero --n=1 --orient=portrait
-> ```
-> Se baixar JPEG ≥1080 cor cheia → **foto-herói em alta CONFIRMADA**; apaga o teste e avisa o Marcos. Se vier
-> "sem PEXELS_API_KEY" de novo → conferir se a var foi salva mesmo (nome exato `PEXELS_API_KEY`, sem aspas).
-> **Ainda falta (Marcos cansou, deixou pra depois):** gerar a chave do **Unsplash** (`UNSPLASH_ACCESS_KEY`) e
-> adicionar na mesma tela. Não bloqueia — Pexels sozinho já entrega a foto-herói.
+## ✅ FOTO-HERÓI PEXELS — CONFIRMADA EM ALTA (2026-06-26, sessão nova)
+> Teste rodado de ponta a ponta nesta sessão nova: a `PEXELS_API_KEY` (56 chars) **apareceu** no ambiente e o
+> comando `node tools/foto-auto.mjs "warm cozy coffee shop interior" --source=pexels ... --orient=portrait`
+> **baixou um JPEG real: 1600×2133 (muito acima de 1080), RGB cor cheia (3 componentes), 446 KB**, com
+> `.LICENSE.txt` correto (Pexels License, uso comercial OK). ➡️ **Foto-herói em ALTA via Pexels CONFIRMADA na
+> nuvem.** Teste apagado depois (não deixar lixo). O `foto-auto` multi-banco está completo: Pexels (alta, com
+> chave) + Openverse (fallback ~960px sem chave).
+> **Único item que ainda falta (não bloqueia):** gerar a chave do **Unsplash** (`UNSPLASH_ACCESS_KEY`) e
+> adicionar na mesma tela do ambiente — Pexels sozinho já entrega a foto-herói, Unsplash só amplia o leque.
 
 ## 🔁 RETOMADA (leia PRIMEIRO se você é uma sessão nova — 2026-06-26)
 > ✅ **O trabalho recente JÁ FOI MESCLADO NA `main`** (2026-06-26 noite) — a `main` voltou a ser a fonte da
