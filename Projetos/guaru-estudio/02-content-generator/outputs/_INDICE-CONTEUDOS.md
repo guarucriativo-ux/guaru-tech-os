@@ -15,7 +15,8 @@
 | 3 | **`pilot-regua-v3`** | Fecha o gap de craft: lime domina, camadas, grafismo sangrando, escala | ✅ Craft no nível — **versão atual da régua** |
 | 4 | `preco-percepcao-v1` | Copy "preço x percepção" (ninguém paga caro no que parece barato) | ✅ Copy aprovada por Marcos |
 | 5 | `seguidor-vs-cliente-v1` | "não precisa de seguidor, precisa de cliente" (1º com os 2 portões) | ❌ "Mais do mesmo" — mesmo molde, só copy trocada (+ coração feio). Superado |
-| 6 | **`seguidor-vs-cliente-v2`** | Mesma copy, **roupagem recomposta**: 5 arquétipos distintos (split·checklist·duelo·mockup·herói) | 🟡 Entregue — **aguardando feedback do Marcos** |
+| 6 | `seguidor-vs-cliente-v2` | Mesma copy, roupagem recomposta: 5 arquétipos distintos | 🟡 Entregue (composição variou, mas tipografia/copy ainda "mais do mesmo") |
+| 7 | **`estudio-beneficio-v1`** | **3 eixos novos:** copy de BENEFÍCIO/transformação · tipografia serifa editorial (Fraunces) · FOTO real | 🟡 Entregue — **aguardando feedback do Marcos** |
 
 ## Onde estamos
 - **Atual / aguardando feedback:** peça #5 (`seguidor-vs-cliente-v1`). Perguntas abertas pro Marcos:
