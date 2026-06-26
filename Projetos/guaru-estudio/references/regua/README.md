@@ -23,6 +23,10 @@ Dois jeitos de jogar MUITAS imagens de uma vez, sem git e sem limite:
   (o Claude roda `tools/sincronizar.mjs` e empurra). 
 Depois é só avisar **"cheguei a régua"** que eu puxo e absorvo o lote inteiro.
 
+> ℹ️ **App do GitHub vs navegador:** o **app** do GitHub (celular) NÃO faz upload de imagem — ele é pra
+> **mesclar PR / revisar / acompanhar** (ótimo pra isso, ex.: mesclar o PR na `main` do celular). Pra **subir
+> imagem** use o **navegador** (github.com → Upload files) ou o **PC**. Resumo: **app pra gerir, navegador/PC pra subir foto.**
+
 ## O que abastecer aqui
 A régua do **estilo/nível do próprio estúdio** (posts do @guaruestudio): design bold/moderno de agência-estúdio
 que te faça babar — o sarrafo que você quer que os posts do estúdio alcancem. Pode incluir as suas próprias
