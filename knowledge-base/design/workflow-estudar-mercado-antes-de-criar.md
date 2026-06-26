@@ -52,8 +52,27 @@ resolve.** Marcos vai liberar em **Network → Custom** (mesma tela onde já tem
   ele as páginas abrem mas as imagens não carregam.
 - (opcional, ótimas refs de design e menos chato que o Pinterest) `dribbble.com`, `*.dribbble.com`, `cdn.dribbble.com`
 
-⚠️ **Regra de sempre:** mudança de rede só vale em **sessão NOVA** (iniciada DEPOIS de salvar) — igual à
-`PEXELS_API_KEY`. Na sessão nova eu uso o **Chromium do ambiente (Puppeteer já funciona)** pra abrir as
-páginas e **screenshotar/baixar** o moodboard de verdade. Ressalva: Pinterest às vezes exige login e pode
-bot-bloquear mesmo com rede liberada → os **CDNs de imagem** (`pinimg.com`, `mir-s3-cdn-cf.behance.net`) e o
-**Dribbble** tendem a ser mais fáceis. Se algum resistir, a curadoria do Marcos (3–5 refs) continua sendo o plano B.
+⚠️ **Regra de sempre:** mudança de rede só vale em sessão nova (mas aqui pegou na hora).
+
+### 🧪 TESTE REAL do acesso (2026-06-26) — VEREDITO: raspar Behance/Pinterest na nuvem NÃO rola
+Marcos liberou `behance.net` + `pinterest.com` (deixou Dribbble e `pinimg.com` de fora; Behance é a régua alta).
+Testei a fundo:
+- **Política de rede:** OK — `behance.net` e `pinterest.com` agora passam o gateway (antes era 403 de policy).
+- **MAS os sites BLOQUEIAM acesso automático:** Behance responde **403 anti-bot** a `curl`/WebFetch; Pinterest
+  responde **200 na home** mas **403/login nas buscas** (`/search/`). Exigem navegador REAL logado.
+- **Navegador headless (Chromium/Puppeteer) pelo proxy:** não atravessa o **MITM** deste ambiente —
+  `ERR_CONNECTION_CLOSED` no túnel TLS. Sem `certutil` pra importar a CA no NSS do Chromium e `--ignore-
+  certificate-errors` não basta (provável HTTP/2). O `render-creative` funciona porque carrega `file://` local,
+  não site externo via proxy.
+- **Imagens do Pinterest** moram em `pinimg.com` (domínio separado, **não liberado**) → não carregariam mesmo.
+
+**➡️ CAMINHO QUE FUNCIONA (recomendado) — CURADORIA do Marcos (modelo régua do Estúdio):**
+o Marcos (olho = filtro de qualidade, ainda mais no Behance que é régua alta) **cura 3–5 referências** e as
+entrega de um destes jeitos, que a fábrica consegue ler de verdade:
+1. **Cola as imagens no chat** — o Claude VÊ imagem no chat e destila na hora (mais rápido pra 1 peça).
+2. **Salva os arquivos** em `Projetos/<cliente>/references/` (ou `niches-library/<nicho>/visual-references/`)
+   — o Claude lê o arquivo de imagem direto (tool Read vê imagem) e escreve a ficha de anatomia + destila o
+   sistema visual. (Imagem de terceiro = referência de ESTUDO, não asset licenciado pra publicar.)
+
+Isso casa com o CLAUDE.md ("cure o critério, não cada arquivo") e com a régua do Estúdio. A pesquisa por
+**WebSearch** (texto) segue válida pra entender o padrão do nicho de graça; a curadoria entra pra elevar o teto visual.

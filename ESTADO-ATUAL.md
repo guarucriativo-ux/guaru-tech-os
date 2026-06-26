@@ -29,13 +29,15 @@
 >   INDIVIDUAIS qualidade cheia. Aguardando feedback do Marcos.
 > - **Workflow gravado na faculdade:** `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`
 >   + ponteiro no `metodo-criativo.md`.
-> - **✅ DECIDIDO (Marcos): LIBERAR A REDE.** O 403 é negação de política no gateway (não anti-bot), então
->   liberar os domínios resolve. **⏳ AÇÃO DO MARCOS — adicionar em Network → Custom** (onde já tem pexels/unsplash):
->   `behance.net`, `*.behance.net`, `pinterest.com`, `*.pinterest.com`, **`pinimg.com`, `*.pinimg.com`** (CDN
->   das imagens do Pinterest — domínio SEPARADO, essencial), e (opcional) `dribbble.com`, `*.dribbble.com`,
->   `cdn.dribbble.com`. **Só vale em sessão NOVA** (regra de sempre). Na sessão nova eu uso o Chromium do
->   ambiente (Puppeteer OK) pra abrir e screenshotar o moodboard. Detalhe em
->   `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`.
+> - **✅ TESTADO (Marcos liberou behance.net + pinterest.com) — VEREDITO: raspar na nuvem NÃO rola.**
+>   A rede passou a permitir os hosts, MAS os sites **bloqueiam acesso automático** (Behance 403 anti-bot;
+>   Pinterest 403/login nas buscas) e o **navegador headless não atravessa o proxy MITM** deste ambiente
+>   (sem certutil/HTTP2). Imagens do Pinterest (`pinimg.com`) nem foram liberadas (domínio separado).
+> - **➡️ CAMINHO QUE FUNCIONA = CURADORIA do Marcos** (modelo régua do Estúdio): ele cura 3–5 refs (Behance =
+>   régua alta) e **cola no chat** OU **salva em `references/`** → o Claude VÊ a imagem (chat/tool Read) e
+>   destila o sistema visual. WebSearch (texto) segue de graça pro padrão do nicho. Detalhe completo em
+>   `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`. (Plano automático fica pro PC com rede
+>   aberta + navegador logado, se um dia precisar.)
 
 ## 🔴 FEEDBACK DURO DO MARCOS NO TESTE DA JOALHERIA (2026-06-26) — TUDO GRAVADO NA FACULDADE
 > O carrossel da Lapidar foi **REPROVADO**. O feedback virou regra (acumulativo — "não ensinar 2x").
