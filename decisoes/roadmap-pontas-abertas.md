@@ -43,7 +43,7 @@ A "prova" = crítica do Marcos por módulo + aplicar numa peça. Drafts v1 ≠ f
   `decisoes/mapa-de-custo-video-api-vs-ia.md`)
 - **Unsplash key** (`UNSPLASH_ACCESS_KEY`): opcional, amplia o leque de foto (Pexels já entrega).
 - **Aprender com VÍDEO (pipeline Nível 1):** yt-dlp + ffmpeg + Whisper + OCR → texto/frames → destilar. Método
-  em `knowledge-base/sistema/aprender-com-video-metodo.md`. Hoje funciona o **Nível 0** (Marcos manda transcrição
+  em `decisoes/aprender-com-video-metodo.md`. Hoje funciona o **Nível 0** (Marcos manda transcrição
   + prints → eu destilo). Construir o Nível 1 só quando for ingerir volume de videoaula (melhor no PC/API).
 - **Render na nuvem:** precisa `npm install` em `tools/render/` (puppeteer; node_modules fora do Git). Chromium é auto-detectado.
 
