@@ -14,8 +14,18 @@
 > git fetch origin && git checkout claude/sync-resume-progress-4nd64x && git pull
 > ```
 > Confirme com `git branch --show-current` (tem que ser `claude/sync-resume-progress-4nd64x`).
-> **Depois:** o Marcos acabou de ABRIR a rede (Full/Custom) — a 1ª tarefa é **testar o `foto-auto`** (ver
-> "Próximo passo POR PARTES" abaixo). Se baixar foto = rede OK; se 403 = pedir print do Network access ao Marcos.
+>
+> ### ❌ TESTE DO foto-auto (2026-06-26, sessão nova) — A REDE AINDA ESTÁ FECHADA
+> Rodei `node tools/foto-auto.mjs "colorful healthy food bowl" ... --n=1` → **403**. Diagnóstico conclusivo
+> (não é o Openverse, é o ambiente): `curl` ao host devolve **`CONNECT tunnel failed, response 403`** = o
+> **gateway da rede do sandbox NEGOU a conexão por política** (`api.openverse.org` não está na allowlist desta sessão).
+> Ou seja: **mesmo sendo sessão nova, a rede NÃO pegou.** Provável causa: o environment ainda está em **Trusted**,
+> ou foi salvo em **Custom sem `api.openverse.org`** na lista.
+> **➡️ AÇÃO DO MARCOS (só ele faz, é config de ambiente, não de repo):** abrir o environment no app →
+> **Network access → Full** (mais simples) **ou Custom** colando estes domínios (1 por linha, manter "include
+> default package managers"): `api.openverse.org` · `images.openverse.org` · `*.pexels.com` · `*.unsplash.com`
+> · `design.canva.ai` · `*.canva.com`. **Salvar e ABRIR UMA SESSÃO NOVA** (a política só vale em sessão iniciada
+> DEPOIS de salvar). Passo a passo: `knowledge-base/sistema/infra-de-producao-e-rede.md`.
 
 ---
 
