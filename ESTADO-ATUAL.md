@@ -21,6 +21,9 @@
 > - **🟢 REGRA Nº0 cravada (2026-06-26):** *copy primeiro — design sem copy pesquisada que converte é bosta.*
 >   Gate obrigatório `knowledge-base/copywriting/copy-primeiro-o-gate.md` (5 passos: dor→ângulo→hook→edita→auto-check),
 >   ligado no Protocolo de Design (passo 0 do `CLAUDE.md`) e na Base Mãe (Regra Nº0). Nenhuma peça vira HTML sem passar.
+> - **🟢 Portão de craft cravado (companheiro):** `knowledge-base/design/craft-primeiro-o-gate.md` — na ENTREGA,
+>   ler a referência certo + bater os 5 marcadores (cor domina · camadas · grafismo que não atrapalha · tipografia
+>   com escala · quadro cheio) + comparar lado a lado com a ref. Passo 4 do Protocolo (`CLAUDE.md`) + pointer na Base Mãe.
 > - **Testes de peça do Estúdio (branch):** régua v3 (`pilot-regua-v3-*.jpg`, craft no nível) + carrossel
 >   `preco-percepcao-v1-*.jpg` (copy que estuda a dor e converte — aprovado por Marcos). Ambos em `Projetos/guaru-estudio/02-content-generator/outputs/`.
 > - **Pendências do Marcos:** fechar a curadoria da régua do Estúdio (libera o teste); greenlight da fusão dos 3 docs de cor.

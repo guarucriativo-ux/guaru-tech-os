@@ -20,6 +20,11 @@ válidas para qualquer cliente/nicho. Esta é a camada 1 do Protocolo de Geraç�
   pesquisar a dor → escolher o ângulo quente (nível de consciência) → escrever hook-first (PAS/AIDA) →
   auto-checar conversão → SÓ ENTÃO diagramar. Cumprir o gate é pré-condição pra abrir qualquer HTML.
 - Se a copy não passa no auto-check de conversão, **não diagrama** — volta pra copy. Bonito não salva fraco.
+- **Portão de craft (companheiro, na ENTREGA):** depois de diagramar e antes de entregar, cumprir
+  [`knowledge-base/design/craft-primeiro-o-gate.md`](../../knowledge-base/design/craft-primeiro-o-gate.md)
+  — craft de estagiário reprova a peça igual copy fraca. Ler a referência certo → bater os 5 marcadores
+  (cor domina · camadas · grafismo que não atrapalha leitura · tipografia com escala · quadro cheio) →
+  comparar lado a lado com a referência. Abaixo da régua volta pro layout.
 
 ## Amendment [2026-06-22] — Correção: não existe "o" estilo Guaru, existem 8 registros
 
