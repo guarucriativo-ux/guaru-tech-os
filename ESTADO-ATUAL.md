@@ -19,6 +19,11 @@
 >   trava na nuvem) = **fallback**, superado. Avatar IA (HeyGen) parqueado (pesa/autenticidade).
 > - Doutrina completa (com a REVISÃO no topo): `knowledge-base/sistema/colaborador-de-motion-graphics.md`.
 > - ⚠️ Decisão do Marcos (custo/conta/chave + allowlist dos hosts): qual estrada testar primeiro.
+> - **💰 MAPA DE CUSTO feito** (Marcos pediu "as duas"): `knowledge-base/sistema/mapa-de-custo-video-api-vs-ia.md`.
+>   Estrada 1 (vídeo-API) ≈ **$40–50/mês FIXO pra fábrica toda** → centavos/reel (sonho do SwaS). Estrada 2
+>   (IA image-to-video via fal.ai) ≈ **$0,15–0,50/clip** com Kling → cirúrgico (peça-UAU/banco). **Protótipo
+>   custo-ZERO possível:** JSON2Video free (600 créd ~20 reels) + fal.ai PAYG (uns dólares). ⏳ Próximo: Marcos
+>   topar o protótipo grátis → eu trago MP4s de teste → ele decide o que assinar.
 
 ## ✅ FOTO-HERÓI PEXELS — CONFIRMADA EM ALTA (2026-06-26, sessão nova)
 > Teste rodado de ponta a ponta nesta sessão nova: a `PEXELS_API_KEY` (56 chars) **apareceu** no ambiente e o

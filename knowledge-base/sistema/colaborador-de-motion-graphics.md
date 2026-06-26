@@ -32,6 +32,10 @@ cinematográfico real (a foto "ganha vida", b-roll gerado) — muito acima de te
   mesma doutrina da geração de imagem por IA ("IA alimenta o BANCO; o banco alimenta os posts").
 
 ### Veredito da revisão
+> 💰 **Comparativo de custo das 2 estradas:** `mapa-de-custo-video-api-vs-ia.md` (com caminho de protótipo
+> custo-zero). Resumo: Estrada 1 ~ **$40–50/mês fixos pra fábrica toda** (centavos/reel); Estrada 2 **$0,15–0,50
+> por clip** (cirúrgico). As duas via free/PAYG dá pra testar **sem assinar nada**.
+
 **Não construir motor de vídeo.** Workhorse do feed = **vídeo-como-API** (1 conta + chave, mandar JSON).
 Camada UAU = **IA image-to-video** cirúrgica sobre nossas stills. As duas são API (simples) e dão resultado
 **acima** de qualquer kinetic-type caseiro. O "construir o próprio" (estudo abaixo / POC) vira **último
