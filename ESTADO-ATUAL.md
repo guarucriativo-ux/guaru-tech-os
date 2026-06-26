@@ -7,6 +7,18 @@
 
 ---
 
+## 🔁 RETOMADA (leia PRIMEIRO se você é uma sessão nova — 2026-06-26)
+> ⚠️ **Todo o trabalho recente está na branch `claude/sync-resume-progress-4nd64x`, NÃO na `main`.**
+> Se você abriu na `main`, você NÃO está vendo o trabalho. Faça antes de tudo:
+> ```
+> git fetch origin && git checkout claude/sync-resume-progress-4nd64x && git pull
+> ```
+> Confirme com `git branch --show-current` (tem que ser `claude/sync-resume-progress-4nd64x`).
+> **Depois:** o Marcos acabou de ABRIR a rede (Full/Custom) — a 1ª tarefa é **testar o `foto-auto`** (ver
+> "Próximo passo POR PARTES" abaixo). Se baixar foto = rede OK; se 403 = pedir print do Network access ao Marcos.
+
+---
+
 ## Última atualização
 - **Data:** 2026-06-25
 - **Terminal:** celular/nuvem (Claude Code na web)
