@@ -41,6 +41,13 @@ pesquisa). É o MANIFESTO aplicado: **estudar antes de agir**.
 > ⚠️ Correção: numa primeira versão o Claude rotulou a curadoria como "booster opcional" — **errado**. O
 > Marcos corrigiu: **a curadoria manual dele é o caminho PRINCIPAL**, não um extra.
 
+> 🔒 **Escopo da decisão (Marcos 2026-06-26): isto muda SÓ o WORKFLOW.** Todo o conhecimento de designer que
+> o Marcos ensinou **CONTINUA valendo integralmente** — hábitos de designer (estudar antes, entrega em slides
+> individuais, alinhamento intencional, destaque em frase, grafismo com função), foto de produto, doutrina do
+> crop, classe B, ética, etc. (ver `design-rules.md` Base Mãe + notas da faculdade). A única coisa que se
+> define aqui é **COMO a referência chega na fábrica** = curadoria manual do Marcos. As regras de craft/entrega
+> são independentes do workflow e seguem firmes.
+
 **Workflow OFICIAL = o Marcos abastece a fábrica com REFERÊNCIA, pela curadoria manual dele** (o olho do
 Marcos é o filtro de qualidade — ainda mais no Behance, que é régua alta). Com a referência curada, a fábrica
 **configura** (destila o sistema visual pro `brand-dna.json` / niche-lib) e **roda mais liso**. É o MOAT do
