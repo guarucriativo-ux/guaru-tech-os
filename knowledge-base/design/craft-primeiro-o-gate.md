@@ -61,6 +61,15 @@ Pegar um stock qualquer "porque referência usa foto" é o mesmo pecado da copy 
    vai de tipográfico. → `foto-vs-texto-carrossel.md` + doutrina do `tools/foto-auto.mjs` ("a foto SEMPRE serve
    ao conteúdo, nunca aleatória").
 
+### Dois erros de foto que JÁ cometi (não repetir) — Marcos 2026-06-26
+- **Domínio errado / literal demais = confunde.** A imagem tem que viver no **campo da SOLUÇÃO/assunto** da
+  peça, não numa tangente literal de uma palavra. Peça sobre MARKETING → imagem de marketing/estratégia: feed
+  organizado no celular, gráfico/resultado subindo, conteúdo, planejamento. (Errei: copy de marketing + foto de
+  artesão no ofício → um estranho vê e se pergunta "isso vende joia?". **Teste:** estranho vendo imagem+copy
+  entende o assunto, ou confunde? Se confunde, foto errada.)
+- **NUNCA repetir a mesma foto na mesma peça** (usei a mesma no slide 1 e 5 = preguiça/sem criatividade). Se
+  usar foto em mais de um slide, são imagens DIFERENTES (ou trata a mesma de formas distintas com intenção).
+
 ## Checklist do portão (se algum NÃO → volta pro layout, não entrega)
 - [ ] **FOTO (se houver):** foi escolhida pra SERVIR a copy/conceito (brief tirado da copy), não "foto no
       escuro"/primeira genérica? Conta a história da mensagem? (Se não serve → troca a foto ou vai tipográfico.)

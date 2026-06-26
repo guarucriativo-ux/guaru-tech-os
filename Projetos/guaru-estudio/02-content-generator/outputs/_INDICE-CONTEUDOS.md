@@ -36,4 +36,7 @@
 - **FOTO serve à COPY (cravada 2026-06-26):** proibido "foto no escuro" (pegar a 1ª genérica porque "ref usa
   foto"). Tirar o BRIEF da copy → buscar com intenção → julgar candidatas contra o conceito. Foto que não
   conta a história da copy é pior que tipográfico limpo. (Gate de craft + `foto-vs-texto-carrossel.md`.)
+  - **Domínio certo, não literal:** imagem vive no campo da SOLUÇÃO/assunto (peça de marketing → feed/estratégia/
+    resultado, não um artesão literal que confunde). Teste: estranho vê imagem+copy e entende, ou confunde?
+  - **Nunca repetir a mesma foto** na mesma peça (= preguiça). Fotos diferentes ou tipográfico — não force foto fraca.
 - Fontes do DNA instaladas localmente (sem depender de rede) — `tools/render/fonts/`.
