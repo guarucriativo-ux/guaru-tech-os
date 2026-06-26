@@ -17,6 +17,22 @@
 > **Único item que ainda falta (não bloqueia):** gerar a chave do **Unsplash** (`UNSPLASH_ACCESS_KEY`) e
 > adicionar na mesma tela do ambiente — Pexels sozinho já entrega a foto-herói, Unsplash só amplia o leque.
 
+## 🧪 TESTE DO WORKFLOW NOVO: ESTUDAR MERCADO ANTES (2026-06-26) — ODONTOLOGIA / Lume
+> Marcos quis testar o caminho do designer humano: **pesquisar referência de mercado ANTES de criar**
+> (Behance/Pinterest "nicho+social media" + Instagram do nicho → destilar → aplicar; DNA fictício mas DENTRO
+> do nicho). Apliquei + as lições da faculdade do teste anterior.
+> - **Nicho:** odontologia (classe B). Cliente fictício **Lume** (`Projetos/lume-odontologia/`). Criada
+>   `niches-library/odontologia/` (estudo-de-referencias + design-rules + pautas).
+> - **Peça:** carrossel "Clareamento: consultório vs. kit de farmácia", 6 slides, paleta clara azul+mint+
+>   branco+navy-teal (nada de preto — bate com o exemplo do Marcos), Poppins, respiro, alinhamento LEFT
+>   intencional, highlight em FRASE, CTA "Comenta AVALIAÇÃO ↓" (sem seta no direct). Entregue em SLIDES
+>   INDIVIDUAIS qualidade cheia. Aguardando feedback do Marcos.
+> - **Workflow gravado na faculdade:** `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`
+>   + ponteiro no `metodo-criativo.md`.
+> - **⚠️ Atrito a decidir:** Behance/Pinterest/blogs **bloqueiam scraping no proxy (403)** → na nuvem só dá
+>   pra estudar via WebSearch (resumo), não baixar a imagem-referência. **Hipótese:** melhor o Marcos curar
+>   3–5 refs do nicho (como a régua do Estúdio) e a fábrica destilar. Decidir com ele qual caminho seguir.
+
 ## 🔴 FEEDBACK DURO DO MARCOS NO TESTE DA JOALHERIA (2026-06-26) — TUDO GRAVADO NA FACULDADE
 > O carrossel da Lapidar foi **REPROVADO**. O feedback virou regra (acumulativo — "não ensinar 2x").
 > **Onde está gravado:** Base Mãe `design-rules.md` (amendment "Hábitos de designer" + correção do crop);

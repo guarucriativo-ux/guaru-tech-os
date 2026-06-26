@@ -29,6 +29,16 @@ Técnicas do método:
 - **Paleta restrita** do `brand-dna.json`; uma única jogada tipográfica por peça.
 - Render: `#post` → `page.screenshot()` em 1080×1080 ou 1080×1350.
 
+## Estudar o mercado ANTES (workflow do designer humano — Marcos 2026-06-26)
+
+Quando NÃO há referência curada pelo Marcos pra aquele nicho, o designer **pesquisa o mercado validado antes
+de criar** (não inventa no escuro): Behance + Pinterest (`nicho + social media`) + como o nicho se comporta
+no Instagram → **destila os conceitos visuais e de copy** → salva em `niches-library/<nicho>/visual-references/
+estudo-de-referencias.md` → só então cria, com DNA do cliente **dentro do nicho** (cores/tipografia que batem
+com o mercado; saúde não é preto). Processo completo + atrito (proxy 403) em
+`knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`. Casa com a régua do Estúdio (curar o
+critério) e com "designer sem boas referências não é ninguém".
+
 ## Fluxo padrão (do briefing à peça)
 
 1. **Contexto + referência** — o cliente/Marcos manda a referência como **imagem real**

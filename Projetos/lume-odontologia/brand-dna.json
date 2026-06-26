@@ -1,0 +1,38 @@
+{
+  "client": "Lume Odontologia",
+  "handle": "@lume.odontologia",
+  "local": "São Paulo - SP",
+  "ficticio": true,
+  "tipo": "Cliente FICTÍCIO de teste — clínica odontológica geral com foco em estética (clareamento, lentes) e prevenção. Criado para testar o WORKFLOW NOVO (estudar referência do mercado validado no Behance/Pinterest + comportamento no Instagram → destilar → aplicar) e as lições da faculdade. Classe B (saúde/autoridade). NÃO é cliente real.",
+  "posicionamento": "Odontologia que cuida sem assustar. Clínica clara, acolhedora e técnica — explica antes de tratar, mostra o porquê, e devolve confiança pra você sorrir.",
+  "promessa": "Seu sorriso bem cuidado, com quem explica cada passo.",
+  "tagline": "Cuidar do sorriso é cuidar de você.",
+  "voz": {
+    "tom": "acolhedor, claro, confiante, sem julgar e sem assustar; brasileiro, linguagem humana (zero jargão)",
+    "estrutura_recorrente": "educar (explica o sintoma/procedimento em linguagem humana) → prova/segurança (como é feito com cuidado) → CTA acolhedor (agendar avaliação, baixo compromisso)",
+    "evitar": "jargão técnico cru ('periodontite', 'hipersensibilidade dentinária'); alarmismo; PROMETER resultado garantido / 'dente perfeito garantido' (ética CFO); fundo preto / visual sombrio (não combina com saúde); botão de app como CTA"
+  },
+  "paleta_lume": {
+    "tinta": "#10303A (navy-teal profundo — cor de TEXTO; nada de preto puro, saúde pede calma)",
+    "azul": "#1789C6 (azul clínico vivo — primária, confiança/higiene)",
+    "mint": "#8FE3D0 (mint — acento de frescor/limpeza, blobs e destaques)",
+    "papel": "#F2FAFB (branco-gelo azulado — respiro generoso = sensação de limpo/clínico)",
+    "regra_de_uso": "claro e fresco governa. Branco/papel é a base (respiro = profissionalismo); azul é a primária (confiança); mint é acento de frescor; navy-teal é o texto escuro. Paleta restrita 4 cores. NUNCA preto."
+  },
+  "tipografia_lume": {
+    "titulo": "sans geométrica amigável BOLD (Poppins) — confiante mas acolhedora, legível em mobile",
+    "acento": "destaque por highlight mint OU cor azul numa PALAVRA/FRASE com sentido (nunca letra solta)",
+    "corpo": "sans limpa (Inter), leve, legível; kicker em sans com letter-spacing"
+  },
+  "motivos_marca": {
+    "sparkle": "brilho/✦ como sinal de 'limpo/branco' — discreto",
+    "blob_mint": "forma orgânica arredondada mint como acento/contêiner (não botão)",
+    "cantos_macios": "cantos arredondados e divisores suaves"
+  },
+  "logos": { "primary": "wordmark 'Lume' em Poppins + ponto/sparkle", "alternate": "monograma 'L' em círculo azul" },
+  "servicos": {
+    "estetica": "clareamento, lentes/facetas (carro-chefe estético)",
+    "prevencao_e_geral": "limpeza, restauração, tratamento de gengiva; ortodontia"
+  },
+  "references_dir": "references/"
+}
