@@ -39,4 +39,5 @@ matéria obrigatória, seguida à risca.**
 ## Matrículas
 - ✅ `designer-grafico.md` — 1º matriculado (pedido do Marcos).
 - ✅ `gestor-de-trafego.md` — 2º matriculado.
+- ✅ `web-designer.md` — 3º matriculado (sites + landing pages; herda a fundação visual do gráfico + cânone de web/UX/CRO).
 - ⬜ Próximos (quando existirem): Olho (crítico visual), Copywriter, Atendimento/CRM.

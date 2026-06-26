@@ -19,6 +19,17 @@
 > com a **PROVA**: crítica do Marcos por módulo + aplicar numa peça. O gestor ainda depende de CONSTRUIR (Meta API/3 tetos).
 > **➡️ Quando o Marcos voltar:** criticar os módulos (começar pelos do designer) — o que ele ajustar vira regra à risca.
 
+## 🌐 NOVO COLABORADOR: WEB DESIGNER — matriculado (2026-06-26)
+> Marcos: a fábrica sem web designer é fraca e converte menos (sem landing pra levar o funil). Matriculado:
+> `knowledge-base/curriculos/web-designer.md`. **Não começa do zero:** HERDA a fundação visual do gráfico
+> (Gestalt/tipo/cor/grid/branding) + estuda referência de mercado (mesmo workflow) + cânone de web/UX/CRO.
+> - **Método de criação** (no doc): herdar fundação → objetivo ÚNICO (backward) → estudar ref de mercado →
+>   message match c/ o funil → mobile-first na nossa stack → medir/otimizar (CRO) → destilar no learning-log.
+> - **Modo caverna iniciado:** ✅ W-N1 Landing & CRO 💰 (`web/landing-page-e-cro-canone.md`) + ✅ W-F1 UX/Usab.
+>   (`web/ux-usabilidade-canone.md`). Fila: UI/componentes → landing-pra-tráfego → responsivo → acessib/perf → stack/host.
+> - **Uso iminente:** site do Guaru Estúdio (domínio `guaruestudio.com.br` já comprado) + landings de tráfego.
+> - Diagnóstico honesto: **calouro em web** (com fundação visual no bolso). Drafts ≠ formado (falta prova: crítica + landing real).
+
 ## 🎓 GRADE CURRICULAR DOS COLABORADORES — matrículas (2026-06-26)
 > Marcos: matricular cada colaborador numa faculdade COMPLETA, modelo das melhores do mundo (grade curricular
 > por função). Estudei os currículos de elite (RISD/Parsons/SVA pra design; Meta Blueprint/Google/performance
