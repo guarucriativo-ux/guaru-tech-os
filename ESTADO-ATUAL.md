@@ -17,7 +17,25 @@
 > **Único item que ainda falta (não bloqueia):** gerar a chave do **Unsplash** (`UNSPLASH_ACCESS_KEY`) e
 > adicionar na mesma tela do ambiente — Pexels sozinho já entrega a foto-herói, Unsplash só amplia o leque.
 
-## ✅ TESTE DESIGNER-GENERALISTA + DOUTRINA DO CROP (2026-06-26, sessão nova) — 4º NICHO VALIDADO
+## 🔴 FEEDBACK DURO DO MARCOS NO TESTE DA JOALHERIA (2026-06-26) — TUDO GRAVADO NA FACULDADE
+> O carrossel da Lapidar foi **REPROVADO**. O feedback virou regra (acumulativo — "não ensinar 2x").
+> **Onde está gravado:** Base Mãe `design-rules.md` (amendment "Hábitos de designer" + correção do crop);
+> `knowledge-base/design/habitos-de-designer-apresentacao-e-estudo.md`; `.../foto-de-produto-referencia-e-qualidade.md`;
+> regra "direct sem seta" em `.../cta-carrossel-sem-botao.md`; logs da Lapidar; `mercado-classe-b.md`.
+> **As lições (resumo):**
+> 1. **ESTUDAR referência ANTES de criar** (visual E copy) — falha-raiz. Copy feita no escuro NÃO converte
+>    (o erro mais grave). "Designer sem boas referências não é ninguém."
+> 2. **Foto de produto:** produto é o herói (texto não o cobre); fundo limpo (tinha um bebê ao fundo!);
+>    **arquivo grande ≠ alta resolução** (conferir nitidez real); usar referência profissional. S2 = crop certo.
+> 3. **Craft:** alinhar de verdade quando centraliza; bold em FRASE com sentido ("É certo."), não em letra
+>    solta; grafismo/traço só com função; **"direct" não leva seta** (→ é arrastar; ↓ só comentário/último slide).
+> 4. **Entrega:** NUNCA folha de contato em baixa — sempre slides individuais em qualidade cheia (apresentar
+>    mal = cliente lê "entrega baixa"). 
+> 5. **Mercado:** foco é **classe B** (serviço/autoridade); joalheria é classe A (produto) = erro de partida.
+> **➡️ Próximo passo:** refazer o teste num nicho **classe B**, ESTUDANDO referências antes (visual + copy),
+> entregando slides individuais. (Aguardar feedback do Marcos por slide antes de reprocessar a Lapidar, se ele quiser.)
+
+## ✅ TESTE DESIGNER-GENERALISTA + DOUTRINA DO CROP (2026-06-26, sessão nova) — base do teste (peça reprovada, ver bloco acima)
 > Marcos pediu: escolher um nicho FICTÍCIO, estudar o social media dele e rodar a geração no automático;
 > e atentar à qualidade de imagem (padrão Instagram, leve) **mas** sabendo que existe a prática de trabalhar
 > com arquivo grande pra cortar um detalhe e diagramar texto por cima — "isso vai pra faculdade, o designer estuda".

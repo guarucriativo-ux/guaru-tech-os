@@ -90,6 +90,45 @@ de app). Isso mete cara de template genérico e mata o peso de branding.
 - **Peça-chave (capa/hook) quase sempre pede FOTO** com gatilho de **identificação** (a pessoa se vê).
   Capa importante sem foto tende a ficar fraca. Ver Amendment "Foto vence text-only".
 
+## Amendment [2026-06-26] — Hábitos de designer: ESTUDAR antes, craft, entrega (Marcos revisou peça a peça)
+
+> Feedback duro do Marcos no teste da joalheria (Lapidar). **Cada item é hábito inegociável** — é o
+> MANIFESTO aplicado ("estudar antes de agir"). Acumulativo: não fazer o Marcos ensinar 2x. Detalhe e
+> exemplos em `knowledge-base/design/habitos-de-designer-apresentacao-e-estudo.md` e
+> `knowledge-base/design/foto-de-produto-referencia-e-qualidade.md`.
+
+**1. ESTUDAR REFERÊNCIA ANTES de criar (a falha-raiz).** Não criar "no escuro". Antes de qualquer peça,
+**pesquisar anúncios/feeds de marcas RENOMADAS do nicho** (profissionais, não amadores) — visual E copy.
+A internet tem imagem boa e ruim; o designer escolhe a boa porque estudou o que é bom. **"Designer sem
+boas referências não é ninguém."** Copy feita sem estudo NÃO converte — é a pior falha, não um detalhe.
+
+**2. Foto de PRODUTO (regra dura — ver nota dedicada).**
+- **O produto é o HERÓI. Texto NUNCA cobre o produto.** (Erro no S1: a copy apagou a aliança.)
+- **Fundo não pode competir nem apagar o produto.** Fundo poluído, pessoas aleatórias (apareceu um bebê
+  no S1!), qualquer coisa que rouba o olho do produto = reprovado. Produto à mostra, limpo, em foco.
+- **Arquivo grande ≠ alta resolução.** 1600px de dimensão pode ser foto mole/upscalada. **Conferir a
+  NITIDEZ REAL**, não só o tamanho em px. Crop de fonte mole = output borrado (foi o erro do S1/S6).
+- Quando der certo é como o **S2**: crop com o **produto à mostra**, nítido, fundo que valoriza.
+
+**3. Alinhamento com intenção.** Centralizou? **Centralize de verdade** (eixo coerente). "Quase centro"
+parece amador, não estilizado. Estilizar desalinhado é válido — mas tem que LER como decisão proposital,
+nunca como descuido. (S1–S5 saíram com alinhamento frouxo.)
+
+**4. Ênfase tipográfica em PALAVRA/FRASE com sentido — nunca numa letra solta.** Bold só no "É" ficou
+feio; o certo era bold em **"É certo."** (a unidade de sentido). Destaque carrega significado, não cai
+numa letra avulsa.
+
+**5. Grafismo só com função.** O traço/filete depois de "polimento" (S3) ficou solto/estranho. Filete,
+traço, divisor — só quando ancoram algo; soltos viram ruído.
+
+**6. ENTREGA/APRESENTAÇÃO é parte do trabalho.** **Nunca** entregar montagem/folha de contato em baixa
+resolução. **Sempre slides individuais em qualidade cheia.** Apresentar mal o próprio trabalho = amadorismo:
+imagem em baixa → o cliente lê "entrega baixa". Errar na apresentação destrói a percepção do que foi feito.
+
+**7. Mercado: foco é CLASSE B (serviço/autoridade), não classe A (produto).** Joalheria é classe A
+(depende de foto de produto, "não é o meu produto") — fica **parqueada** (ver `niches-library/
+mercado-classe-b.md`). Escolher classe A sem necessidade foi erro de partida.
+
 ## Amendment [2026-06-26] — Doutrina do CROP: fonte GRANDE, output LEVE (o designer estuda)
 
 > Lição do Marcos (2026-06-26). Vale pra **qualquer nicho**. Detalhe e exemplo trabalhado:
@@ -115,6 +154,12 @@ Regra prática:
   **e** um ou mais slides de detalhe (zoom em regiões diferentes) — multiplicador grátis de variedade.
 - **Régua, não regra:** o designer decide por peça se faz o crop, qual detalhe, qual tratamento. A
   ferramenta serve os dois níveis (fundo tratado ~960px **e** foto-herói ≥1600px) pra nunca limitar a decisão.
+
+> ⚠️ **Correção (Marcos 2026-06-26):** ≥1600px é condição NECESSÁRIA, não suficiente. **Tamanho em px ≠
+> nitidez** — foto pode vir mole/upscalada e o crop sai borrado mesmo "grande" (erro no S1/S6 da Lapidar).
+> E o crop só presta com **produto à mostra + fundo limpo** (como o S2), nunca com o produto tapado por
+> texto ou um fundo poluído. Sempre conferir a nitidez REAL e escolher foto de produto profissional (ver
+> itens 1, 2 do amendment "Hábitos de designer" acima).
 
 ## Diagramação
 - Layout limpo, focado em legibilidade. ~~Alinhamento de texto rigoroso — nunca texto

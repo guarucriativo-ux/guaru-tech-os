@@ -29,6 +29,11 @@ A seta não é decoração, ela INSTRUI. Apontar pro lado errado é erro de UX d
   então a seta aponta pra lá. 
 - **Último slide NUNCA usa seta lateral (→).** Não há pra onde arrastar — é o fim. Seta lateral no último
   slide é erro. (No "esgotamento"/"comparação" eu inverti as duas: corrigir sempre.)
+- **Seta SÓ existe pra direção REAL (Marcos 2026-06-26).** A seta aponta pra um lugar de verdade: **→** =
+  arrastar (lateral); **↓** = comentar (comentário fica embaixo). **"Chama no direct" / "manda no direct"
+  NÃO leva seta** — o direct não fica do lado nem embaixo da peça, então seta ali é erro (foi o erro do S6
+  da Lapidar: "Chama no direct →"). Direct = só a frase-comando, sem seta. **↓ é reservado a COMENTÁRIO**
+  (e no último slide). Se não há direção física, não há seta.
 
 ## ⚠️ O CTA/fechamento tem que VARIAR (não é template — Marcos 2026-06-24)
 "Sempre fechar a última com o mesmo texto" = ctrl-c/ctrl-v, **não fazemos isso.** O comando do último

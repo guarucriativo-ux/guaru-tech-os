@@ -1,5 +1,12 @@
 # Pautas de Conteúdo — Joalheria / Ourivesaria Autoral
 
+> ⚠️ **CLASSE A (produto) — PARQUEADO (Marcos 2026-06-26).** Joalheria depende de foto de produto
+> profissional ("não é o meu produto") → não é o foco da fábrica, que é **classe B (serviço/autoridade)**.
+> Ver `niches-library/mercado-classe-b.md`. Esta lib nasceu de um TESTE; mantida como referência, mas
+> **não priorizar classe A** sem necessidade. Se um dia atacar produto, valem em DOBRO as regras de
+> `knowledge-base/design/foto-de-produto-referencia-e-qualidade.md`.
+
+
 Estudo de como o nicho de joalheria (alianças, joias autorais sob medida, ouro/prata) se
 comunica nas redes — o que converte, o que afasta. Camada 2 do Protocolo de Geração de Design.
 Base: padrão observado em ateliers e joalherias autorais no Instagram (2026).
