@@ -44,13 +44,13 @@
 ### 4. O teste rápido de uma oferta
 Pegue o valor oferecido ÷ % pedido = valuation implícito. Compare com (a) o custo de reconstrução e (b) o que
 o negócio gera por mês. Se o valuation implícito ficar abaixo do custo de reconstrução, é roubo na certa.
-> Ex.: R$10k por 50% ⇒ empresa "valendo" R$20k — abaixo do custo de reconstrução (R$80k+). **Recusar.**
+> Ex.: R$10k por 50% ⇒ empresa "valendo" R$20k — abaixo do custo de reconstrução (R$100k+). **Recusar.**
 
 ## Snapshot dos números (2026-06-25 — ENVELHECE, reavaliar a cada marco)
 - **Meta R$10k/mês:** alcançável em ~6–18 meses (não no próximo mês). = ~20–40 clientes pagantes entre os dois
   braços (Psi.automatic @ R$97 e Guaru Estúdio @ R$200–500/mês + projetos avulsos R$1–5k). Limite = venda, não
   capacidade. Próximo mês realista: R$0–2k (primeiros clientes).
-- **Valor hoje (pré-receita, 0 pagante):** ~R$80k–250k defensável (custo de reconstrução); acima é potencial não provado.
+- **Valor hoje (pré-receita, 0 pagante):** ~R$150k–300k defensável (custo de reconstrução — ver seção abaixo); acima é potencial não provado.
 - **Valor em R$10k/mês** (~R$120k/ano, ~80% margem): ~R$300k–500k.
 - **Valor visão (plano conservador ano 3 ~R$634k/ano):** ~R$1,9M–3,2M a 3–5×; **R$3M–5M+** se a tese de
   plataforma se provar.
@@ -62,6 +62,20 @@ Bate com `poder-da-fabrica-e-cenario.md`: o moat (e o valuation) só compõem qu
 real. Então o movimento de maior alavancagem pro valor da empresa não é levantar dinheiro — é **fechar os
 primeiros clientes pagantes** (Guaru Estúdio = caixa já). Cada cliente sobe o valuation mais do que qualquer
 cheque de R$10k faria — e sem diluir nada.
+
+## Custo de reconstrução do ativo (reavaliado 2026-06-25, de baixo pra cima)
+Refeito do zero (a estimativa antiga de R$80–250k subcontava o IP). **Medido no repo:** ~2.500–3.000 linhas de
+código distinto + **~45.000 palavras de conhecimento curado** (faculdade 29 docs + nichos 25 docs + estratégia
+16 docs + 5 brand-DNAs ≈ livro de ~150–180 págs). Recriar o estado ATUAL contratando, a taxa de mercado BR 2026
+(dev sênior ~R$150–250/h carregado):
+- **Software** (RAG, 2 motores c/ API + robustez, composição duotone, render Puppeteer, ads-engine, ledger,
+  guardrails, CLI, CI): ~400–650h → **R$60k–180k**.
+- **IP/conhecimento curado** (doutrina de ~50 refs, playbooks de nicho, DNAs — custo = pesquisa+curadoria+
+  validação): ~250–450h sênior → **R$40k–110k+**.
+- **R&D/descoberta** (achar o que funciona): **+20–30%**.
+- **➡️ Total: ~R$150k–300k** (piso ~R$100k copiado com mapa pronto; teto **R$400k+** com descoberta completa + taste).
+- **Nuance:** custo do software cai (IA barateia código); o conhecimento curado NÃO cai ("o novo moat é o
+  contexto") → ancorar valor no IP, não no código. O fundador capturou esse valor a custo marginal ≈ zero.
 
 ## Fontes
 - Múltiplos de SaaS bootstrapped 2026 (~2–4× receita): https://saasvaluationmultiple.com/stages/bootstrapped-saas-valuation

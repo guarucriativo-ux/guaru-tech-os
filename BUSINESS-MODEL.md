@@ -78,17 +78,28 @@ de aprendizado. Esse é o fosso.
 
 ---
 
-## 7. Valor de construção (custo de reconstruir o que existe) — (estimativa)
+## 7. Valor de construção (custo de reconstruir o que existe) — (reavaliado 2026-06-25, de baixo pra cima)
 > Isto é **custo de build**, NÃO valuation do negócio. São coisas diferentes.
+> ↻ Número refeito do zero em 2026-06-25 (medindo a obra real + taxa de mercado BR 2026). A estimativa antiga
+> (R$80–250k) não era absurda no teto, mas **subcontava o IP/curadoria** (tratava quase tudo como rebuild de
+> software). Memória da conta: `valuation-e-equity.md` › "Custo de reconstrução".
 
-- Reconstruir o motor/MVP atual (IA de conteúdo + render de imagem + gerador de campanha +
-  ledger/aprendizado + CLI + automação em nuvem): trabalho de **dev sênior full-stack com
-  experiência em IA**, ~2–4 meses → faixa de **R$80 mil–R$250 mil** (freelance/contratação).
-- Turnkey por software house (com design de produto + arquitetura): **R$200 mil–R$600 mil+**.
-- **O que dinheiro não compra rápido:** a `niches-library`, o método de design e o olhar
-  acumulado. Isso é IP, não serviço entregável.
-- **Nota:** o fundador executou os papéis de dev sênior + diretor de criação + estrategista de
-  produto usando IA como alavanca — comprimiu o output de um time.
+Medido no repo: ~2.500–3.000 linhas de código distinto + **~45.000 palavras de conhecimento curado** (faculdade
+29 docs + nichos 25 docs + estratégia 16 docs + 5 brand-DNAs). Conta de baixo pra cima, recriar o estado ATUAL
+contratando:
+- **Software** (RAG/faculdade, 2 motores c/ API Anthropic + robustez, composição duotone, render Puppeteer,
+  ads-engine, ledger, guardrails, CLI, CI): ~400–650h de dev sênior IA → **R$60k–180k**.
+- **IP/conhecimento curado** (doutrina de design vinda de ~50 refs, playbooks de nicho, DNAs — custo é
+  pesquisa+curadoria+validação, não digitar): ~250–450h sênior → **R$40k–110k+**.
+- **R&D/descoberta** (achar o que funciona; quem recria sem o mapa paga inteiro): **+20–30%**.
+- **➡️ Total realista: ~R$150k–300k** (piso ~R$100k se copiado com o mapa pronto; teto **R$400k+** contando
+  descoberta completa + o taste, que dinheiro não compra).
+
+**Nuance que decide tudo:** o custo do **software** está caindo (IA barateia código); o que **não cai** é o
+**conhecimento curado** — "o novo moat é o contexto". Logo, não ancorar o valor no código, e sim no IP.
+**O que dinheiro não compra rápido:** a `niches-library`, o método de design e o olhar acumulado.
+**Nota:** o fundador executou dev sênior + diretor de criação + estrategista usando IA como alavanca —
+capturou ~R$150–300k de valor de reposição a custo marginal perto de zero.
 
 ⚠️ **Valor de build ≠ valor do negócio.** O negócio vale por **receita recorrente + retenção +
 moat**, ainda a provar com os primeiros pagantes.
