@@ -56,6 +56,7 @@
 > - **🟢 REGRA Nº0 cravada (2026-06-26):** *copy primeiro — design sem copy pesquisada que converte é bosta.*
 >   Gate obrigatório `knowledge-base/copywriting/copy-primeiro-o-gate.md` (5 passos: dor→ângulo→hook→edita→auto-check),
 >   ligado no Protocolo de Design (passo 0 do `CLAUDE.md`) e na Base Mãe (Regra Nº0). Nenhuma peça vira HTML sem passar.
+> - **🏆 GARIMPO DE AGENTES — O OURO** (`decisoes/garimpo-de-agentes-o-ouro.md`): tudo que íamos construir na unha JÁ EXISTE pronto (MIT). Ouro: ai-marketing-claude (audit/PDF/proposta/calendário/e-mail) · marketingskills (cro/copy/programmatic-seo/free-tools) · VoltAgent (content-quality-editor=gate de copy executável, market-researcher) · rshah515 (email/automation) · wshobson (DISTRIBUIÇÃO social-publishing · RELATÓRIO · SEO · arte-IA meigen · orquestração agent-teams). MARCO: fase de construir o cérebro acabou → montar+curar+rodar+vender.
 > - **Lições Rafa+Rony** (`decisoes/licoes-rafa-rony-aplicar.md`): técnica da linha (loops/headless/agentes paralelos/auto-postagem/roteamento de modelo) + venda/marca/oferta do Rony (4 mecanismos · hooks · ancoragem · SwaS). ⚠️ ICP = dono que NÃO sabe/NÃO quer fazer (compra resultado pronto); a audiência do Rony (quem quer APRENDER/DIY) NÃO é nosso cliente.
 > - **🟢 Portão de craft cravado (companheiro):** `knowledge-base/design/craft-primeiro-o-gate.md` — na ENTREGA:
 >   ler a ref certo → 3 camadas → 5 marcadores (cor domina · camadas · grafismo que não atrapalha · tipografia
