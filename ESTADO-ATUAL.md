@@ -7,6 +7,18 @@
 
 ---
 
+## 📓 DEVER DE CASA — MODO CAVERNA concluído (2026-06-26, Marcos descansando)
+> Marcos mandou estudar muito enquanto descansava. **Destilei 13 módulos do cânone das melhores faculdades**,
+> cada um: ementa + competência + **livros canônicos** + "como muda a peça" + erros proibidos. Tudo commitado.
+> **Designer (Fases 1–2 completas, 8 módulos):** F1 Gestalt (Arnheim/Dondis) · F2 Tipografia (Bringhurst/Lupton) ·
+> F3 Cor (Albers/Itten) · N1 Grid (Müller-Brockmann/Samara) · N2 Imagem (Freeman/Bang) · N3 Branding (Wheeler/
+> Neumeier) · N4 Copy (Ogilvy/Cialdini/StoryBrand) · N5 História (Meggs). Em `knowledge-base/design/` + `copywriting/`.
+> **Gestor (teoria-base, 5 módulos):** F1 Funil/Consciência (Schwartz) · F2/N1 Mídia Paga (Meta Blueprint/Google,
+> Advantage+/learning phase) · N3 Mensuração (Pixel/CAPI/GA4) · E1 Otimização/Escala · E2 🔴 3 Tetos de Gasto. Em `knowledge-base/marketing/`.
+> **⚠️ Honestidade (não repetir o "quase formado"):** são **drafts v1** — o teórico no papel. Vira "formado" só
+> com a **PROVA**: crítica do Marcos por módulo + aplicar numa peça. O gestor ainda depende de CONSTRUIR (Meta API/3 tetos).
+> **➡️ Quando o Marcos voltar:** criticar os módulos (começar pelos do designer) — o que ele ajustar vira regra à risca.
+
 ## 🎓 GRADE CURRICULAR DOS COLABORADORES — matrículas (2026-06-26)
 > Marcos: matricular cada colaborador numa faculdade COMPLETA, modelo das melhores do mundo (grade curricular
 > por função). Estudei os currículos de elite (RISD/Parsons/SVA pra design; Meta Blueprint/Google/performance
