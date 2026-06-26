@@ -119,6 +119,15 @@ construir) — pesquisar tools/produtos/repos do mercado. Bater cabeça reinvent
 tempo humano perdido. Recon de mercado é o passo 0 de qualquer frente nova. (Cravado depois de descobrir o
 Xquads tarde.)
 
+## Mecanismo provável da arte (pesquisa 2026-06-26) — é a MESMA família que a nossa
+Esse meio (Claude Code + carrossel) entrega imagem **via HTML → PNG/JPG, sem IA de imagem** ("create carousel
+directly inside Claude, HTML to PNG conversion"). É **o mesmo método do nosso `render-creative.js`**. Marcos viu
+num vídeo a entrega dele sair **bem melhor** que a nossa. Conclusão provável: se a tecnologia é igual, a vantagem
+dele **não é o render — é a CURADORIA/CRAFT embutida** (templates/regras/checklists de design melhor authorados).
+**Boa notícia:** craft encodado a gente **absorve** pro nosso pipeline (que já faz HTML→JPG). O teste head-to-head
+vai mostrar o QUE ele faz melhor (estrutura? tipografia? composição? copy?) → vira regra na nossa faculdade.
+(Ainda assim, confirmar no arquivo real: se usar IA de imagem em algum ponto, anotar.)
+
 ## INTEGRAÇÃO NA FÁBRICA — arquitetura + contrato + o que mexer no código (meio de campo, 2026-06-26)
 **Princípio que protege a criatividade:** o Xquads encurta a **curadoria de CONTEÚDO**; a **criatividade
 VISUAL continua no designer** (senão vira o template que o Marcos reprovou). Então não é "spec → template
