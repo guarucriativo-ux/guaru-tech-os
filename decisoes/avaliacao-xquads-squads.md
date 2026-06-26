@@ -86,9 +86,17 @@ Repo público e clonável, **sem arquivo LICENSE declarado**, com página de dow
 explícitos = zona cinza pra uso comercial. **Estudar/aprender o método: ok.** Usar o conteúdo deles em
 entrega paga: confirmar condições com o vendedor (sowsales) antes. (Reforça a opção B/C — nosso conteúdo curado.)
 
-### Primeiro passo concreto (recomendado)
-Fase 0: rodar UM teste real e comparar o output cru deles com o que a nossa fábrica faz hoje → decidir A/B/C
-com dado, não achismo. Definir quem roda (PC do Marcos x instalar na nuvem).
+### Preço/risco (achado 2026-06-26 — muda a Fase 0)
+- **Xquads = R$67, garantia de 7 dias (reembolso).** Barato e reversível. A `raxo.com.br/vibecodingvsl` é a
+  **VSL do funil** (utm `xquads-isca-nov25`) — o Xquads é a **isca/front-end**; a VSL deve vender um curso/oferta
+  maior de "vibe coding" por cima. ⚠️ Avaliar o front-end (R$67) ANTES de qualquer upsell do funil.
+- Comprar dá acesso/uso (resolve a zona cinza de licença pro nosso teste). A garantia torna a Fase 0 quase sem risco.
+
+### Primeiro passo concreto (recomendado, atualizado)
+**Comprar o Xquads (R$67) → rodar a Fase 0 → comparar com a nossa fábrica → decidir A/B/C.** Como é R$67 com
+garantia, o custo de descobrir é mínimo. Definir quem instala/roda (PC do Marcos x nuvem). Guardrail: o que
+valer a pena, **destilar pra NOSSA faculdade** (não virar dependente do tool; o conteúdo curado tem que ser
+nosso — é o MOAT que sobrevive mesmo se largarmos o pacote).
 
 ## Pendência
 - Marcos decidir: (1) quem roda a Fase 0 (PC dele x eu instalo na nuvem) · (2) modelo de adoção A/B/C.
