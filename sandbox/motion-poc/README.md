@@ -1,7 +1,7 @@
 # POC — Motor de Motion Graphics (Tier 1)
 
 Prova de conceito do **colaborador de motion** da fábrica (ver
-`knowledge-base/sistema/colaborador-de-motion-graphics.md`). Demonstra que a NOSSA arquitetura já faz vídeo:
+`decisoes/colaborador-de-motion-graphics.md`). Demonstra que a NOSSA arquitetura já faz vídeo:
 **HTML/CSS animado → Puppeteer captura frame a frame → ffmpeg junta**. Mesmo "1 cérebro + config" do designer
 still, só com eixo do tempo.
 

@@ -54,6 +54,43 @@ Sem âncora, vira um menino aprendendo errado e repetindo com confiança. **A cu
 
 ---
 
+## A CULTURA DE CURADORIA da Faculdade (Marcos 2026-06-26) — o método das melhores faculdades, aplicado
+
+> Faculdade é lugar de **ENSINO que vira RESULTADO na entrega do colaborador** — não depósito. Conhecimento
+> errado ou em excesso vira **gordura no cérebro**: dilui o sinal do RAG (o sistema lê trecho irrelevante) e
+> dá a ILUSÃO de "coberto" o que não está. **Curar é subtrair tanto quanto somar.** Não precisamos de excesso —
+> precisamos de conhecimento que muda a entrega.
+
+Método das melhores faculdades (Wiggins & McTighe, *Backward Design* · Biggs, *Constructive Alignment* ·
+Meyer & Land, *Threshold Concepts* · *depth over breadth*), traduzido pra nossa curadoria:
+
+### O TESTE DE ENTRADA — um doc só entra/permanece se passa nos 4
+1. **Backward da ENTREGA** (começa pelo fim, não pelo conteúdo): *"qual peça/entrega, de qual colaborador,
+   isto melhora?"* Se não muda nenhuma entrega → não é faculdade.
+2. **Princípio TRANSFERÍVEL, não fato avulso** (threshold/transfer): vale em vários casos/clientes/nichos?
+   Fato de uma vez, decisão pontual → não entra.
+3. **Profundidade > amplitude** (less is more): uma página afiada vence dez enroladas. Já existe doc parecido?
+   **Funde**, não soma. Cada doc tem que ganhar o seu lugar.
+4. **Alinhado e nomeado** (constructive alignment): o doc diz QUAL colaborador usa e QUAL entrega melhora.
+   Órfão (ninguém consulta, não aparece em peça) → candidato a corte.
+
+### O que NÃO é faculdade (vai pra `decisoes/` ou raiz — nunca em `knowledge-base/`)
+Decisão · estratégia · comparativo de fornecedor/preço · roadmap/exploração de capacidade ainda não construída ·
+infra/rede · status/handoff · teste descartável. Isso é **operação/negócio**, não **ensino**. (Foi o erro do
+*mapa de custo de vídeo*: virou pra `decisoes/`.)
+
+### A "prova" = a ENTREGA (alinhamento ao nosso mundo)
+Em faculdade a prova mede se o ensino pegou. Aqui a prova é a **peça que o colaborador produz + o feedback do
+Marcos**. Doc que nunca aparece na entrega **reprovou** → sai (ou vira regra no motor e some da prateleira).
+
+### AUDITORIA SEMANAL (ritual cravado) — faculdade vs. aplicado
+Toda semana, passar cada doc pelos 4 testes: *mudou alguma entrega? é transferível? tem duplicata pra fundir?
+está alinhado a um colaborador?* O que não passa: **funde, move ou poda.** Registrar o resultado em
+`decisoes/auditoria-faculdade-<data>.md`. A âncora continua sendo a **curadoria do Marcos** (anti-deriva acima):
+sem o olho humano, a faculdade incha de novo.
+
+---
+
 ## Sequência (não atrasar o que importa)
 - **Base de Conhecimento (RAG):** começar a usar cedo — melhora a qualidade de toda peça já. Marcos
   pode começar a alimentar `knowledge-base/` HOJE; o wire no gerador é o próximo passo barato.

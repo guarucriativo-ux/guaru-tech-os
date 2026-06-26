@@ -7,6 +7,19 @@
 
 ---
 
+## 🎓 CULTURA DE CURADORIA DA FACULDADE — cravada (2026-06-26)
+> Marcos: faculdade é ENSINO que vira RESULTADO, não depósito; conhecimento errado/excesso = "gordura no
+> cérebro" (dilui o RAG). Estudei o método das melhores faculdades (Backward Design, Constructive Alignment,
+> Threshold Concepts, depth>breadth) e cravei a **Cultura de Curadoria** em `ESCOPO-ESTUDO.md` + portão no
+> `knowledge-base/README.md`. **Teste de Entrada (4):** (1) backward da entrega; (2) princípio transferível,
+> não fato avulso; (3) profundidade > amplitude (funde duplicata); (4) alinhado a um colaborador/entrega.
+> **NÃO é faculdade** (→ `decisoes/`): decisão, preço de fornecedor, roadmap não-construído, infra, status, teste.
+> - **Nova pasta `decisoes/`** (não-ensino). Já movidos pra lá: o **mapa de custo de vídeo** e a **exploração
+>   de motion** (eram gordura na faculdade — meu erro desta sessão, corrigido).
+> - **1ª auditoria feita:** `decisoes/auditoria-faculdade-2026-06-26.md` (veredito por arquivo). ⏳ Aguardando
+>   greenlight do Marcos pra 2ª onda (fundir 3 docs de cor; mover modelos de negócio + infra pra fora).
+> - **Ritual:** auditoria SEMANAL (faculdade vs. aplicado) — eu rodo o teste dos 4 e trago o diff.
+
 ## 🎬 VÍDEO/MOTION — estudo REVISADO (olhar amplo, 2026-06-26): NÃO construir, ALAVANCAR
 > Marcos pediu pra estudar motion; depois corrigiu: "kinetic type frame a frame qualquer app faz; ache uma
 > saída mais simples e de melhor resultado". **Reframe (a conclusão que vale):** a fábrica **não constrói
@@ -17,9 +30,9 @@
 >    (clip 4–10s cinematográfico). Custo por clip → usar pra peça-UAU/banco de b-roll, não por post.
 > - **Construir o próprio** (Puppeteer+ffmpeg; POC em `sandbox/motion-poc/` capturou 90 frames mas o encode
 >   trava na nuvem) = **fallback**, superado. Avatar IA (HeyGen) parqueado (pesa/autenticidade).
-> - Doutrina completa (com a REVISÃO no topo): `knowledge-base/sistema/colaborador-de-motion-graphics.md`.
+> - Doutrina completa (com a REVISÃO no topo): `decisoes/colaborador-de-motion-graphics.md`.
 > - ⚠️ Decisão do Marcos (custo/conta/chave + allowlist dos hosts): qual estrada testar primeiro.
-> - **💰 MAPA DE CUSTO feito** (Marcos pediu "as duas"): `knowledge-base/sistema/mapa-de-custo-video-api-vs-ia.md`.
+> - **💰 MAPA DE CUSTO feito** (Marcos pediu "as duas"): `decisoes/mapa-de-custo-video-api-vs-ia.md`.
 >   Estrada 1 (vídeo-API) ≈ **$40–50/mês FIXO pra fábrica toda** → centavos/reel (sonho do SwaS). Estrada 2
 >   (IA image-to-video via fal.ai) ≈ **$0,15–0,50/clip** com Kling → cirúrgico (peça-UAU/banco). **Protótipo
 >   custo-ZERO possível:** JSON2Video free (600 créd ~20 reels) + fal.ai PAYG (uns dólares). ⏳ Próximo: Marcos

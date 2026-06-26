@@ -55,6 +55,18 @@ não pensar caso a caso.
 | **QUEM somos / pra ONDE vamos / quanto valemos** (estratégia/identidade) | raiz do repo |
 | ❌ **Teste descartável, exercício, craft pontual não-validado, qualquer coisa que não se reusa** | **não salva** |
 
+## 🎓 Portão de curadoria (cultura da faculdade — constituição em `ESCOPO-ESTUDO.md`)
+Faculdade = **ensino que vira RESULTADO na entrega**, não depósito. Excesso = **gordura no cérebro** (dilui o
+RAG). **Curar é subtrair tanto quanto somar.** Um doc só entra/permanece se passa nos **4 testes**:
+1. **Backward da entrega** — qual peça/entrega de qual colaborador isto melhora? Não muda nada → fora.
+2. **Transferível, não fato avulso** — vale em vários casos/clientes? Fato/decisão pontual → fora.
+3. **Profundidade > amplitude** — uma página afiada > dez; tem duplicata? **funde**.
+4. **Alinhado** — diz QUAL colaborador usa e QUAL entrega melhora; órfão → corte.
+
+**NÃO é faculdade** (vai pra `decisoes/` ou raiz): decisão, estratégia, preço de fornecedor, roadmap/capacidade
+não-construída, infra, status, teste. **Auditoria SEMANAL** (`decisoes/auditoria-faculdade-<data>.md`): o que
+não passa nos 4 testes, funde/move/poda.
+
 ## Princípio (não cair no mito)
 Encher a pasta NÃO deixa o modelo (Claude) mais inteligente sozinho — ele é congelado. O que fica
 mais inteligente é o **sistema**, porque passa a **consultar** este acervo ao gerar, e porque a
