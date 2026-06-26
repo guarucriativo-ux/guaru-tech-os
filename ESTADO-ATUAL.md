@@ -32,6 +32,19 @@
   defasado** (crava Alkimia como 1º cliente "com caixa", contradito pelo foco atual psi.automatic + 0 pagante);
   (3) **ledger anti-repetição** do motor novo psi.automatic segue como prioridade nº1 a construir (colisão de tema/assinatura).
 
+## Novidades 2026-06-26 (sessão de design + Canva)
+- **Designer sênior do Estúdio implementado:** `compor.js` (estrutura `conteudo-direto`) + `checar-guardrails.js`
+  do Estúdio + lixo de laboratório limpo. **Vitrine do psi validada** (bracket marca→prova→pitch). **3 nichos
+  testados** (psi/estúdio/nutri) = mesmo designer, 3 registros → "designer = 1 cérebro + config" comprovado.
+- **Entrega de carrossel = arquivos individuais por slide** (Marcos preferiu, pra baixar/testar cada um). Folha
+  de revisão (1 imagem) foi descartada.
+- **Foto/asset:** bancos livres (Openverse/Pexels) E **pixels do Canva** (`design.canva.ai`) **bloqueados pela
+  rede da nuvem (403)**. **Conector Canva (metadados/comandos) ATIVO** (achou brand kit "GUARU", designs reais).
+  **Decisão: DNA pelas PASTAS** (`brand-dna.json`), não pelo brand kit do Canva (caixa-preta). Foto = do cliente
+  na pasta / Canva no PC / ou liberar `design.canva.ai`+bancos em Network→Custom. Detalhe:
+  `knowledge-base/sistema/fontes-de-dna-e-asset-pasta-vs-canva.md`.
+- **foto-auto** segue pendente (depende de rede liberada ou rodar no PC).
+
 ## Backlog técnico — alinhamento código × visão ampla (auditado 2026-06-25)
 Auditoria do código contra `visao-ampla-forca-de-trabalho-digital.md`. Fundação alinhada (faculdade/kb-query,
 ledger/aprendizado, modelo clone template→cliente, designer sênior `compor`/`gerar-peca`). Buracos a fechar, em ordem:
