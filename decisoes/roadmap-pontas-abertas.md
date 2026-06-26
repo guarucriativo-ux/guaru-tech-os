@@ -39,6 +39,16 @@ A "prova" = crítica do Marcos por módulo + aplicar numa peça. Drafts v1 ≠ f
 - ⚠️ Já há **5 imagens cruas** na pasta (sem ficha/nome) — parte do lote; absorver junto quando o Marcos fechar.
 - Depois da absorção → **testar uma peça do Estúdio** com a régua + a faculdade nova (é o teste que ficou pendente).
 
+## 🟢 CONCLUÍDO nesta sessão — Pipeline de conteúdo com 2 portões + 3 peças de teste
+- **Dois portões obrigatórios cravados** (não dependem mais da memória de sessão):
+  **(1) gate de copy** `knowledge-base/copywriting/copy-primeiro-o-gate.md` (Regra Nº0 — copy primeiro) ·
+  **(2) portão de craft** `knowledge-base/design/craft-primeiro-o-gate.md`. Ambos ligados no Protocolo de
+  Geração de Design (`CLAUDE.md`, passos 0 e 4) + Base Mãe. Fluxo: copy pesquisada → 3 camadas → craft → entrega.
+- **3 peças de teste geradas** (base no piloto de 4 refs, ANTES da absorção das 65) — índice e status em
+  `Projetos/guaru-estudio/02-content-generator/outputs/_INDICE-CONTEUDOS.md`: régua v3 (craft no nível) ·
+  preço-percepção (copy aprovada) · **seguidor-x-cliente (🟡 aguardando feedback do Marcos)**.
+- **➡️ Retomar aqui:** feedback do Marcos na peça #3 (copy quente? craft na régua?) → o ajuste vira regra.
+
 ## 🟢 FACULDADE — manutenção (cultura cravada)
 - **Auditoria semanal** (Teste dos 4): última 2026-06-26, **próxima ~2026-07-03**. (`ESCOPO-ESTUDO.md` + `decisoes/auditoria-faculdade-2026-06-26.md`)
 - **Pendente de greenlight do Marcos:** fundir os 3 docs de cor (`design/teoria-das-cores-harmonia` + `psicologia-das-cores`

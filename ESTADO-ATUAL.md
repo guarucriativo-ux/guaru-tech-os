@@ -24,9 +24,13 @@
 > - **🟢 Portão de craft cravado (companheiro):** `knowledge-base/design/craft-primeiro-o-gate.md` — na ENTREGA,
 >   ler a referência certo + bater os 5 marcadores (cor domina · camadas · grafismo que não atrapalha · tipografia
 >   com escala · quadro cheio) + comparar lado a lado com a ref. Passo 4 do Protocolo (`CLAUDE.md`) + pointer na Base Mãe.
-> - **Testes de peça do Estúdio (branch):** régua v3 (`pilot-regua-v3-*.jpg`, craft no nível) + carrossel
->   `preco-percepcao-v1-*.jpg` (copy que estuda a dor e converte — aprovado por Marcos). Ambos em `Projetos/guaru-estudio/02-content-generator/outputs/`.
-> - **Pendências do Marcos:** fechar a curadoria da régua do Estúdio (libera o teste); greenlight da fusão dos 3 docs de cor.
+> - **3 peças de teste do Estúdio** (todas em `Projetos/guaru-estudio/02-content-generator/outputs/`, índice em
+>   `_INDICE-CONTEUDOS.md`): **(1)** régua v3 (`pilot-regua-v3-*`, craft no nível) · **(2)** `preco-percepcao-v1-*`
+>   (copy aprovada por Marcos) · **(3)** `seguidor-vs-cliente-v1-*` (1ª rodando os 2 portões — copy+craft).
+> - **🟡 AGUARDANDO FEEDBACK do Marcos (retomar AQUI):** ele vai criticar a peça #3 (seguidor x cliente) — duas
+>   perguntas abertas: a **copy** chegou no nível "quente/converte"? o **craft** está na régua? O que ele ajustar
+>   vira regra (atualizar gates/Base Mãe). Também pendente: fechar curadoria da régua (libera absorver as 65) +
+>   greenlight da fusão dos 3 docs de cor + crítica dos currículos dos 3 colaboradores.
 > - **Branch desta sessão:** `claude/pexels-hero-photo-test-0vbct1` → **PR #1 aberto** (github.com/guarucriativo-ux/
 >   guaru-tech-os/pull/1) pra mesclar na `main`. No PC: rodar `node tools/sincronizar.mjs` (ou mesclar o PR) pra
 >   o trabalho chegar nos outros terminais. **`main` é a fonte da verdade** — depois de mesclar, todo terminal nasce com tudo.
