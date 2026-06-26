@@ -7,6 +7,13 @@
 
 ---
 
+## 🔄 RUMO NOVO (Marcos 2026-06-26) — produtizar COM os agentes, não treinar do zero
+> O cérebro vem pronto no **kit de agentes (Xquads)**. O trabalho agora **não é mais ensinar colaboradores do
+> zero** — é **(1) como usar o kit na fábrica** e **(2) quais PRODUTOS os agentes entregam automático**. Estudar
+> de novo: **MERCADO + o que dá pra construir/vender com os agentes.** Nosso valor por cima = render + gates +
+> taste + produto/oferta. Currículos do zero = DESPRIORIZADOS. Detalhes: `decisoes/rumo-produtos-com-agentes.md`.
+> (O estudo de perfil do IG que o Marcos pediu entra como parte da frente 2 — mercado/concorrente/referência.)
+
 ## 🖥️ PRÓXIMA SESSÃO NO DESKTOP — checklist (Marcos a caminho)
 > Meio de campo armado pra ganhar tempo. Quando chegar no PC:
 > 1. Baixar Xquads (ZIP): https://github.com/ohmyjahh/xquads-squads/archive/refs/heads/main.zip → descompactar.

@@ -21,13 +21,19 @@ Os elos 2 (tráfego) e 3 (landing) são o gargalo. Construir, nesta ordem de seg
 4. **DECISÃO DE HOST/infra de produção** (o "tijolo grande", Estágio 3→4): onde hospedar (Vercel/Netlify/
    Supabase/servidor nosso) + apontar o domínio. Ver `decisoes/ambiente-de-build-vscode.md` + `infra-de-producao-e-rede.md`.
 
-## 🟡 PRIORIDADE 2 — Formar os colaboradores (modo caverna + crítica do Marcos)
-A "prova" = crítica do Marcos por módulo + aplicar numa peça. Drafts v1 ≠ formado.
-- **Designer Gráfico:** Fases 1–2 destiladas (8 módulos do cânone) — **aguardando a crítica do Marcos**.
-- **Gestor de Tráfego:** teoria-base destilada (5 módulos) — falta crítica + a CONSTRUÇÃO (ver Prioridade 1).
-- **Web Designer:** iniciado (W-N1 Landing/CRO + W-F1 UX). **Fila:** UI/componentes → landing-pra-tráfego →
-  responsivo → acessibilidade/perf → stack/host → IA → interação → SEO/analytics. (`curriculos/web-designer.md`)
-- **Próximas matrículas:** Olho (crítico visual) · Copywriter · CRM/Atendimento (o elo 4 da cadeia de valor).
+## 🔄 PRIORIDADE NOVA — Produtizar COM os agentes (Xquads), não treinar do zero
+> Virada de rumo (Marcos 2026-06-26, `decisoes/rumo-produtos-com-agentes.md`). O cérebro vem pronto no kit.
+- **Frente 1 — o KIT:** Fase 0/head-to-head (depende do Marcos subir `_estudo-xquads/`) → mapear, por squad,
+  QUAL produto sai (carrossel, landing, copy de anúncio, branding…) e o que ganha da nossa fábrica.
+- **Frente 2 — MERCADO + PRODUTOS:** estudar o que dá pra **construir e vender** com os agentes (linhas de
+  produto/ofertas automáticas, preço, quem compra, concorrentes). O estudo do perfil do IG entra aqui.
+- **Camada de valor nossa (não se joga fora):** render (HTML→JPG) + gates + taste + curadoria por cima do kit.
+
+## 🅿️ DESPRIORIZADO — Formar colaboradores DO ZERO (parado; vira referência, não frente ativa)
+> O kit cobre o "cérebro". Mantido só como plano B se o kit não validar no teste.
+- Designer Gráfico (8 módulos destilados), Gestor de Tráfego (5 módulos), Web Designer (iniciado) — em
+  `knowledge-base/curriculos/`. Viram **curadoria/régua por cima do kit**, não treino do zero.
+- (Olho/Copywriter/CRM como matrículas futuras: idem — só se o kit não cobrir.)
 
 ## 🟡 TESTE pendente — Guaru Estúdio (PRONTO PRA RECEBER A CURADORIA)
 - **Recepção organizada (Marcos vai mandar "bastante" imagem):** ele dropa as refs curadas em
