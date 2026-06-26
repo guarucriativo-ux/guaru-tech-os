@@ -7,6 +7,22 @@
 
 ---
 
+## 🧭 RETOMADA RÁPIDA — leia ISTO primeiro (atualizado 2026-06-26)
+> Sessão longa (faculdade + colaboradores + operação). **Para retomar qualquer assunto, abra o mapa:**
+> **`decisoes/roadmap-pontas-abertas.md`** (todas as pontas abertas, por prioridade). Resumo do estado:
+> - **Faculdade organizada:** cultura de curadoria cravada (`ESCOPO-ESTUDO.md`); só ENSINO em `knowledge-base/`;
+>   decisão/estratégia/preço/infra em `decisoes/`. Auditoria semanal (próx. ~03/07).
+> - **3 colaboradores matriculados** (`knowledge-base/curriculos/`): Designer Gráfico (Fases 1–2 destiladas),
+>   Gestor de Tráfego (teoria-base), Web Designer (iniciado). Todos drafts v1 → **aguardam a crítica do Marcos**.
+> - **Operação da fábrica** mapeada (`sistema/operacao-da-fabrica-cadeia-de-valor.md`): designer faz parecer bom,
+>   **gestor + web fazem dar dinheiro** (elos 2-3 = motor de resultado = gargalo/prioridade).
+> - **🔴 Próximo grande passo (quando voltarmos):** construir o motor de resultado — 3 tetos de gasto + ponta da
+>   Meta (gestor) + 1ª landing real do Estúdio (web) + decidir o host. Tudo no roadmap acima.
+> - **Pendências do Marcos:** fechar a curadoria da régua do Estúdio (libera o teste); greenlight da fusão dos 3 docs de cor.
+> - **Branch desta sessão:** `claude/pexels-hero-photo-test-0vbct1` (PR aberto pra mesclar na `main` — ver fim do arquivo).
+
+---
+
 ## 📓 DEVER DE CASA — MODO CAVERNA concluído (2026-06-26, Marcos descansando)
 > Marcos mandou estudar muito enquanto descansava. **Destilei 13 módulos do cânone das melhores faculdades**,
 > cada um: ementa + competência + **livros canônicos** + "como muda a peça" + erros proibidos. Tudo commitado.
