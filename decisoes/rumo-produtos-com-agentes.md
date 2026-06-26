@@ -43,7 +43,7 @@
   copy de anúncio, roteiro de reels…
 - **B) Estações da linha (fluxo por produto):** pedido/tema → agente(s) → briefing de peça → render (HTML→JPG,
   nosso) → gate/QA (copy+craft+taste) → entrega em lote leve. Definir, por produto, o que é automático x manual.
-- **C) MERCADO/oferta por produto (estudo pesado, backward da entrega):** quem compra cada produto, a dor, o
+- **C) MERCADO/oferta por produto — ✅ v1 FEITA: `decisoes/estudo-mercado-frente-c.md`** (preços/modelos/concorrentes). quem compra cada produto, a dor, o
   preço, como se vende (oferta produtizada), concorrentes (ex.: raxo/agências de IA). [o perfil do IG entra aqui]
 - **D) Capacidade/escala/custo:** throughput, gargalos, custo por unidade, qualidade x volume.
 - **E) O que falta construir:** adaptador kit→briefing, orquestrador, config de produtos (contrato já feito).
