@@ -52,7 +52,12 @@ volume) · **Opus** julga/revisa · **Fable** raciocínio longo (caro).
 
 ## PARTE 2 — RONY MEISLER (venda · marca · oferta · produto)
 > Reserva (R$6 mil → ~R$2 bi → vendida ao Arezzo). Hoje: newsletter "Email do Rony" (~1,2mi), Manual de Donos
-> (escola por e-mail + comunidade + IA), Rebels Ventures. A audiência dele É o nosso buyer persona (donos).
+> (escola por e-mail + comunidade + IA), Rebels Ventures.
+> ⚠️ **CORREÇÃO (Marcos): a audiência do Rony NÃO é o nosso cliente.** Ele ensina donos a **FAZER (DIY)** — quem
+> quer aprender IA/marketing. O **nosso cliente é o oposto:** o dono que **não entende nada disso e não quer
+> aprender** — compra o RESULTADO pronto. Vender serviço pronto pra quem já sabe fazer = não faz sentido (é
+> "vender o que sei fazer pra mim mesmo"). **Aprendemos os MÉTODOS do Rony (venda/copy/marca/oferta); não miramos
+> a audiência dele.** (Inclusive: a audiência dele é mais o público do MODELO "vender kit/curso" — não o nosso ICP.)
 > ⚠️ Substack/LPs deram 403; conteúdo reconstruído de snippets de busca — frases entre aspas são indexadas,
 > preços variam por campanha. Vínculo honesto, não verificado linha a linha.
 

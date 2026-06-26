@@ -49,8 +49,14 @@ MEIs em 2025 (+22%)**. **59% das MPEs e 39% dos MEIs** já investem em divulgaç
   em venda** (não vaidade de seguidor). → é exatamente o eixo da nossa copy de benefício.
 - **Objeções:** "tá caro", "eu mesmo faço", medo de não ter retorno. → mensalidade previsível + foco em conversão.
 - **Disposição a pagar:** sensível (MEI gasta pouco e ~56% nem medem o retorno). Ancorar **abaixo da agência,
-  acima do "faço sozinho"**, provando conversão. (Persona B — "operador digital" que compra kits/cursos de IA —
-  existe e é grande, mas é mercado da frente "kit", não do serviço.)
+  acima do "faço sozinho"**, provando conversão.
+
+> **🎯 ICP (cliente ideal) — definido pelo Marcos:** o dono que **NÃO entende nada disso (Claude Code/IA/design/
+> marketing) e NÃO quer aprender** — quer o **resultado pronto**. Compra porque NÃO sabe/NÃO tem tempo de fazer.
+> **Persona B — "operador digital" que quer APRENDER a fazer (compra kits/cursos de IA, ex. audiência do Rony/
+> Manual de Donos) — NÃO é nosso cliente** (vender serviço pronto pra quem quer fazer sozinho não fecha; é até
+> potencial concorrente). Isso também é um alerta sobre o modelo "vender kit/curso": ele mira o DIY, não o nosso
+> ICP. Nosso jogo = **done-for-you pro não-técnico.**
 
 ## 4. Tendências e AMEAÇAS (e o que isso valida na nossa tese)
 - **"Post de IA" virou commodity → preço caiu e o mercado cobra RESULTADO** (TI Inside abr/2026: "pressão por
