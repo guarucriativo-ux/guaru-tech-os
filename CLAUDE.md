@@ -82,6 +82,15 @@ Cada sessão é isolada: o Claude de um terminal **não herda a conversa** de ou
 Nenhum HTML/CSS de criativo nasce no vazio. Antes de gerar qualquer peça visual, ler nesta
 ordem (cada camada é mais específica que a anterior):
 
+**0. Copy primeiro (regra inquebrável — vem ANTES das 3 camadas visuais).** A copy nasce antes do
+   layout; o design veste a copy, não o contrário. *Design que não cria copy entrega bosta — se
+   entregamos o que não converte, de nada adianta.* Cumprir o **gate de copy** em
+   `knowledge-base/copywriting/copy-primeiro-o-gate.md`: pesquisar a DOR + o que CONVERTE → escolher o
+   ângulo quente (nível de consciência) → escrever hook-first (PAS/AIDA, capa = 80%) → auto-checar
+   conversão → só então diagramar. **Proibido copy no escuro** (escrever sem estudar). Copy que não
+   passa no auto-check volta pra copy — não vira HTML. A faculdade já tem o cânone
+   (`knowledge-base/copywriting/`); o pecado é não usá-lo.
+
 1. **Base Mãe** — `niches-library/design-principles/design-rules.md`: qualidade técnica e
    diagramação aprovadas pelo Marcos, valem para qualquer cliente/nicho.
 2. **Regras de nicho** — `niches-library/<nicho>/visual-references/design-rules.md`: padrões

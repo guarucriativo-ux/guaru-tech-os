@@ -8,6 +8,19 @@ válidas para qualquer cliente/nicho. Esta é a camada 1 do Protocolo de Geraç�
 > claro, caixa de texto sólida sobre fundo vibrante, paleta restrita e tipografia bold de alto
 > contraste se repetem em praticamente todas as peças. Nenhuma regra abaixo precisou mudar.
 
+## REGRA Nº0 [2026-06-26] — Copy primeiro. Design sem copy pesquisada que converte é bosta.
+
+> Lei suprema da fábrica (Marcos: *"design que não cria copy entrega bosta. Isso sim é regra. Se
+> entregarmos o que não converte, tudo se acaba, de nada adianta, designer."*). Vem ANTES de toda
+> regra visual abaixo — peça linda com copy fraca está REPROVADA por definição.
+
+- **Nenhuma peça nasce do layout.** Nasce da **copy pesquisada**. A copy vem primeiro; o design veste a copy.
+- **Proibido copy no escuro** (escrever sem estudar a dor, o mercado e o que converte) — é a pior falha.
+- O **gate obrigatório** está em [`knowledge-base/copywriting/copy-primeiro-o-gate.md`](../../knowledge-base/copywriting/copy-primeiro-o-gate.md):
+  pesquisar a dor → escolher o ângulo quente (nível de consciência) → escrever hook-first (PAS/AIDA) →
+  auto-checar conversão → SÓ ENTÃO diagramar. Cumprir o gate é pré-condição pra abrir qualquer HTML.
+- Se a copy não passa no auto-check de conversão, **não diagrama** — volta pra copy. Bonito não salva fraco.
+
 ## Amendment [2026-06-22] — Correção: não existe "o" estilo Guaru, existem 8 registros
 
 Estudo sistemático e completo das 20 referências (ver

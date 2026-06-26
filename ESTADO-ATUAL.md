@@ -18,6 +18,11 @@
 >   **gestor + web fazem dar dinheiro** (elos 2-3 = motor de resultado = gargalo/prioridade).
 > - **🔴 Próximo grande passo (quando voltarmos):** construir o motor de resultado — 3 tetos de gasto + ponta da
 >   Meta (gestor) + 1ª landing real do Estúdio (web) + decidir o host. Tudo no roadmap acima.
+> - **🟢 REGRA Nº0 cravada (2026-06-26):** *copy primeiro — design sem copy pesquisada que converte é bosta.*
+>   Gate obrigatório `knowledge-base/copywriting/copy-primeiro-o-gate.md` (5 passos: dor→ângulo→hook→edita→auto-check),
+>   ligado no Protocolo de Design (passo 0 do `CLAUDE.md`) e na Base Mãe (Regra Nº0). Nenhuma peça vira HTML sem passar.
+> - **Testes de peça do Estúdio (branch):** régua v3 (`pilot-regua-v3-*.jpg`, craft no nível) + carrossel
+>   `preco-percepcao-v1-*.jpg` (copy que estuda a dor e converte — aprovado por Marcos). Ambos em `Projetos/guaru-estudio/02-content-generator/outputs/`.
 > - **Pendências do Marcos:** fechar a curadoria da régua do Estúdio (libera o teste); greenlight da fusão dos 3 docs de cor.
 > - **Branch desta sessão:** `claude/pexels-hero-photo-test-0vbct1` → **PR #1 aberto** (github.com/guarucriativo-ux/
 >   guaru-tech-os/pull/1) pra mesclar na `main`. No PC: rodar `node tools/sincronizar.mjs` (ou mesclar o PR) pra
