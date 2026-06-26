@@ -37,9 +37,16 @@ pesquisa). É o MANIFESTO aplicado: **estudar antes de agir**.
   critério > garimpar arquivo (CLAUDE.md). A pesquisa por texto (WebSearch) é boa pra entender o padrão, mas
   o olho humano na curadoria das imagens é o que garante referência de qualidade.
 
-## Veredito preliminar (a confirmar com o feedback do Marcos)
-Estudar antes pareceu o melhor caminho (peça mais coesa e "de mercado"). O gargalo não é o método — é o
-ACESSO às imagens na nuvem. Resolver o acesso (curadoria do Marcos ou rede aberta) destrava o workflow.
+## ✅ VEREDITO FINAL (Marcos 2026-06-26): o melhor caminho é o que JÁ tínhamos testado
+**Workflow DEFAULT validado = estudar o mercado via WebSearch + o Claude destilar e aplicar** (o fluxo que
+gerou a Lume). Simples, roda 100% na nuvem, sem depender de raspar site nenhum. Foi o que produziu a melhor
+peça e é o caminho oficial daqui pra frente.
+
+- **Raspar Behance/Pinterest na nuvem = descartado** (beco sem saída: anti-bot 403 + proxy MITM; ver teste
+  abaixo). Não revisitar.
+- **Curadoria do Marcos (colar ref no chat / salvar em `references/`) = booster OPCIONAL**, não obrigatório —
+  usar só quando ele quiser elevar o teto visual de uma peça específica (Behance é régua alta). O default não
+  exige curadoria; a curadoria é um extra.
 
 ## ✅ CAMINHO ESCOLHIDO (Marcos 2026-06-26): LIBERAR A REDE pra abrir as referências
 Diagnóstico confirmado: o 403 é **negação de política de rede no gateway** (`connect_rejected: gateway

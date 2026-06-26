@@ -33,11 +33,11 @@
 >   A rede passou a permitir os hosts, MAS os sites **bloqueiam acesso automático** (Behance 403 anti-bot;
 >   Pinterest 403/login nas buscas) e o **navegador headless não atravessa o proxy MITM** deste ambiente
 >   (sem certutil/HTTP2). Imagens do Pinterest (`pinimg.com`) nem foram liberadas (domínio separado).
-> - **➡️ CAMINHO QUE FUNCIONA = CURADORIA do Marcos** (modelo régua do Estúdio): ele cura 3–5 refs (Behance =
->   régua alta) e **cola no chat** OU **salva em `references/`** → o Claude VÊ a imagem (chat/tool Read) e
->   destila o sistema visual. WebSearch (texto) segue de graça pro padrão do nicho. Detalhe completo em
->   `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`. (Plano automático fica pro PC com rede
->   aberta + navegador logado, se um dia precisar.)
+> - **✅ VEREDITO FINAL (Marcos): o melhor caminho é o que JÁ testamos** = estudar o mercado via **WebSearch +
+>   Claude destila e aplica** (o fluxo que gerou a Lume). É o DEFAULT oficial — roda 100% na nuvem, sem raspar
+>   site. **Raspar Behance/Pinterest = descartado** (anti-bot + proxy MITM). **Curadoria do Marcos** (colar ref
+>   no chat / salvar em `references/`) = **booster OPCIONAL** pra elevar o teto de uma peça, não obrigatório.
+>   Detalhe em `knowledge-base/design/workflow-estudar-mercado-antes-de-criar.md`.
 
 ## 🔴 FEEDBACK DURO DO MARCOS NO TESTE DA JOALHERIA (2026-06-26) — TUDO GRAVADO NA FACULDADE
 > O carrossel da Lapidar foi **REPROVADO**. O feedback virou regra (acumulativo — "não ensinar 2x").
