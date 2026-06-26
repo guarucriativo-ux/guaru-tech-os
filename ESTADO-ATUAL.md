@@ -32,6 +32,28 @@
   defasado** (crava Alkimia como 1º cliente "com caixa", contradito pelo foco atual psi.automatic + 0 pagante);
   (3) **ledger anti-repetição** do motor novo psi.automatic segue como prioridade nº1 a construir (colisão de tema/assinatura).
 
+## Backlog técnico — alinhamento código × visão ampla (auditado 2026-06-25)
+Auditoria do código contra `visao-ampla-forca-de-trabalho-digital.md`. Fundação alinhada (faculdade/kb-query,
+ledger/aprendizado, modelo clone template→cliente, designer sênior `compor`/`gerar-peca`). Buracos a fechar, em ordem:
+1. **🔴 Designer sênior NÃO está no Guaru Estúdio** (braço de caixa). O motor bom (`compor`/`gerar-peca`) vive só
+   no `psi-automatic`; o Guaru Estúdio roda o motor velho (`generate.js`+`image-engine.js`) + tem lixo de teste
+   (academia/simulados/mona/kameleon). ⚠️ Nuance: o `compor.js` do psi é motor de VITRINE (bracket marca→prova→
+   pitch) — não copia verbatim; o Estúdio precisa de estrutura de conteúdo de cliente. Régua do Estúdio segue
+   CONGELADA (curadoria) → usar Base Mãe + DNA por enquanto, sem a régua.
+2. **Guardrail de marca do Guaru Estúdio não existe** (`checar-guardrails.js` é só do psi). Regras do Estúdio:
+   nunca vender "IA", estrutura PAS.
+3. **🔴 Gestor de tráfego é maquete** — zero integração real com a API da Meta (só placeholder; gera blueprint
+   PAUSED). Falta o loop criar-campanha + ler-relatório + aprender 24/7.
+4. **🔴 Os 3 tetos de gasto não existem em código** — só um `daily_budget` num JSON. Falta account spending
+   limit + stop-loss + config de guardrail por cliente.
+5. Motor duplicado em 5 clientes (cada um tem cópia de `traffic-manager`/`image-engine`) → centralizar (modelo:
+   `tools/render` já é compartilhado). Abstrair só DEPOIS de 2 roupagens funcionando (CLAUDE.md: nada de
+   abstração prematura).
+6. *(Destino)* Olho (crítico visual) em código; especialistas como agentes separados (Agent SDK).
+
+**Ordem acordada com o Marcos:** (1) designer sênior no Estúdio + limpar lixo → (2) guardrail de marca do Estúdio
+→ (3) fechar ponta da Meta + 3 tetos → (4) centralizar motores → (depois) Olho/agentes.
+
 ## Onde paramos (o que foi feito nesta sessão)
 1. **Acesso pelo celular destravado.** Caminho oficial = app do Claude → aba **"Code"** (Claude Code na
    nuvem, PC pode estar desligado), conectado ao repo via GitHub (conta `guarucriativo-ux`). O modo
