@@ -57,22 +57,26 @@ faculdade **aprende com cada peça** (este loop de design inteiro é prova disso
    fase de escalar) — mas **tijolo por tijolo**, sem abrir frente agora.
 
 ## PLANO — capturar o atalho (Marcos: "o modelo dele já está pronto, encurta nosso caminho")
-**Insight central (confirmado nos arquivos):** o Xquads entrega o **CÉREBRO DE CONTEÚDO curado** (copy/
-estratégia/branding como agentes + tasks + checklists de qualidade). Ele **NÃO renderiza arte** (sem JPG/DNA/
-fontes — README confirma: "conteúdo e planejamento, não renderização"). A copy-squad gera headline/oferta/
-sales-letter/crítica; não tem task de render. Logo: a metade do RENDER (HTML→JPG + DNA + fontes + gates +
-taste) **já é nossa e está pronta**. Não é trocar a fábrica por ele — é **plugar o cérebro de conteúdo dele
-no nosso render**. E é exatamente a parte que mais penei (curadoria de copy/estratégia) que ele entrega pronta.
+**Insight central (CORRIGIDO 2026-06-26 — eu tinha concluído cedo demais):** o Xquads claramente entrega o
+**CÉREBRO DE CONTEÚDO curado** (copy/estratégia/branding). **MAS ele também PODE entregar a IMAGEM** — a
+**design-squad** tem `visual-generator` ("visual assets") e `ui-engineer` ("UI code production"). Marcos
+ouviu que às vezes entrega a arte pronta, **às vezes melhor que a nossa**. ⚠️ Minha leitura anterior ("não
+renderiza") veio só do README + copy-squad (textual) — **estava incompleta**. O que falta APURAR (só com os
+arquivos reais): COMO o `visual-generator`/`ui-engineer` produz a imagem (escreve código HTML/SVG como a gente?
+chama IA de imagem? exporta PNG/JPG?) e **se a qualidade ganha da nossa**. → decisão por **TESTE head-to-head**,
+não por achismo. Pode ser que a integração não seja "conteúdo dele + render nosso", e sim **usar o pipeline
+dele** se a arte dele for melhor — ou um híbrido. Manter as duas portas abertas até o teste.
 
 **Como ele "já funciona" (a curadoria embutida):** persona-expert (frameworks do Aaker/Halbert/etc. no system
 prompt) + **tasks** com passos/inputs/outputs + **checklist output-quality** (portão) + **workflow** que
 encadeia + **routing-catalog** + **orquestrador**. Invocação BMAD: `@copy-chief` → `*diagnose`/`*full-copy-project`.
 
 ### Fases
-- **Fase 0 — VALIDAR a promessa (barato, ANTES de comprometer):** rodar um teste real (zip de
-  `xquads.vercel.app/xquads/downloads` ou `npx aios-core install`) e pedir um carrossel/post no NOSSO nicho.
-  Avaliar honesto: a curadoria é tão boa quanto parece? Em PT-BR? Serve a pequeno negócio? ⚠️ Na nuvem o git de
-  terceiro é bloqueado (proxy só libera nosso repo); roda melhor **no PC do Marcos** ou via npm se liberar.
+- **Fase 0 — TESTE HEAD-TO-HEAD (barato, ANTES de comprometer):** mesmo briefing → (a) gerar pelo Xquads
+  (design-squad: `visual-generator`/`ui-engineer`) e (b) pela nossa fábrica → **comparar lado a lado**: a
+  imagem dele sai pronta? como (código x IA de imagem)? a qualidade/craft ganha da nossa? a copy/curadoria é
+  boa? em PT-BR? serve a pequeno negócio BR? **Quem ganha em cada parte (conteúdo / arte) define a integração.**
+  ⚠️ Na nuvem o git de terceiro é bloqueado (proxy só libera nosso repo); roda melhor **no PC do Marcos**.
 - **Fase 1 — Modelo de adoção:** (A) usar/adaptar os squads direto (rápido; risco genérico+licença) · (B)
   replicar o PADRÃO com a NOSSA faculdade curada (alinhado ao MOAT; mais trabalho) · (C) **HÍBRIDO
   (recomendado):** estrutura + conteúdo deles como BASE, vestida com nosso DNA + gates + taste do Marcos.
