@@ -31,10 +31,11 @@ const OUT = path.join(PROJ, "outputs");
 const log = (m) => console.log(`\n[fabrica:${slug}] ${m}`);
 
 // roda um agente sênior headless via claude -p. Retorna o texto final. Os arquivos que ele escreve ficam no disco.
-function claude(prompt, { tools = "Read,Write,Edit,Glob,Grep", timeoutMs = 600000 } = {}) {
+function claude(prompt, { tools = "Read,Write,Edit,Glob,Grep", timeoutMs = 900000 } = {}) {
   return new Promise((resolve, reject) => {
     const a = ["-p", prompt, "--output-format", "text", "--permission-mode", "acceptEdits", "--allowedTools", tools];
-    execFile("claude", a, { cwd: ROOT, timeout: timeoutMs, maxBuffer: 64 * 1024 * 1024 }, (err, stdout, stderr) => {
+    // stdin ignorado ('ignore') = sem o aviso "no stdin data received in 3s"; timeout amplo p/ etapas pesadas (design).
+    execFile("claude", a, { cwd: ROOT, timeout: timeoutMs, maxBuffer: 64 * 1024 * 1024, stdio: ["ignore", "pipe", "pipe"] }, (err, stdout, stderr) => {
       if (err) return reject(new Error(`claude -p falhou (${err.code || err.signal}): ${String(stderr || err.message).slice(0, 500)}`));
       resolve(String(stdout).trim());
     });
@@ -144,7 +145,7 @@ FONTES (já no cache local, use pelos nomes): ${fontnames}. NÃO use @import do 
 TÉCNICO (obrigatório): cada slide = <div class="slide"> com width:1080px;height:1350px;overflow:hidden;box-sizing:border-box. Foto via <img>/background url('../assets/...') object-fit:cover com contraste garantido.
 Respeite a paleta/tipografia da identidade e o que a marca NÃO faz. Use o copy EXATO. Mantenha os PLACEHOLDERS [entre colchetes]. Evite clichês de carrossel (01/0X, "ARRASTE →", chip) — ache solução sua se quiser indicar progressão.
 SALVE um HTML autossuficiente em ${htmlRel}.`,
-  { tools: "Read,Write,Edit", timeoutMs: 700000 }
+  { tools: "Read,Write,Edit", timeoutMs: 1080000 }
 );
 if (!existsSync(path.join(OUT, "carrossel.html"))) throw new Error("HTML não foi salvo");
 
