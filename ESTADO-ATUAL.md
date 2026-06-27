@@ -1,7 +1,12 @@
 # ESTADO-ATUAL.md — bastão de contexto entre terminais
 
 > Leia no início de toda sessão (+ `CLAUDE.md` + `MANIFESTO.md`). Atualize no fim de cada sessão.
-> **Branch de trabalho atual:** `claude/pexels-hero-photo-test-0vbct1` (tudo pushado; no outro terminal: `git pull`).
+> **Branch de trabalho:** `claude/pexels-hero-photo-test-0vbct1` (tudo pushado).
+>
+> 🔻 **PROJETO ENCERRADO (2026-06-27).** Esta linha cumpriu o papel: arrancou a régua e provou o gate de realidade
+> (3 nichos, 3 caras distintas + teste headless 1-4). O Marcos iniciou um **modelo novo, mais avançado** (sessão com
+> Adobe / workflow de 7 portões — ver `decisoes/workflow-adobe-carrossel.md`), que **sucede** este. O conteúdo abaixo
+> fica como registro/base do que foi limpo e decidido. Nada novo aqui.
 
 ## 🟢 Fábrica renascida + RÉGUA ARRANCADA (2026-06-27)
 Setor criativo reconstruído do zero: os agentes são SENIORES; a régua antiga (faculdade, Base Mãe, regras de
