@@ -13,11 +13,9 @@
 // `auto` usa os bancos de alta SE a chave existir; senão cai no Openverse. Force um com --source=.
 //
 // POR QUE dois níveis de qualidade (não é detalhe — é design): o tratamento da foto é DECISÃO do designer por
-// peça (régua, não regra). Duotone, foto-herói nítida em cor, recorte — são MÉTODOS de referência que o designer
-// ESCOLHE caso a caso ("com esta foto e este texto, fica melhor assim ou assado?"). O psi hoje usa duotone (aí
-// ~960px do Openverse basta), mas isso é UMA escolha, não regra. Como o designer decide caso a caso, as duas
-// capacidades têm que estar SEMPRE disponíveis — a ferramenta nunca limita a decisão dele.
-// A ferramenta nunca limita a decisão do designer — serve os dois níveis. Ver ESTADO-ATUAL.md.
+// peça. Duotone, foto-herói nítida em cor, recorte — o designer ESCOLHE caso a caso ("com esta foto e este
+// texto, fica melhor assim ou assado?"). Como decide caso a caso, as duas capacidades têm que estar SEMPRE
+// disponíveis — a ferramenta nunca limita a decisão dele.
 //
 // Portável PC + nuvem: na nuvem os hosts de imagem precisam estar liberados em Network→Custom
 // (images.pexels.com · images.unsplash.com · api.openverse.org). No PC (rede aberta) roda direto.
@@ -209,7 +207,6 @@ async function main() {
     console.error(`✖ Não consegui baixar nenhuma foto pra "${query}".`);
     for (const m of motivos) console.error(`  · ${m}`);
     console.error("  → Alta (Pexels/Unsplash): exporte PEXELS_API_KEY / UNSPLASH_ACCESS_KEY e libere images.pexels.com / images.unsplash.com na rede.");
-    console.error("  → Detalhe: knowledge-base/sistema/infra-de-producao-e-rede.md");
     process.exit(3);
   }
   console.log(`\n[foto-auto] ${salvos} foto(s) em ${path.relative(process.cwd(), outDir)} → passe em: compor --foto=${name}.jpg`);

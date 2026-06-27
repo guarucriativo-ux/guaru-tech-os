@@ -29,13 +29,13 @@ camadas **ACIMA** do modelo.
    não tem tempo/saco (é a dor dele). Nós **removemos o operador**: a máquina gera, posta, anuncia,
    no automático. O diferencial não é gerar — é tirar o humano do operacional.
 
-3. **A corrente inteira, não um elo.** Pesquisa → conteúdo com embasamento (faculdade) + identidade
-   do cliente (brand-DNA) → peça final autoral → agenda → posta → tráfego → lê resultado →
+3. **A corrente inteira, não um elo.** Pesquisa de fonte real → conteúdo com embasamento + identidade
+   do cliente (dados reais) → peça final autoral → agenda → posta → tráfego → lê resultado →
    realimenta → CRM. Eles são um elo; nós somos a corrente, e cada elo alimenta o aprendizado.
 
-4. **Memória de marca / consistência.** Seguramos o DNA do cliente e mantemos um sistema visual
-   coerente em toda peça, pra sempre — e mais consistente conforme aprende. É o que faz o pequeno
-   parecer profissional. IA de um tiro não tem memória de marca nem padrão de curadoria.
+4. **Memória de marca / consistência.** Guardamos a identidade do cliente (cores, tom, fotos reais)
+   e mantemos coerência de peça em peça — e mais consistente conforme aprende. É o que faz o pequeno
+   parecer profissional. IA de um tiro não tem memória de marca nem curadoria humana.
 
 5. **Auto-melhoria (a inteligência que cresce).** IA genérica é estática. O nosso melhora a cada
    peça (feedback→regra), cada livro (RAG/faculdade), cada cliente (biblioteca de nicho). Em 2 anos

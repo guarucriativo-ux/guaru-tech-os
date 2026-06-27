@@ -1,9 +1,14 @@
 # Manifesto da Fábrica
 
-> **A voz do fundador (Marcos), preservada — palavra por palavra.** Este é o documento de **CULTURA** da
-> fábrica: o *porquê* por trás da arquitetura ([CLAUDE.md](CLAUDE.md)), do norte ([VISION.md](VISION.md)) e da
-> faculdade ([knowledge-base/](knowledge-base/)). **Leitura obrigatória de todo colaborador — humano ou agente.**
-> Escrito em 2026-06-25. A leitura/alinhamento do sócio Claude está em [Manifesto/leitura-e-alinhamento.md](Manifesto/leitura-e-alinhamento.md).
+> **A voz do fundador (Marcos), preservada — palavra por palavra.** Documento de **CULTURA**: o *porquê* por
+> trás da arquitetura ([CLAUDE.md](CLAUDE.md)) e do norte ([VISION.md](VISION.md)).
+>
+> ⚠️ **ATUALIZAÇÃO 2026-06-27 — vale sobre o texto abaixo.** A **CULTURA** permanece inteira (estudar antes de
+> agir, dados de fonte real, zero achismo, acúmulo = MOAT, baixo custo, nerd). Mas a parte **OPERACIONAL** escrita
+> em 25/06 está **APOSENTADA**: não existe mais "faculdade"/knowledge-base, nem o designer é "estagiário que
+> precisa de referências alimentadas", nem se "aplica regra de cada setor". Os especialistas são **SENIORES e
+> criam o próprio método** — sem régua, sem referência pré-salva, sem lista fixa de fontes. Onde o texto antigo
+> disser o contrário, **vale esta atualização e o [CLAUDE.md](CLAUDE.md)**.
 
 ---
 

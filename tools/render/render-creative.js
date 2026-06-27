@@ -15,9 +15,9 @@ import { homedir } from "node:os";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-// FONTES INSTALADAS (como um designer tem): a fábrica carrega a própria biblioteca de fontes (tools/render/
-// fonts/*.ttf) pro fontconfig em TODA sessão — assim o Chromium acha as fontes do DNA LOCALMENTE, sem depender
-// do Google Fonts via rede (que flapa e cai em serifa errada). "Design gráfico sem fontes não faz nada."
+// FONTES (cache sob demanda, não lista fixa): carrega pro fontconfig, em TODA sessão, o que estiver no cache
+// tools/render/fonts/*.ttf — assim o Chromium acha a fonte pelo nome LOCALMENTE (offline depois de baixada).
+// A fonte de cada peça é a que a MARCA pede; traga qualquer uma com `node tools/fonte-auto.mjs "Família"`.
 async function instalarFontes(fontsDir) {
   try {
     if (!existsSync(fontsDir)) return;
@@ -54,8 +54,8 @@ const args = process.argv.slice(2);
 const slidesMode = args.includes("--slides");
 const scaleArg = args.find((a) => a.startsWith("--scale="));
 const qArg = args.find((a) => a.startsWith("--q="));
-// scale 1 = 1080x1350 nativo (= tamanho de tela exato que a Meta exibe; não fazer oversize). Ver
-// knowledge-base/design/specs-imagem-redes.md. quality 85-95 ideal pra JPEG (100 piora na Meta).
+// scale 1 = 1080x1350 nativo (= tamanho de tela exato que a Meta exibe; não fazer oversize).
+// quality 85-95 ideal pra JPEG (100 piora na Meta).
 const scale = scaleArg ? Number(scaleArg.split("=")[1]) : 1;
 const quality = qArg ? Number(qArg.split("=")[1]) : 90;
 const [htmlArg, outArg, wArg, hArg] = args.filter((a) => !a.startsWith("--"));
@@ -72,7 +72,7 @@ const outPath = path.resolve(__dirname, outArg);
 // formato por extensão: .jpg/.jpeg => JPEG sRGB (entrega Meta, mais leve); senão PNG (texto puro/transparência)
 const shotOpts = (p) => (/\.jpe?g$/i.test(p) ? { path: p, type: "jpeg", quality } : { path: p });
 
-await instalarFontes(path.join(__dirname, "fonts")); // carrega a biblioteca de fontes da fábrica (local, sem rede)
+await instalarFontes(path.join(__dirname, "fonts")); // carrega o cache de fontes (local; traga novas com fonte-auto)
 const executablePath = await acharChromium();
 const browser = await puppeteer.launch({ args: ["--no-sandbox"], ...(executablePath ? { executablePath } : {}) });
 try {

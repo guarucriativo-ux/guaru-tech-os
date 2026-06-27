@@ -1,10 +1,17 @@
-# Biblioteca de fontes da fábrica (instaladas, como um designer)
+# Cache de fontes (baixadas sob demanda — NÃO é uma lista fixa)
 
-As fontes que os motores usam ficam AQUI (`.ttf`/`.otf`), versionadas no Git — assim toda sessão (PC/nuvem)
-tem as MESMAS fontes, sem depender do Google Fonts via rede (que flapa e cai em serifa errada).
+Isto é um **cache**, não uma prateleira de fontes "da fábrica". Não existe régua tipográfica: o
+especialista escolhe a fonte que **aquela marca** pede, igual a foto é escolhida por peça.
 
-O `render-creative.js` copia estas fontes pra `~/.fonts` + roda `fc-cache` em TODA renderização (idempotente),
-então o Chromium acha as fontes do DNA pelo nome (font-family) localmente, offline.
+As fontes aqui são só o que **já foi baixado** por jobs anteriores. Para trazer qualquer outra:
 
-**Como adicionar uma fonte nova:** baixe o `.ttf`/`.otf` aqui e commite. O nome do arquivo não importa (o
-fontconfig lê o nome da família de dentro do arquivo). Hoje: Anton, Archivo, Fraunces (itálica), Inter.
+```
+node tools/fonte-auto.mjs "Nome Da Família" [--weights=400,700] [--italic]
+```
+
+Isso baixa o(s) `.ttf` do Google Fonts pra cá. O `render-creative.js` copia este cache pro
+`~/.fonts` + roda `fc-cache` em toda renderização, então o Chromium acha a fonte pelo `font-family`
+localmente (offline depois de baixada). O nome do arquivo não importa — o fontconfig lê a família
+de dentro do `.ttf`.
+
+> Não escolha a tipografia por estar "na lista". Escolha a que serve à marca; o `fonte-auto` traz.

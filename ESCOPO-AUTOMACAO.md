@@ -53,7 +53,7 @@ justificar o último metro e a biblioteca do nicho já estiver endurecida com pe
 
 ### Para o Alvo A (prova social — semanas, não meses)
 1. **Escolher o nicho** do 1º Instagram de prova.
-2. **Construir a biblioteca daquele nicho** (`niches-library/<nicho>/` + design-rules + DNA).
+2. **Estudar o nicho de fonte real** (pesquisa validada — sem régua de design nem referência pré-salva; o especialista cria do método dele).
 3. **Cadência de postagem** semi-automática (a máquina gera; scheduler simples ou pessoa posta).
 4. **Consistência por algumas semanas** — virar vitrine viva.
 
