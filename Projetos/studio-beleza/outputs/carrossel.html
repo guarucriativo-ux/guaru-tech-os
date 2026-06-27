@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Maré — studio de olhar · carrossel</title>
+<style>
+/* ============ FONTES (locais, sem @import google) ============ */
+@font-face{font-family:'Fraunces';src:url('/home/user/guaru-tech-os/tools/render/fonts/Fraunces-Light.ttf') format('truetype');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Fraunces';src:url('/home/user/guaru-tech-os/tools/render/fonts/Fraunces-LightItalic.ttf') format('truetype');font-weight:300;font-style:italic;font-display:swap;}
+@font-face{font-family:'Fraunces';src:url('/home/user/guaru-tech-os/tools/render/fonts/Fraunces-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap;}
+@font-face{font-family:'Fraunces';src:url('/home/user/guaru-tech-os/tools/render/fonts/Fraunces-Italic.ttf') format('truetype');font-weight:600;font-style:italic;font-display:swap;}
+@font-face{font-family:'Inter';src:url('/home/user/guaru-tech-os/tools/render/fonts/Inter-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Inter';src:url('/home/user/guaru-tech-os/tools/render/fonts/Inter-Medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'Inter';src:url('/home/user/guaru-tech-os/tools/render/fonts/Inter-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap;}
+
+/* ============ TOKENS ============ */
+:root{
+  --verde:#1F3D38;      /* âncora */
+  --verde-2:#16302C;    /* verde mais fundo p/ profundidade */
+  --areia:#E7D8C4;      /* off-white quente */
+  --areia-2:#DCC9B0;    /* areia um tom abaixo */
+  --nude:#D8A98F;       /* acento ~5% */
+  --concha:#FAF6F0;     /* texto sobre verde */
+  --ouro:#C9A24B;       /* raro: selo / CTA */
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{background:#3a3a3a;}
+body{font-family:'Inter',sans-serif;display:flex;flex-direction:column;align-items:center;gap:40px;padding:40px 0;}
+
+.slide{
+  position:relative;
+  width:1080px;height:1350px;
+  overflow:hidden;box-sizing:border-box;
+  background:var(--verde);
+}
+
+/* ---- tratamento de foto: quente + sombra esverdeada nos meios-tons ---- */
+.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    filter:saturate(0.82) contrast(1.04) brightness(1.04) sepia(0.16) hue-rotate(-6deg);}
+/* véu que casa a foto com o verde-mar (sombra esverdeada nos tons médios) */
+.veil-verde{position:absolute;inset:0;background:
+   linear-gradient(180deg, rgba(31,61,56,0.10) 0%, rgba(31,61,56,0.34) 55%, rgba(22,48,44,0.86) 100%),
+   radial-gradient(120% 80% at 70% 30%, rgba(31,61,56,0.0) 0%, rgba(31,61,56,0.28) 100%);}
+.veil-areia{position:absolute;inset:0;background:
+   linear-gradient(180deg, rgba(231,216,196,0.05) 0%, rgba(231,216,196,0.42) 60%, rgba(220,201,176,0.90) 100%);}
+.grain{position:absolute;inset:0;opacity:0.05;mix-blend-mode:multiply;
+   background-image:radial-gradient(rgba(31,61,56,0.6) 0.5px, transparent 0.6px);background-size:3px 3px;}
+
+/* ---- componentes de marca ---- */
+.kicker{font-family:'Inter';font-weight:600;font-size:19px;letter-spacing:0.32em;text-transform:uppercase;}
+.brandmark{font-family:'Fraunces';font-weight:600;font-style:italic;font-size:30px;letter-spacing:0.01em;}
+.brandmark .sub{font-family:'Inter';font-weight:500;font-style:normal;font-size:14px;letter-spacing:0.34em;text-transform:uppercase;display:block;margin-top:6px;}
+
+/* tracinho-onda separador */
+.wave{display:inline-block;width:64px;height:14px;}
+
+/* progressão (marés) */
+.tide{position:absolute;bottom:54px;left:0;right:0;display:flex;justify-content:center;gap:11px;z-index:6;}
+.tide span{display:block;width:26px;height:3px;border-radius:2px;background:rgba(250,246,240,0.30);}
+.tide span.on{background:var(--nude);width:40px;}
+.tide.dark span{background:rgba(31,61,56,0.22);}
+.tide.dark span.on{background:var(--nude);}
+
+.ilustr{position:absolute;bottom:24px;right:40px;font-family:'Inter';font-weight:400;font-size:13px;letter-spacing:0.12em;text-transform:lowercase;opacity:0.7;z-index:6;}
+
+/* selo dourado fosco */
+.selo{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border:1.5px solid var(--ouro);color:var(--ouro);border-radius:100px;
+  font-family:'Inter';font-weight:600;font-size:15px;letter-spacing:0.16em;text-transform:uppercase;
+  padding:11px 22px;}
+
+/* corpo de texto */
+.body{font-family:'Inter';font-weight:400;line-height:1.62;}
+.body strong{font-weight:600;}
+
+/* ===================================================================== */
+/* SLIDE 1 — GANCHO (foto herói full) */
+/* ===================================================================== */
+.s1 .photo-wrap{position:absolute;inset:0;}
+.s1 .ph{object-position:62% 50%;}
+.s1 .content{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;
+  justify-content:flex-end;padding:84px 84px 150px;color:var(--concha);}
+.s1 .top{position:absolute;top:74px;left:84px;right:84px;display:flex;justify-content:space-between;align-items:center;color:var(--concha);}
+.s1 .top .kicker{color:rgba(250,246,240,0.85);}
+.s1 .top .brandmark{color:var(--concha);text-align:right;}
+.s1 .top .brandmark .sub{color:rgba(250,246,240,0.7);}
+.s1 h1{font-family:'Fraunces';font-weight:600;font-size:96px;line-height:0.99;letter-spacing:-0.01em;}
+.s1 h1 em{font-family:'Fraunces';font-weight:300;font-style:italic;display:block;font-size:62px;margin-top:18px;color:var(--areia);letter-spacing:0;}
+.s1 .micro{font-family:'Inter';font-weight:400;font-size:25px;color:rgba(250,246,240,0.86);margin-top:30px;font-style:italic;}
+
+/* ===================================================================== */
+/* SLIDE 2 — PROMESSA (split: verde texto / foto) */
+/* ===================================================================== */
+.s2{background:var(--verde);display:flex;flex-direction:column;}
+.s2 .img-band{position:absolute;top:0;left:0;right:0;height:560px;overflow:hidden;}
+.s2 .img-band .ph{object-position:60% 42%;}
+.s2 .img-band .veil-verde{background:linear-gradient(180deg, rgba(31,61,56,0.05) 0%, rgba(31,61,56,0.0) 40%, rgba(31,61,56,0.55) 82%, var(--verde) 100%);}
+.s2 .head{position:absolute;top:60px;left:84px;right:84px;display:flex;justify-content:space-between;align-items:center;z-index:5;color:var(--concha);}
+.s2 .head .kicker{color:rgba(250,246,240,0.9);}
+.s2 .head .brandmark{color:var(--concha);font-size:24px;}
+.s2 .panel{position:absolute;left:0;right:0;bottom:0;height:790px;z-index:4;
+  padding:0 84px 150px;display:flex;flex-direction:column;justify-content:center;color:var(--concha);}
+.s2 h2{font-family:'Fraunces';font-weight:600;font-size:92px;line-height:1.0;letter-spacing:-0.01em;}
+.s2 h2 em{font-family:'Fraunces';font-weight:300;font-style:italic;display:block;color:var(--nude);font-size:74px;margin-top:6px;}
+.s2 .body{font-size:31px;color:rgba(250,246,240,0.9);max-width:760px;margin-top:42px;}
+.s2 .body strong{color:var(--areia);}
+
+/* ===================================================================== */
+/* SLIDE 3 — MEDO 1 (fundo areia, respiro) */
+/* ===================================================================== */
+.s3{background:var(--areia);color:var(--verde);}
+.s3 .head{position:absolute;top:60px;left:84px;right:84px;display:flex;justify-content:space-between;align-items:center;z-index:5;}
+.s3 .head .kicker{color:var(--verde);opacity:0.6;}
+.s3 .head .brandmark{color:var(--verde);font-size:24px;}
+.s3 .wrap{position:absolute;inset:0;padding:230px 84px 160px;display:flex;flex-direction:column;justify-content:flex-start;}
+.s3 .quote-tag{font-family:'Inter';font-weight:600;font-size:18px;letter-spacing:0.24em;text-transform:uppercase;color:var(--nude);margin-bottom:24px;}
+.s3 h2{font-family:'Fraunces';font-weight:300;font-style:italic;font-size:84px;line-height:1.05;color:var(--verde);letter-spacing:-0.01em;}
+.s3 h2 .q{font-weight:600;font-style:normal;}
+.s3 .rule{width:90px;height:2px;background:var(--nude);margin:46px 0 40px;}
+.s3 .body{font-size:33px;color:var(--verde);max-width:840px;}
+.s3 .body strong{color:var(--verde);font-weight:600;}
+.s3 .body p+p{margin-top:24px;}
+.s3 .deco-eye{position:absolute;right:-60px;bottom:60px;width:430px;height:430px;border-radius:50%;overflow:hidden;
+  box-shadow:0 30px 70px rgba(31,61,56,0.22);border:6px solid var(--concha);}
+.s3 .deco-eye .ph{object-position:58% 46%;}
+
+/* ===================================================================== */
+/* SLIDE 4 — MEDO 2 + DIFERENCIAL (slide-assinatura, território máximo) */
+/* ===================================================================== */
+.s4 .photo-wrap{position:absolute;inset:0;}
+.s4 .ph{object-position:55% 55%;filter:saturate(0.78) contrast(1.05) brightness(1.0) sepia(0.2) hue-rotate(-8deg);}
+.s4 .veil{position:absolute;inset:0;background:
+   linear-gradient(165deg, rgba(31,61,56,0.30) 0%, rgba(31,61,56,0.55) 45%, rgba(22,48,44,0.92) 100%);}
+.s4 .head{position:absolute;top:60px;left:84px;right:84px;display:flex;justify-content:space-between;align-items:center;z-index:5;color:var(--concha);}
+.s4 .head .kicker{color:var(--nude);}
+.s4 .head .brandmark{color:var(--concha);font-size:24px;}
+.s4 .content{position:absolute;inset:0;z-index:5;padding:0 84px 170px;display:flex;flex-direction:column;justify-content:flex-end;color:var(--concha);}
+.s4 h2{font-family:'Fraunces';font-weight:300;font-style:italic;font-size:96px;line-height:1.0;color:var(--concha);letter-spacing:-0.01em;}
+.s4 h2 .q{font-weight:600;font-style:normal;}
+.s4 .body{font-size:30px;color:rgba(250,246,240,0.92);max-width:820px;margin-top:38px;}
+.s4 .body p+p{margin-top:22px;}
+.s4 .body strong{color:var(--areia);font-weight:600;}
+.s4 .badge{display:inline-block;margin-top:34px;font-family:'Inter';font-weight:600;font-size:21px;letter-spacing:0.04em;
+  color:var(--verde);background:var(--areia);padding:14px 26px;border-radius:100px;width:fit-content;}
+.s4 .badge b{color:var(--verde);}
+
+/* ===================================================================== */
+/* SLIDE 5 — TÉCNICAS (fundo verde, menu leve) */
+/* ===================================================================== */
+.s5{background:var(--verde);color:var(--concha);}
+.s5 .head{position:absolute;top:60px;left:84px;right:84px;display:flex;justify-content:space-between;align-items:center;z-index:5;}
+.s5 .head .kicker{color:var(--nude);}
+.s5 .head .brandmark{color:var(--concha);font-size:24px;}
+.s5 .wrap{position:absolute;inset:0;padding:212px 84px 168px;display:flex;flex-direction:column;}
+.s5 h2{font-family:'Fraunces';font-weight:300;font-style:italic;font-size:78px;line-height:1.04;color:var(--concha);}
+.s5 h2 .q{font-weight:600;font-style:normal;}
+.s5 h2 .calma{font-family:'Fraunces';font-weight:600;font-style:normal;color:var(--areia);display:block;font-size:78px;margin-top:6px;}
+.s5 .menu{margin-top:54px;display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(231,216,196,0.22);}
+.s5 .menu .it{font-family:'Inter';font-weight:500;font-size:34px;color:var(--areia);
+  padding:22px 0;border-bottom:1px solid rgba(231,216,196,0.22);display:flex;align-items:center;gap:20px;}
+.s5 .menu .it::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--nude);flex:none;}
+.s5 .body{font-size:28px;color:rgba(250,246,240,0.9);margin-top:46px;max-width:820px;}
+.s5 .body strong{color:var(--areia);}
+.s5 .ethics{margin-top:34px;font-family:'Inter';font-weight:400;font-size:19px;color:rgba(250,246,240,0.62);
+  line-height:1.5;border-left:3px solid var(--ouro);padding-left:18px;max-width:760px;}
+
+/* ===================================================================== */
+/* SLIDE 6 — CONFIANÇA (areia + lista de cuidado) */
+/* ===================================================================== */
+.s6{background:var(--areia);color:var(--verde);}
+.s6 .head{position:absolute;top:60px;left:84px;right:84px;display:flex;justify-content:space-between;align-items:center;z-index:5;}
+.s6 .head .kicker{color:var(--verde);opacity:0.6;}
+.s6 .head .brandmark{color:var(--verde);font-size:24px;}
+.s6 .strip{position:absolute;right:0;top:0;bottom:0;width:300px;overflow:hidden;}
+.s6 .strip .ph{object-position:60% 50%;filter:saturate(0.8) contrast(1.04) brightness(1.02) sepia(0.18) hue-rotate(-6deg);}
+.s6 .strip .veil-areia{background:linear-gradient(270deg, rgba(231,216,196,0.0) 0%, rgba(231,216,196,0.55) 70%, var(--areia) 100%);}
+.s6 .wrap{position:absolute;inset:0;padding:212px 84px 170px;display:flex;flex-direction:column;z-index:4;}
+.s6 h2{font-family:'Fraunces';font-weight:600;font-size:76px;line-height:1.04;color:var(--verde);letter-spacing:-0.01em;max-width:780px;}
+.s6 h2 em{font-family:'Fraunces';font-weight:300;font-style:italic;color:var(--nude);}
+.s6 .list{margin-top:56px;display:flex;flex-direction:column;gap:34px;max-width:840px;}
+.s6 .list .row{display:flex;gap:22px;align-items:flex-start;}
+.s6 .list .mk{flex:none;width:42px;height:42px;border-radius:50%;border:2px solid var(--ouro);
+  display:flex;align-items:center;justify-content:center;margin-top:2px;}
+.s6 .list .mk svg{width:20px;height:20px;}
+.s6 .list .txt{font-family:'Inter';font-weight:400;font-size:30px;line-height:1.42;color:var(--verde);}
+.s6 .list .txt strong{font-weight:600;}
+
+/* ===================================================================== */
+/* SLIDE 7 — CTA (verde fundo, botão WhatsApp) */
+/* ===================================================================== */
+.s7{background:var(--verde);color:var(--concha);}
+.s7 .glow{position:absolute;inset:0;background:radial-gradient(80% 55% at 50% 34%, rgba(216,169,143,0.16) 0%, rgba(31,61,56,0) 60%);}
+.s7 .head{position:absolute;top:60px;left:0;right:0;display:flex;flex-direction:column;align-items:center;z-index:5;text-align:center;}
+.s7 .head .brandmark{color:var(--concha);font-size:30px;}
+.s7 .head .brandmark .sub{color:rgba(250,246,240,0.65);}
+.s7 .wrap{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:0 96px;z-index:4;}
+.s7 .selo{margin-bottom:38px;}
+.s7 h2{font-family:'Fraunces';font-weight:600;font-size:90px;line-height:1.02;color:var(--concha);letter-spacing:-0.01em;max-width:840px;}
+.s7 h2 em{font-family:'Fraunces';font-weight:300;font-style:italic;color:var(--nude);}
+.s7 .body{font-size:31px;color:rgba(250,246,240,0.9);margin-top:36px;max-width:760px;}
+.s7 .body strong{color:var(--areia);}
+.s7 .cta{margin-top:54px;display:inline-flex;align-items:center;gap:18px;
+  background:var(--ouro);color:var(--verde-2);
+  font-family:'Inter';font-weight:600;font-size:28px;letter-spacing:0.1em;text-transform:uppercase;
+  padding:28px 48px;border-radius:100px;box-shadow:0 18px 44px rgba(201,162,75,0.28);}
+.s7 .cta svg{width:32px;height:32px;}
+.s7 .cta .num{font-weight:600;text-transform:none;letter-spacing:0.02em;}
+.s7 .footer{position:absolute;bottom:64px;left:0;right:0;text-align:center;z-index:5;
+  font-family:'Inter';font-weight:400;font-size:21px;letter-spacing:0.04em;color:rgba(250,246,240,0.7);}
+.s7 .footer b{color:var(--areia);font-weight:600;}
+</style>
+</head>
+<body>
+
+<!-- ============================ SLIDE 1 — GANCHO ============================ -->
+<div class="slide s1">
+  <div class="photo-wrap">
+    <img class="ph" src="../assets/olhar-b.jpg" alt="">
+    <div class="veil-verde"></div>
+    <div class="grain"></div>
+  </div>
+  <div class="top">
+    <span class="kicker">studio de olhar · litoral</span>
+    <span class="brandmark">Maré<span class="sub">lash &amp; brow · Guarujá</span></span>
+  </div>
+  <div class="content">
+    <h1>Olhar de<br>"acordei assim".<em>Sem rímel, sem retoque, sem segredo.</em></h1>
+    <div class="micro">(a parte do "assim" é com a gente)</div>
+  </div>
+  <div class="tide"><span class="on"></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="ilustr" style="color:var(--concha)">imagem ilustrativa</div>
+</div>
+
+<!-- ============================ SLIDE 2 — PROMESSA ============================ -->
+<div class="slide s2">
+  <div class="img-band">
+    <img class="ph" src="../assets/olhar-a.jpg" alt="">
+    <div class="veil-verde"></div>
+    <div class="grain"></div>
+  </div>
+  <div class="head">
+    <span class="kicker">o conceito</span>
+    <span class="brandmark">Maré</span>
+  </div>
+  <div class="panel">
+    <h2>Marcado de verdade.<em>Natural de propósito.</em></h2>
+    <p class="body">Cílio e sobrancelha pensados pro <strong>SEU rosto</strong> — não um molde igual pra todo mundo. O resultado tem que parecer seu. Só que melhor descansado.</p>
+  </div>
+  <div class="tide"><span></span><span class="on"></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="ilustr" style="color:var(--concha)">imagem ilustrativa</div>
+</div>
+
+<!-- ============================ SLIDE 3 — MEDO 1 ============================ -->
+<div class="slide s3">
+  <div class="head">
+    <span class="kicker">o que a gente mais ouve</span>
+    <span class="brandmark">Maré</span>
+  </div>
+  <div class="wrap">
+    <div class="quote-tag">o medo nº 1</div>
+    <h2><span class="q">&ldquo;</span>Tenho medo de<br>ficar artificial.<span class="q">&rdquo;</span></h2>
+    <div class="rule"></div>
+    <div class="body">
+      <p>A gente ouve isso o tempo todo. E concorda: olhar pesado, postiço, <strong>"cílio de boneca"</strong> — não é o nosso trabalho.</p>
+      <p>Aqui a técnica é escolhida pelo seu olho e pela força do seu fio natural. Discreto se você quer discreto. Marcante se a ocasião pede. <strong>Você decide — a gente entrega no ponto.</strong></p>
+    </div>
+  </div>
+  <div class="deco-eye">
+    <img class="ph" src="../assets/olhar-b.jpg" alt="">
+  </div>
+  <div class="tide dark"><span></span><span></span><span class="on"></span><span></span><span></span><span></span><span></span></div>
+  <div class="ilustr" style="color:var(--verde)">imagem ilustrativa</div>
+</div>
+
+<!-- ============================ SLIDE 4 — DIFERENCIAL (assinatura) ============================ -->
+<div class="slide s4">
+  <div class="photo-wrap">
+    <img class="ph" src="../assets/olhar-a.jpg" alt="">
+    <div class="veil"></div>
+    <div class="grain"></div>
+  </div>
+  <div class="head">
+    <span class="kicker">o diferencial do litoral</span>
+    <span class="brandmark">Maré</span>
+  </div>
+  <div class="content">
+    <h2><span class="q">&ldquo;</span>Mas dura<br>na praia?<span class="q">&rdquo;</span></h2>
+    <div class="body">
+      <p>Essa é a pergunta de quem mora — e de quem vem passar o verão — no Guarujá.</p>
+      <p>A gente é <strong>studio DAQUI</strong>. Pensa o seu olhar pra água salgada, sol e cloro de Guarujá. Tem técnica feita pra entrar no mar e sair com o olhar marcado <em>(oi, lash lifting)</em>. E a gente te ensina o pós-praia certo pra durar mais.</p>
+      <p>Acabou a história de ir pra praia sem máscara e ainda assim ter olhar.</p>
+    </div>
+    <span class="badge"><b>à prova de Guarujá</b> — sol · sal · cloro</span>
+  </div>
+  <div class="tide"><span></span><span></span><span></span><span class="on"></span><span></span><span></span><span></span></div>
+  <div class="ilustr" style="color:var(--concha)">imagem ilustrativa</div>
+</div>
+
+<!-- ============================ SLIDE 5 — TÉCNICAS ============================ -->
+<div class="slide s5">
+  <div class="head">
+    <span class="kicker">não precisa chegar sabendo</span>
+    <span class="brandmark">Maré</span>
+  </div>
+  <div class="wrap">
+    <h2><span class="q">&ldquo;</span>Volume russo ou fio a fio?<span class="q">&rdquo;</span><span class="calma">Calma. A escolha é nossa parte.</span></h2>
+    <div class="menu">
+      <div class="it">Fio a fio</div>
+      <div class="it">Volume</div>
+      <div class="it">Lash lifting</div>
+      <div class="it">Design &amp; henna de sobrancelha</div>
+    </div>
+    <p class="body">Você chega com o seu rosto e a sua rotina — <strong>a gente lê o seu olho</strong> e diz a técnica certa pra você (e pra praia que você frequenta).</p>
+    <p class="ethics">Teste de sensibilidade incluído antes de começar. Resultados podem variar.</p>
+  </div>
+  <div class="tide"><span></span><span></span><span></span><span></span><span class="on"></span><span></span><span></span></div>
+</div>
+
+<!-- ============================ SLIDE 6 — CONFIANÇA ============================ -->
+<div class="slide s6">
+  <div class="strip">
+    <img class="ph" src="../assets/olhar-b.jpg" alt="">
+    <div class="veil-areia"></div>
+  </div>
+  <div class="head">
+    <span class="kicker">studio novo, cuidado de sempre</span>
+    <span class="brandmark">Maré</span>
+  </div>
+  <div class="wrap">
+    <h2>Por que confiar<br>o seu olhar <em>à Maré</em></h2>
+    <div class="list">
+      <div class="row">
+        <span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="txt"><strong>Material esterilizado e descartável</strong> a cada cliente.</span>
+      </div>
+      <div class="row">
+        <span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="txt"><strong>Teste de sensibilidade antes</strong> — a sua segurança vem primeiro.</span>
+      </div>
+      <div class="row">
+        <span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="txt"><strong>Aplicação fio a fio, sem pressa</strong>, no seu tempo.</span>
+      </div>
+      <div class="row">
+        <span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="txt"><strong>Studio do litoral:</strong> a gente entende o que o verão do Guarujá faz com o seu olhar.</span>
+      </div>
+    </div>
+  </div>
+  <div class="tide dark"><span></span><span></span><span></span><span></span><span></span><span class="on"></span><span></span></div>
+</div>
+
+<!-- ============================ SLIDE 7 — CTA ============================ -->
+<div class="slide s7">
+  <div class="glow"></div>
+  <div class="head">
+    <span class="brandmark">Maré<span class="sub">studio de olhar · Guarujá</span></span>
+  </div>
+  <div class="wrap">
+    <span class="selo">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-4 6-4 9 0s6 4 9 0"/></svg>
+      agenda de verão
+    </span>
+    <h2>Bora deixar seu olhar<br><em>pronto pro verão?</em></h2>
+    <p class="body">Manda um <strong>"oi"</strong> no WhatsApp e a gente já vê a técnica certa pra você. A agenda de verão enche rápido — garanta o seu horário.</p>
+    <span class="cta">
+      <svg viewBox="0 0 24 24" fill="#1F3D38" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.36-.5.05-.97.24-3.28-.69-2.78-1.1-4.55-3.95-4.69-4.14-.14-.19-1.13-1.5-1.13-2.86 0-1.36.71-2.03.96-2.31.25-.27.55-.34.73-.34.18 0 .37 0 .53.01.17.01.4-.06.62.48.24.55.81 1.92.88 2.06.07.14.12.3.02.49-.09.19-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.27.71 1.17 1.52 1.89 1.05.94 1.93 1.23 2.2 1.37.27.14.43.12.59-.07.16-.19.68-.79.86-1.06.18-.27.36-.22.61-.13.25.09 1.59.75 1.86.89.27.14.46.2.53.31.07.11.07.64-.17 1.32z"/></svg>
+      Chamar no WhatsApp <span class="num">[número/WhatsApp]</span>
+    </span>
+  </div>
+  <div class="footer">
+    Maré · studio de olhar · <b>[endereço/bairro], Guarujá</b> · @[arroba]
+  </div>
+</div>
+
+</body>
+</html>
