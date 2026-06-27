@@ -14,8 +14,7 @@ classe A (produto) fica parqueada como ponta aberta. Ver memória `classe-b-foco
 
 > **Reforço (2026-06-26):** num teste o Claude escolheu **joalheria (classe A)** pra exercitar o designer —
 > o Marcos apontou como erro de partida (classe A depende de foto de produto profissional). Lição cravada:
-> **default é classe B**; só ir pra classe A com necessidade real + as regras de foto de produto
-> (`knowledge-base/design/foto-de-produto-referencia-e-qualidade.md`) aplicadas em dobro.
+> **default é classe B**; só ir pra classe A com necessidade real.
 
 ---
 

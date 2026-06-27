@@ -8,8 +8,7 @@
 <!-- Origem: pedido do Marcos numa conversa de fortalecimento de Manifesto/Visão (sessão nuvem 2026-06-25).
      Marcos pediu um feedback HONESTO sobre o poder da engrenagem (colaborador que aprende sozinho, aplicado a
      vários especialistas) + comparação com o que o mercado está fazendo. Baseado em pesquisa do cenário 2026
-     (fontes no rodapé), não em achismo. Liga com: MANIFESTO.md, VISION.md, DIFERENCIAL.md, BUSINESS-MODEL.md,
-     ESCOPO-AUTOMACAO.md e doutrina-do-olho-referencia-como-regua.md. -->
+     (fontes no rodapé), não em achismo. Liga com: MANIFESTO.md, VISION.md, DIFERENCIAL.md, BUSINESS-MODEL.md. -->
 
 ## TL;DR (a real, em uma frase)
 A fábrica é o **motor certo, na hora certa, com a disciplina certa** — mas o poder dele hoje é **potencial,
