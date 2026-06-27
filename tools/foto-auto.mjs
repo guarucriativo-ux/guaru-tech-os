@@ -17,7 +17,7 @@
 // ESCOLHE caso a caso ("com esta foto e este texto, fica melhor assim ou assado?"). O psi hoje usa duotone (aí
 // ~960px do Openverse basta), mas isso é UMA escolha, não regra. Como o designer decide caso a caso, as duas
 // capacidades têm que estar SEMPRE disponíveis — a ferramenta nunca limita a decisão dele.
-// Doutrina: niches-library/design-principles/metodo-criativo.md ("Referência é régua, não regra"). Ver ESTADO-ATUAL.md.
+// A ferramenta nunca limita a decisão do designer — serve os dois níveis. Ver ESTADO-ATUAL.md.
 //
 // Portável PC + nuvem: na nuvem os hosts de imagem precisam estar liberados em Network→Custom
 // (images.pexels.com · images.unsplash.com · api.openverse.org). No PC (rede aberta) roda direto.

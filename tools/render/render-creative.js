@@ -6,7 +6,7 @@
 // Com --slides: recorta CADA elemento .slide em um PNG separado (formato postável do carrossel:
 //   uma imagem 1080x1350 por slide → saida-1.png, saida-2.png, ...).
 // Carrega o HTML por file:// (resolve assets/fontes relativos), espera fontes + rede.
-// Método autoral — ver niches-library/design-principles/metodo-criativo.md
+// Renderizador de infraestrutura — só converte HTML em imagem; não impõe estilo.
 import puppeteer from "puppeteer";
 import { mkdir, readdir, copyFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
