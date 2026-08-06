@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Maré Advocacia do Trabalhador — Carrossel</title>
+<style>
+  /* ====================================================================
+     MARÉ ADVOCACIA DO TRABALHADOR — Carrossel IG (8 slides, 1080x1350)
+     graphic-designer sênior · Guaru Tech · 2026-06-27
+     Fontes: Fraunces (hook/serifa) + Libre Franklin (corpo/sans).
+     Já no fontconfig (render carrega tools/render/fonts/*.ttf). Sem @import.
+     Rev. OLHO 2026-06-27: S7 overlay marinho denso + topo escuro; S6 fecho legível;
+     S8 label WhatsApp sem duplicar palavra.
+     ==================================================================== */
+
+  :root{
+    --marinho:   #10243B;  /* base dominante */
+    --aco:       #1F4E6B;  /* apoio / profundidade */
+    --gelo:      #F4F6F8;  /* texto sobre escuro / fundo respiro */
+    --nevoa:     #9FB0BD;  /* apoio / OAB / créditos */
+    --terracota: #C2683D;  /* acento único ~10% */
+    --carvao:    #0B1622;  /* sombra / contraste extremo */
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  body{
+    background:#222;
+    font-family:"Libre Franklin", system-ui, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* RESTRIÇÃO DO RENDER: cada slide exatamente 1080x1350, recortado. */
+  .slide{
+    position:relative;
+    width:1080px;
+    height:1350px;
+    overflow:hidden;
+    box-sizing:border-box;
+    background:var(--marinho);
+    color:var(--gelo);
+    display:flex;
+    flex-direction:column;
+    /* espaçamento entre slides só na visualização em pilha; o render recorta cada .slide */
+    margin:0 auto 40px;
+  }
+
+  /* ---------- camadas de foto ---------- */
+  .photo{
+    position:absolute; inset:0;
+    background-size:cover;
+    background-position:center;
+    z-index:0;
+  }
+  /* dessaturação fria documental */
+  .photo.heroi{
+    background-image:url('../assets/trabalhador-b.jpg');
+    background-position:center 38%;
+    filter:grayscale(100%) contrast(108%) brightness(86%);
+  }
+  .photo.porto{
+    background-image:url('../assets/trabalhador-a-2.jpg');
+    background-position:center 60%;
+    /* OLHO: foto puxada mais pro frio/escuro pra parar de ser dominada pelo céu claro/marrom */
+    filter:saturate(58%) contrast(104%) brightness(78%);
+  }
+  /* overlay marinho — unifica foto à marca e garante contraste do texto */
+  .veil{
+    position:absolute; inset:0; z-index:1;
+  }
+  .veil.heroi{
+    background:
+      linear-gradient(180deg,
+        rgba(16,36,59,.42) 0%,
+        rgba(16,36,59,.40) 42%,
+        rgba(11,22,34,.92) 82%,
+        rgba(11,22,34,.98) 100%),
+      linear-gradient(0deg, rgba(16,36,59,.55), rgba(16,36,59,.55));
+    mix-blend-mode:normal;
+  }
+  .veil.porto{
+    /* OLHO (1+2): marinho precisa DOMINAR (60-70%) e o HEADER (topo) precisa de faixa
+       densa pra label + ponto terracota lerem sobre o céu claro da foto.
+       Duas camadas:
+       1) base marinho chapado FORTE → foto vira atmosfera, não protagonista
+       2) gradiente: topo bem escuro (header) + fundo quase opaco (foot). */
+    background:
+      linear-gradient(180deg,
+        rgba(11,22,34,.88) 0%,
+        rgba(11,22,34,.66) 16%,
+        rgba(16,36,59,.72) 50%,
+        rgba(11,22,34,.95) 86%,
+        rgba(11,22,34,.99) 100%),
+      linear-gradient(0deg, rgba(16,36,59,.64), rgba(16,36,59,.64));
+  }
+  /* grão sutil documental */
+  .grain{
+    position:absolute; inset:0; z-index:2; opacity:.05; pointer-events:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  /* ---------- conteúdo ---------- */
+  .pad{
+    position:relative; z-index:3;
+    flex:1;
+    display:flex; flex-direction:column;
+    padding:96px 92px 84px;
+  }
+
+  /* fio/maré: marcador de continuidade discreto (substitui "01/08" e "arraste") */
+  .tide{
+    display:flex; align-items:center; gap:14px;
+    z-index:3;
+  }
+  .tide .dots{ display:flex; gap:9px; }
+  .tide .dots i{
+    width:9px; height:9px; border-radius:50%;
+    background:rgba(159,176,189,.35);
+    display:block;
+  }
+  .tide .dots i.on{ background:var(--terracota); }
+  .tide .label{
+    font-size:18px; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--nevoa); font-weight:500;
+  }
+
+  /* wordmark compacto */
+  .mark{
+    display:flex; flex-direction:column; gap:2px; z-index:3;
+  }
+  .mark .name{
+    font-family:"Fraunces", serif;
+    font-weight:600; font-size:30px; letter-spacing:.01em;
+    color:var(--gelo);
+  }
+  .mark .name b{ color:var(--terracota); font-weight:600; }
+  .mark .sub{
+    font-size:16px; letter-spacing:.26em; text-transform:uppercase;
+    color:var(--nevoa); font-weight:500;
+  }
+
+  /* tipografia editorial */
+  h1.hook{
+    font-family:"Fraunces", serif;
+    font-weight:600;
+    line-height:1.04;
+    letter-spacing:-0.012em;
+    color:var(--gelo);
+  }
+  .terra{ color:var(--terracota); }
+
+  .kicker{
+    font-family:"Libre Franklin", sans-serif;
+    font-weight:700; font-size:22px; letter-spacing:.24em; text-transform:uppercase;
+    color:var(--terracota);
+    margin-bottom:30px;
+  }
+  .kicker.muted{ color:var(--nevoa); }
+
+  p.body{
+    font-family:"Libre Franklin", sans-serif;
+    font-weight:400;
+    font-size:38px;
+    line-height:1.5;
+    color:var(--gelo);
+    max-width:880px;
+  }
+  p.body.tight{ font-size:35px; }
+  p.body em{ font-style:normal; font-weight:700; color:var(--gelo); }
+  p.body .soft{ color:var(--nevoa); }
+
+  /* rodapé institucional (peso de instituição) */
+  .foot{
+    position:relative; z-index:3;
+    display:flex; align-items:center; justify-content:space-between;
+    border-top:1px solid rgba(159,176,189,.22);
+    padding-top:26px;
+  }
+  .foot .oab{
+    font-size:20px; line-height:1.4; color:var(--nevoa); font-weight:500;
+  }
+  .foot .oab b{ color:var(--gelo); font-weight:700; }
+  .foot .seal{
+    font-family:"Fraunces", serif; font-weight:600; font-size:22px;
+    color:var(--nevoa); letter-spacing:.01em;
+    white-space:nowrap;
+  }
+
+  /* lista educativa sóbria */
+  ul.points{ list-style:none; margin-top:8px; }
+  ul.points li{
+    position:relative;
+    font-family:"Libre Franklin", sans-serif;
+    font-weight:400; font-size:33px; line-height:1.36;
+    color:var(--gelo);
+    padding:22px 0 22px 46px;
+    border-bottom:1px solid rgba(159,176,189,.16);
+    max-width:900px;
+  }
+  ul.points li:first-child{ border-top:1px solid rgba(159,176,189,.16); }
+  ul.points li::before{
+    content:""; position:absolute; left:0; top:34px;
+    width:14px; height:2px; background:var(--terracota);
+  }
+  ul.points li .note{ color:var(--nevoa); font-size:27px; }
+
+  /* chips de prova (slide 5) */
+  .chips{ display:flex; flex-wrap:wrap; gap:18px; margin-top:8px; max-width:920px; }
+  .chips span{
+    font-family:"Libre Franklin", sans-serif;
+    font-weight:500; font-size:30px; color:var(--gelo);
+    background:rgba(31,78,107,.55);
+    border:1px solid rgba(159,176,189,.28);
+    border-radius:6px;
+    padding:18px 26px;
+  }
+
+  /* número-âncora (slide 6) */
+  .anchor{
+    display:flex; align-items:baseline; gap:24px; margin-bottom:8px;
+  }
+  .anchor .num{
+    font-family:"Fraunces", serif; font-weight:600;
+    font-size:200px; line-height:.86; color:var(--terracota);
+    letter-spacing:-0.02em;
+  }
+  .anchor .unit{
+    font-family:"Fraunces", serif; font-weight:400; font-style:italic;
+    font-size:54px; color:var(--gelo);
+  }
+
+  /* aspas — objeção na voz do trabalhador */
+  .voice{
+    font-family:"Fraunces", serif; font-weight:400; font-style:italic;
+    font-size:30px; color:var(--nevoa); letter-spacing:.01em;
+    margin-bottom:26px;
+    display:flex; align-items:flex-start; gap:14px;
+  }
+  .voice::before{
+    content:"\201C"; font-size:64px; line-height:.6; color:var(--terracota);
+    font-style:normal; position:relative; top:18px;
+  }
+
+  /* ====================== SLIDE 8 — RESPIRO CLARO ====================== */
+  .slide.light{ background:var(--gelo); color:var(--marinho); }
+  .slide.light h1.hook{ color:var(--marinho); }
+  .slide.light .kicker{ color:var(--terracota); }
+  .slide.light p.body{ color:var(--marinho); }
+  .slide.light p.body .soft{ color:var(--aco); }
+  .slide.light .mark .name{ color:var(--marinho); }
+  .slide.light .mark .sub{ color:var(--aco); }
+  .slide.light .tide .label{ color:var(--aco); }
+  .slide.light .tide .dots i{ background:rgba(31,78,107,.30); }
+  .slide.light .tide .dots i.on{ background:var(--terracota); }
+
+  .contact{
+    margin-top:8px;
+    border-left:5px solid var(--terracota);
+    padding:8px 0 8px 34px;
+  }
+  .contact .wa{
+    display:flex; align-items:center; gap:20px;
+    font-family:"Fraunces", serif; font-weight:600; font-size:48px;
+    color:var(--marinho);
+    margin-bottom:18px;
+  }
+  .contact .wa svg{ flex:0 0 auto; }
+  .contact .meta{
+    font-family:"Libre Franklin", sans-serif; font-weight:500;
+    font-size:27px; line-height:1.5; color:var(--aco);
+  }
+  .contact .meta .oab{ color:var(--marinho); font-weight:700; }
+
+  .slide.light .foot{ border-top-color:rgba(31,78,107,.22); }
+  .slide.light .foot .oab{ color:var(--aco); }
+  .slide.light .foot .oab b{ color:var(--marinho); }
+  .slide.light .foot .seal{ color:var(--aco); }
+</style>
+</head>
+<body>
+<div id="post">
+
+  <!-- =================== SLIDE 1 — CAPA / HOOK =================== -->
+  <div class="slide">
+    <div class="photo heroi"></div>
+    <div class="veil heroi"></div>
+    <div class="grain"></div>
+    <div class="pad">
+      <div class="mark">
+        <div class="name">Maré <b>·</b> Advocacia do Trabalhador</div>
+        <div class="sub">Santos · Guarujá · Baixada</div>
+      </div>
+
+      <div style="flex:1"></div>
+
+      <h1 class="hook" style="font-size:96px;">
+        Te mandaram embora e, no fim,<br>
+        a conta <span class="terra">não fechou</span>?
+      </h1>
+      <p class="body" style="margin-top:36px;">
+        O que muita gente recebe na saída é menos do que tem direito.
+        <span class="soft">E quase ninguém vai atrás.</span>
+      </p>
+
+      <div class="foot" style="margin-top:54px;">
+        <div class="oab"><b>[Nome do(a) advogado(a) responsável]</b><br>OAB/SP [nº]</div>
+        <div class="seal">continua →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== SLIDE 2 — ACOLHER =================== -->
+  <div class="slide">
+    <div class="pad">
+      <div class="tide">
+        <span class="dots"><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="label">Antes de mais nada</span>
+      </div>
+
+      <div style="flex:1"></div>
+
+      <h1 class="hook" style="font-size:84px;">
+        A culpa não é sua<br>por não saber.
+      </h1>
+      <p class="body" style="margin-top:38px;">
+        Ninguém ensina trabalhador a ler holerite, contar hora extra ou conferir rescisão.
+        A gente sabe que dá medo de mexer, medo de “arrumar problema”.
+      </p>
+      <p class="body" style="margin-top:26px;">
+        Respira. <em>Saber o que é seu não é arrumar briga</em> — é entender o seu direito.
+      </p>
+
+      <div style="flex:1"></div>
+
+      <div class="foot">
+        <div class="oab">Maré · Advocacia do Trabalhador</div>
+        <div class="seal">continua →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== SLIDE 3 — EDUCAR =================== -->
+  <div class="slide">
+    <div class="pad">
+      <div class="tide">
+        <span class="dots"><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="label">Para conferir</span>
+      </div>
+
+      <h1 class="hook" style="font-size:64px; margin-top:54px;">
+        O que costuma entrar<br>quando você sai
+      </h1>
+
+      <ul class="points" style="margin-top:40px;">
+        <li>O salário dos dias que você ainda trabalhou</li>
+        <li>As férias que você não tirou <span class="note">(+ o terço de férias)</span></li>
+        <li>O 13º proporcional do ano</li>
+        <li>O aviso prévio</li>
+        <li>A multa de 40% do FGTS <span class="note">— quando é demissão sem justa causa</span></li>
+      </ul>
+
+      <p class="body" style="margin-top:40px; font-size:36px;">
+        Não bateu com o que te pagaram? <span class="terra"><em>Vale conferir.</em></span>
+      </p>
+
+      <div style="flex:1"></div>
+
+      <div class="foot">
+        <div class="oab">Conteúdo informativo · cada caso é único</div>
+        <div class="seal">continua →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== SLIDE 4 — "ADVOGADO É CARO" =================== -->
+  <div class="slide">
+    <div class="pad">
+      <div class="tide">
+        <span class="dots"><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i></span>
+        <span class="label">O que mais trava — 1 de 3</span>
+      </div>
+
+      <div style="flex:1"></div>
+
+      <div class="voice">Mas advogado é caro. É aqui que muita gente desiste.</div>
+
+      <p class="body tight">
+        Na Justiça do Trabalho, a primeira conversa pra entender o seu caso é
+        <em>sem compromisso</em>. E em geral o trabalhador não paga nada adiantado:
+        o acerto fica pra depois, se o direito for reconhecido.
+      </p>
+      <p class="body tight" style="margin-top:26px;">
+        Ou seja: <span class="terra">dá pra começar a entender a sua situação sem tirar do bolso.</span>
+      </p>
+
+      <div style="flex:1"></div>
+
+      <div class="foot">
+        <div class="oab">Maré · Advocacia do Trabalhador</div>
+        <div class="seal">continua →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== SLIDE 5 — "NÃO TENHO PROVA" =================== -->
+  <div class="slide">
+    <div class="pad">
+      <div class="tide">
+        <span class="dots"><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i></span>
+        <span class="label">O que mais trava — 2 de 3</span>
+      </div>
+
+      <div style="flex:1"></div>
+
+      <div class="voice">Não guardei nada. Não tenho prova.</div>
+
+      <p class="body tight" style="margin-bottom:34px;">
+        Mais coisa vale como prova do que você imagina:
+      </p>
+
+      <div class="chips">
+        <span>Conversa de WhatsApp</span>
+        <span>Foto do ponto</span>
+        <span>Áudio</span>
+        <span>Um colega que viu</span>
+        <span>O grupo da empresa</span>
+        <span>Extrato do banco</span>
+      </div>
+
+      <p class="body tight" style="margin-top:38px;">
+        Você não precisa chegar com a pasta perfeita.
+        <em>Chega com o que tem</em> — <span class="terra">o resto a gente organiza junto.</span>
+      </p>
+
+      <div style="flex:1"></div>
+
+      <div class="foot">
+        <div class="oab">Maré · Advocacia do Trabalhador</div>
+        <div class="seal">continua →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== SLIDE 6 — "JÁ PASSOU O PRAZO" =================== -->
+  <div class="slide">
+    <div class="pad">
+      <div class="tide">
+        <span class="dots"><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i></span>
+        <span class="label">O que mais trava — 3 de 3</span>
+      </div>
+
+      <div style="flex:1"></div>
+
+      <div class="voice">Já faz tempo que saí. Perdi o prazo, né?</div>
+
+      <div class="anchor">
+        <span class="num">2</span>
+        <span class="unit">anos, em geral,<br>pra entrar com a ação</span>
+      </div>
+
+      <p class="body tight" style="margin-top:18px;">
+        Talvez não. Em geral, dá pra entrar até 2 anos depois que você saiu da empresa
+        — e ainda dá pra cobrar o que ficou pra trás dos últimos anos de contrato.
+      </p>
+      <!-- OLHO (3): fecho que empurra pra consulta sobe pra branco-gelo (legível no celular). -->
+      <p class="body tight" style="margin-top:24px;">
+        A única forma de saber é olhando o seu caso.
+      </p>
+
+      <div style="flex:1"></div>
+
+      <div class="foot">
+        <div class="oab">Conteúdo informativo · cada caso é único</div>
+        <div class="seal">continua →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== SLIDE 7 — "LISTA NEGRA" + COMO FUNCIONA =================== -->
+  <div class="slide">
+    <div class="photo porto"></div>
+    <div class="veil porto"></div>
+    <div class="grain"></div>
+    <div class="pad">
+      <div class="tide">
+        <span class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i></span>
+        <span class="label">Você não está sozinho</span>
+      </div>
+
+      <div style="flex:1"></div>
+
+      <div class="voice">E se eu for pra lista negra?</div>
+
+      <p class="body tight">
+        Buscar o que é seu por direito é garantido por lei — e o processo corre
+        entre você e a empresa, <em>com sigilo</em>.
+      </p>
+      <p class="body tight" style="margin-top:24px;">
+        Cobrar o que você já trabalhou não é “ser difícil”: é exercer um direito que
+        todo trabalhador tem. <span class="terra">E você não precisa encarar isso sozinho.</span>
+      </p>
+
+      <div class="foot" style="margin-top:54px;">
+        <div class="oab">Maré · Advocacia do Trabalhador</div>
+        <div class="seal">continua →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== SLIDE 8 — CTA SUAVE (RESPIRO CLARO) =================== -->
+  <div class="slide light">
+    <div class="pad">
+      <div class="tide">
+        <span class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i></span>
+        <span class="label">Fala com a gente</span>
+      </div>
+
+      <div style="flex:1"></div>
+
+      <h1 class="hook" style="font-size:78px;">
+        Ficou com dúvida<br>sobre o seu caso?
+      </h1>
+
+      <p class="body" style="margin-top:34px; font-size:36px;">
+        Manda uma mensagem. A gente te explica, com calma e na linguagem que você
+        entende, como funciona e o que dá pra fazer.
+        <span class="soft">Sem compromisso, sem juridiquês.</span>
+      </p>
+
+      <div class="contact" style="margin-top:48px;">
+        <!-- OLHO (4): rótulo "WhatsApp" só uma vez. Marcos troca [WhatsApp] pelo número real
+             → lê "WhatsApp (13) 9XXXX-XXXX", não "WhatsApp WhatsApp...". -->
+        <div class="wa">
+          <svg width="46" height="46" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2a10 10 0 0 0-8.6 15.05L2 22l5.1-1.33A10 10 0 1 0 12 2Z" fill="#C2683D"/>
+            <path d="M8.4 7.3c-.2-.45-.4-.46-.6-.47h-.5c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.27 0 1.34.97 2.63 1.1 2.81.14.18 1.9 3.04 4.7 4.14 2.32.92 2.8.73 3.3.69.5-.05 1.6-.66 1.83-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.31-.27-.14-1.6-.79-1.84-.88-.25-.09-.43-.13-.6.14-.18.27-.7.88-.85 1.06-.16.18-.31.2-.58.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.6-1.5-1.87-.16-.27-.02-.41.12-.55.12-.12.27-.31.4-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.6-1.49-.85-2.02Z" fill="#F4F6F8"/>
+          </svg>
+          WhatsApp&nbsp;[WhatsApp]
+        </div>
+        <div class="meta">
+          Atendimento para Santos, Guarujá e toda a Baixada<br>
+          <span class="oab">[Nome do(a) advogado(a) responsável] — OAB/SP [nº]</span>
+        </div>
+      </div>
+
+      <div style="flex:1"></div>
+
+      <div class="foot">
+        <div class="oab">Conteúdo informativo · cada situação é única</div>
+        <div class="seal">Maré</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

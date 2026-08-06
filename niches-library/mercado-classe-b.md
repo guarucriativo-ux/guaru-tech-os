@@ -12,6 +12,10 @@ Conteúdo vive de conhecimento/confiança → **stock (Unsplash) + design autora
 problema do "não é o meu produto". Mais automatizável → custo de servir menor → north-star. A
 classe A (produto) fica parqueada como ponta aberta. Ver memória `classe-b-foco-expansao`.
 
+> **Reforço (2026-06-26):** num teste o Claude escolheu **joalheria (classe A)** pra exercitar o designer —
+> o Marcos apontou como erro de partida (classe A depende de foto de produto profissional). Lição cravada:
+> **default é classe B**; só ir pra classe A com necessidade real.
+
 ---
 
 ## 1. Quantos nichos existem na classe B (taxonomia)

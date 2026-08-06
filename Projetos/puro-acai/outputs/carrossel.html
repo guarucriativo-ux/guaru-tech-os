@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Puro Açaí — Carrossel de Venda</title>
+<style>
+  /* ===== FONTES LOCAIS (fontconfig já tem as famílias; @font-face aponta pros .ttf como reforço explícito) ===== */
+  @font-face { font-family: "Anton";   src: local("Anton"), url("/home/user/guaru-tech-os/tools/render/fonts/anton-v27-1Ptgg87LROyAm0K0.ttf") format("truetype"); font-weight: 400; font-style: normal; }
+  @font-face { font-family: "Inter";   src: local("Inter"); font-weight: 400 900; font-style: normal; }
+  @font-face { font-family: "Fraunces";src: local("Fraunces"); font-weight: 400 900; font-style: italic; }
+  @font-face { font-family: "Archivo"; src: local("Archivo"); font-weight: 400 900; font-style: normal; }
+
+  :root{
+    --roxo:   #1E1224;  /* base / assinatura */
+    --preto:  #0C070F;  /* profundidade */
+    --areia:  #F4E9D6;  /* respiro / oferta */
+    --branco: #FDFCFA;  /* texto sobre escuro */
+    --verde:  #6FA03C;  /* AÇÃO: cta + preço */
+    --amarelo:#F2B829;  /* tempero */
+    --morango:#C7263B;  /* tempero / fome */
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  body{
+    font-family: "Inter", sans-serif;
+    background: #2a2a2a;
+    color: var(--branco);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* container só pra empilhar os slides na pré-visualização; o render recorta cada .slide */
+  .deck{ display:flex; flex-direction:column; align-items:center; gap:24px; padding:24px 0; }
+
+  .slide{
+    position: relative;
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: var(--roxo);
+  }
+
+  /* ---------- camadas de foto ---------- */
+  .photo{
+    position:absolute; inset:0;
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .overlay{ position:absolute; inset:0; }
+
+  /* vinheta roxa-base p/ contraste de texto sobre foto, sem matar a cor do produto */
+  .veil-bottom{
+    background: linear-gradient(180deg,
+      rgba(12,7,15,0) 38%,
+      rgba(12,7,15,0.55) 66%,
+      rgba(12,7,15,0.92) 100%);
+  }
+  .veil-top{
+    background: linear-gradient(180deg,
+      rgba(12,7,15,0.85) 0%,
+      rgba(12,7,15,0.35) 26%,
+      rgba(12,7,15,0) 48%);
+  }
+  /* neutraliza o fundo laranja da foto de apoio puxando pro roxo-base (não vira gradiente IG: é veil chapado roxo) */
+  .veil-purplewash{ background: rgba(30,18,36,0.46); mix-blend-mode: multiply; }
+
+  /* ---------- conteúdo ---------- */
+  /* z-index alto: garante que NADA de fundo/acento caia por cima do texto */
+  .content{ position:absolute; inset:0; z-index:20; padding:96px 92px; display:flex; flex-direction:column; }
+
+  .anton{
+    font-family:"Anton", sans-serif;
+    text-transform:uppercase;
+    line-height:0.92;
+    letter-spacing:-0.5px;
+    color:var(--branco);
+    text-shadow: 0 4px 28px rgba(12,7,15,0.55);
+  }
+  .fraunces{ font-family:"Fraunces", serif; font-style:italic; }
+
+  .kicker{
+    font-family:"Archivo", sans-serif;
+    text-transform:uppercase;
+    letter-spacing:6px;
+    font-weight:700;
+    font-size:26px;
+    color:var(--verde);
+  }
+  .body{ font-family:"Inter", sans-serif; color:var(--branco); }
+
+  /* marca de continuidade discreta (substitui "arraste/01/05" banidos): traço de progresso */
+  .progress{
+    position:absolute; left:92px; bottom:64px; z-index:20;
+    display:flex; gap:10px; align-items:center;
+  }
+  .progress .dash{ width:34px; height:6px; border-radius:3px; background:rgba(253,252,250,0.28); }
+  .progress .dash.on{ background:var(--verde); }
+  .progress .seq{
+    margin-left:6px; font-family:"Archivo",sans-serif; font-weight:700;
+    letter-spacing:3px; font-size:18px; color:rgba(253,252,250,0.55);
+    text-transform:uppercase;
+  }
+
+  /* logotipo-texto discreto da marca, recorrente sem virar clichê */
+  .wordmark{
+    position:absolute; right:92px; bottom:60px; z-index:20;
+    font-family:"Archivo",sans-serif; font-weight:900;
+    text-transform:uppercase; letter-spacing:2px; font-size:22px;
+    color:var(--branco); opacity:0.85;
+  }
+  .wordmark b{ color:var(--amarelo); }
+
+  /* ===== SLIDE 1 — gancho ===== */
+  .s1 .bg{
+    position:absolute; inset:0; z-index:1;
+    background: radial-gradient(120% 90% at 78% 18%, #3a2147 0%, var(--roxo) 46%, var(--preto) 100%);
+  }
+  /* "calor": faixa de luz/sol quente entrando do alto, sutil, sem revelar produto */
+  .s1 .sunbeam{
+    position:absolute; inset:0; z-index:2;
+    background: linear-gradient(155deg, rgba(242,184,41,0.22) 0%, rgba(242,184,41,0) 30%);
+  }
+  .s1 .content{ justify-content:center; }
+  /* AJUSTE: font-size reduzido + line-height aberto (1.12) pra NENHUM acento (Á/Ê) tocar a linha vizinha */
+  .s1 .anton{ font-size:204px; line-height:1.12; }
+  .s1 .anton .line2{ color:var(--amarelo); }
+  /* respiro extra entre a 1ª e a 2ª estrofe — libera o circunflexo do "Ê" de VOCÊ */
+  .s1 .anton .gap{ display:block; height:38px; }
+  .s1 .whisper{
+    margin-top:56px; font-size:30px; color:rgba(253,252,250,0.78);
+    font-weight:400; letter-spacing:0.2px;
+  }
+  /* acentos/grãos de luz: z-index BAIXO (atrás do texto) e movidos pros cantos livres */
+  .s1 .berry{
+    position:absolute; z-index:3; width:14px; height:14px; border-radius:50%;
+    background:var(--morango); box-shadow:0 0 22px 6px rgba(199,38,59,0.35);
+  }
+
+  /* ===== SLIDE 2 — prova / foto-herói full bleed ===== */
+  .s2 .content{ justify-content:flex-end; }
+  .s2 .anton{ font-size:158px; }
+  .s2 .anton .em{ color:var(--amarelo); }
+  .s2 .body{ font-size:34px; line-height:1.34; margin-top:22px; max-width:760px; font-weight:500; }
+
+  /* ===== SLIDE 3 — diferenciação ===== */
+  .s3 .bg{ position:absolute; inset:0; background:var(--roxo); }
+  .s3 .content{ justify-content:flex-start; padding-top:118px; }
+  .s3 .anton{ font-size:138px; }
+  .s3 .underline{
+    display:inline-block; box-shadow: inset 0 -22px 0 var(--morango);
+  }
+  .s3 .body{ font-size:38px; line-height:1.42; margin-top:60px; max-width:840px; font-weight:500; }
+  /* CONTRASTE: texto sobre fundo escuro vai em Branco-Colher (identidade) — sem cinza médio */
+  .s3 .body .bad{ color:var(--branco); }
+  .s3 .body .good{ color:var(--branco); font-weight:700; }
+  .s3 .stamp{
+    margin-top:50px; font-size:64px; color:var(--amarelo);
+  }
+  /* tira de foto-prova na base: a textura/cor real fecha o argumento */
+  .s3 .proofstrip{
+    position:absolute; left:0; right:0; bottom:0; height:430px; overflow:hidden;
+  }
+  .s3 .proofstrip img{ width:100%; height:100%; object-fit:cover; object-position:center 36%; }
+  .s3 .proofstrip .grad{
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, var(--roxo) 0%, rgba(30,18,36,0) 34%);
+  }
+
+  /* ===== SLIDE 4 — desejo + contexto ===== */
+  .s4 .content{ justify-content:flex-end; }
+  .s4 .anton{ font-size:150px; }
+  .s4 .anton .hot{ color:var(--amarelo); }
+  .s4 .body{
+    font-size:34px; line-height:1.36; margin-top:24px; max-width:780px; font-weight:500;
+    /* LEGIBILIDADE: text-shadow forte garante contraste mesmo sobre a parte clara da foto */
+    text-shadow: 0 2px 16px rgba(12,7,15,0.95), 0 0 4px rgba(12,7,15,0.85);
+  }
+  /* reforço de véu escuro SÓ na faixa inferior do texto (não escurece o produto no topo) */
+  .s4 .veil-textband{
+    position:absolute; left:0; right:0; bottom:0; height:46%; z-index:5;
+    background: linear-gradient(180deg,
+      rgba(12,7,15,0) 0%,
+      rgba(12,7,15,0.62) 42%,
+      rgba(12,7,15,0.92) 100%);
+  }
+
+  /* ===== SLIDE 5 — oferta (fundo areia) ===== */
+  .s5{ background:var(--areia); }
+  .s5 .content{ justify-content:center; }
+  .s5 .anton{ font-family:"Anton", sans-serif; font-size:150px; color:var(--roxo); text-shadow:none; }
+  .s5 .offer{ margin-top:54px; }
+  .s5 .row{
+    display:flex; align-items:baseline; gap:18px; flex-wrap:wrap;
+    padding:26px 0; border-bottom:3px solid rgba(30,18,36,0.16);
+  }
+  .s5 .row .label{ font-family:"Inter"; font-weight:600; font-size:38px; color:var(--roxo); }
+  .s5 .row .price{
+    font-family:"Inter"; font-weight:900; font-size:54px; color:var(--verde);
+    margin-left:auto;
+  }
+  .s5 .selo{
+    margin-top:56px; align-self:flex-start;
+    background:var(--verde); color:var(--branco);
+    font-family:"Archivo"; font-weight:700; text-transform:uppercase;
+    letter-spacing:5px; font-size:28px; padding:22px 40px; border-radius:10px;
+  }
+  .s5 .progress .dash{ background:rgba(30,18,36,0.22); }
+  .s5 .progress .dash.on{ background:var(--verde); }
+  .s5 .progress .seq{ color:rgba(30,18,36,0.5); }
+  .s5 .wordmark{ color:var(--roxo); }
+  .s5 .wordmark b{ color:var(--morango); }
+
+  /* ===== SLIDE 6 — CTA ===== */
+  .s6 .bg{ position:absolute; inset:0;
+    background: radial-gradient(110% 80% at 50% 30%, #2b1838 0%, var(--roxo) 52%, var(--preto) 100%); }
+  .s6 .content{ justify-content:center; align-items:center; text-align:center; }
+  .s6 .anton{ font-size:172px; }
+  .s6 .anton .go{ color:var(--amarelo); }
+  .s6 .body{ font-size:34px; line-height:1.4; margin-top:36px; font-weight:500; color:rgba(253,252,250,0.9); }
+  .s6 .handle{ margin-top:14px; font-size:30px; color:rgba(253,252,250,0.7); }
+  .s6 .cta{
+    margin-top:64px;
+    background:var(--verde); color:var(--branco);
+    font-family:"Inter"; font-weight:900; font-size:52px;
+    padding:42px 80px; border-radius:22px;
+    box-shadow:0 18px 50px rgba(111,160,60,0.4);
+    display:inline-flex; align-items:center; gap:24px;
+    letter-spacing:0.5px;
+  }
+  .s6 .cta .arr{ font-size:56px; }
+  .s6 .wordmark{ left:0; right:0; text-align:center; }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- ============ SLIDE 1 — GANCHO ============ -->
+  <div class="slide s1">
+    <div class="bg"></div>
+    <div class="sunbeam"></div>
+    <!-- acentos reposicionados pros cantos livres e em z-index baixo: NUNCA cobrem o gancho -->
+    <div class="berry" style="top:7%; left:8%;"></div>
+    <div class="berry" style="top:91%; left:90%; background:#6FA03C; box-shadow:0 0 22px 6px rgba(111,160,60,0.3);"></div>
+    <div class="content">
+      <div class="kicker">PURO AÇAÍ · LITORAL</div>
+      <div class="anton" style="margin-top:44px;">
+        TÁ<br>QUENTE.
+        <span class="gap"></span>
+        <span class="line2">VOCÊ<br>MERECE.</span>
+      </div>
+      <div class="whisper">(você já sabe o que vem agora)</div>
+    </div>
+    <div class="progress"><span class="dash on"></span><span class="dash"></span><span class="dash"></span><span class="dash"></span><span class="dash"></span><span class="dash"></span></div>
+  </div>
+
+  <!-- ============ SLIDE 2 — PROVA / FOTO-HERÓI ============ -->
+  <div class="slide s2">
+    <img class="photo" src="../assets/acai-heroi-3.jpg" alt="Bowl de açaí roxo escuro real com kiwi, morango, banana e granola">
+    <div class="overlay veil-top"></div>
+    <div class="overlay veil-bottom"></div>
+    <div class="content">
+      <div class="anton">AÇAÍ DE<br><span class="em">VERDADE</span></div>
+      <div class="body">Roxo escuro, quase preto. Denso.<br>A colher fica em pé.</div>
+    </div>
+    <div class="progress"><span class="dash"></span><span class="dash on"></span><span class="dash"></span><span class="dash"></span><span class="dash"></span><span class="dash"></span></div>
+  </div>
+
+  <!-- ============ SLIDE 3 — DIFERENCIAÇÃO ============ -->
+  <div class="slide s3">
+    <div class="bg"></div>
+    <div class="content">
+      <div class="anton"><span class="underline">A COR<br>NÃO MENTE</span></div>
+      <div class="body">
+        <span class="bad">Açaí claro, rosado ou aguado = açúcar, xarope e água.</span><br><br>
+        <span class="good">O nosso é roxo escuro porque é só a polpa.</span>
+      </div>
+      <div class="stamp"><span class="fraunces">de verdade</span> — sem enrolação.</div>
+    </div>
+    <div class="proofstrip">
+      <img src="../assets/acai-heroi-3.jpg" alt="Textura densa do açaí roxo real">
+      <div class="grad"></div>
+    </div>
+    <div class="progress"><span class="dash"></span><span class="dash"></span><span class="dash on"></span><span class="dash"></span><span class="dash"></span><span class="dash"></span></div>
+  </div>
+
+  <!-- ============ SLIDE 4 — DESEJO + CONTEXTO ============ -->
+  <div class="slide s4">
+    <img class="photo" src="../assets/acai-heroi-3.jpg" alt="Mão segurando bowl de açaí no calor do litoral" style="object-position:center 40%;">
+    <div class="overlay veil-purplewash"></div>
+    <div class="overlay veil-top"></div>
+    <div class="overlay veil-bottom"></div>
+    <div class="overlay veil-textband"></div>
+    <div class="content">
+      <div class="anton">DEPOIS<br>DA PRAIA<br><span class="hot">BATE AQUELA</span></div>
+      <div class="body">Gelado, cremoso, do jeito que a tarde quente pede.<br>Tarde, noite, fim de semana — tá sempre na hora.</div>
+    </div>
+    <div class="progress"><span class="dash"></span><span class="dash"></span><span class="dash"></span><span class="dash on"></span><span class="dash"></span><span class="dash"></span></div>
+  </div>
+
+  <!-- ============ SLIDE 5 — OFERTA ============ -->
+  <div class="slide s5">
+    <div class="content">
+      <div class="kicker" style="color:var(--verde);">A OFERTA</div>
+      <div class="anton" style="margin-top:18px;">MANDA<br>UM AÇAÍ</div>
+      <div class="offer">
+        <div class="row">
+          <span class="label">Copo [tamanho] · [topping/topping]</span>
+          <span class="price">a partir de [preço]</span>
+        </div>
+        <div class="row">
+          <span class="label">Combo [nome do combo]</span>
+          <span class="price">[preço]</span>
+        </div>
+        <div class="row" style="border-bottom:none;">
+          <span class="label">Entrega em [tempo] · [bairro/região]</span>
+        </div>
+      </div>
+      <div class="selo">ENTREGA RÁPIDA · [região]</div>
+    </div>
+    <div class="progress"><span class="dash"></span><span class="dash"></span><span class="dash"></span><span class="dash"></span><span class="dash on"></span><span class="dash"></span></div>
+    <div class="wordmark">PURO <b>AÇAÍ</b></div>
+  </div>
+
+  <!-- ============ SLIDE 6 — CTA ============ -->
+  <div class="slide s6">
+    <div class="bg"></div>
+    <div class="content">
+      <div class="anton">BORA?<br><span class="go">MANDA<br>UM WHATS</span></div>
+      <div class="body">Chama no [WhatsApp] e teu açaí já tá saindo.</div>
+      <div class="handle">[@handle] · [bairro/cidade]</div>
+      <div class="cta">PEDIR AGORA <span class="arr">→</span> [WhatsApp]</div>
+    </div>
+    <div class="wordmark">PURO <b>AÇAÍ</b></div>
+  </div>
+
+</div>
+</body>
+</html>

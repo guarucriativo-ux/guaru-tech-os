@@ -6,19 +6,56 @@
 // Com --slides: recorta CADA elemento .slide em um PNG separado (formato postável do carrossel:
 //   uma imagem 1080x1350 por slide → saida-1.png, saida-2.png, ...).
 // Carrega o HTML por file:// (resolve assets/fontes relativos), espera fontes + rede.
-// Método autoral — ver niches-library/design-principles/metodo-criativo.md
+// Renderizador de infraestrutura — só converte HTML em imagem; não impõe estilo.
 import puppeteer from "puppeteer";
-import { mkdir } from "node:fs/promises";
+import { mkdir, readdir, copyFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
+import { execFile } from "node:child_process";
+import { homedir } from "node:os";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+
+// FONTES (cache sob demanda, não lista fixa): carrega pro fontconfig, em TODA sessão, o que estiver no cache
+// tools/render/fonts/*.ttf — assim o Chromium acha a fonte pelo nome LOCALMENTE (offline depois de baixada).
+// A fonte de cada peça é a que a MARCA pede; traga qualquer uma com `node tools/fonte-auto.mjs "Família"`.
+async function instalarFontes(fontsDir) {
+  try {
+    if (!existsSync(fontsDir)) return;
+    const dest = path.join(homedir(), ".fonts");
+    await mkdir(dest, { recursive: true });
+    let copiou = 0;
+    for (const f of await readdir(fontsDir)) {
+      if (!/\.(ttf|otf)$/i.test(f)) continue;
+      const d = path.join(dest, f);
+      if (!existsSync(d)) { await copyFile(path.join(fontsDir, f), d); copiou++; }
+    }
+    if (copiou) await new Promise((r) => execFile("fc-cache", ["-f", dest], () => r())); // idempotente; ignora se não houver fc-cache
+  } catch {}
+}
+
+// Acha o Chromium do ambiente quando o puppeteer não baixou o próprio (ex.: nuvem usa o pré-instalado em
+// /opt/pw-browsers, com nº de versão que muda). Sem isso, render falha na nuvem ("Could not find Chrome").
+// Ordem: PUPPETEER_EXECUTABLE_PATH explícito → bundle do puppeteer → varredura do PLAYWRIGHT_BROWSERS_PATH.
+async function acharChromium() {
+  if (process.env.PUPPETEER_EXECUTABLE_PATH) return process.env.PUPPETEER_EXECUTABLE_PATH;
+  try { const p = puppeteer.executablePath(); if (p && existsSync(p)) return p; } catch {}
+  const base = process.env.PLAYWRIGHT_BROWSERS_PATH || "/opt/pw-browsers";
+  try {
+    for (const dir of (await readdir(base)).filter((d) => d.startsWith("chromium-")).sort().reverse()) {
+      const cand = path.join(base, dir, "chrome-linux", "chrome");
+      if (existsSync(cand)) return cand;
+    }
+  } catch {}
+  return undefined; // deixa o puppeteer tentar do jeito padrão
+}
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
 const slidesMode = args.includes("--slides");
 const scaleArg = args.find((a) => a.startsWith("--scale="));
 const qArg = args.find((a) => a.startsWith("--q="));
-// scale 1 = 1080x1350 nativo (= tamanho de tela exato que a Meta exibe; não fazer oversize). Ver
-// knowledge-base/design/specs-imagem-redes.md. quality 85-95 ideal pra JPEG (100 piora na Meta).
+// scale 1 = 1080x1350 nativo (= tamanho de tela exato que a Meta exibe; não fazer oversize).
+// quality 85-95 ideal pra JPEG (100 piora na Meta).
 const scale = scaleArg ? Number(scaleArg.split("=")[1]) : 1;
 const quality = qArg ? Number(qArg.split("=")[1]) : 90;
 const [htmlArg, outArg, wArg, hArg] = args.filter((a) => !a.startsWith("--"));
@@ -35,7 +72,9 @@ const outPath = path.resolve(__dirname, outArg);
 // formato por extensão: .jpg/.jpeg => JPEG sRGB (entrega Meta, mais leve); senão PNG (texto puro/transparência)
 const shotOpts = (p) => (/\.jpe?g$/i.test(p) ? { path: p, type: "jpeg", quality } : { path: p });
 
-const browser = await puppeteer.launch({ args: ["--no-sandbox"] });
+await instalarFontes(path.join(__dirname, "fonts")); // carrega o cache de fontes (local; traga novas com fonte-auto)
+const executablePath = await acharChromium();
+const browser = await puppeteer.launch({ args: ["--no-sandbox"], ...(executablePath ? { executablePath } : {}) });
 try {
   const page = await browser.newPage();
   await page.setViewport({ width, height, deviceScaleFactor: scale });

@@ -1,13 +1,7 @@
 {
   "name": "guaru-tech-os",
   "version": "0.1.0",
-  "description": "Core do Guaru Tech OS — CLI de gestão de clientes e ciclo de aprendizado (modelo SwaS).",
+  "description": "Guaru Tech OS — fábrica de agentes operada pelo Chat-Mestre (ver CLAUDE.md).",
   "type": "module",
-  "bin": {
-    "guaru": "cli/index.js"
-  },
-  "scripts": {
-    "guaru": "node cli/index.js"
-  },
   "license": "ISC"
 }

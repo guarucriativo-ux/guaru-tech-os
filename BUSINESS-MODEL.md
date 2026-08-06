@@ -24,9 +24,8 @@ trabalha sozinho:
   É o que faz o sistema *crescer conforme trabalha*.
 - **4 órgãos (por cliente):** conteúdo (copy/roteiro) · render de imagem (HTML+SVG→PNG) ·
   plano de campanha (Meta) · mini-CRM de leads.
-- **Ciclo de aprendizado:** rotação de ângulo via ledger · feedback de design no `learning-log`
-  (codifica o *olhar* do fundador) · promoção pra `niches-library` quando se prova · protocolo de
-  3 camadas (Base Mãe → nicho → DNA do cliente).
+- **Ciclo de aprendizado:** rotação de ângulo via ledger · cada entrega real vira aprendizado registrado ·
+  promoção pra `niches-library` quando se prova em mais de um cliente.
 - **Autonomia:** GitHub Action roda na nuvem, no agendamento, sem máquina ligada (comprovado
   2026-06-22 — o `guaru-bot` gerou e commitou um pacote semanal sozinho).
 

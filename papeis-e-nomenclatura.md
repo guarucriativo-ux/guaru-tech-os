@@ -26,13 +26,13 @@ Não é programador (isso é o Claude). É a profissão nova que ainda está sen
 descrevem, em ordem de força:
 1. **Context Engineer (Engenheiro de Contexto)** — a evolução do "prompt engineer" e o termo mais forte de
    2026. *Não ajusta a pergunta; constrói a base de conhecimento e o scaffolding que tornam a resposta boa.*
-   É **literalmente** o que o Marcos faz: a faculdade, a `niches-library`, o brand-DNA, a régua, o
-   `ESTADO-ATUAL`, toda a disciplina de acúmulo. **É a superpotência dele e o MOAT da empresa.**
+   É **literalmente** o que o Marcos faz: a `niches-library`, o
+   `ESTADO-ATUAL`, toda a disciplina de acúmulo de conhecimento. **É a superpotência dele e o MOAT da empresa.**
 2. **AI Orchestrator (Orquestrador de IA)** — eleito "o trabalho mais importante de 2026". *O arquiteto de
    pessoas e máquinas trabalhando juntas; decide quando o agente age sozinho e quando passa pro humano.* =
    a fábrica de especialistas + o humano-no-loop. O maestro.
-3. **AI / Solutions Architect (Arquiteto de IA)** — desenha **o que o sistema deve ser** (os 4 módulos, o
-   protocolo de design 3 camadas, o modelo de dois braços). Arquiteta a planta.
+3. **AI / Solutions Architect (Arquiteto de IA)** — desenha **o que o sistema deve ser** (os módulos, o
+   modelo de dois braços). Arquiteta a planta.
 
 E, claro, **Fundador** — mas qualificado: *fundador de uma empresa AI-native*, não "fundador genérico".
 > ⛔ Termo a NÃO usar pra ele: "citizen developer" (quem monta formulário interno via no-code). É tecnicamente

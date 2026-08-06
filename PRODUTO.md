@@ -13,8 +13,9 @@
 Ao instalar a tecnologia no WhatsApp do cliente, um **briefing rápido** (questionário) coleta:
 nicho, cores, fotos próprias, intenções, **como** ele quer o conteúdo e **em quais dias** quer postar.
 
-→ As respostas **preenchem o `brand-dna.json` do cliente sozinhas** (hoje feito à mão). É o que
-torna o cadastro de cliente escalável (multi-inquilino). A "pasta por cliente" já isola cada um.
+→ As respostas **viram o perfil/briefing do cliente sozinhas** (hoje feito à mão) — dados reais
+(nicho, cores, fotos), não régua de estilo. É o que torna o cadastro escalável (multi-inquilino);
+a "pasta por cliente" já isola cada um.
 
 ## 2. Operação: gerar → confirmar → postar
 No dia/horário programado, antes de ir pro Instagram, o cliente recebe a peça pra **confirmar o

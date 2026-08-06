@@ -1,0 +1,37 @@
+
+[fabrica:burger] Portão 1: pesquisa real (fonte real, sem achismo)…
+
+[fabrica:burger] ✓ pesquisa-realidade.md
+
+[fabrica:burger] Portão 2: identidade (a equipe escolhe a própria tipografia/paleta)…
+
+[fabrica:burger] ✓ identidade — fontes: Syne, DM Sans | foto: "smash burger cast iron griddle process overhead mashed patty steam hands visible dark background honest food photography"
+
+[fabrica:burger] Portão 3: copy…
+
+[fabrica:burger] ✓ copy-carrossel.md
+
+[fabrica:burger] Portão 4: baixando fontes escolhidas + foto real…
+
+[fabrica:burger]   ✓ fonte: Syne
+
+[fabrica:burger]   ✓ fonte: DM Sans
+
+[fabrica:burger] ✓ 3 foto(s) candidata(s)
+
+[fabrica:burger] ✓ foto escolhida: foto-2.jpg
+
+[fabrica:burger] Portão 5: design (método do designer)…
+file:///home/user/guaru-tech-os/tools/fabrica.mjs:38
+      if (err) return reject(new Error(`claude -p falhou (${err.code || err.signal}): ${String(stderr || err.message).slice(0, 500)}`));
+                             ^
+
+Error: claude -p falhou (143): Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+
+    at file:///home/user/guaru-tech-os/tools/fabrica.mjs:38:30
+    at ChildProcess.exithandler (node:child_process:424:5)
+    at ChildProcess.emit (node:events:519:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:304:5)
+
+Node.js v22.22.2

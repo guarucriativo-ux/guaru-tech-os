@@ -1,15 +1,1 @@
-{
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "node cli/hooks/log-carousel.mjs"
-          }
-        ]
-      }
-    ]
-  }
-}
+{}
